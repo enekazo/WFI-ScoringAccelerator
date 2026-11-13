@@ -85,7 +85,7 @@ Details: [docs/azure-mapping.md](docs/azure-mapping.md).
 
 ## Results
 
-We evaluated three parts of the accelerator: score consistency, answers from Fabric IQ, and calculations through Foundry Agent Tools. These are the same three experiments presented in the [v9 article](docs/dissemination/techcommunity-post-v9.md#what-we-measured).
+We evaluated three parts of the accelerator: score consistency, answers from Fabric IQ, and calculations through Foundry Agent Tools. These are the same three experiments presented in the [v9 article](docs/dissemination/techcommunity-post-v9.md#evaluation-and-results).
 
 | Experiment | Test scope | Models tested |
 |---|---|---|
