@@ -2,7 +2,7 @@
 
 (Named NOTES.md because `SUMMARY.md` collides with the generated `summary.md` on case-insensitive filesystems.)
 
-Same protocol as `gpt-6.1-sol` ([docs/model-comparison.md](../../../model-comparison.md)): 50 parcels,
+Same protocol as `gpt-6.1-sol` ([docs/model-comparison.md](../../../../model-comparison.md)): 50 parcels,
 same seeds, 3 repeats (450 runs), weight-sensitivity pass (10 variants x first 10 parcels x 1 repeat).
 Full tables: [summary.md](summary.md); raw data: `runs.json`, `metrics.json`, `sensitivity.json`, `receipts/`.
 

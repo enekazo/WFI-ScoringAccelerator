@@ -204,7 +204,7 @@ The study supports keeping calculation, explanation and approval separate. The a
 
 For teams trying this approach, start with a decision that has stable rules and consequences worth checking. Calculate scores in code, record the inputs and give the agent only the tools and permissions it needs. Keep approval with the planner and make the supporting evidence inspectable. 
 
-The next step is a pilot with a forestry planners using real, governed data, comparing the agent with the simpler tools or templates they already use. This pilot would assess whether the accelerator improves planning compared with existing alternatives.
+The next step is a pilot with forestry planners using real, governed data, comparing the agent with the simpler tools or templates they already use. This pilot would assess whether the accelerator improves planning compared with existing alternatives.
 
 The [companion repository](https://github.com/enekazo/WFI-ScoringAccelerator) contains the implementation, deployment instructions and detailed evaluation reports.
 
