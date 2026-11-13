@@ -354,7 +354,6 @@ deploy/                 One-click installer, private-parameter template, Bicep, 
 docs/                   Architecture, business case, evaluation, Foundry, Fabric and review/approval guides
 docs/reports/           Full reports for the three experiments
 docs/dissemination/      Current v9 article and shared publication assets
-docs/archive/            Superseded publication drafts and historical assets
 docs/evidence/           Metrics, runs, receipts, summaries, charts
 results/                Additional recorded experiment runs
 tests/                  Automated tests for scoring, tools, deployment, Fabric and review controls
@@ -408,7 +407,6 @@ python scripts/make_v9_test_charts.py
 | Reproduce the three experiments or inspect their evidence | [Reproduction guide](docs/experiment.md) · [Evidence reports](docs/reports/README.md) |
 | Read the companion article and its business context | [Forestry planning with AI (v9)](docs/dissemination/techcommunity-post-v9.md) · [Business case](docs/business-case.md) |
 | Understand the separate human decision workflow | [Review and approval](docs/authority.md) · [Recorded approval evidence](docs/evidence/authority-plane/summary.md) |
-| Find older publication drafts, not current instructions | [Archive](docs/archive/README.md) |
 | Contribute or check security and attribution | [Contributing](CONTRIBUTING.md) · [Security](SECURITY.md) · [Notice](NOTICE.md) |
 
 ## Built On + Thanks
