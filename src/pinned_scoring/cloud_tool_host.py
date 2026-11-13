@@ -86,13 +86,13 @@ def _normalise_observations(observations: list[Observation], policy: Policy, as_
 
 
 def is_auth_required() -> bool:
-    """Return True when Entra Bearer JWT authentication is enforced on `/api/mcp`."""
+    """Require Entra Bearer JWT authentication unless explicitly disabled."""
     flag = os.environ.get(REQUIRE_AUTH_ENV, "").strip().lower()
     if flag in ("0", "false", "no"):
         return False
     if flag in ("1", "true", "yes"):
         return True
-    return bool(os.environ.get(ALLOWED_TENANT_ENV, "").strip())
+    return True
 
 
 def parse_allowed_audiences(raw: str | None = None) -> list[str]:

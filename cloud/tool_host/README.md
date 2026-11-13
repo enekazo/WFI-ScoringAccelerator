@@ -64,6 +64,7 @@ Unauthenticated liveness/readiness probe returning `status`, `server` (`"pinneds
 - **Storage access:** The Function App uses the user-assigned managed identity (`<resourcePrefix>-agent-id`) with `Storage Blob Data Reader` on the receipts storage account (`RECEIPTS_STORAGE_ACCOUNT` / `RECEIPTS_CONTAINER` / `RECEIPTS_PREFIX`). Every blob is verified via `Receipt.from_wire()` (SHA-256 check) on load. Neither `/api/score` nor `/api/verify` writes to Blob Storage.
 - **Host storage:** Uses identity-based Azure Functions host storage (`AzureWebJobsStorage__accountName` + `AzureWebJobsStorage__credential=managedidentity` + `AzureWebJobsStorage__clientId`), with `allowSharedKeyAccess: false` on the storage accounts.
 - **Inbound auth:** `/api/mcp`, `/api/score`, and `/api/verify` enforce in-app RS256 JWT validation (`verify_entra_bearer_token`) against the configured tenant's Entra OIDC JWKS keys (`MCP_ALLOWED_TENANT_ID` and `MCP_ALLOWED_AUDIENCES`). No API keys or storage keys exist in the repository.
+- **Fail-closed default:** Authentication is required even when `MCP_REQUIRE_AUTH` is unset, empty or unrecognised. If `MCP_ALLOWED_TENANT_ID` is missing or blank, protected requests return `401 Unauthorized`. `/api/health` remains unauthenticated. For isolated local testing only, explicitly set `MCP_REQUIRE_AUTH=false` to disable authentication; do not use that override on a deployed host.
 
 ## Local testing
 

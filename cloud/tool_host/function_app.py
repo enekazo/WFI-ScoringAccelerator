@@ -74,9 +74,10 @@ def handle_http_request(
     """Framework-neutral HTTP handler used by both Azure Functions and offline unit tests.
 
     Returns `(status_code, headers_dict, json_body_str)`.
-    When `MCP_ALLOWED_TENANT_ID` (or `MCP_REQUIRE_AUTH=true`) is set, `/api/mcp` enforces
-    cryptographic RS256 verification of the incoming Microsoft Entra `Authorization: Bearer <jwt>`
-    token against the configured tenant's OIDC JWKS keys.
+    Protected endpoints require authentication by default and reject a missing
+    `MCP_ALLOWED_TENANT_ID`. Cryptographic RS256 verification checks the incoming
+    Microsoft Entra `Authorization: Bearer <jwt>` token against the configured
+    tenant's OIDC JWKS keys, unless authentication is explicitly disabled.
     """
     global _LAST_AUTH_ERROR
     headers = {"Content-Type": "application/json"}

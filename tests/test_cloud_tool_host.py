@@ -264,6 +264,7 @@ def test_mcp_tool_host_rejects_propose_action_and_honours_kill_switch(monkeypatc
 
 
 def test_function_app_http_handler_get_and_post(monkeypatch):
+    monkeypatch.setenv(cth.REQUIRE_AUTH_ENV, "false")
     reader, _ = _make_fake_blob_reader()
     tb = fa.FoundryToolbox(reader=reader)
     host = cth.McpToolHost(tb)
@@ -350,7 +351,7 @@ def test_cloud_agent_definition_and_cloud_runner_require_zero_local_tools(monkey
 
     reader, _ = _make_fake_blob_reader()
     monkeypatch.setattr(func_app, "_HOST", cth.McpToolHost(fa.FoundryToolbox(reader=reader)))
-    monkeypatch.delenv("MCP_ALLOWED_TENANT_ID", raising=False)
+    monkeypatch.setenv(cth.REQUIRE_AUTH_ENV, "false")
     _install_fake_urllib_for_function_app(monkeypatch)
 
     res = run_cloud_agent.run_prompt(
@@ -382,6 +383,35 @@ def test_cloud_agent_definition_and_cloud_runner_require_zero_local_tools(monkey
 
     with pytest.raises(RuntimeError, match="local function_call"):
         fa.run_cloud_agent_turn(_FakeOpenAIBad(), "Get P001")
+
+
+@pytest.mark.parametrize("auth_flag", [None, "", "invalid"])
+@pytest.mark.parametrize(
+    "path, payload",
+    [
+        ("/api/mcp", {
+            "jsonrpc": "2.0", "id": 1, "method": "tools/call",
+            "params": {"name": "get_receipt", "arguments": {"parcel": "P003"}},
+        }),
+        ("/api/score", {"parcel": "P003"}),
+        ("/api/verify", {"question": "P003?", "answer": "Parcel P003 has score 33.3."}),
+    ],
+)
+def test_function_endpoints_reject_missing_tenant_by_default(monkeypatch, auth_flag, path, payload):
+    if auth_flag is not None:
+        monkeypatch.setenv(cth.REQUIRE_AUTH_ENV, auth_flag)
+    reader, _ = _make_fake_blob_reader()
+    monkeypatch.setattr(func_app, "_HOST", cth.McpToolHost(fa.FoundryToolbox(reader=reader)))
+
+    status, headers, body = func_app.handle_http_request(
+        "POST", path, json.dumps(payload).encode("utf-8"),
+    )
+
+    assert status == 401
+    assert "WWW-Authenticate" in headers
+    error = json.loads(body)["error"]
+    message = error["message"] if path == "/api/mcp" else error
+    assert "MCP_ALLOWED_TENANT_ID is not configured" in message
 
 
 def test_entra_jwt_authentication_enforcement_on_mcp_endpoint(monkeypatch):
@@ -541,7 +571,7 @@ def test_parse_allowed_audiences_expands_api_uri_and_guid():
 def test_function_hosted_score_endpoint_executes_deterministic_scorer_and_enforces_policy_pinning(monkeypatch):
     reader, _ = _make_fake_blob_reader()
     monkeypatch.setattr(func_app, "_HOST", cth.McpToolHost(fa.FoundryToolbox(reader=reader)))
-    monkeypatch.delenv("MCP_ALLOWED_TENANT_ID", raising=False)
+    monkeypatch.setenv(cth.REQUIRE_AUTH_ENV, "false")
 
     p003_expected = json.loads((RECEIPTS_DIR / "P003.json").read_text(encoding="utf-8"))
 
@@ -617,7 +647,7 @@ def test_function_hosted_score_endpoint_executes_deterministic_scorer_and_enforc
 def test_function_hosted_verify_endpoint_blocks_altered_answer_and_returns_receipt_fallback(monkeypatch):
     reader, _ = _make_fake_blob_reader()
     monkeypatch.setattr(func_app, "_HOST", cth.McpToolHost(fa.FoundryToolbox(reader=reader)))
-    monkeypatch.delenv("MCP_ALLOWED_TENANT_ID", raising=False)
+    monkeypatch.setenv(cth.REQUIRE_AUTH_ENV, "false")
 
     p003_wire = json.loads((RECEIPTS_DIR / "P003.json").read_text(encoding="utf-8"))
 
@@ -776,7 +806,7 @@ def test_cloud_runner_executes_zero_local_scoring_or_verification_and_replaces_a
     reader, _ = _make_fake_blob_reader()
     host = cth.McpToolHost(fa.FoundryToolbox(reader=reader))
     monkeypatch.setattr(func_app, "_HOST", host)
-    monkeypatch.delenv("MCP_ALLOWED_TENANT_ID", raising=False)
+    monkeypatch.setenv(cth.REQUIRE_AUTH_ENV, "false")
     _install_fake_urllib_for_function_app(monkeypatch)
 
     # Model hallucinates a wrong score (88.8 instead of 33.3)
@@ -935,7 +965,7 @@ def test_cli_main_enforces_mandatory_fallback_without_verify_flag_and_supports_s
     reader, _ = _make_fake_blob_reader()
     host = cth.McpToolHost(fa.FoundryToolbox(reader=reader))
     monkeypatch.setattr(func_app, "_HOST", host)
-    monkeypatch.delenv("MCP_ALLOWED_TENANT_ID", raising=False)
+    monkeypatch.setenv(cth.REQUIRE_AUTH_ENV, "false")
     _install_fake_urllib_for_function_app(monkeypatch)
 
     # 1. --score-parcel P003 via CLI main (no --verify flag, exercises real call_function_json)
