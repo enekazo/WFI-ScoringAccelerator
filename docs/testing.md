@@ -17,10 +17,11 @@ establish a fresh-tenant deployment or production readiness.
 
 ## Offline automated checks
 
-Prerequisite: the development dependencies described in the deployment guide.
+Install the CI-only test dependencies before running the full offline suite.
 No Azure login is needed. Avoid bytecode/cache output when comparing a clean checkout:
 
 ```powershell
+python -m pip install -e ".[dev]" -r .github\requirements-ci.txt
 $env:PYTHONDONTWRITEBYTECODE = '1'
 $env:PYTHONPATH = 'src;scripts'
 python -m pytest -q -p no:cacheprovider
@@ -35,7 +36,9 @@ Do not encode a permanent test count in deployment acceptance: it changes with c
 The [Offline tests workflow](https://github.com/enekazo/WFI-ScoringAccelerator/actions/workflows/tests.yml)
 runs the full `pytest` suite on pushes to `main`, pull requests and manual dispatch.
 It uses a clean Windows runner with Python 3.11, PowerShell 7 and Windows PowerShell,
-and installs the development and Function runtime dependencies. No Azure credentials,
+and installs the development dependencies plus `.github/requirements-ci.txt`. This
+CI-only file reuses the existing deployment SDK requirements and adds the Delta Lake
+and Arrow packages and optional tracing support needed by the tests. No Azure credentials,
 deployment, live model calls or Fabric capacity are required. The README badge links
 to the workflow and reports the result for `main`.
 

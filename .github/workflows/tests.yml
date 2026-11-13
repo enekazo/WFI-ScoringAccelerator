@@ -36,12 +36,14 @@ jobs:
           cache: pip
           cache-dependency-path: |
             pyproject.toml
+            .github/requirements-ci.txt
+            deploy/requirements.txt
             cloud/tool_host/requirements.txt
       - name: Check PowerShell runtimes
         run: |
           pwsh -NoProfile -Command '$PSVersionTable.PSVersion.ToString()'
           powershell -NoProfile -Command '$PSVersionTable.PSVersion.ToString()'
       - name: Install test dependencies
-        run: python -m pip install -e ".[dev]" -r cloud/tool_host/requirements.txt
+        run: python -m pip install -e ".[dev]" -r .github/requirements-ci.txt
       - name: Run offline tests
         run: python -m pytest -q -p no:cacheprovider

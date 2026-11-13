@@ -1,0 +1,4 @@
+-r ../deploy/requirements.txt
+azure-core-tracing-opentelemetry==1.0.0b13
+deltalake==1.6.3
+pyarrow==23.0.1
