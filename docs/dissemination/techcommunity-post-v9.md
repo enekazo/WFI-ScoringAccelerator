@@ -141,7 +141,7 @@ I tested score consistency, answers from Fabric IQ and calculations through Foun
 | Scenario | Test scope | Models tested |
 |---|---|---|
 | [Locking the score](https://github.com/enekazo/WFI-ScoringAccelerator/blob/main/docs/evidence/scenario-1-locking-the-score/combined-150/combined_150.md) | 150 synthetic parcels, three repeats | gpt-4.1, gpt-4.1-mini, Phi-4, gpt-5.5, gpt-6.1-sol, gpt-6.1-terra, grok-4.7 |
-| [Fabric IQ](https://github.com/enekazo/WFI-ScoringAccelerator/blob/main/docs/reports/scenario-2-ontology.md) | 5 connection questions against 150 parcels; separate 20-question usefulness comparison | Live checks: Foundry agent (underlying model/version not independently verified); usefulness: gpt-4.1, judged by gpt-4.1-mini |
+| [Fabric IQ](https://github.com/enekazo/WFI-ScoringAccelerator/blob/main/docs/reports/scenario-2-ontology.md) | 5 connection questions against 150 parcels; separate 20-question usefulness comparison | Live checks: Foundry agent; usefulness: gpt-4.1, judged by gpt-4.1-mini |
 | [Foundry Agent Tools](https://github.com/enekazo/WFI-ScoringAccelerator/blob/main/docs/reports/scenario-3-four-tools.md) | 20 questions per model, covering four scenarios | gpt-4.1, gpt-5.5, gpt-6.1-sol, gpt-6.1-terra, grok-4.7 |
 
 ### Locking the score

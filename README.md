@@ -90,7 +90,7 @@ We evaluated three parts of the accelerator: score consistency, answers from Fab
 | Experiment | Test scope | Models tested |
 |---|---|---|
 | [1. Locking the score](docs/reports/scenario-1-locking-the-score.md) | 150 parcels; three repeats per available test setup | gpt-4.1, gpt-4.1-mini, Phi-4, gpt-5.5, gpt-6.1-sol, gpt-6.1-terra, grok-4.7 |
-| [2. Fabric IQ](docs/reports/scenario-2-ontology.md) | Five connection questions against 150 parcels; a separate 20-question usefulness comparison | Live checks: Foundry agent (underlying model/version not independently verified); usefulness: gpt-4.1, judged by gpt-4.1-mini |
+| [2. Fabric IQ](docs/reports/scenario-2-ontology.md) | Five connection questions against 150 parcels; a separate 20-question usefulness comparison | Live checks: Foundry agent; usefulness: gpt-4.1, judged by gpt-4.1-mini |
 | [3. Foundry Agent Tools](docs/reports/scenario-3-four-tools.md) | 20 questions covering four decision scenarios; one repeat per test setup per model | gpt-4.1, gpt-5.5, gpt-6.1-sol, gpt-6.1-terra, grok-4.7 |
 
 <details>
