@@ -1,0 +1,17 @@
+{
+ "list_status": 200,
+ "models": [
+  [
+   "00000000-0000-4000-8000-000000000004",
+   "pinned_scoring_ontology_graph_097b5a547d8d45b98d268cfd8b28902e"
+  ]
+ ],
+ "queries": [
+  {
+   "query": "MATCH (n:CrewAccess) RETURN count(n) AS c",
+   "status": 200,
+   "seconds": 21.75,
+   "body": "{\"status\":{\"code\":\"00000\",\"description\":\"note: successful completion\",\"diagnostics\":{\"OPERATION\":\"query\",\"OPERATION_CODE\":\"0\",\"CURRENT_SCHEMA\":\"/\",\"_graphaneGqlStatus\":{\"gqlType\":\"STRING\",\"value\":\"00000\"}}},\"result\":{\"kind\":\"TABLE\",\"columns\":[{\"name\":\"c\",\"gqlType\":\"UINT64\",\"jsonType\":\"number|string\"}],\"data\":[{\"c\":150}]}}"
+  }
+ ]
+}

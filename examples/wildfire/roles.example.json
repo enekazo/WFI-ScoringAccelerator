@@ -1,0 +1,9 @@
+{
+  "separation_of_duties": "required",
+  "reviewers": [
+    {"upn": "reviewer.one@example.com", "display_name": "Reviewer One"}
+  ],
+  "approvers": [
+    {"upn": "approver.one@example.com", "display_name": "Approver One"}
+  ]
+}

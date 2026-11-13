@@ -1,0 +1,37 @@
+{
+  "date_utc": "2026-11-09",
+  "capacity": "resized F2 -> F4 by the user before this run",
+  "ontology_getDefinition": {
+    "ontology": "00000000-0000-4000-8000-000000000002",
+    "http": 200,
+    "entities/CrewAccess.tmdl": "keyProperty: parcel_id AND keyProperty: crew_type (composite key already stored)",
+    "tables/crew_access.tmdl": "directLake binding to dbo.crew_access, columns parcel_id, crew_type, reachable, via_road_id, provenance, seed",
+    "updateDefinition": "not needed, not run"
+  },
+  "graph_model_getDefinition": {
+    "graph_model": "00000000-0000-4000-8000-000000000004",
+    "http": 202,
+    "note": "LRO accepted; no CrewAccess key text was extracted from it in this run"
+  },
+  "refresh_job": {
+    "request": "POST /v1/workspaces/{ws}/items/{graph}/jobs/instances?jobType=RefreshGraph",
+    "http": 202,
+    "instance_id": "00000000-0000-4000-8000-000000000010",
+    "jobType_reported": "Refresh",
+    "status": "Failed",
+    "failureReason": {
+      "requestId": "00000000-0000-4000-8000-000000000008",
+      "errorCode": "CapacityLimitExceeded",
+      "message": "Job failed to start: Unable to complete the action because your organization's Fabric compute capacity has exceeded its limits. Try again later.",
+      "isRetriable": false
+    },
+    "startTimeUtc": "2026-11-09T11:24:37.0866667",
+    "endTimeUtc": "2026-11-09T11:24:37.4533333"
+  },
+  "graph_after_failed_refresh": {
+    "CrewAccess_nodes": 50,
+    "expected": 150,
+    "C1_C2_C4_C5": "match ground truth",
+    "C3": "engine only vs truth dozer+engine (mismatch, stale 50-node materialization)"
+  }
+}

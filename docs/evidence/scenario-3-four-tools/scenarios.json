@@ -1,0 +1,1741 @@
+{
+ "meta": {
+  "models": [
+   "gpt-4.1"
+  ],
+  "repeats": 1,
+  "dry_run": false,
+  "endpoint": "https://model.example.invalid/"
+ },
+ "questions": [
+  {
+   "qid": "exposure-40",
+   "scenario": "exposure",
+   "text": "If every parcel scoring 40 or more ignites, how many customers and critical facilities are exposed? List the parcels.",
+   "params": {
+    "min_score": "40"
+   }
+  },
+  {
+   "qid": "exposure-50",
+   "scenario": "exposure",
+   "text": "If every parcel scoring 50 or more ignites, how many customers and critical facilities are exposed? List the parcels.",
+   "params": {
+    "min_score": "50"
+   }
+  },
+  {
+   "qid": "exposure-55",
+   "scenario": "exposure",
+   "text": "If every parcel scoring 55 or more ignites, how many customers and critical facilities are exposed? List the parcels.",
+   "params": {
+    "min_score": "55"
+   }
+  },
+  {
+   "qid": "exposure-60",
+   "scenario": "exposure",
+   "text": "If every parcel scoring 60 or more ignites, how many customers and critical facilities are exposed? List the parcels.",
+   "params": {
+    "min_score": "60"
+   }
+  },
+  {
+   "qid": "exposure-70",
+   "scenario": "exposure",
+   "text": "If every parcel scoring 70 or more ignites, how many customers and critical facilities are exposed? List the parcels.",
+   "params": {
+    "min_score": "70"
+   }
+  },
+  {
+   "qid": "mitigation-5000",
+   "scenario": "mitigation",
+   "text": "Which single parcel mitigation gives the biggest risk reduction per dollar, where one action may cost at most $5000?",
+   "params": {
+    "budget_usd": 5000
+   }
+  },
+  {
+   "qid": "mitigation-6000",
+   "scenario": "mitigation",
+   "text": "Which single parcel mitigation gives the biggest risk reduction per dollar, where one action may cost at most $6000?",
+   "params": {
+    "budget_usd": 6000
+   }
+  },
+  {
+   "qid": "mitigation-9000",
+   "scenario": "mitigation",
+   "text": "Which single parcel mitigation gives the biggest risk reduction per dollar, where one action may cost at most $9000?",
+   "params": {
+    "budget_usd": 9000
+   }
+  },
+  {
+   "qid": "mitigation-18000",
+   "scenario": "mitigation",
+   "text": "Which single parcel mitigation gives the biggest risk reduction per dollar, where one action may cost at most $18000?",
+   "params": {
+    "budget_usd": 18000
+   }
+  },
+  {
+   "qid": "mitigation-None",
+   "scenario": "mitigation",
+   "text": "Which single parcel mitigation gives the biggest risk reduction per dollar, with no budget cap?",
+   "params": {
+    "budget_usd": null
+   }
+  },
+  {
+   "qid": "deenergise-40",
+   "scenario": "deenergise",
+   "text": "Red-flag day, wind 40 km/h: which feeder should we de-energise first?",
+   "params": {
+    "wind_kmh": 40
+   }
+  },
+  {
+   "qid": "deenergise-50",
+   "scenario": "deenergise",
+   "text": "Red-flag day, wind 50 km/h: which feeder should we de-energise first?",
+   "params": {
+    "wind_kmh": 50
+   }
+  },
+  {
+   "qid": "deenergise-60",
+   "scenario": "deenergise",
+   "text": "Red-flag day, wind 60 km/h: which feeder should we de-energise first?",
+   "params": {
+    "wind_kmh": 60
+   }
+  },
+  {
+   "qid": "deenergise-70",
+   "scenario": "deenergise",
+   "text": "Red-flag day, wind 70 km/h: which feeder should we de-energise first?",
+   "params": {
+    "wind_kmh": 70
+   }
+  },
+  {
+   "qid": "deenergise-80",
+   "scenario": "deenergise",
+   "text": "Red-flag day, wind 80 km/h: which feeder should we de-energise first?",
+   "params": {
+    "wind_kmh": 80
+   }
+  },
+  {
+   "qid": "sensitivity-fuel_load:up",
+   "scenario": "sensitivity",
+   "text": "On a red-flag day with wind 60 km/h, does the feeder to de-energise first change if the policy weight changes as 'fuel_load:up' (20%)?",
+   "params": {
+    "variant": "fuel_load:up",
+    "wind_kmh": 60
+   }
+  },
+  {
+   "qid": "sensitivity-dead_fuel:up",
+   "scenario": "sensitivity",
+   "text": "On a red-flag day with wind 60 km/h, does the feeder to de-energise first change if the policy weight changes as 'dead_fuel:up' (20%)?",
+   "params": {
+    "variant": "dead_fuel:up",
+    "wind_kmh": 60
+   }
+  },
+  {
+   "qid": "sensitivity-moisture:down",
+   "scenario": "sensitivity",
+   "text": "On a red-flag day with wind 60 km/h, does the feeder to de-energise first change if the policy weight changes as 'moisture:down' (20%)?",
+   "params": {
+    "variant": "moisture:down",
+    "wind_kmh": 60
+   }
+  },
+  {
+   "qid": "sensitivity-wind:up",
+   "scenario": "sensitivity",
+   "text": "On a red-flag day with wind 60 km/h, does the feeder to de-energise first change if the policy weight changes as 'wind:up' (20%)?",
+   "params": {
+    "variant": "wind:up",
+    "wind_kmh": 60
+   }
+  },
+  {
+   "qid": "sensitivity-weather_danger:down",
+   "scenario": "sensitivity",
+   "text": "On a red-flag day with wind 60 km/h, does the feeder to de-energise first change if the policy weight changes as 'weather_danger:down' (20%)?",
+   "params": {
+    "variant": "weather_danger:down",
+    "wind_kmh": 60
+   }
+  }
+ ],
+ "truths": {
+  "exposure-40": {
+   "parcels": [
+    "P005",
+    "P007",
+    "P008",
+    "P009",
+    "P010",
+    "P011",
+    "P012",
+    "P014",
+    "P015",
+    "P016",
+    "P018",
+    "P021",
+    "P022",
+    "P023",
+    "P030",
+    "P035",
+    "P036",
+    "P039",
+    "P042"
+   ],
+   "customers": 13886,
+   "critical_facilities": 10,
+   "policy_sha256": "26fd759b9fc3d9cbe1d252730b34111e289d7e67190aaa9497c361fb96de69ff",
+   "counterfactual": false
+  },
+  "exposure-50": {
+   "parcels": [
+    "P007",
+    "P008",
+    "P010",
+    "P012",
+    "P014",
+    "P015",
+    "P016",
+    "P018",
+    "P021",
+    "P022",
+    "P023",
+    "P030",
+    "P035",
+    "P036",
+    "P042"
+   ],
+   "customers": 11910,
+   "critical_facilities": 8,
+   "policy_sha256": "26fd759b9fc3d9cbe1d252730b34111e289d7e67190aaa9497c361fb96de69ff",
+   "counterfactual": false
+  },
+  "exposure-55": {
+   "parcels": [
+    "P007",
+    "P008",
+    "P014",
+    "P015",
+    "P018",
+    "P023",
+    "P030",
+    "P035",
+    "P036",
+    "P042"
+   ],
+   "customers": 9948,
+   "critical_facilities": 7,
+   "policy_sha256": "26fd759b9fc3d9cbe1d252730b34111e289d7e67190aaa9497c361fb96de69ff",
+   "counterfactual": false
+  },
+  "exposure-60": {
+   "parcels": [
+    "P014",
+    "P015",
+    "P018",
+    "P030",
+    "P035",
+    "P036",
+    "P042"
+   ],
+   "customers": 6733,
+   "critical_facilities": 5,
+   "policy_sha256": "26fd759b9fc3d9cbe1d252730b34111e289d7e67190aaa9497c361fb96de69ff",
+   "counterfactual": false
+  },
+  "exposure-70": {
+   "parcels": [
+    "P042"
+   ],
+   "customers": 2169,
+   "critical_facilities": 1,
+   "policy_sha256": "26fd759b9fc3d9cbe1d252730b34111e289d7e67190aaa9497c361fb96de69ff",
+   "counterfactual": false
+  },
+  "mitigation-5000": {
+   "parcel": null,
+   "mitigation": null,
+   "risk_reduction_per_1000usd": null,
+   "policy_sha256": "26fd759b9fc3d9cbe1d252730b34111e289d7e67190aaa9497c361fb96de69ff",
+   "counterfactual": true
+  },
+  "mitigation-6000": {
+   "parcel": "P013",
+   "mitigation": "targeted_grazing",
+   "risk_reduction_per_1000usd": "3246.10",
+   "policy_sha256": "26fd759b9fc3d9cbe1d252730b34111e289d7e67190aaa9497c361fb96de69ff",
+   "counterfactual": true
+  },
+  "mitigation-9000": {
+   "parcel": "P013",
+   "mitigation": "moisture_mulch",
+   "risk_reduction_per_1000usd": "3662.27",
+   "policy_sha256": "26fd759b9fc3d9cbe1d252730b34111e289d7e67190aaa9497c361fb96de69ff",
+   "counterfactual": true
+  },
+  "mitigation-18000": {
+   "parcel": "P013",
+   "mitigation": "moisture_mulch",
+   "risk_reduction_per_1000usd": "3662.27",
+   "policy_sha256": "26fd759b9fc3d9cbe1d252730b34111e289d7e67190aaa9497c361fb96de69ff",
+   "counterfactual": true
+  },
+  "mitigation-None": {
+   "parcel": "P013",
+   "mitigation": "moisture_mulch",
+   "risk_reduction_per_1000usd": "3662.27",
+   "policy_sha256": "26fd759b9fc3d9cbe1d252730b34111e289d7e67190aaa9497c361fb96de69ff",
+   "counterfactual": true
+  },
+  "deenergise-40": {
+   "feeder": "F12",
+   "customers": 540,
+   "critical_facilities": 1,
+   "policy_sha256": "26fd759b9fc3d9cbe1d252730b34111e289d7e67190aaa9497c361fb96de69ff",
+   "counterfactual": true
+  },
+  "deenergise-50": {
+   "feeder": "F12",
+   "customers": 540,
+   "critical_facilities": 1,
+   "policy_sha256": "26fd759b9fc3d9cbe1d252730b34111e289d7e67190aaa9497c361fb96de69ff",
+   "counterfactual": true
+  },
+  "deenergise-60": {
+   "feeder": "F01",
+   "customers": 469,
+   "critical_facilities": 0,
+   "policy_sha256": "26fd759b9fc3d9cbe1d252730b34111e289d7e67190aaa9497c361fb96de69ff",
+   "counterfactual": true
+  },
+  "deenergise-70": {
+   "feeder": "F01",
+   "customers": 469,
+   "critical_facilities": 0,
+   "policy_sha256": "26fd759b9fc3d9cbe1d252730b34111e289d7e67190aaa9497c361fb96de69ff",
+   "counterfactual": true
+  },
+  "deenergise-80": {
+   "feeder": "F01",
+   "customers": 469,
+   "critical_facilities": 0,
+   "policy_sha256": "26fd759b9fc3d9cbe1d252730b34111e289d7e67190aaa9497c361fb96de69ff",
+   "counterfactual": true
+  },
+  "sensitivity-fuel_load:up": {
+   "feeder_decision_changes": true,
+   "feeder_variant": "F12",
+   "policy_sha256": "d235ea5629a106ffda2cfd32710e40d91aba1b5b2fb6d6a053e7f8a713845e3a",
+   "counterfactual": true
+  },
+  "sensitivity-dead_fuel:up": {
+   "feeder_decision_changes": false,
+   "feeder_variant": "F01",
+   "policy_sha256": "99f2ebb6700149a423d7d219bee459e658dcddc8b00b07e89b3a8879fa8b90e8",
+   "counterfactual": true
+  },
+  "sensitivity-moisture:down": {
+   "feeder_decision_changes": true,
+   "feeder_variant": "F12",
+   "policy_sha256": "68216f691b9a675c47697cb0eed30483d01a4b87c938d89a6f98b3d25344d5ac",
+   "counterfactual": true
+  },
+  "sensitivity-wind:up": {
+   "feeder_decision_changes": false,
+   "feeder_variant": "F01",
+   "policy_sha256": "9240d9401f556fa23329b5dfa48802e43f996d5ed5701be127c99f3e5b5727d7",
+   "counterfactual": true
+  },
+  "sensitivity-weather_danger:down": {
+   "feeder_decision_changes": true,
+   "feeder_variant": "F12",
+   "policy_sha256": "3f3390fe5bdfdb58263fd87279ddc304696e89d45238e2d614e2e87f546baf14",
+   "counterfactual": true
+  }
+ },
+ "runs": [
+  {
+   "qid": "deenergise-40",
+   "scenario": "deenergise",
+   "arm": "flat",
+   "repeat": 0,
+   "metrics": {
+    "correct": 0.0,
+    "provenance_ok": 0.0,
+    "numbers_pinned": 0.0,
+    "parse_failure": 1.0
+   },
+   "tool_calls": 27,
+   "unpinned": [],
+   "error": null,
+   "answer": null,
+   "model": "gpt-4.1"
+  },
+  {
+   "qid": "deenergise-50",
+   "scenario": "deenergise",
+   "arm": "flat",
+   "repeat": 0,
+   "metrics": {
+    "correct": 0.0,
+    "provenance_ok": 0.0,
+    "numbers_pinned": 0.0,
+    "parse_failure": 1.0
+   },
+   "tool_calls": 27,
+   "unpinned": [],
+   "error": null,
+   "answer": null,
+   "model": "gpt-4.1"
+  },
+  {
+   "qid": "deenergise-60",
+   "scenario": "deenergise",
+   "arm": "flat",
+   "repeat": 0,
+   "metrics": {
+    "correct": 0.0,
+    "provenance_ok": 0.0,
+    "numbers_pinned": 0.0,
+    "parse_failure": 1.0
+   },
+   "tool_calls": 17,
+   "unpinned": [],
+   "error": null,
+   "answer": null,
+   "model": "gpt-4.1"
+  },
+  {
+   "qid": "deenergise-70",
+   "scenario": "deenergise",
+   "arm": "flat",
+   "repeat": 0,
+   "metrics": {
+    "correct": 0.0,
+    "provenance_ok": 0.0,
+    "numbers_pinned": 0.0,
+    "parse_failure": 1.0
+   },
+   "tool_calls": 21,
+   "unpinned": [],
+   "error": null,
+   "answer": null,
+   "model": "gpt-4.1"
+  },
+  {
+   "qid": "deenergise-80",
+   "scenario": "deenergise",
+   "arm": "flat",
+   "repeat": 0,
+   "metrics": {
+    "correct": 0.0,
+    "provenance_ok": 0.0,
+    "numbers_pinned": 0.0,
+    "parse_failure": 1.0
+   },
+   "tool_calls": 16,
+   "unpinned": [],
+   "error": null,
+   "answer": null,
+   "model": "gpt-4.1"
+  },
+  {
+   "qid": "exposure-40",
+   "scenario": "exposure",
+   "arm": "flat",
+   "repeat": 0,
+   "metrics": {
+    "correct": 0.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 0.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 3,
+   "unpinned": [
+    "11",
+    "13438"
+   ],
+   "error": null,
+   "answer": {
+    "parcels": [
+     "P005",
+     "P007",
+     "P008",
+     "P009",
+     "P010",
+     "P011",
+     "P012",
+     "P014",
+     "P015",
+     "P016",
+     "P018",
+     "P021",
+     "P022",
+     "P023",
+     "P030",
+     "P035",
+     "P036",
+     "P039",
+     "P042"
+    ],
+    "customers": 13438,
+    "critical_facilities": 11,
+    "policy_sha256": "26fd759b9fc3d9cbe1d252730b34111e289d7e67190aaa9497c361fb96de69ff",
+    "counterfactual": false
+   },
+   "model": "gpt-4.1"
+  },
+  {
+   "qid": "exposure-50",
+   "scenario": "exposure",
+   "arm": "flat",
+   "repeat": 0,
+   "metrics": {
+    "correct": 0.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 0.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 3,
+   "unpinned": [
+    "11",
+    "12041"
+   ],
+   "error": null,
+   "answer": {
+    "parcels": [
+     "P007",
+     "P008",
+     "P010",
+     "P012",
+     "P014",
+     "P015",
+     "P016",
+     "P018",
+     "P021",
+     "P022",
+     "P023",
+     "P030",
+     "P035",
+     "P036",
+     "P042"
+    ],
+    "customers": 12041,
+    "critical_facilities": 11,
+    "policy_sha256": "26fd759b9fc3d9cbe1d252730b34111e289d7e67190aaa9497c361fb96de69ff",
+    "counterfactual": false
+   },
+   "model": "gpt-4.1"
+  },
+  {
+   "qid": "exposure-55",
+   "scenario": "exposure",
+   "arm": "flat",
+   "repeat": 0,
+   "metrics": {
+    "correct": 0.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 0.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 3,
+   "unpinned": [
+    "10141",
+    "8"
+   ],
+   "error": null,
+   "answer": {
+    "parcels": [
+     "P007",
+     "P008",
+     "P014",
+     "P015",
+     "P018",
+     "P023",
+     "P030",
+     "P035",
+     "P036",
+     "P042"
+    ],
+    "customers": 10141,
+    "critical_facilities": 8,
+    "policy_sha256": "26fd759b9fc3d9cbe1d252730b34111e289d7e67190aaa9497c361fb96de69ff",
+    "counterfactual": false
+   },
+   "model": "gpt-4.1"
+  },
+  {
+   "qid": "exposure-60",
+   "scenario": "exposure",
+   "arm": "flat",
+   "repeat": 0,
+   "metrics": {
+    "correct": 0.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 0.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 10,
+   "unpinned": [
+    "10838",
+    "8"
+   ],
+   "error": null,
+   "answer": {
+    "parcels": [
+     "P014",
+     "P015",
+     "P018",
+     "P030",
+     "P035",
+     "P036",
+     "P042"
+    ],
+    "customers": 10838,
+    "critical_facilities": 8,
+    "policy_sha256": "26fd759b9fc3d9cbe1d252730b34111e289d7e67190aaa9497c361fb96de69ff",
+    "counterfactual": false
+   },
+   "model": "gpt-4.1"
+  },
+  {
+   "qid": "exposure-70",
+   "scenario": "exposure",
+   "arm": "flat",
+   "repeat": 0,
+   "metrics": {
+    "correct": 0.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 0.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 3,
+   "unpinned": [
+    "1",
+    "671"
+   ],
+   "error": null,
+   "answer": {
+    "parcels": [
+     "P042"
+    ],
+    "customers": 671,
+    "critical_facilities": 1,
+    "policy_sha256": "26fd759b9fc3d9cbe1d252730b34111e289d7e67190aaa9497c361fb96de69ff",
+    "counterfactual": false
+   },
+   "model": "gpt-4.1"
+  },
+  {
+   "qid": "mitigation-18000",
+   "scenario": "mitigation",
+   "arm": "flat",
+   "repeat": 0,
+   "metrics": {
+    "correct": 0.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 1.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 62,
+   "unpinned": [],
+   "error": null,
+   "answer": {
+    "parcel": null,
+    "mitigation": null,
+    "risk_reduction_per_1000usd": null,
+    "policy_sha256": "26fd759b9fc3d9cbe1d252730b34111e289d7e67190aaa9497c361fb96de69ff",
+    "counterfactual": true
+   },
+   "model": "gpt-4.1"
+  },
+  {
+   "qid": "mitigation-5000",
+   "scenario": "mitigation",
+   "arm": "flat",
+   "repeat": 0,
+   "metrics": {
+    "correct": 1.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 1.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 80,
+   "unpinned": [],
+   "error": null,
+   "answer": {
+    "parcel": null,
+    "mitigation": null,
+    "risk_reduction_per_1000usd": null,
+    "policy_sha256": "26fd759b9fc3d9cbe1d252730b34111e289d7e67190aaa9497c361fb96de69ff",
+    "counterfactual": true
+   },
+   "model": "gpt-4.1"
+  },
+  {
+   "qid": "mitigation-6000",
+   "scenario": "mitigation",
+   "arm": "flat",
+   "repeat": 0,
+   "metrics": {
+    "correct": 0.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 0.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 16,
+   "unpinned": [
+    "1.33"
+   ],
+   "error": null,
+   "answer": {
+    "parcel": "P042",
+    "mitigation": "targeted_grazing",
+    "risk_reduction_per_1000usd": "1.33",
+    "policy_sha256": "26fd759b9fc3d9cbe1d252730b34111e289d7e67190aaa9497c361fb96de69ff",
+    "counterfactual": true
+   },
+   "model": "gpt-4.1"
+  },
+  {
+   "qid": "mitigation-9000",
+   "scenario": "mitigation",
+   "arm": "flat",
+   "repeat": 0,
+   "metrics": {
+    "correct": 0.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 0.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 17,
+   "unpinned": [
+    "1.88"
+   ],
+   "error": null,
+   "answer": {
+    "parcel": "P042",
+    "mitigation": "thin_vegetation",
+    "risk_reduction_per_1000usd": "1.88",
+    "policy_sha256": "26fd759b9fc3d9cbe1d252730b34111e289d7e67190aaa9497c361fb96de69ff",
+    "counterfactual": true
+   },
+   "model": "gpt-4.1"
+  },
+  {
+   "qid": "mitigation-None",
+   "scenario": "mitigation",
+   "arm": "flat",
+   "repeat": 0,
+   "metrics": {
+    "correct": 0.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 0.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 9,
+   "unpinned": [
+    "6.28"
+   ],
+   "error": null,
+   "answer": {
+    "parcel": "P042",
+    "mitigation": "thin_vegetation",
+    "risk_reduction_per_1000usd": "6.28",
+    "policy_sha256": "26fd759b9fc3d9cbe1d252730b34111e289d7e67190aaa9497c361fb96de69ff",
+    "counterfactual": true
+   },
+   "model": "gpt-4.1"
+  },
+  {
+   "qid": "sensitivity-dead_fuel:up",
+   "scenario": "sensitivity",
+   "arm": "flat",
+   "repeat": 0,
+   "metrics": {
+    "correct": 0.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 1.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 34,
+   "unpinned": [],
+   "error": null,
+   "answer": {
+    "feeder_decision_changes": false,
+    "feeder_variant": "dead_fuel:up",
+    "policy_sha256": "99f2ebb6700149a423d7d219bee459e658dcddc8b00b07e89b3a8879fa8b90e8",
+    "counterfactual": true
+   },
+   "model": "gpt-4.1"
+  },
+  {
+   "qid": "sensitivity-fuel_load:up",
+   "scenario": "sensitivity",
+   "arm": "flat",
+   "repeat": 0,
+   "metrics": {
+    "correct": 0.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 1.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 16,
+   "unpinned": [],
+   "error": null,
+   "answer": {
+    "feeder_decision_changes": false,
+    "feeder_variant": "fuel_load:up",
+    "policy_sha256": "d235ea5629a106ffda2cfd32710e40d91aba1b5b2fb6d6a053e7f8a713845e3a",
+    "counterfactual": true
+   },
+   "model": "gpt-4.1"
+  },
+  {
+   "qid": "sensitivity-moisture:down",
+   "scenario": "sensitivity",
+   "arm": "flat",
+   "repeat": 0,
+   "metrics": {
+    "correct": 0.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 1.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 18,
+   "unpinned": [],
+   "error": null,
+   "answer": {
+    "feeder_decision_changes": false,
+    "feeder_variant": "moisture:down",
+    "policy_sha256": "68216f691b9a675c47697cb0eed30483d01a4b87c938d89a6f98b3d25344d5ac",
+    "counterfactual": true
+   },
+   "model": "gpt-4.1"
+  },
+  {
+   "qid": "sensitivity-weather_danger:down",
+   "scenario": "sensitivity",
+   "arm": "flat",
+   "repeat": 0,
+   "metrics": {
+    "correct": 0.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 1.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 34,
+   "unpinned": [],
+   "error": null,
+   "answer": {
+    "feeder_decision_changes": false,
+    "feeder_variant": "weather_danger:down",
+    "policy_sha256": "3f3390fe5bdfdb58263fd87279ddc304696e89d45238e2d614e2e87f546baf14",
+    "counterfactual": true
+   },
+   "model": "gpt-4.1"
+  },
+  {
+   "qid": "sensitivity-wind:up",
+   "scenario": "sensitivity",
+   "arm": "flat",
+   "repeat": 0,
+   "metrics": {
+    "correct": 0.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 1.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 34,
+   "unpinned": [],
+   "error": null,
+   "answer": {
+    "feeder_decision_changes": false,
+    "feeder_variant": "wind:up",
+    "policy_sha256": "9240d9401f556fa23329b5dfa48802e43f996d5ed5701be127c99f3e5b5727d7",
+    "counterfactual": true
+   },
+   "model": "gpt-4.1"
+  },
+  {
+   "qid": "deenergise-40",
+   "scenario": "deenergise",
+   "arm": "graph",
+   "repeat": 0,
+   "metrics": {
+    "correct": 1.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 1.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 1,
+   "unpinned": [],
+   "error": null,
+   "answer": {
+    "feeder": "F12",
+    "customers": 540,
+    "critical_facilities": 1,
+    "policy_sha256": "26fd759b9fc3d9cbe1d252730b34111e289d7e67190aaa9497c361fb96de69ff",
+    "counterfactual": true
+   },
+   "model": "gpt-4.1"
+  },
+  {
+   "qid": "deenergise-50",
+   "scenario": "deenergise",
+   "arm": "graph",
+   "repeat": 0,
+   "metrics": {
+    "correct": 1.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 1.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 1,
+   "unpinned": [],
+   "error": null,
+   "answer": {
+    "feeder": "F12",
+    "customers": 540,
+    "critical_facilities": 1,
+    "policy_sha256": "26fd759b9fc3d9cbe1d252730b34111e289d7e67190aaa9497c361fb96de69ff",
+    "counterfactual": true
+   },
+   "model": "gpt-4.1"
+  },
+  {
+   "qid": "deenergise-60",
+   "scenario": "deenergise",
+   "arm": "graph",
+   "repeat": 0,
+   "metrics": {
+    "correct": 1.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 1.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 1,
+   "unpinned": [],
+   "error": null,
+   "answer": {
+    "feeder": "F01",
+    "customers": 469,
+    "critical_facilities": 0,
+    "policy_sha256": "26fd759b9fc3d9cbe1d252730b34111e289d7e67190aaa9497c361fb96de69ff",
+    "counterfactual": true
+   },
+   "model": "gpt-4.1"
+  },
+  {
+   "qid": "deenergise-70",
+   "scenario": "deenergise",
+   "arm": "graph",
+   "repeat": 0,
+   "metrics": {
+    "correct": 1.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 1.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 1,
+   "unpinned": [],
+   "error": null,
+   "answer": {
+    "feeder": "F01",
+    "customers": 469,
+    "critical_facilities": 0,
+    "policy_sha256": "26fd759b9fc3d9cbe1d252730b34111e289d7e67190aaa9497c361fb96de69ff",
+    "counterfactual": true
+   },
+   "model": "gpt-4.1"
+  },
+  {
+   "qid": "deenergise-80",
+   "scenario": "deenergise",
+   "arm": "graph",
+   "repeat": 0,
+   "metrics": {
+    "correct": 1.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 1.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 1,
+   "unpinned": [],
+   "error": null,
+   "answer": {
+    "feeder": "F01",
+    "customers": 469,
+    "critical_facilities": 0,
+    "policy_sha256": "26fd759b9fc3d9cbe1d252730b34111e289d7e67190aaa9497c361fb96de69ff",
+    "counterfactual": true
+   },
+   "model": "gpt-4.1"
+  },
+  {
+   "qid": "exposure-40",
+   "scenario": "exposure",
+   "arm": "graph",
+   "repeat": 0,
+   "metrics": {
+    "correct": 1.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 1.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 1,
+   "unpinned": [],
+   "error": null,
+   "answer": {
+    "parcels": [
+     "P005",
+     "P007",
+     "P008",
+     "P009",
+     "P010",
+     "P011",
+     "P012",
+     "P014",
+     "P015",
+     "P016",
+     "P018",
+     "P021",
+     "P022",
+     "P023",
+     "P030",
+     "P035",
+     "P036",
+     "P039",
+     "P042"
+    ],
+    "customers": 13886,
+    "critical_facilities": 10,
+    "policy_sha256": "26fd759b9fc3d9cbe1d252730b34111e289d7e67190aaa9497c361fb96de69ff",
+    "counterfactual": false
+   },
+   "model": "gpt-4.1"
+  },
+  {
+   "qid": "exposure-50",
+   "scenario": "exposure",
+   "arm": "graph",
+   "repeat": 0,
+   "metrics": {
+    "correct": 1.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 1.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 1,
+   "unpinned": [],
+   "error": null,
+   "answer": {
+    "parcels": [
+     "P007",
+     "P008",
+     "P010",
+     "P012",
+     "P014",
+     "P015",
+     "P016",
+     "P018",
+     "P021",
+     "P022",
+     "P023",
+     "P030",
+     "P035",
+     "P036",
+     "P042"
+    ],
+    "customers": 11910,
+    "critical_facilities": 8,
+    "policy_sha256": "26fd759b9fc3d9cbe1d252730b34111e289d7e67190aaa9497c361fb96de69ff",
+    "counterfactual": false
+   },
+   "model": "gpt-4.1"
+  },
+  {
+   "qid": "exposure-55",
+   "scenario": "exposure",
+   "arm": "graph",
+   "repeat": 0,
+   "metrics": {
+    "correct": 1.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 1.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 1,
+   "unpinned": [],
+   "error": null,
+   "answer": {
+    "parcels": [
+     "P007",
+     "P008",
+     "P014",
+     "P015",
+     "P018",
+     "P023",
+     "P030",
+     "P035",
+     "P036",
+     "P042"
+    ],
+    "customers": 9948,
+    "critical_facilities": 7,
+    "policy_sha256": "26fd759b9fc3d9cbe1d252730b34111e289d7e67190aaa9497c361fb96de69ff",
+    "counterfactual": false
+   },
+   "model": "gpt-4.1"
+  },
+  {
+   "qid": "exposure-60",
+   "scenario": "exposure",
+   "arm": "graph",
+   "repeat": 0,
+   "metrics": {
+    "correct": 1.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 1.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 1,
+   "unpinned": [],
+   "error": null,
+   "answer": {
+    "parcels": [
+     "P014",
+     "P015",
+     "P018",
+     "P030",
+     "P035",
+     "P036",
+     "P042"
+    ],
+    "customers": 6733,
+    "critical_facilities": 5,
+    "policy_sha256": "26fd759b9fc3d9cbe1d252730b34111e289d7e67190aaa9497c361fb96de69ff",
+    "counterfactual": false
+   },
+   "model": "gpt-4.1"
+  },
+  {
+   "qid": "exposure-70",
+   "scenario": "exposure",
+   "arm": "graph",
+   "repeat": 0,
+   "metrics": {
+    "correct": 1.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 1.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 1,
+   "unpinned": [],
+   "error": null,
+   "answer": {
+    "parcels": [
+     "P042"
+    ],
+    "customers": 2169,
+    "critical_facilities": 1,
+    "policy_sha256": "26fd759b9fc3d9cbe1d252730b34111e289d7e67190aaa9497c361fb96de69ff",
+    "counterfactual": false
+   },
+   "model": "gpt-4.1"
+  },
+  {
+   "qid": "mitigation-18000",
+   "scenario": "mitigation",
+   "arm": "graph",
+   "repeat": 0,
+   "metrics": {
+    "correct": 1.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 1.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 1,
+   "unpinned": [],
+   "error": null,
+   "answer": {
+    "parcel": "P013",
+    "mitigation": "moisture_mulch",
+    "risk_reduction_per_1000usd": "3662.27",
+    "policy_sha256": "26fd759b9fc3d9cbe1d252730b34111e289d7e67190aaa9497c361fb96de69ff",
+    "counterfactual": true
+   },
+   "model": "gpt-4.1"
+  },
+  {
+   "qid": "mitigation-5000",
+   "scenario": "mitigation",
+   "arm": "graph",
+   "repeat": 0,
+   "metrics": {
+    "correct": 1.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 1.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 1,
+   "unpinned": [],
+   "error": null,
+   "answer": {
+    "parcel": null,
+    "mitigation": null,
+    "risk_reduction_per_1000usd": null,
+    "policy_sha256": "26fd759b9fc3d9cbe1d252730b34111e289d7e67190aaa9497c361fb96de69ff",
+    "counterfactual": true
+   },
+   "model": "gpt-4.1"
+  },
+  {
+   "qid": "mitigation-6000",
+   "scenario": "mitigation",
+   "arm": "graph",
+   "repeat": 0,
+   "metrics": {
+    "correct": 1.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 1.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 1,
+   "unpinned": [],
+   "error": null,
+   "answer": {
+    "parcel": "P013",
+    "mitigation": "targeted_grazing",
+    "risk_reduction_per_1000usd": "3246.10",
+    "policy_sha256": "26fd759b9fc3d9cbe1d252730b34111e289d7e67190aaa9497c361fb96de69ff",
+    "counterfactual": true
+   },
+   "model": "gpt-4.1"
+  },
+  {
+   "qid": "mitigation-9000",
+   "scenario": "mitigation",
+   "arm": "graph",
+   "repeat": 0,
+   "metrics": {
+    "correct": 1.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 1.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 1,
+   "unpinned": [],
+   "error": null,
+   "answer": {
+    "parcel": "P013",
+    "mitigation": "moisture_mulch",
+    "risk_reduction_per_1000usd": "3662.27",
+    "policy_sha256": "26fd759b9fc3d9cbe1d252730b34111e289d7e67190aaa9497c361fb96de69ff",
+    "counterfactual": true
+   },
+   "model": "gpt-4.1"
+  },
+  {
+   "qid": "mitigation-None",
+   "scenario": "mitigation",
+   "arm": "graph",
+   "repeat": 0,
+   "metrics": {
+    "correct": 1.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 1.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 1,
+   "unpinned": [],
+   "error": null,
+   "answer": {
+    "parcel": "P013",
+    "mitigation": "moisture_mulch",
+    "risk_reduction_per_1000usd": "3662.27",
+    "policy_sha256": "26fd759b9fc3d9cbe1d252730b34111e289d7e67190aaa9497c361fb96de69ff",
+    "counterfactual": true
+   },
+   "model": "gpt-4.1"
+  },
+  {
+   "qid": "sensitivity-dead_fuel:up",
+   "scenario": "sensitivity",
+   "arm": "graph",
+   "repeat": 0,
+   "metrics": {
+    "correct": 1.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 1.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 1,
+   "unpinned": [],
+   "error": null,
+   "answer": {
+    "feeder_decision_changes": false,
+    "feeder_variant": "F01",
+    "policy_sha256": "99f2ebb6700149a423d7d219bee459e658dcddc8b00b07e89b3a8879fa8b90e8",
+    "counterfactual": true
+   },
+   "model": "gpt-4.1"
+  },
+  {
+   "qid": "sensitivity-fuel_load:up",
+   "scenario": "sensitivity",
+   "arm": "graph",
+   "repeat": 0,
+   "metrics": {
+    "correct": 1.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 1.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 1,
+   "unpinned": [],
+   "error": null,
+   "answer": {
+    "feeder_decision_changes": true,
+    "feeder_variant": "F12",
+    "policy_sha256": "d235ea5629a106ffda2cfd32710e40d91aba1b5b2fb6d6a053e7f8a713845e3a",
+    "counterfactual": true
+   },
+   "model": "gpt-4.1"
+  },
+  {
+   "qid": "sensitivity-moisture:down",
+   "scenario": "sensitivity",
+   "arm": "graph",
+   "repeat": 0,
+   "metrics": {
+    "correct": 1.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 1.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 1,
+   "unpinned": [],
+   "error": null,
+   "answer": {
+    "feeder_decision_changes": true,
+    "feeder_variant": "F12",
+    "policy_sha256": "68216f691b9a675c47697cb0eed30483d01a4b87c938d89a6f98b3d25344d5ac",
+    "counterfactual": true
+   },
+   "model": "gpt-4.1"
+  },
+  {
+   "qid": "sensitivity-weather_danger:down",
+   "scenario": "sensitivity",
+   "arm": "graph",
+   "repeat": 0,
+   "metrics": {
+    "correct": 1.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 1.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 1,
+   "unpinned": [],
+   "error": null,
+   "answer": {
+    "feeder_decision_changes": true,
+    "feeder_variant": "F12",
+    "policy_sha256": "3f3390fe5bdfdb58263fd87279ddc304696e89d45238e2d614e2e87f546baf14",
+    "counterfactual": true
+   },
+   "model": "gpt-4.1"
+  },
+  {
+   "qid": "sensitivity-wind:up",
+   "scenario": "sensitivity",
+   "arm": "graph",
+   "repeat": 0,
+   "metrics": {
+    "correct": 1.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 1.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 1,
+   "unpinned": [],
+   "error": null,
+   "answer": {
+    "feeder_decision_changes": false,
+    "feeder_variant": "F01",
+    "policy_sha256": "9240d9401f556fa23329b5dfa48802e43f996d5ed5701be127c99f3e5b5727d7",
+    "counterfactual": true
+   },
+   "model": "gpt-4.1"
+  }
+ ],
+ "summary": {
+  "gpt-4.1": {
+   "graph": {
+    "overall": {
+     "correct": {
+      "mean": 1.0,
+      "lo": 1.0,
+      "hi": 1.0,
+      "n": 20
+     },
+     "provenance_ok": {
+      "mean": 1.0,
+      "lo": 1.0,
+      "hi": 1.0,
+      "n": 20
+     },
+     "numbers_pinned": {
+      "mean": 1.0,
+      "lo": 1.0,
+      "hi": 1.0,
+      "n": 20
+     },
+     "parse_failure": {
+      "mean": 0.0,
+      "lo": 0.0,
+      "hi": 0.0,
+      "n": 20
+     },
+     "tool_calls": {
+      "mean": 1.0,
+      "lo": 1.0,
+      "hi": 1.0,
+      "n": 20
+     }
+    },
+    "by_scenario": {
+     "deenergise": {
+      "correct": {
+       "mean": 1.0,
+       "lo": 1.0,
+       "hi": 1.0,
+       "n": 5
+      },
+      "provenance_ok": {
+       "mean": 1.0,
+       "lo": 1.0,
+       "hi": 1.0,
+       "n": 5
+      },
+      "numbers_pinned": {
+       "mean": 1.0,
+       "lo": 1.0,
+       "hi": 1.0,
+       "n": 5
+      },
+      "parse_failure": {
+       "mean": 0.0,
+       "lo": 0.0,
+       "hi": 0.0,
+       "n": 5
+      },
+      "tool_calls": {
+       "mean": 1.0,
+       "lo": 1.0,
+       "hi": 1.0,
+       "n": 5
+      }
+     },
+     "exposure": {
+      "correct": {
+       "mean": 1.0,
+       "lo": 1.0,
+       "hi": 1.0,
+       "n": 5
+      },
+      "provenance_ok": {
+       "mean": 1.0,
+       "lo": 1.0,
+       "hi": 1.0,
+       "n": 5
+      },
+      "numbers_pinned": {
+       "mean": 1.0,
+       "lo": 1.0,
+       "hi": 1.0,
+       "n": 5
+      },
+      "parse_failure": {
+       "mean": 0.0,
+       "lo": 0.0,
+       "hi": 0.0,
+       "n": 5
+      },
+      "tool_calls": {
+       "mean": 1.0,
+       "lo": 1.0,
+       "hi": 1.0,
+       "n": 5
+      }
+     },
+     "mitigation": {
+      "correct": {
+       "mean": 1.0,
+       "lo": 1.0,
+       "hi": 1.0,
+       "n": 5
+      },
+      "provenance_ok": {
+       "mean": 1.0,
+       "lo": 1.0,
+       "hi": 1.0,
+       "n": 5
+      },
+      "numbers_pinned": {
+       "mean": 1.0,
+       "lo": 1.0,
+       "hi": 1.0,
+       "n": 5
+      },
+      "parse_failure": {
+       "mean": 0.0,
+       "lo": 0.0,
+       "hi": 0.0,
+       "n": 5
+      },
+      "tool_calls": {
+       "mean": 1.0,
+       "lo": 1.0,
+       "hi": 1.0,
+       "n": 5
+      }
+     },
+     "sensitivity": {
+      "correct": {
+       "mean": 1.0,
+       "lo": 1.0,
+       "hi": 1.0,
+       "n": 5
+      },
+      "provenance_ok": {
+       "mean": 1.0,
+       "lo": 1.0,
+       "hi": 1.0,
+       "n": 5
+      },
+      "numbers_pinned": {
+       "mean": 1.0,
+       "lo": 1.0,
+       "hi": 1.0,
+       "n": 5
+      },
+      "parse_failure": {
+       "mean": 0.0,
+       "lo": 0.0,
+       "hi": 0.0,
+       "n": 5
+      },
+      "tool_calls": {
+       "mean": 1.0,
+       "lo": 1.0,
+       "hi": 1.0,
+       "n": 5
+      }
+     }
+    }
+   },
+   "flat": {
+    "overall": {
+     "correct": {
+      "mean": 0.05,
+      "lo": 0.0,
+      "hi": 0.15,
+      "n": 20
+     },
+     "provenance_ok": {
+      "mean": 0.75,
+      "lo": 0.55,
+      "hi": 0.95,
+      "n": 20
+     },
+     "numbers_pinned": {
+      "mean": 0.35,
+      "lo": 0.15,
+      "hi": 0.55,
+      "n": 20
+     },
+     "parse_failure": {
+      "mean": 0.25,
+      "lo": 0.05,
+      "hi": 0.45,
+      "n": 20
+     },
+     "tool_calls": {
+      "mean": 22.5,
+      "lo": 15.15,
+      "hi": 31.4,
+      "n": 20
+     }
+    },
+    "by_scenario": {
+     "deenergise": {
+      "correct": {
+       "mean": 0.0,
+       "lo": 0.0,
+       "hi": 0.0,
+       "n": 5
+      },
+      "provenance_ok": {
+       "mean": 0.0,
+       "lo": 0.0,
+       "hi": 0.0,
+       "n": 5
+      },
+      "numbers_pinned": {
+       "mean": 0.0,
+       "lo": 0.0,
+       "hi": 0.0,
+       "n": 5
+      },
+      "parse_failure": {
+       "mean": 1.0,
+       "lo": 1.0,
+       "hi": 1.0,
+       "n": 5
+      },
+      "tool_calls": {
+       "mean": 21.6,
+       "lo": 17.4,
+       "hi": 25.8,
+       "n": 5
+      }
+     },
+     "exposure": {
+      "correct": {
+       "mean": 0.0,
+       "lo": 0.0,
+       "hi": 0.0,
+       "n": 5
+      },
+      "provenance_ok": {
+       "mean": 1.0,
+       "lo": 1.0,
+       "hi": 1.0,
+       "n": 5
+      },
+      "numbers_pinned": {
+       "mean": 0.0,
+       "lo": 0.0,
+       "hi": 0.0,
+       "n": 5
+      },
+      "parse_failure": {
+       "mean": 0.0,
+       "lo": 0.0,
+       "hi": 0.0,
+       "n": 5
+      },
+      "tool_calls": {
+       "mean": 4.4,
+       "lo": 3.0,
+       "hi": 7.2,
+       "n": 5
+      }
+     },
+     "mitigation": {
+      "correct": {
+       "mean": 0.2,
+       "lo": 0.0,
+       "hi": 0.6,
+       "n": 5
+      },
+      "provenance_ok": {
+       "mean": 1.0,
+       "lo": 1.0,
+       "hi": 1.0,
+       "n": 5
+      },
+      "numbers_pinned": {
+       "mean": 0.4,
+       "lo": 0.0,
+       "hi": 0.8,
+       "n": 5
+      },
+      "parse_failure": {
+       "mean": 0.0,
+       "lo": 0.0,
+       "hi": 0.0,
+       "n": 5
+      },
+      "tool_calls": {
+       "mean": 36.8,
+       "lo": 13.4,
+       "hi": 63.6,
+       "n": 5
+      }
+     },
+     "sensitivity": {
+      "correct": {
+       "mean": 0.0,
+       "lo": 0.0,
+       "hi": 0.0,
+       "n": 5
+      },
+      "provenance_ok": {
+       "mean": 1.0,
+       "lo": 1.0,
+       "hi": 1.0,
+       "n": 5
+      },
+      "numbers_pinned": {
+       "mean": 1.0,
+       "lo": 1.0,
+       "hi": 1.0,
+       "n": 5
+      },
+      "parse_failure": {
+       "mean": 0.0,
+       "lo": 0.0,
+       "hi": 0.0,
+       "n": 5
+      },
+      "tool_calls": {
+       "mean": 27.2,
+       "lo": 20.0,
+       "hi": 34.0,
+       "n": 5
+      }
+     }
+    }
+   },
+   "graph_minus_flat": {
+    "correct": {
+     "mean": 0.95,
+     "lo": 0.85,
+     "hi": 1.0,
+     "n": 20
+    },
+    "provenance_ok": {
+     "mean": 0.25,
+     "lo": 0.05,
+     "hi": 0.45,
+     "n": 20
+    },
+    "numbers_pinned": {
+     "mean": 0.65,
+     "lo": 0.45,
+     "hi": 0.85,
+     "n": 20
+    }
+   },
+   "errors": 0
+  }
+ }
+}

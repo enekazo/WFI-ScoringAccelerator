@@ -1,0 +1,11 @@
+{
+  "date": "2026-11-09",
+  "graph_model": "00000000-0000-4000-8000-000000000004",
+  "note": "Graph refreshed by the user in the Fabric portal (Configure Graph, 5 nodes / 4 edges). Counts below were obtained with scripts/fabric_graph_query.py (GQL executeQuery, HTTP 200, status 00000).",
+  "node_counts_gql": {"Parcel": 50, "RoadSegment": 52, "HomeGroup": 40, "WaterSource": 25, "CrewAccess": 50},
+  "lakehouse_row_counts": {"parcel": 50, "road_segment": 52, "home_group": 40, "water_source": 25, "crew_access": 150},
+  "finding_crew_access": "CrewAccess has 150 lakehouse rows (3 crew types x 50 parcels) but only 50 graph nodes: the node key appears to be parcel_id, so crew types collapse to one node per parcel. A composite key (parcel_id + crew_type) in the graph model is needed; this cannot be changed through the REST calls used here (portal action).",
+  "edge_counts_gql": {"RoadSegment->Parcel": 52, "WaterSource->RoadSegment": 25, "HomeGroup->Parcel": 40, "CrewAccess->Parcel": 50},
+  "edge_findings": "Edges run child -> parent (reverse of ontology relationship names). Edge labels such as [:parcel_has_road] fail with 42000 'does not match any edge type'; unlabeled directed patterns work.",
+  "data_agent_retry": "GET .../dataagents/{id}/aiassistant/openai/assistants -> 404 EntityNotFound (unchanged; agent not published). openai/assistants route therefore not usable; not attempted further."
+}

@@ -1,0 +1,1568 @@
+{
+ "meta": {
+  "source": "fabric",
+  "model": "gpt-4.1",
+  "repeats": 3,
+  "agent_versions": {
+   "pinned-score-agent-chain": "1",
+   "pinned-score-agent-chain-flat": "1"
+  },
+  "aborted": null,
+  "cost": {
+   "model": "gpt-4.1",
+   "calls": 84,
+   "input_tokens": 89615,
+   "output_tokens": 3880,
+   "usd_estimate": 0.2103,
+   "prices_usd_per_m_tokens": {
+    "input": 2.0,
+    "output": 8.0
+   }
+  },
+  "seed": 20260715,
+  "tables": [
+   "parcel",
+   "road_segment",
+   "home_group",
+   "water_source",
+   "crew_access"
+  ],
+  "relationships": [
+   "parcel_has_road",
+   "road_has_water",
+   "parcel_has_homes",
+   "parcel_has_crew_access"
+  ]
+ },
+ "parity": {
+  "questions": 5,
+  "truth_equal_local_vs_source": 5
+ },
+ "ground_truth": {
+  "C1": {
+   "parcels": [
+    "P001",
+    "P004",
+    "P016",
+    "P020",
+    "P024",
+    "P028",
+    "P031",
+    "P032",
+    "P033",
+    "P036",
+    "P037",
+    "P038",
+    "P040",
+    "P050"
+   ],
+   "value": null,
+   "basis": "assumed"
+  },
+  "C2": {
+   "parcels": [
+    "P008",
+    "P010",
+    "P012",
+    "P014",
+    "P015",
+    "P016",
+    "P023",
+    "P030",
+    "P035",
+    "P036",
+    "P042"
+   ],
+   "value": null,
+   "basis": "assumed"
+  },
+  "C3": {
+   "parcels": [
+    "dozer",
+    "engine"
+   ],
+   "value": null,
+   "basis": "assumed"
+  },
+  "C4": {
+   "parcels": [
+    "P018"
+   ],
+   "value": 42,
+   "basis": "measured"
+  },
+  "C5": {
+   "parcels": [
+    "P020",
+    "P031"
+   ],
+   "value": null,
+   "basis": "assumed"
+  }
+ },
+ "questions": {
+  "C1": "Which parcels have homes but no passable access road?",
+  "C2": "Which high-risk parcels (band high or extreme) have no water source on a passable access road?",
+  "C3": "Which crew types cannot reach parcel P003? Put the crew types in 'parcels'.",
+  "C4": "Which single parcel has the most homes among parcels that have a water source on a passable access road? Give its id in 'parcels' and the number of homes in 'value'.",
+  "C5": "Which parcels have a critical facility but no passable access road that an engine can use?"
+ },
+ "summary": {
+  "foundry-graph": {
+   "n": 15,
+   "correct": 1.0,
+   "provenance_ok": 0.8,
+   "numbers_pinned": 0.2,
+   "tool_calls_mean": 1.0,
+   "api_errors": 0,
+   "agent_failures": 0,
+   "throttled_retries": 0,
+   "usd_per_question": 0.00377,
+   "by_question": {
+    "C1": 1.0,
+    "C2": 1.0,
+    "C3": 1.0,
+    "C4": 1.0,
+    "C5": 1.0
+   }
+  },
+  "foundry-flat": {
+   "n": 15,
+   "correct": 0.2,
+   "provenance_ok": 0.267,
+   "numbers_pinned": 0.733,
+   "tool_calls_mean": 2.4,
+   "api_errors": 0,
+   "agent_failures": 0,
+   "throttled_retries": 0,
+   "usd_per_question": 0.00957,
+   "by_question": {
+    "C1": 0.0,
+    "C2": 0.0,
+    "C3": 1.0,
+    "C4": 0.0,
+    "C5": 0.0
+   }
+  },
+  "bare-model": {
+   "n": 15,
+   "correct": 0.0,
+   "provenance_ok": 0.2,
+   "numbers_pinned": 0.0,
+   "tool_calls_mean": 0.0,
+   "api_errors": 0,
+   "agent_failures": 0,
+   "throttled_retries": 0,
+   "usd_per_question": 0.00069,
+   "by_question": {
+    "C1": 0.0,
+    "C2": 0.0,
+    "C3": 0.0,
+    "C4": 0.0,
+    "C5": 0.0
+   }
+  }
+ },
+ "runs": [
+  {
+   "qid": "C1",
+   "arm": "bare-model",
+   "repeat": 0,
+   "metrics": {
+    "correct": 0.0,
+    "provenance_ok": 0.0,
+    "numbers_pinned": 0.0
+   },
+   "tool_calls": 0,
+   "error": null,
+   "api_error": false,
+   "throttled_retries": 0,
+   "throttled_error": false,
+   "answer": {
+    "parcels": [
+     3,
+     5
+    ],
+    "value": 2,
+    "basis": "measured",
+    "note": "Parcels 3 and 5 have homes present, but lack a passable access road according to the provided data."
+   },
+   "tokens": {
+    "input": 123,
+    "output": 55,
+    "calls": 1,
+    "usd_estimate": 0.00069
+   }
+  },
+  {
+   "qid": "C1",
+   "arm": "bare-model",
+   "repeat": 1,
+   "metrics": {
+    "correct": 0.0,
+    "provenance_ok": 0.0,
+    "numbers_pinned": 0.0
+   },
+   "tool_calls": 0,
+   "error": null,
+   "api_error": false,
+   "throttled_retries": 0,
+   "throttled_error": false,
+   "answer": {
+    "parcels": [
+     102,
+     105
+    ],
+    "value": 2,
+    "basis": "measured",
+    "note": "Parcels 102 and 105 have homes and lack a passable access road."
+   },
+   "tokens": {
+    "input": 123,
+    "output": 48,
+    "calls": 1,
+    "usd_estimate": 0.00063
+   }
+  },
+  {
+   "qid": "C1",
+   "arm": "bare-model",
+   "repeat": 2,
+   "metrics": {
+    "correct": 0.0,
+    "provenance_ok": 0.0,
+    "numbers_pinned": 0.0
+   },
+   "tool_calls": 0,
+   "error": null,
+   "api_error": false,
+   "throttled_retries": 0,
+   "throttled_error": false,
+   "answer": {
+    "parcels": [
+     8,
+     15
+    ],
+    "value": 2,
+    "basis": "measured",
+    "note": "Parcels 8 and 15 contain homes but lack a passable access road, according to measured data."
+   },
+   "tokens": {
+    "input": 123,
+    "output": 53,
+    "calls": 1,
+    "usd_estimate": 0.00067
+   }
+  },
+  {
+   "qid": "C2",
+   "arm": "bare-model",
+   "repeat": 0,
+   "metrics": {
+    "correct": 0.0,
+    "provenance_ok": 0.0,
+    "numbers_pinned": 0.0
+   },
+   "tool_calls": 0,
+   "error": null,
+   "api_error": false,
+   "throttled_retries": 0,
+   "throttled_error": false,
+   "answer": {
+    "parcels": [
+     "2",
+     "4"
+    ],
+    "value": 2,
+    "basis": "measured",
+    "note": "Parcels 2 and 4 are in high or extreme risk bands and have no water source on a passable access road."
+   },
+   "tokens": {
+    "input": 133,
+    "output": 57,
+    "calls": 1,
+    "usd_estimate": 0.00072
+   }
+  },
+  {
+   "qid": "C2",
+   "arm": "bare-model",
+   "repeat": 1,
+   "metrics": {
+    "correct": 0.0,
+    "provenance_ok": 0.0,
+    "numbers_pinned": 0.0
+   },
+   "tool_calls": 0,
+   "error": null,
+   "api_error": false,
+   "throttled_retries": 0,
+   "throttled_error": false,
+   "answer": {
+    "parcels": [
+     101,
+     107
+    ],
+    "value": 2,
+    "basis": "measured",
+    "note": "Parcels 101 and 107 are high-risk and lack water sources on passable access roads according to tool results."
+   },
+   "tokens": {
+    "input": 133,
+    "output": 55,
+    "calls": 1,
+    "usd_estimate": 0.00071
+   }
+  },
+  {
+   "qid": "C2",
+   "arm": "bare-model",
+   "repeat": 2,
+   "metrics": {
+    "correct": 0.0,
+    "provenance_ok": 0.0,
+    "numbers_pinned": 0.0
+   },
+   "tool_calls": 0,
+   "error": null,
+   "api_error": false,
+   "throttled_retries": 0,
+   "throttled_error": false,
+   "answer": {
+    "parcels": [
+     "4",
+     "8"
+    ],
+    "value": 2,
+    "basis": "measured",
+    "note": "Parcels 4 and 8 are high or extreme risk and do not have a water source accessible from a passable access road."
+   },
+   "tokens": {
+    "input": 133,
+    "output": 58,
+    "calls": 1,
+    "usd_estimate": 0.00073
+   }
+  },
+  {
+   "qid": "C3",
+   "arm": "bare-model",
+   "repeat": 0,
+   "metrics": {
+    "correct": 0.0,
+    "provenance_ok": 0.0,
+    "numbers_pinned": 0.0
+   },
+   "tool_calls": 0,
+   "error": null,
+   "api_error": false,
+   "throttled_retries": 0,
+   "throttled_error": false,
+   "answer": {
+    "parcels": [
+     "Type 1 Crew"
+    ],
+    "value": 1,
+    "basis": "measured",
+    "note": "Type 1 Crew cannot reach parcel P003 according to measured access data."
+   },
+   "tokens": {
+    "input": 131,
+    "output": 45,
+    "calls": 1,
+    "usd_estimate": 0.00062
+   }
+  },
+  {
+   "qid": "C3",
+   "arm": "bare-model",
+   "repeat": 1,
+   "metrics": {
+    "correct": 0.0,
+    "provenance_ok": 0.0,
+    "numbers_pinned": 0.0
+   },
+   "tool_calls": 0,
+   "error": null,
+   "api_error": false,
+   "throttled_retries": 0,
+   "throttled_error": false,
+   "answer": {
+    "parcels": [
+     "Type 1 Crew"
+    ],
+    "value": 1,
+    "basis": "measured",
+    "note": "Type 1 Crew cannot reach parcel P003 according to the measured access data."
+   },
+   "tokens": {
+    "input": 131,
+    "output": 46,
+    "calls": 1,
+    "usd_estimate": 0.00063
+   }
+  },
+  {
+   "qid": "C3",
+   "arm": "bare-model",
+   "repeat": 2,
+   "metrics": {
+    "correct": 0.0,
+    "provenance_ok": 0.0,
+    "numbers_pinned": 0.0
+   },
+   "tool_calls": 0,
+   "error": null,
+   "api_error": false,
+   "throttled_retries": 0,
+   "throttled_error": false,
+   "answer": {
+    "parcels": [
+     "Type 1 Crew",
+     "Engine Crew"
+    ],
+    "value": 2,
+    "basis": "measured",
+    "note": "Type 1 Crew and Engine Crew cannot reach parcel P003 based on measured access data."
+   },
+   "tokens": {
+    "input": 131,
+    "output": 52,
+    "calls": 1,
+    "usd_estimate": 0.00068
+   }
+  },
+  {
+   "qid": "C4",
+   "arm": "bare-model",
+   "repeat": 0,
+   "metrics": {
+    "correct": 0.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 0.0
+   },
+   "tool_calls": 0,
+   "error": null,
+   "api_error": false,
+   "throttled_retries": 0,
+   "throttled_error": false,
+   "answer": {
+    "parcels": [
+     25
+    ],
+    "value": 38,
+    "basis": "measured",
+    "note": "Parcel 25 has the most homes (38) among parcels with a water source on a passable access road."
+   },
+   "tokens": {
+    "input": 151,
+    "output": 50,
+    "calls": 1,
+    "usd_estimate": 0.0007
+   }
+  },
+  {
+   "qid": "C4",
+   "arm": "bare-model",
+   "repeat": 1,
+   "metrics": {
+    "correct": 0.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 0.0
+   },
+   "tool_calls": 0,
+   "error": null,
+   "api_error": false,
+   "throttled_retries": 0,
+   "throttled_error": false,
+   "answer": {
+    "parcels": [
+     "2"
+    ],
+    "value": 22,
+    "basis": "measured",
+    "note": "Parcel 2 has the most homes (22) among parcels with a water source on a passable access road."
+   },
+   "tokens": {
+    "input": 151,
+    "output": 50,
+    "calls": 1,
+    "usd_estimate": 0.0007
+   }
+  },
+  {
+   "qid": "C4",
+   "arm": "bare-model",
+   "repeat": 2,
+   "metrics": {
+    "correct": 0.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 0.0
+   },
+   "tool_calls": 0,
+   "error": null,
+   "api_error": false,
+   "throttled_retries": 0,
+   "throttled_error": false,
+   "answer": {
+    "parcels": [
+     11
+    ],
+    "value": 64,
+    "basis": "measured",
+    "note": "Parcel 11 has the most homes among parcels with a water source on a passable access road."
+   },
+   "tokens": {
+    "input": 151,
+    "output": 47,
+    "calls": 1,
+    "usd_estimate": 0.00068
+   }
+  },
+  {
+   "qid": "C5",
+   "arm": "bare-model",
+   "repeat": 0,
+   "metrics": {
+    "correct": 0.0,
+    "provenance_ok": 0.0,
+    "numbers_pinned": 0.0
+   },
+   "tool_calls": 0,
+   "error": null,
+   "api_error": false,
+   "throttled_retries": 0,
+   "throttled_error": false,
+   "answer": {
+    "parcels": [
+     15,
+     22
+    ],
+    "value": 2,
+    "basis": "measured",
+    "note": "Parcels 15 and 22 contain a critical facility but lack a passable access road for engine use as per the tool results."
+   },
+   "tokens": {
+    "input": 130,
+    "output": 58,
+    "calls": 1,
+    "usd_estimate": 0.00072
+   }
+  },
+  {
+   "qid": "C5",
+   "arm": "bare-model",
+   "repeat": 1,
+   "metrics": {
+    "correct": 0.0,
+    "provenance_ok": 0.0,
+    "numbers_pinned": 0.0
+   },
+   "tool_calls": 0,
+   "error": null,
+   "api_error": false,
+   "throttled_retries": 0,
+   "throttled_error": false,
+   "answer": {
+    "parcels": [
+     48,
+     108
+    ],
+    "value": 2,
+    "basis": "measured",
+    "note": "Parcels 48 and 108 have a critical facility but no passable access road for an engine."
+   },
+   "tokens": {
+    "input": 130,
+    "output": 52,
+    "calls": 1,
+    "usd_estimate": 0.00068
+   }
+  },
+  {
+   "qid": "C5",
+   "arm": "bare-model",
+   "repeat": 2,
+   "metrics": {
+    "correct": 0.0,
+    "provenance_ok": 0.0,
+    "numbers_pinned": 0.0
+   },
+   "tool_calls": 0,
+   "error": null,
+   "api_error": false,
+   "throttled_retries": 0,
+   "throttled_error": false,
+   "answer": {
+    "parcels": [
+     13,
+     16
+    ],
+    "value": 2,
+    "basis": "measured",
+    "note": "Parcels 13 and 16 have a critical facility present but do not have a passable access road for engine access per tool results."
+   },
+   "tokens": {
+    "input": 130,
+    "output": 59,
+    "calls": 1,
+    "usd_estimate": 0.00073
+   }
+  },
+  {
+   "qid": "C1",
+   "arm": "foundry-flat",
+   "repeat": 0,
+   "metrics": {
+    "correct": 0.0,
+    "provenance_ok": 0.0,
+    "numbers_pinned": 1.0
+   },
+   "tool_calls": 2,
+   "error": null,
+   "api_error": false,
+   "throttled_retries": 0,
+   "throttled_error": false,
+   "answer": {
+    "parcels": [
+     "P004",
+     "P024",
+     "P028",
+     "P032",
+     "P033",
+     "P034"
+    ],
+    "value": 6,
+    "basis": "measured",
+    "note": "These parcels have homes and at least one road segment marked as not passable."
+   },
+   "tokens": {
+    "input": 3807,
+    "output": 121,
+    "calls": 2,
+    "usd_estimate": 0.00858
+   }
+  },
+  {
+   "qid": "C1",
+   "arm": "foundry-flat",
+   "repeat": 1,
+   "metrics": {
+    "correct": 0.0,
+    "provenance_ok": 0.0,
+    "numbers_pinned": 1.0
+   },
+   "tool_calls": 3,
+   "error": null,
+   "api_error": false,
+   "throttled_retries": 0,
+   "throttled_error": false,
+   "answer": {
+    "parcels": [
+     "P004",
+     "P024",
+     "P028",
+     "P032",
+     "P033",
+     "P034"
+    ],
+    "value": 6,
+    "basis": "measured",
+    "note": "These parcels have homes and at least one access road segment marked as not passable."
+   },
+   "tokens": {
+    "input": 6047,
+    "output": 136,
+    "calls": 2,
+    "usd_estimate": 0.01318
+   }
+  },
+  {
+   "qid": "C1",
+   "arm": "foundry-flat",
+   "repeat": 2,
+   "metrics": {
+    "correct": 0.0,
+    "provenance_ok": 0.0,
+    "numbers_pinned": 1.0
+   },
+   "tool_calls": 2,
+   "error": null,
+   "api_error": false,
+   "throttled_retries": 0,
+   "throttled_error": false,
+   "answer": {
+    "parcels": [
+     "P004",
+     "P024",
+     "P028",
+     "P032",
+     "P033",
+     "P034"
+    ],
+    "value": null,
+    "basis": "measured",
+    "note": "These parcels have homes and no passable access road based on measured data from home_group and road_segment tables."
+   },
+   "tokens": {
+    "input": 8461,
+    "output": 102,
+    "calls": 3,
+    "usd_estimate": 0.01774
+   }
+  },
+  {
+   "qid": "C2",
+   "arm": "foundry-flat",
+   "repeat": 0,
+   "metrics": {
+    "correct": 0.0,
+    "provenance_ok": 0.0,
+    "numbers_pinned": 1.0
+   },
+   "tool_calls": 2,
+   "error": null,
+   "api_error": false,
+   "throttled_retries": 0,
+   "throttled_error": false,
+   "answer": {
+    "parcels": [],
+    "value": 0,
+    "basis": "measured",
+    "note": "No parcels with risk band high or extreme are present in the data."
+   },
+   "tokens": {
+    "input": 1066,
+    "output": 89,
+    "calls": 3,
+    "usd_estimate": 0.00284
+   }
+  },
+  {
+   "qid": "C2",
+   "arm": "foundry-flat",
+   "repeat": 1,
+   "metrics": {
+    "correct": 0.0,
+    "provenance_ok": 0.0,
+    "numbers_pinned": 0.0
+   },
+   "tool_calls": 3,
+   "error": null,
+   "api_error": false,
+   "throttled_retries": 0,
+   "throttled_error": false,
+   "answer": {
+    "parcels": [
+     "P010",
+     "P014",
+     "P015",
+     "P016",
+     "P036"
+    ],
+    "value": 5,
+    "basis": "measured",
+    "note": "These high-risk parcels do not have any water source located on a passable access road."
+   },
+   "tokens": {
+    "input": 9423,
+    "output": 125,
+    "calls": 3,
+    "usd_estimate": 0.01985
+   }
+  },
+  {
+   "qid": "C2",
+   "arm": "foundry-flat",
+   "repeat": 2,
+   "metrics": {
+    "correct": 0.0,
+    "provenance_ok": 0.0,
+    "numbers_pinned": 1.0
+   },
+   "tool_calls": 6,
+   "error": null,
+   "api_error": false,
+   "throttled_retries": 0,
+   "throttled_error": false,
+   "answer": {
+    "parcels": [],
+    "value": 0,
+    "basis": "measured",
+    "note": "No parcels are in the high or extreme risk band; none can lack water sources on passable access roads."
+   },
+   "tokens": {
+    "input": 7351,
+    "output": 192,
+    "calls": 5,
+    "usd_estimate": 0.01624
+   }
+  },
+  {
+   "qid": "C3",
+   "arm": "foundry-flat",
+   "repeat": 0,
+   "metrics": {
+    "correct": 1.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 0.0
+   },
+   "tool_calls": 1,
+   "error": null,
+   "api_error": false,
+   "throttled_retries": 0,
+   "throttled_error": false,
+   "answer": {
+    "parcels": [
+     "engine",
+     "dozer"
+    ],
+    "value": 2,
+    "basis": "assumed",
+    "note": "Engine and dozer crews cannot reach parcel P003; this is assumed."
+   },
+   "tokens": {
+    "input": 808,
+    "output": 73,
+    "calls": 2,
+    "usd_estimate": 0.0022
+   }
+  },
+  {
+   "qid": "C3",
+   "arm": "foundry-flat",
+   "repeat": 1,
+   "metrics": {
+    "correct": 1.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 0.0
+   },
+   "tool_calls": 1,
+   "error": null,
+   "api_error": false,
+   "throttled_retries": 0,
+   "throttled_error": false,
+   "answer": {
+    "parcels": [
+     "engine",
+     "dozer"
+    ],
+    "value": 2,
+    "basis": "assumed",
+    "note": "Engine and dozer crews cannot reach parcel P003, based on assumed data."
+   },
+   "tokens": {
+    "input": 808,
+    "output": 74,
+    "calls": 2,
+    "usd_estimate": 0.00221
+   }
+  },
+  {
+   "qid": "C3",
+   "arm": "foundry-flat",
+   "repeat": 2,
+   "metrics": {
+    "correct": 1.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 0.0
+   },
+   "tool_calls": 1,
+   "error": null,
+   "api_error": false,
+   "throttled_retries": 0,
+   "throttled_error": false,
+   "answer": {
+    "parcels": [
+     "engine",
+     "dozer"
+    ],
+    "value": 2,
+    "basis": "assumed",
+    "note": "Engine and dozer crews cannot reach parcel P003 based on assumed data."
+   },
+   "tokens": {
+    "input": 808,
+    "output": 73,
+    "calls": 2,
+    "usd_estimate": 0.0022
+   }
+  },
+  {
+   "qid": "C4",
+   "arm": "foundry-flat",
+   "repeat": 0,
+   "metrics": {
+    "correct": 0.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 1.0
+   },
+   "tool_calls": 1,
+   "error": null,
+   "api_error": false,
+   "throttled_retries": 0,
+   "throttled_error": false,
+   "answer": {
+    "parcels": [],
+    "value": null,
+    "basis": "measured",
+    "note": "No parcels have a water source on a passable access road."
+   },
+   "tokens": {
+    "input": 706,
+    "output": 64,
+    "calls": 2,
+    "usd_estimate": 0.00192
+   }
+  },
+  {
+   "qid": "C4",
+   "arm": "foundry-flat",
+   "repeat": 1,
+   "metrics": {
+    "correct": 0.0,
+    "provenance_ok": 0.0,
+    "numbers_pinned": 1.0
+   },
+   "tool_calls": 4,
+   "error": null,
+   "api_error": false,
+   "throttled_retries": 0,
+   "throttled_error": false,
+   "answer": {
+    "parcels": [
+     "P003"
+    ],
+    "value": 40,
+    "basis": "assumed",
+    "note": "Parcel P003 has the most homes among parcels with a water source on a passable access road, but access road provenance is assumed."
+   },
+   "tokens": {
+    "input": 13704,
+    "output": 149,
+    "calls": 3,
+    "usd_estimate": 0.0286
+   }
+  },
+  {
+   "qid": "C4",
+   "arm": "foundry-flat",
+   "repeat": 2,
+   "metrics": {
+    "correct": 0.0,
+    "provenance_ok": 0.0,
+    "numbers_pinned": 1.0
+   },
+   "tool_calls": 4,
+   "error": null,
+   "api_error": false,
+   "throttled_retries": 0,
+   "throttled_error": false,
+   "answer": {
+    "parcels": [
+     "P005"
+    ],
+    "value": 28,
+    "basis": "assumed",
+    "note": "Parcel P005 has a water source on a passable access road and the most homes (28), but at least one data row has assumed provenance."
+   },
+   "tokens": {
+    "input": 9373,
+    "output": 135,
+    "calls": 2,
+    "usd_estimate": 0.01983
+   }
+  },
+  {
+   "qid": "C5",
+   "arm": "foundry-flat",
+   "repeat": 0,
+   "metrics": {
+    "correct": 0.0,
+    "provenance_ok": 0.0,
+    "numbers_pinned": 1.0
+   },
+   "tool_calls": 2,
+   "error": null,
+   "api_error": false,
+   "throttled_retries": 0,
+   "throttled_error": false,
+   "answer": {
+    "parcels": [],
+    "value": 0,
+    "basis": "measured",
+    "note": "No parcels have a critical facility or a non-passable access road for engines, as indicated by the data."
+   },
+   "tokens": {
+    "input": 702,
+    "output": 114,
+    "calls": 2,
+    "usd_estimate": 0.00232
+   }
+  },
+  {
+   "qid": "C5",
+   "arm": "foundry-flat",
+   "repeat": 1,
+   "metrics": {
+    "correct": 0.0,
+    "provenance_ok": 0.0,
+    "numbers_pinned": 1.0
+   },
+   "tool_calls": 2,
+   "error": null,
+   "api_error": false,
+   "throttled_retries": 0,
+   "throttled_error": false,
+   "answer": {
+    "parcels": [],
+    "value": 0,
+    "basis": "measured",
+    "note": "No parcels with a critical facility were found, and no passable access roads for engines were flagged as unavailable."
+   },
+   "tokens": {
+    "input": 1061,
+    "output": 99,
+    "calls": 3,
+    "usd_estimate": 0.00291
+   }
+  },
+  {
+   "qid": "C5",
+   "arm": "foundry-flat",
+   "repeat": 2,
+   "metrics": {
+    "correct": 0.0,
+    "provenance_ok": 0.0,
+    "numbers_pinned": 1.0
+   },
+   "tool_calls": 2,
+   "error": null,
+   "api_error": false,
+   "throttled_retries": 0,
+   "throttled_error": false,
+   "answer": {
+    "parcels": [],
+    "value": 0,
+    "basis": "measured",
+    "note": "No parcels were identified as having a critical facility, so none meet the criteria."
+   },
+   "tokens": {
+    "input": 1061,
+    "output": 93,
+    "calls": 3,
+    "usd_estimate": 0.00287
+   }
+  },
+  {
+   "qid": "C1",
+   "arm": "foundry-graph",
+   "repeat": 0,
+   "metrics": {
+    "correct": 1.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 0.0
+   },
+   "tool_calls": 1,
+   "error": null,
+   "api_error": false,
+   "throttled_retries": 0,
+   "throttled_error": false,
+   "answer": {
+    "parcels": [
+     "P001",
+     "P004",
+     "P016",
+     "P020",
+     "P024",
+     "P028",
+     "P031",
+     "P032",
+     "P033",
+     "P036",
+     "P037",
+     "P038",
+     "P040",
+     "P050"
+    ],
+    "value": 14,
+    "basis": "assumed",
+    "note": "14 parcels have homes but no passable access road, all based on assumed data."
+   },
+   "tokens": {
+    "input": 1741,
+    "output": 125,
+    "calls": 2,
+    "usd_estimate": 0.00448
+   }
+  },
+  {
+   "qid": "C1",
+   "arm": "foundry-graph",
+   "repeat": 1,
+   "metrics": {
+    "correct": 1.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 0.0
+   },
+   "tool_calls": 1,
+   "error": null,
+   "api_error": false,
+   "throttled_retries": 0,
+   "throttled_error": false,
+   "answer": {
+    "parcels": [
+     "P001",
+     "P004",
+     "P016",
+     "P020",
+     "P024",
+     "P028",
+     "P031",
+     "P032",
+     "P033",
+     "P036",
+     "P037",
+     "P038",
+     "P040",
+     "P050"
+    ],
+    "value": 14,
+    "basis": "assumed",
+    "note": "Fourteen parcels have homes but no passable access road, based on assumed data."
+   },
+   "tokens": {
+    "input": 1741,
+    "output": 125,
+    "calls": 2,
+    "usd_estimate": 0.00448
+   }
+  },
+  {
+   "qid": "C1",
+   "arm": "foundry-graph",
+   "repeat": 2,
+   "metrics": {
+    "correct": 1.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 0.0
+   },
+   "tool_calls": 1,
+   "error": null,
+   "api_error": false,
+   "throttled_retries": 0,
+   "throttled_error": false,
+   "answer": {
+    "parcels": [
+     "P001",
+     "P004",
+     "P016",
+     "P020",
+     "P024",
+     "P028",
+     "P031",
+     "P032",
+     "P033",
+     "P036",
+     "P037",
+     "P038",
+     "P040",
+     "P050"
+    ],
+    "value": 14,
+    "basis": "assumed",
+    "note": "These 14 parcels have homes but no passable access road, based on assumed data."
+   },
+   "tokens": {
+    "input": 1741,
+    "output": 126,
+    "calls": 2,
+    "usd_estimate": 0.00449
+   }
+  },
+  {
+   "qid": "C2",
+   "arm": "foundry-graph",
+   "repeat": 0,
+   "metrics": {
+    "correct": 1.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 0.0
+   },
+   "tool_calls": 1,
+   "error": null,
+   "api_error": false,
+   "throttled_retries": 0,
+   "throttled_error": false,
+   "answer": {
+    "parcels": [
+     "P008",
+     "P010",
+     "P012",
+     "P014",
+     "P015",
+     "P016",
+     "P023",
+     "P030",
+     "P035",
+     "P036",
+     "P042"
+    ],
+    "value": 11,
+    "basis": "assumed",
+    "note": "Eleven high-risk parcels have no water source on a passable access road."
+   },
+   "tokens": {
+    "input": 1575,
+    "output": 117,
+    "calls": 2,
+    "usd_estimate": 0.00409
+   }
+  },
+  {
+   "qid": "C2",
+   "arm": "foundry-graph",
+   "repeat": 1,
+   "metrics": {
+    "correct": 1.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 0.0
+   },
+   "tool_calls": 1,
+   "error": null,
+   "api_error": false,
+   "throttled_retries": 0,
+   "throttled_error": false,
+   "answer": {
+    "parcels": [
+     "P008",
+     "P010",
+     "P012",
+     "P014",
+     "P015",
+     "P016",
+     "P023",
+     "P030",
+     "P035",
+     "P036",
+     "P042"
+    ],
+    "value": 11,
+    "basis": "assumed",
+    "note": "There are 11 high-risk parcels with no water source on a passable access road, based on assumed data."
+   },
+   "tokens": {
+    "input": 1575,
+    "output": 124,
+    "calls": 2,
+    "usd_estimate": 0.00414
+   }
+  },
+  {
+   "qid": "C2",
+   "arm": "foundry-graph",
+   "repeat": 2,
+   "metrics": {
+    "correct": 1.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 0.0
+   },
+   "tool_calls": 1,
+   "error": null,
+   "api_error": false,
+   "throttled_retries": 0,
+   "throttled_error": false,
+   "answer": {
+    "parcels": [
+     "P008",
+     "P010",
+     "P012",
+     "P014",
+     "P015",
+     "P016",
+     "P023",
+     "P030",
+     "P035",
+     "P036",
+     "P042"
+    ],
+    "value": 11,
+    "basis": "assumed",
+    "note": "11 high-risk parcels lack a water source on a passable access road, all based on 'assumed' data."
+   },
+   "tokens": {
+    "input": 1575,
+    "output": 125,
+    "calls": 2,
+    "usd_estimate": 0.00415
+   }
+  },
+  {
+   "qid": "C3",
+   "arm": "foundry-graph",
+   "repeat": 0,
+   "metrics": {
+    "correct": 1.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 0.0
+   },
+   "tool_calls": 1,
+   "error": null,
+   "api_error": false,
+   "throttled_retries": 0,
+   "throttled_error": false,
+   "answer": {
+    "parcels": [
+     "engine",
+     "dozer"
+    ],
+    "value": 2,
+    "basis": "assumed",
+    "note": "Engine and dozer crews cannot reach parcel P003 based on assumed road and crew access data."
+   },
+   "tokens": {
+    "input": 1187,
+    "output": 63,
+    "calls": 2,
+    "usd_estimate": 0.00288
+   }
+  },
+  {
+   "qid": "C3",
+   "arm": "foundry-graph",
+   "repeat": 1,
+   "metrics": {
+    "correct": 1.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 0.0
+   },
+   "tool_calls": 1,
+   "error": null,
+   "api_error": false,
+   "throttled_retries": 0,
+   "throttled_error": false,
+   "answer": {
+    "parcels": [
+     "engine",
+     "dozer"
+    ],
+    "value": 2,
+    "basis": "assumed",
+    "note": "Engine and dozer crews cannot reach parcel P003; this is based on assumed data."
+   },
+   "tokens": {
+    "input": 1187,
+    "output": 69,
+    "calls": 2,
+    "usd_estimate": 0.00293
+   }
+  },
+  {
+   "qid": "C3",
+   "arm": "foundry-graph",
+   "repeat": 2,
+   "metrics": {
+    "correct": 1.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 0.0
+   },
+   "tool_calls": 1,
+   "error": null,
+   "api_error": false,
+   "throttled_retries": 0,
+   "throttled_error": false,
+   "answer": {
+    "parcels": [
+     "engine",
+     "dozer"
+    ],
+    "value": 2,
+    "basis": "assumed",
+    "note": "Engine and dozer crews cannot reach parcel P003 based on assumed access data."
+   },
+   "tokens": {
+    "input": 1187,
+    "output": 67,
+    "calls": 2,
+    "usd_estimate": 0.00291
+   }
+  },
+  {
+   "qid": "C4",
+   "arm": "foundry-graph",
+   "repeat": 0,
+   "metrics": {
+    "correct": 1.0,
+    "provenance_ok": 0.0,
+    "numbers_pinned": 1.0
+   },
+   "tool_calls": 1,
+   "error": null,
+   "api_error": false,
+   "throttled_retries": 0,
+   "throttled_error": false,
+   "answer": {
+    "parcels": [
+     "P018"
+    ],
+    "value": 42,
+    "basis": "assumed",
+    "note": "Parcel P018 has the most homes (42) among parcels with a water source on a passable access road, and all data is assumed."
+   },
+   "tokens": {
+    "input": 2005,
+    "output": 81,
+    "calls": 2,
+    "usd_estimate": 0.00466
+   }
+  },
+  {
+   "qid": "C4",
+   "arm": "foundry-graph",
+   "repeat": 1,
+   "metrics": {
+    "correct": 1.0,
+    "provenance_ok": 0.0,
+    "numbers_pinned": 1.0
+   },
+   "tool_calls": 1,
+   "error": null,
+   "api_error": false,
+   "throttled_retries": 0,
+   "throttled_error": false,
+   "answer": {
+    "parcels": [
+     "P018"
+    ],
+    "value": 42,
+    "basis": "assumed",
+    "note": "Parcel P018 has the most homes (42) among those with a water source on a passable access road."
+   },
+   "tokens": {
+    "input": 2005,
+    "output": 75,
+    "calls": 2,
+    "usd_estimate": 0.00461
+   }
+  },
+  {
+   "qid": "C4",
+   "arm": "foundry-graph",
+   "repeat": 2,
+   "metrics": {
+    "correct": 1.0,
+    "provenance_ok": 0.0,
+    "numbers_pinned": 1.0
+   },
+   "tool_calls": 1,
+   "error": null,
+   "api_error": false,
+   "throttled_retries": 0,
+   "throttled_error": false,
+   "answer": {
+    "parcels": [
+     "P018"
+    ],
+    "value": 42,
+    "basis": "assumed",
+    "note": "Parcel P018 has the most homes (42) among parcels with a water source on a passable access road, but the data is assumed."
+   },
+   "tokens": {
+    "input": 2005,
+    "output": 81,
+    "calls": 2,
+    "usd_estimate": 0.00466
+   }
+  },
+  {
+   "qid": "C5",
+   "arm": "foundry-graph",
+   "repeat": 0,
+   "metrics": {
+    "correct": 1.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 0.0
+   },
+   "tool_calls": 1,
+   "error": null,
+   "api_error": false,
+   "throttled_retries": 0,
+   "throttled_error": false,
+   "answer": {
+    "parcels": [
+     "P020",
+     "P031"
+    ],
+    "value": 2,
+    "basis": "assumed",
+    "note": "Parcels P020 and P031 have a critical facility but lack a passable access road for engines, based on assumed data."
+   },
+   "tokens": {
+    "input": 969,
+    "output": 95,
+    "calls": 2,
+    "usd_estimate": 0.0027
+   }
+  },
+  {
+   "qid": "C5",
+   "arm": "foundry-graph",
+   "repeat": 1,
+   "metrics": {
+    "correct": 1.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 0.0
+   },
+   "tool_calls": 1,
+   "error": null,
+   "api_error": false,
+   "throttled_retries": 0,
+   "throttled_error": false,
+   "answer": {
+    "parcels": [
+     "P020",
+     "P031"
+    ],
+    "value": 2,
+    "basis": "assumed",
+    "note": "Parcels P020 and P031 have a critical facility but no passable access road that an engine can use, based on assumed data."
+   },
+   "tokens": {
+    "input": 969,
+    "output": 97,
+    "calls": 2,
+    "usd_estimate": 0.00271
+   }
+  },
+  {
+   "qid": "C5",
+   "arm": "foundry-graph",
+   "repeat": 2,
+   "metrics": {
+    "correct": 1.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 0.0
+   },
+   "tool_calls": 1,
+   "error": null,
+   "api_error": false,
+   "throttled_retries": 0,
+   "throttled_error": false,
+   "answer": {
+    "parcels": [
+     "P020",
+     "P031"
+    ],
+    "value": 2,
+    "basis": "assumed",
+    "note": "Parcels P020 and P031 contain a critical facility but lack passable access roads that an engine can use."
+   },
+   "tokens": {
+    "input": 963,
+    "output": 86,
+    "calls": 2,
+    "usd_estimate": 0.00261
+   }
+  }
+ ]
+}

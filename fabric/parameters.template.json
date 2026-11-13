@@ -1,0 +1,10 @@
+{
+  "workspaceName": "<fabric-workspace-name>",
+  "workspaceId": "",
+  "capacityName": "<existing-fabric-capacity-name>",
+  "capacityId": "",
+  "lakehouseName": "pinned_scoring_lh",
+  "ontologyName": "pinned_scoring_ontology",
+  "capacitySku": "F4",
+  "parcelCount": 150
+}

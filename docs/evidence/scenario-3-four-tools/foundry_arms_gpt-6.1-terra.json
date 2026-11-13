@@ -1,0 +1,2092 @@
+{
+ "meta": {
+  "source": "local",
+  "model": "gpt-6.1-terra",
+  "repeats": 1,
+  "workers": 2,
+  "agent_versions": {
+   "pinned-score-agent": "5",
+   "pinned-score-agent-flat": "4"
+  },
+  "aborted": null,
+  "cost": {
+   "model": "gpt-6.1-terra",
+   "calls": 142,
+   "input_tokens": 656871,
+   "output_tokens": 55642,
+   "usd_estimate": 1.8702,
+   "prices_usd_per_m_tokens": {
+    "input": 2.0,
+    "output": 10.0
+   }
+  }
+ },
+ "parity": {
+  "questions": 20,
+  "truth_equal_local_vs_source": 20
+ },
+ "summary": {
+  "foundry-graph": {
+   "n": 20,
+   "correct": 1.0,
+   "provenance_ok": 0.95,
+   "numbers_pinned": 1.0,
+   "tool_calls_mean": 1.0,
+   "api_errors": 0,
+   "throttled_retries": 0,
+   "usd_estimate": 0.1349,
+   "usd_per_question": 0.00674
+  },
+  "foundry-flat": {
+   "n": 20,
+   "correct": 1.0,
+   "provenance_ok": 0.95,
+   "numbers_pinned": 0.3,
+   "tool_calls_mean": 46.95,
+   "api_errors": 0,
+   "throttled_retries": 4,
+   "usd_estimate": 1.666,
+   "usd_per_question": 0.0833
+  },
+  "bare-model": {
+   "n": 20,
+   "correct": 0.05,
+   "provenance_ok": 0.0,
+   "numbers_pinned": 1.0,
+   "tool_calls_mean": 0.0,
+   "api_errors": 0,
+   "throttled_retries": 0,
+   "usd_estimate": 0.0694,
+   "usd_per_question": 0.00347
+  }
+ },
+ "runs": [
+  {
+   "qid": "deenergise-40",
+   "scenario": "deenergise",
+   "arm": "bare-model",
+   "repeat": 0,
+   "metrics": {
+    "correct": 0.0,
+    "provenance_ok": 0.0,
+    "numbers_pinned": 1.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 0,
+   "unpinned": [],
+   "error": null,
+   "throttled_retries": 0,
+   "answer": {
+    "feeder": null,
+    "customers": null,
+    "critical_facilities": null,
+    "policy_sha256": null,
+    "counterfactual": null,
+    "error": "Scoring tools are unavailable, so the feeder cannot be determined."
+   },
+   "tokens": {
+    "input": 388,
+    "output": 380,
+    "calls": 1,
+    "usd_estimate": 0.00458
+   }
+  },
+  {
+   "qid": "deenergise-50",
+   "scenario": "deenergise",
+   "arm": "bare-model",
+   "repeat": 0,
+   "metrics": {
+    "correct": 0.0,
+    "provenance_ok": 0.0,
+    "numbers_pinned": 1.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 0,
+   "unpinned": [],
+   "error": null,
+   "throttled_retries": 0,
+   "answer": {
+    "feeder": null,
+    "customers": null,
+    "critical_facilities": null,
+    "policy_sha256": null,
+    "counterfactual": true,
+    "error": "The scoring tool is unavailable, so the feeder ranking could not be computed."
+   },
+   "tokens": {
+    "input": 388,
+    "output": 259,
+    "calls": 1,
+    "usd_estimate": 0.00337
+   }
+  },
+  {
+   "qid": "deenergise-60",
+   "scenario": "deenergise",
+   "arm": "bare-model",
+   "repeat": 0,
+   "metrics": {
+    "correct": 0.0,
+    "provenance_ok": 0.0,
+    "numbers_pinned": 1.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 0,
+   "unpinned": [],
+   "error": null,
+   "throttled_retries": 0,
+   "answer": {
+    "error": "Scoring tools are unavailable, so the feeder cannot be determined.",
+    "policy_sha256": null,
+    "counterfactual": null
+   },
+   "tokens": {
+    "input": 388,
+    "output": 292,
+    "calls": 1,
+    "usd_estimate": 0.0037
+   }
+  },
+  {
+   "qid": "deenergise-70",
+   "scenario": "deenergise",
+   "arm": "bare-model",
+   "repeat": 0,
+   "metrics": {
+    "correct": 0.0,
+    "provenance_ok": 0.0,
+    "numbers_pinned": 1.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 0,
+   "unpinned": [],
+   "error": null,
+   "throttled_retries": 0,
+   "answer": {
+    "feeder": null,
+    "customers": null,
+    "critical_facilities": null,
+    "policy_sha256": null,
+    "counterfactual": null,
+    "error": "Scoring tools are unavailable, so the feeder and policy hash cannot be determined."
+   },
+   "tokens": {
+    "input": 388,
+    "output": 324,
+    "calls": 1,
+    "usd_estimate": 0.00402
+   }
+  },
+  {
+   "qid": "deenergise-80",
+   "scenario": "deenergise",
+   "arm": "bare-model",
+   "repeat": 0,
+   "metrics": {
+    "correct": 0.0,
+    "provenance_ok": 0.0,
+    "numbers_pinned": 1.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 0,
+   "unpinned": [],
+   "error": null,
+   "throttled_retries": 0,
+   "answer": {
+    "error": "Scoring tool unavailable; cannot determine the feeder or policy hash.",
+    "policy_sha256": "",
+    "counterfactual": false
+   },
+   "tokens": {
+    "input": 388,
+    "output": 332,
+    "calls": 1,
+    "usd_estimate": 0.0041
+   }
+  },
+  {
+   "qid": "exposure-40",
+   "scenario": "exposure",
+   "arm": "bare-model",
+   "repeat": 0,
+   "metrics": {
+    "correct": 0.0,
+    "provenance_ok": 0.0,
+    "numbers_pinned": 1.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 0,
+   "unpinned": [],
+   "error": null,
+   "throttled_retries": 0,
+   "answer": {
+    "error": "Unable to determine exposure because the scoring tools are unavailable.",
+    "policy_sha256": null,
+    "counterfactual": false
+   },
+   "tokens": {
+    "input": 390,
+    "output": 204,
+    "calls": 1,
+    "usd_estimate": 0.00282
+   }
+  },
+  {
+   "qid": "exposure-50",
+   "scenario": "exposure",
+   "arm": "bare-model",
+   "repeat": 0,
+   "metrics": {
+    "correct": 0.0,
+    "provenance_ok": 0.0,
+    "numbers_pinned": 1.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 0,
+   "unpinned": [],
+   "error": null,
+   "throttled_retries": 0,
+   "answer": {
+    "error": "Unable to determine exposure because the scoring tool is unavailable.",
+    "policy_sha256": null,
+    "counterfactual": false
+   },
+   "tokens": {
+    "input": 390,
+    "output": 206,
+    "calls": 1,
+    "usd_estimate": 0.00284
+   }
+  },
+  {
+   "qid": "exposure-55",
+   "scenario": "exposure",
+   "arm": "bare-model",
+   "repeat": 0,
+   "metrics": {
+    "correct": 0.0,
+    "provenance_ok": 0.0,
+    "numbers_pinned": 1.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 0,
+   "unpinned": [],
+   "error": null,
+   "throttled_retries": 0,
+   "answer": {
+    "error": "Unable to retrieve baseline scores and exposure data because the required tools are unavailable.",
+    "policy_sha256": null,
+    "counterfactual": false
+   },
+   "tokens": {
+    "input": 390,
+    "output": 198,
+    "calls": 1,
+    "usd_estimate": 0.00276
+   }
+  },
+  {
+   "qid": "exposure-60",
+   "scenario": "exposure",
+   "arm": "bare-model",
+   "repeat": 0,
+   "metrics": {
+    "correct": 0.0,
+    "provenance_ok": 0.0,
+    "numbers_pinned": 1.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 0,
+   "unpinned": [],
+   "error": null,
+   "throttled_retries": 0,
+   "answer": {
+    "error": "Unable to determine exposure: scorer and feeder data tools are unavailable.",
+    "policy_sha256": null,
+    "counterfactual": false
+   },
+   "tokens": {
+    "input": 390,
+    "output": 48,
+    "calls": 1,
+    "usd_estimate": 0.00126
+   }
+  },
+  {
+   "qid": "exposure-70",
+   "scenario": "exposure",
+   "arm": "bare-model",
+   "repeat": 0,
+   "metrics": {
+    "correct": 0.0,
+    "provenance_ok": 0.0,
+    "numbers_pinned": 1.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 0,
+   "unpinned": [],
+   "error": null,
+   "throttled_retries": 0,
+   "answer": {
+    "error": "Scoring and exposure data are unavailable; the requested figures cannot be determined.",
+    "policy_sha256": null,
+    "counterfactual": false
+   },
+   "tokens": {
+    "input": 390,
+    "output": 198,
+    "calls": 1,
+    "usd_estimate": 0.00276
+   }
+  },
+  {
+   "qid": "mitigation-18000",
+   "scenario": "mitigation",
+   "arm": "bare-model",
+   "repeat": 0,
+   "metrics": {
+    "correct": 0.0,
+    "provenance_ok": 0.0,
+    "numbers_pinned": 1.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 0,
+   "unpinned": [],
+   "error": null,
+   "throttled_retries": 0,
+   "answer": {
+    "parcel": null,
+    "mitigation": null,
+    "risk_reduction_per_1000usd": null,
+    "policy_sha256": null,
+    "counterfactual": null,
+    "error": "Scoring tools are unavailable."
+   },
+   "tokens": {
+    "input": 389,
+    "output": 369,
+    "calls": 1,
+    "usd_estimate": 0.00447
+   }
+  },
+  {
+   "qid": "mitigation-5000",
+   "scenario": "mitigation",
+   "arm": "bare-model",
+   "repeat": 0,
+   "metrics": {
+    "correct": 1.0,
+    "provenance_ok": 0.0,
+    "numbers_pinned": 1.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 0,
+   "unpinned": [],
+   "error": null,
+   "throttled_retries": 0,
+   "answer": {
+    "parcel": null,
+    "mitigation": null,
+    "risk_reduction_per_1000usd": null,
+    "policy_sha256": null,
+    "counterfactual": false,
+    "error": "Scoring tools were unavailable; the mitigation and policy hash could not be determined."
+   },
+   "tokens": {
+    "input": 389,
+    "output": 254,
+    "calls": 1,
+    "usd_estimate": 0.00332
+   }
+  },
+  {
+   "qid": "mitigation-6000",
+   "scenario": "mitigation",
+   "arm": "bare-model",
+   "repeat": 0,
+   "metrics": {
+    "correct": 0.0,
+    "provenance_ok": 0.0,
+    "numbers_pinned": 1.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 0,
+   "unpinned": [],
+   "error": null,
+   "throttled_retries": 0,
+   "answer": {
+    "parcel": null,
+    "mitigation": null,
+    "risk_reduction_per_1000usd": null,
+    "policy_sha256": null,
+    "counterfactual": false,
+    "error": "Scoring tools are unavailable; the mitigation and policy hash cannot be determined."
+   },
+   "tokens": {
+    "input": 389,
+    "output": 281,
+    "calls": 1,
+    "usd_estimate": 0.00359
+   }
+  },
+  {
+   "qid": "mitigation-9000",
+   "scenario": "mitigation",
+   "arm": "bare-model",
+   "repeat": 0,
+   "metrics": {
+    "correct": 0.0,
+    "provenance_ok": 0.0,
+    "numbers_pinned": 1.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 0,
+   "unpinned": [],
+   "error": null,
+   "throttled_retries": 0,
+   "answer": {
+    "parcel": null,
+    "mitigation": null,
+    "risk_reduction_per_1000usd": null,
+    "policy_sha256": null,
+    "counterfactual": false
+   },
+   "tokens": {
+    "input": 389,
+    "output": 270,
+    "calls": 1,
+    "usd_estimate": 0.00348
+   }
+  },
+  {
+   "qid": "mitigation-None",
+   "scenario": "mitigation",
+   "arm": "bare-model",
+   "repeat": 0,
+   "metrics": {
+    "correct": 0.0,
+    "provenance_ok": 0.0,
+    "numbers_pinned": 1.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 0,
+   "unpinned": [],
+   "error": null,
+   "throttled_retries": 0,
+   "answer": {
+    "parcel": null,
+    "mitigation": null,
+    "risk_reduction_per_1000usd": null,
+    "policy_sha256": null,
+    "counterfactual": false,
+    "error": "Scoring tools were unavailable."
+   },
+   "tokens": {
+    "input": 383,
+    "output": 412,
+    "calls": 1,
+    "usd_estimate": 0.00489
+   }
+  },
+  {
+   "qid": "sensitivity-dead_fuel:up",
+   "scenario": "sensitivity",
+   "arm": "bare-model",
+   "repeat": 0,
+   "metrics": {
+    "correct": 0.0,
+    "provenance_ok": 0.0,
+    "numbers_pinned": 1.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 0,
+   "unpinned": [],
+   "error": null,
+   "throttled_retries": 0,
+   "answer": {
+    "feeder_decision_changes": null,
+    "feeder_variant": null,
+    "policy_sha256": null,
+    "counterfactual": null,
+    "error": "Scoring tools are unavailable; the sensitivity analysis cannot be performed."
+   },
+   "tokens": {
+    "input": 405,
+    "output": 266,
+    "calls": 1,
+    "usd_estimate": 0.00347
+   }
+  },
+  {
+   "qid": "sensitivity-fuel_load:up",
+   "scenario": "sensitivity",
+   "arm": "bare-model",
+   "repeat": 0,
+   "metrics": {
+    "correct": 0.0,
+    "provenance_ok": 0.0,
+    "numbers_pinned": 1.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 0,
+   "unpinned": [],
+   "error": null,
+   "throttled_retries": 0,
+   "answer": {
+    "error": "Unable to determine: scoring tools are unavailable.",
+    "policy_sha256": null,
+    "counterfactual": null
+   },
+   "tokens": {
+    "input": 404,
+    "output": 253,
+    "calls": 1,
+    "usd_estimate": 0.00334
+   }
+  },
+  {
+   "qid": "sensitivity-moisture:down",
+   "scenario": "sensitivity",
+   "arm": "bare-model",
+   "repeat": 0,
+   "metrics": {
+    "correct": 0.0,
+    "provenance_ok": 0.0,
+    "numbers_pinned": 1.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 0,
+   "unpinned": [],
+   "error": null,
+   "throttled_retries": 0,
+   "answer": {
+    "feeder_decision_changes": null,
+    "feeder_variant": null,
+    "policy_sha256": null,
+    "counterfactual": null,
+    "error": "Unable to determine: scoring tools are unavailable."
+   },
+   "tokens": {
+    "input": 405,
+    "output": 212,
+    "calls": 1,
+    "usd_estimate": 0.00293
+   }
+  },
+  {
+   "qid": "sensitivity-weather_danger:down",
+   "scenario": "sensitivity",
+   "arm": "bare-model",
+   "repeat": 0,
+   "metrics": {
+    "correct": 0.0,
+    "provenance_ok": 0.0,
+    "numbers_pinned": 1.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 0,
+   "unpinned": [],
+   "error": null,
+   "throttled_retries": 0,
+   "answer": {
+    "error": "Unable to determine; scoring tools are unavailable.",
+    "policy_sha256": null,
+    "counterfactual": false
+   },
+   "tokens": {
+    "input": 405,
+    "output": 294,
+    "calls": 1,
+    "usd_estimate": 0.00375
+   }
+  },
+  {
+   "qid": "sensitivity-wind:up",
+   "scenario": "sensitivity",
+   "arm": "bare-model",
+   "repeat": 0,
+   "metrics": {
+    "correct": 0.0,
+    "provenance_ok": 0.0,
+    "numbers_pinned": 1.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 0,
+   "unpinned": [],
+   "error": null,
+   "throttled_retries": 0,
+   "answer": {
+    "feeder_decision_changes": null,
+    "feeder_variant": null,
+    "policy_sha256": null,
+    "counterfactual": null,
+    "error": "Scoring tool unavailable; sensitivity cannot be determined."
+   },
+   "tokens": {
+    "input": 403,
+    "output": 310,
+    "calls": 1,
+    "usd_estimate": 0.00391
+   }
+  },
+  {
+   "qid": "deenergise-40",
+   "scenario": "deenergise",
+   "arm": "foundry-flat",
+   "repeat": 0,
+   "metrics": {
+    "correct": 1.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 0.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 53,
+   "unpinned": [
+    "1",
+    "5.4E+2"
+   ],
+   "error": null,
+   "throttled_retries": 0,
+   "answer": {
+    "feeder": "F12",
+    "customers": 540,
+    "critical_facilities": 1,
+    "policy_sha256": "26fd759b9fc3d9cbe1d252730b34111e289d7e67190aaa9497c361fb96de69ff",
+    "counterfactual": true
+   },
+   "tokens": {
+    "input": 19086,
+    "output": 1908,
+    "calls": 3,
+    "usd_estimate": 0.05725
+   }
+  },
+  {
+   "qid": "deenergise-50",
+   "scenario": "deenergise",
+   "arm": "foundry-flat",
+   "repeat": 0,
+   "metrics": {
+    "correct": 1.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 0.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 53,
+   "unpinned": [
+    "1",
+    "5.4E+2"
+   ],
+   "error": null,
+   "throttled_retries": 0,
+   "answer": {
+    "feeder": "F12",
+    "customers": 540,
+    "critical_facilities": 1,
+    "policy_sha256": "26fd759b9fc3d9cbe1d252730b34111e289d7e67190aaa9497c361fb96de69ff",
+    "counterfactual": true
+   },
+   "tokens": {
+    "input": 19086,
+    "output": 1840,
+    "calls": 3,
+    "usd_estimate": 0.05657
+   }
+  },
+  {
+   "qid": "deenergise-60",
+   "scenario": "deenergise",
+   "arm": "foundry-flat",
+   "repeat": 0,
+   "metrics": {
+    "correct": 1.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 0.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 53,
+   "unpinned": [
+    "0",
+    "469"
+   ],
+   "error": null,
+   "throttled_retries": 0,
+   "answer": {
+    "feeder": "F01",
+    "customers": 469,
+    "critical_facilities": 0,
+    "policy_sha256": "26fd759b9fc3d9cbe1d252730b34111e289d7e67190aaa9497c361fb96de69ff",
+    "counterfactual": true
+   },
+   "tokens": {
+    "input": 19078,
+    "output": 2017,
+    "calls": 3,
+    "usd_estimate": 0.05833
+   }
+  },
+  {
+   "qid": "deenergise-70",
+   "scenario": "deenergise",
+   "arm": "foundry-flat",
+   "repeat": 0,
+   "metrics": {
+    "correct": 1.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 0.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 53,
+   "unpinned": [
+    "0",
+    "469"
+   ],
+   "error": null,
+   "throttled_retries": 0,
+   "answer": {
+    "feeder": "F01",
+    "customers": 469,
+    "critical_facilities": 0,
+    "policy_sha256": "26fd759b9fc3d9cbe1d252730b34111e289d7e67190aaa9497c361fb96de69ff",
+    "counterfactual": true
+   },
+   "tokens": {
+    "input": 19103,
+    "output": 1929,
+    "calls": 3,
+    "usd_estimate": 0.0575
+   }
+  },
+  {
+   "qid": "deenergise-80",
+   "scenario": "deenergise",
+   "arm": "foundry-flat",
+   "repeat": 0,
+   "metrics": {
+    "correct": 1.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 0.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 53,
+   "unpinned": [
+    "0",
+    "469"
+   ],
+   "error": null,
+   "throttled_retries": 0,
+   "answer": {
+    "feeder": "F01",
+    "customers": 469,
+    "critical_facilities": 0,
+    "policy_sha256": "26fd759b9fc3d9cbe1d252730b34111e289d7e67190aaa9497c361fb96de69ff",
+    "counterfactual": true
+   },
+   "tokens": {
+    "input": 19088,
+    "output": 1943,
+    "calls": 3,
+    "usd_estimate": 0.05761
+   }
+  },
+  {
+   "qid": "exposure-40",
+   "scenario": "exposure",
+   "arm": "foundry-flat",
+   "repeat": 0,
+   "metrics": {
+    "correct": 1.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 0.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 4,
+   "unpinned": [
+    "13886",
+    "1E+1"
+   ],
+   "error": null,
+   "throttled_retries": 0,
+   "answer": {
+    "parcels": [
+     "P005",
+     "P007",
+     "P008",
+     "P009",
+     "P010",
+     "P011",
+     "P012",
+     "P014",
+     "P015",
+     "P016",
+     "P018",
+     "P021",
+     "P022",
+     "P023",
+     "P030",
+     "P035",
+     "P036",
+     "P039",
+     "P042"
+    ],
+    "customers": 13886,
+    "critical_facilities": 10,
+    "policy_sha256": "26fd759b9fc3d9cbe1d252730b34111e289d7e67190aaa9497c361fb96de69ff",
+    "counterfactual": false
+   },
+   "tokens": {
+    "input": 13746,
+    "output": 464,
+    "calls": 3,
+    "usd_estimate": 0.03213
+   }
+  },
+  {
+   "qid": "exposure-50",
+   "scenario": "exposure",
+   "arm": "foundry-flat",
+   "repeat": 0,
+   "metrics": {
+    "correct": 1.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 0.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 4,
+   "unpinned": [
+    "1.191E+4",
+    "8"
+   ],
+   "error": null,
+   "throttled_retries": 0,
+   "answer": {
+    "parcels": [
+     "P007",
+     "P008",
+     "P010",
+     "P012",
+     "P014",
+     "P015",
+     "P016",
+     "P018",
+     "P021",
+     "P022",
+     "P023",
+     "P030",
+     "P035",
+     "P036",
+     "P042"
+    ],
+    "customers": 11910,
+    "critical_facilities": 8,
+    "policy_sha256": "26fd759b9fc3d9cbe1d252730b34111e289d7e67190aaa9497c361fb96de69ff",
+    "counterfactual": false
+   },
+   "tokens": {
+    "input": 8498,
+    "output": 358,
+    "calls": 2,
+    "usd_estimate": 0.02058
+   }
+  },
+  {
+   "qid": "exposure-55",
+   "scenario": "exposure",
+   "arm": "foundry-flat",
+   "repeat": 0,
+   "metrics": {
+    "correct": 1.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 0.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 4,
+   "unpinned": [
+    "7",
+    "9948"
+   ],
+   "error": null,
+   "throttled_retries": 0,
+   "answer": {
+    "parcels": [
+     "P007",
+     "P008",
+     "P014",
+     "P015",
+     "P018",
+     "P023",
+     "P030",
+     "P035",
+     "P036",
+     "P042"
+    ],
+    "customers": 9948,
+    "critical_facilities": 7,
+    "policy_sha256": "26fd759b9fc3d9cbe1d252730b34111e289d7e67190aaa9497c361fb96de69ff",
+    "counterfactual": false
+   },
+   "tokens": {
+    "input": 12523,
+    "output": 350,
+    "calls": 3,
+    "usd_estimate": 0.02855
+   }
+  },
+  {
+   "qid": "exposure-60",
+   "scenario": "exposure",
+   "arm": "foundry-flat",
+   "repeat": 0,
+   "metrics": {
+    "correct": 1.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 0.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 4,
+   "unpinned": [
+    "5",
+    "6733"
+   ],
+   "error": null,
+   "throttled_retries": 0,
+   "answer": {
+    "parcels": [
+     "P014",
+     "P015",
+     "P018",
+     "P030",
+     "P035",
+     "P036",
+     "P042"
+    ],
+    "customers": 6733,
+    "critical_facilities": 5,
+    "policy_sha256": "26fd759b9fc3d9cbe1d252730b34111e289d7e67190aaa9497c361fb96de69ff",
+    "counterfactual": false
+   },
+   "tokens": {
+    "input": 7895,
+    "output": 270,
+    "calls": 2,
+    "usd_estimate": 0.01849
+   }
+  },
+  {
+   "qid": "exposure-70",
+   "scenario": "exposure",
+   "arm": "foundry-flat",
+   "repeat": 0,
+   "metrics": {
+    "correct": 1.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 0.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 4,
+   "unpinned": [
+    "1",
+    "2169"
+   ],
+   "error": null,
+   "throttled_retries": 0,
+   "answer": {
+    "parcels": [
+     "P042"
+    ],
+    "customers": 2169,
+    "critical_facilities": 1,
+    "policy_sha256": "26fd759b9fc3d9cbe1d252730b34111e289d7e67190aaa9497c361fb96de69ff",
+    "counterfactual": false
+   },
+   "tokens": {
+    "input": 8494,
+    "output": 203,
+    "calls": 2,
+    "usd_estimate": 0.01902
+   }
+  },
+  {
+   "qid": "mitigation-18000",
+   "scenario": "mitigation",
+   "arm": "foundry-flat",
+   "repeat": 0,
+   "metrics": {
+    "correct": 1.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 0.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 81,
+   "unpinned": [
+    "3662.27"
+   ],
+   "error": null,
+   "throttled_retries": 1,
+   "answer": {
+    "parcel": "P013",
+    "mitigation": "moisture_mulch",
+    "risk_reduction_per_1000usd": "3662.27",
+    "policy_sha256": "26fd759b9fc3d9cbe1d252730b34111e289d7e67190aaa9497c361fb96de69ff",
+    "counterfactual": true,
+    "scope": "Among scored parcels; other receipts are incomplete.",
+    "provenance": "P013 receipt inputs are measured. Exposure and mitigation details come from the asset, customer-group and mitigation tables."
+   },
+   "tokens": {
+    "input": 61432,
+    "output": 6180,
+    "calls": 7,
+    "usd_estimate": 0.18466
+   }
+  },
+  {
+   "qid": "mitigation-5000",
+   "scenario": "mitigation",
+   "arm": "foundry-flat",
+   "repeat": 0,
+   "metrics": {
+    "correct": 1.0,
+    "provenance_ok": 0.0,
+    "numbers_pinned": 1.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 5,
+   "unpinned": [],
+   "error": null,
+   "throttled_retries": 0,
+   "answer": {
+    "parcel": null,
+    "mitigation": null,
+    "risk_reduction_per_1000usd": null,
+    "policy_sha256": "26fd759b9fc3d9cbe1d252730b34111e289d7e67190aaa9497c361fb96de69ff",
+    "counterfactual": false
+   },
+   "tokens": {
+    "input": 8628,
+    "output": 210,
+    "calls": 2,
+    "usd_estimate": 0.01936
+   }
+  },
+  {
+   "qid": "mitigation-6000",
+   "scenario": "mitigation",
+   "arm": "foundry-flat",
+   "repeat": 0,
+   "metrics": {
+    "correct": 1.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 0.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 30,
+   "unpinned": [
+    "3246.1"
+   ],
+   "error": null,
+   "throttled_retries": 0,
+   "answer": {
+    "parcel": "P013",
+    "mitigation": "targeted_grazing",
+    "risk_reduction_per_1000usd": "3246.1",
+    "policy_sha256": "26fd759b9fc3d9cbe1d252730b34111e289d7e67190aaa9497c361fb96de69ff",
+    "counterfactual": true,
+    "provenance": "P013 receipt inputs were measured; the what-if scales dead fuel by 0.7. Exposure and cost are from the asset, customer-group and mitigation tables.",
+    "caveat": "Incomplete parcels could not be ranked."
+   },
+   "tokens": {
+    "input": 26398,
+    "output": 1585,
+    "calls": 4,
+    "usd_estimate": 0.06865
+   }
+  },
+  {
+   "qid": "mitigation-9000",
+   "scenario": "mitigation",
+   "arm": "foundry-flat",
+   "repeat": 0,
+   "metrics": {
+    "correct": 1.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 0.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 55,
+   "unpinned": [
+    "3662.2666666667"
+   ],
+   "error": null,
+   "throttled_retries": 0,
+   "answer": {
+    "parcel": "P013",
+    "mitigation": "moisture_mulch",
+    "risk_reduction_per_1000usd": "3662.2666666667",
+    "policy_sha256": "26fd759b9fc3d9cbe1d252730b34111e289d7e67190aaa9497c361fb96de69ff",
+    "counterfactual": true,
+    "provenance": "P013 receipt: moisture measured; the mitigation scales that input in the what-if. Exposure and cost are from the asset, customer-group and mitigation tables."
+   },
+   "tokens": {
+    "input": 32415,
+    "output": 2433,
+    "calls": 4,
+    "usd_estimate": 0.08916
+   }
+  },
+  {
+   "qid": "mitigation-None",
+   "scenario": "mitigation",
+   "arm": "foundry-flat",
+   "repeat": 0,
+   "metrics": {
+    "correct": 1.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 0.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 81,
+   "unpinned": [
+    "3662.2667"
+   ],
+   "error": null,
+   "throttled_retries": 0,
+   "answer": {
+    "parcel": "P013",
+    "mitigation": "moisture_mulch",
+    "risk_reduction_per_1000usd": "3662.2667",
+    "policy_sha256": "26fd759b9fc3d9cbe1d252730b34111e289d7e67190aaa9497c361fb96de69ff",
+    "counterfactual": true,
+    "provenance": "P013 receipt records moisture as measured; the mitigation effect is simulated. Exposure and cost are from the assets, customer_groups and mitigations tables.",
+    "scope": "Highest among scored parcels; incomplete parcels could not be ranked."
+   },
+   "tokens": {
+    "input": 42585,
+    "output": 3495,
+    "calls": 4,
+    "usd_estimate": 0.12012
+   }
+  },
+  {
+   "qid": "sensitivity-dead_fuel:up",
+   "scenario": "sensitivity",
+   "arm": "foundry-flat",
+   "repeat": 0,
+   "metrics": {
+    "correct": 1.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 1.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 79,
+   "unpinned": [],
+   "error": null,
+   "throttled_retries": 1,
+   "answer": {
+    "feeder_decision_changes": false,
+    "feeder_variant": "F01",
+    "policy_sha256": "99f2ebb6700149a423d7d219bee459e658dcddc8b00b07e89b3a8879fa8b90e8",
+    "counterfactual": true
+   },
+   "tokens": {
+    "input": 54187,
+    "output": 5719,
+    "calls": 7,
+    "usd_estimate": 0.16556
+   }
+  },
+  {
+   "qid": "sensitivity-fuel_load:up",
+   "scenario": "sensitivity",
+   "arm": "foundry-flat",
+   "repeat": 0,
+   "metrics": {
+    "correct": 1.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 1.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 79,
+   "unpinned": [],
+   "error": null,
+   "throttled_retries": 0,
+   "answer": {
+    "feeder_decision_changes": true,
+    "feeder_variant": "F12",
+    "policy_sha256": "d235ea5629a106ffda2cfd32710e40d91aba1b5b2fb6d6a053e7f8a713845e3a",
+    "counterfactual": true
+   },
+   "tokens": {
+    "input": 34870,
+    "output": 3037,
+    "calls": 4,
+    "usd_estimate": 0.10011
+   }
+  },
+  {
+   "qid": "sensitivity-moisture:down",
+   "scenario": "sensitivity",
+   "arm": "foundry-flat",
+   "repeat": 0,
+   "metrics": {
+    "correct": 1.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 1.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 81,
+   "unpinned": [],
+   "error": null,
+   "throttled_retries": 2,
+   "answer": {
+    "feeder_decision_changes": true,
+    "feeder_variant": "F12",
+    "policy_sha256": "68216f691b9a675c47697cb0eed30483d01a4b87c938d89a6f98b3d25344d5ac",
+    "counterfactual": true
+   },
+   "tokens": {
+    "input": 108811,
+    "output": 8306,
+    "calls": 14,
+    "usd_estimate": 0.30068
+   }
+  },
+  {
+   "qid": "sensitivity-weather_danger:down",
+   "scenario": "sensitivity",
+   "arm": "foundry-flat",
+   "repeat": 0,
+   "metrics": {
+    "correct": 1.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 1.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 79,
+   "unpinned": [],
+   "error": null,
+   "throttled_retries": 0,
+   "answer": {
+    "feeder_decision_changes": true,
+    "feeder_variant": "F12",
+    "policy_sha256": "3f3390fe5bdfdb58263fd87279ddc304696e89d45238e2d614e2e87f546baf14",
+    "counterfactual": true
+   },
+   "tokens": {
+    "input": 34679,
+    "output": 2954,
+    "calls": 4,
+    "usd_estimate": 0.0989
+   }
+  },
+  {
+   "qid": "sensitivity-wind:up",
+   "scenario": "sensitivity",
+   "arm": "foundry-flat",
+   "repeat": 0,
+   "metrics": {
+    "correct": 1.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 1.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 84,
+   "unpinned": [],
+   "error": null,
+   "throttled_retries": 0,
+   "answer": {
+    "feeder_decision_changes": false,
+    "feeder_variant": "F01",
+    "policy_sha256": "9240d9401f556fa23329b5dfa48802e43f996d5ed5701be127c99f3e5b5727d7",
+    "counterfactual": true
+   },
+   "tokens": {
+    "input": 41817,
+    "output": 2912,
+    "calls": 5,
+    "usd_estimate": 0.11275
+   }
+  },
+  {
+   "qid": "deenergise-40",
+   "scenario": "deenergise",
+   "arm": "foundry-graph",
+   "repeat": 0,
+   "metrics": {
+    "correct": 1.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 1.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 1,
+   "unpinned": [],
+   "error": null,
+   "throttled_retries": 0,
+   "answer": {
+    "feeder": "F12",
+    "customers": 540,
+    "critical_facilities": 1,
+    "needs_human_signoff": true,
+    "policy_sha256": "26fd759b9fc3d9cbe1d252730b34111e289d7e67190aaa9497c361fb96de69ff",
+    "counterfactual": true
+   },
+   "tokens": {
+    "input": 2764,
+    "output": 124,
+    "calls": 2,
+    "usd_estimate": 0.00677
+   }
+  },
+  {
+   "qid": "deenergise-50",
+   "scenario": "deenergise",
+   "arm": "foundry-graph",
+   "repeat": 0,
+   "metrics": {
+    "correct": 1.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 1.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 1,
+   "unpinned": [],
+   "error": null,
+   "throttled_retries": 0,
+   "answer": {
+    "feeder": "F12",
+    "customers": 540,
+    "critical_facilities": 1,
+    "policy_sha256": "26fd759b9fc3d9cbe1d252730b34111e289d7e67190aaa9497c361fb96de69ff",
+    "counterfactual": true,
+    "needs_human_signoff": true
+   },
+   "tokens": {
+    "input": 2764,
+    "output": 115,
+    "calls": 2,
+    "usd_estimate": 0.00668
+   }
+  },
+  {
+   "qid": "deenergise-60",
+   "scenario": "deenergise",
+   "arm": "foundry-graph",
+   "repeat": 0,
+   "metrics": {
+    "correct": 1.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 1.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 1,
+   "unpinned": [],
+   "error": null,
+   "throttled_retries": 0,
+   "answer": {
+    "feeder": "F01",
+    "customers": 469,
+    "critical_facilities": 0,
+    "policy_sha256": "26fd759b9fc3d9cbe1d252730b34111e289d7e67190aaa9497c361fb96de69ff",
+    "counterfactual": true
+   },
+   "tokens": {
+    "input": 2768,
+    "output": 89,
+    "calls": 2,
+    "usd_estimate": 0.00643
+   }
+  },
+  {
+   "qid": "deenergise-70",
+   "scenario": "deenergise",
+   "arm": "foundry-graph",
+   "repeat": 0,
+   "metrics": {
+    "correct": 1.0,
+    "provenance_ok": 0.0,
+    "numbers_pinned": 1.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 1,
+   "unpinned": [],
+   "error": null,
+   "throttled_retries": 0,
+   "answer": {
+    "feeder": "F01",
+    "customers": 469,
+    "critical_facilities": 0,
+    "policy_sha256": "26fd759b9c3d9cbe1d252730b34111e289d7e67190aaa9497c361fb96de69ff",
+    "counterfactual": true
+   },
+   "tokens": {
+    "input": 2768,
+    "output": 89,
+    "calls": 2,
+    "usd_estimate": 0.00643
+   }
+  },
+  {
+   "qid": "deenergise-80",
+   "scenario": "deenergise",
+   "arm": "foundry-graph",
+   "repeat": 0,
+   "metrics": {
+    "correct": 1.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 1.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 1,
+   "unpinned": [],
+   "error": null,
+   "throttled_retries": 0,
+   "answer": {
+    "feeder": "F01",
+    "customers": 469,
+    "critical_facilities": 0,
+    "policy_sha256": "26fd759b9fc3d9cbe1d252730b34111e289d7e67190aaa9497c361fb96de69ff",
+    "counterfactual": true
+   },
+   "tokens": {
+    "input": 2768,
+    "output": 89,
+    "calls": 2,
+    "usd_estimate": 0.00643
+   }
+  },
+  {
+   "qid": "exposure-40",
+   "scenario": "exposure",
+   "arm": "foundry-graph",
+   "repeat": 0,
+   "metrics": {
+    "correct": 1.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 1.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 1,
+   "unpinned": [],
+   "error": null,
+   "throttled_retries": 0,
+   "answer": {
+    "parcels": [
+     "P005",
+     "P007",
+     "P008",
+     "P009",
+     "P010",
+     "P011",
+     "P012",
+     "P014",
+     "P015",
+     "P016",
+     "P018",
+     "P021",
+     "P022",
+     "P023",
+     "P030",
+     "P035",
+     "P036",
+     "P039",
+     "P042"
+    ],
+    "customers": 13886,
+    "critical_facilities": 10,
+    "policy_sha256": "26fd759b9fc3d9cbe1d252730b34111e289d7e67190aaa9497c361fb96de69ff",
+    "counterfactual": false
+   },
+   "tokens": {
+    "input": 3685,
+    "output": 146,
+    "calls": 2,
+    "usd_estimate": 0.00883
+   }
+  },
+  {
+   "qid": "exposure-50",
+   "scenario": "exposure",
+   "arm": "foundry-graph",
+   "repeat": 0,
+   "metrics": {
+    "correct": 1.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 1.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 1,
+   "unpinned": [],
+   "error": null,
+   "throttled_retries": 0,
+   "answer": {
+    "parcels": [
+     "P007",
+     "P008",
+     "P010",
+     "P012",
+     "P014",
+     "P015",
+     "P016",
+     "P018",
+     "P021",
+     "P022",
+     "P023",
+     "P030",
+     "P035",
+     "P036",
+     "P042"
+    ],
+    "customers": 11910,
+    "critical_facilities": 8,
+    "policy_sha256": "26fd759b9fc3d9cbe1d252730b34111e289d7e67190aaa9497c361fb96de69ff",
+    "counterfactual": false
+   },
+   "tokens": {
+    "input": 3454,
+    "output": 134,
+    "calls": 2,
+    "usd_estimate": 0.00825
+   }
+  },
+  {
+   "qid": "exposure-55",
+   "scenario": "exposure",
+   "arm": "foundry-graph",
+   "repeat": 0,
+   "metrics": {
+    "correct": 1.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 1.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 1,
+   "unpinned": [],
+   "error": null,
+   "throttled_retries": 0,
+   "answer": {
+    "parcels": [
+     "P007",
+     "P008",
+     "P014",
+     "P015",
+     "P018",
+     "P023",
+     "P030",
+     "P035",
+     "P036",
+     "P042"
+    ],
+    "customers": 9948,
+    "critical_facilities": 7,
+    "policy_sha256": "26fd759b9fc3d9cbe1d252730b34111e289d7e67190aaa9497c361fb96de69ff",
+    "counterfactual": false
+   },
+   "tokens": {
+    "input": 3178,
+    "output": 119,
+    "calls": 2,
+    "usd_estimate": 0.00755
+   }
+  },
+  {
+   "qid": "exposure-60",
+   "scenario": "exposure",
+   "arm": "foundry-graph",
+   "repeat": 0,
+   "metrics": {
+    "correct": 1.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 1.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 1,
+   "unpinned": [],
+   "error": null,
+   "throttled_retries": 0,
+   "answer": {
+    "parcels": [
+     "P014",
+     "P015",
+     "P018",
+     "P030",
+     "P035",
+     "P036",
+     "P042"
+    ],
+    "customers": 6733,
+    "critical_facilities": 5,
+    "policy_sha256": "26fd759b9fc3d9cbe1d252730b34111e289d7e67190aaa9497c361fb96de69ff",
+    "counterfactual": false
+   },
+   "tokens": {
+    "input": 3006,
+    "output": 124,
+    "calls": 2,
+    "usd_estimate": 0.00725
+   }
+  },
+  {
+   "qid": "exposure-70",
+   "scenario": "exposure",
+   "arm": "foundry-graph",
+   "repeat": 0,
+   "metrics": {
+    "correct": 1.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 1.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 1,
+   "unpinned": [],
+   "error": null,
+   "throttled_retries": 0,
+   "answer": {
+    "parcels": [
+     "P042"
+    ],
+    "customers": 2169,
+    "critical_facilities": 1,
+    "policy_sha256": "26fd759b9fc3d9cbe1d252730b34111e289d7e67190aaa9497c361fb96de69ff",
+    "counterfactual": false
+   },
+   "tokens": {
+    "input": 2660,
+    "output": 116,
+    "calls": 2,
+    "usd_estimate": 0.00648
+   }
+  },
+  {
+   "qid": "mitigation-18000",
+   "scenario": "mitigation",
+   "arm": "foundry-graph",
+   "repeat": 0,
+   "metrics": {
+    "correct": 1.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 1.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 1,
+   "unpinned": [],
+   "error": null,
+   "throttled_retries": 0,
+   "answer": {
+    "parcel": "P013",
+    "mitigation": "moisture_mulch",
+    "risk_reduction_per_1000usd": "3662.27",
+    "policy_sha256": "26fd759b9fc3d9cbe1d252730b34111e289d7e67190aaa9497c361fb96de69ff",
+    "counterfactual": true
+   },
+   "tokens": {
+    "input": 2795,
+    "output": 102,
+    "calls": 2,
+    "usd_estimate": 0.00661
+   }
+  },
+  {
+   "qid": "mitigation-5000",
+   "scenario": "mitigation",
+   "arm": "foundry-graph",
+   "repeat": 0,
+   "metrics": {
+    "correct": 1.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 1.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 1,
+   "unpinned": [],
+   "error": null,
+   "throttled_retries": 0,
+   "answer": {
+    "parcel": null,
+    "mitigation": null,
+    "risk_reduction_per_1000usd": null,
+    "policy_sha256": "26fd759b9fc3d9cbe1d252730b34111e289d7e67190aaa9497c361fb96de69ff",
+    "counterfactual": true
+   },
+   "tokens": {
+    "input": 2474,
+    "output": 94,
+    "calls": 2,
+    "usd_estimate": 0.00589
+   }
+  },
+  {
+   "qid": "mitigation-6000",
+   "scenario": "mitigation",
+   "arm": "foundry-graph",
+   "repeat": 0,
+   "metrics": {
+    "correct": 1.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 1.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 1,
+   "unpinned": [],
+   "error": null,
+   "throttled_retries": 0,
+   "answer": {
+    "parcel": "P013",
+    "mitigation": "targeted_grazing",
+    "risk_reduction_per_1000usd": "3246.10",
+    "policy_sha256": "26fd759b9fc3d9cbe1d252730b34111e289d7e67190aaa9497c361fb96de69ff",
+    "counterfactual": true
+   },
+   "tokens": {
+    "input": 2796,
+    "output": 102,
+    "calls": 2,
+    "usd_estimate": 0.00661
+   }
+  },
+  {
+   "qid": "mitigation-9000",
+   "scenario": "mitigation",
+   "arm": "foundry-graph",
+   "repeat": 0,
+   "metrics": {
+    "correct": 1.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 1.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 1,
+   "unpinned": [],
+   "error": null,
+   "throttled_retries": 0,
+   "answer": {
+    "parcel": "P013",
+    "mitigation": "moisture_mulch",
+    "risk_reduction_per_1000usd": "3662.27",
+    "policy_sha256": "26fd759b9fc3d9cbe1d252730b34111e289d7e67190aaa9497c361fb96de69ff",
+    "counterfactual": true
+   },
+   "tokens": {
+    "input": 2796,
+    "output": 102,
+    "calls": 2,
+    "usd_estimate": 0.00661
+   }
+  },
+  {
+   "qid": "mitigation-None",
+   "scenario": "mitigation",
+   "arm": "foundry-graph",
+   "repeat": 0,
+   "metrics": {
+    "correct": 1.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 1.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 1,
+   "unpinned": [],
+   "error": null,
+   "throttled_retries": 0,
+   "answer": {
+    "parcel": "P013",
+    "mitigation": "moisture_mulch",
+    "risk_reduction_per_1000usd": "3662.27",
+    "policy_sha256": "26fd759b9fc3d9cbe1d252730b34111e289d7e67190aaa9497c361fb96de69ff",
+    "counterfactual": true
+   },
+   "tokens": {
+    "input": 2780,
+    "output": 101,
+    "calls": 2,
+    "usd_estimate": 0.00657
+   }
+  },
+  {
+   "qid": "sensitivity-dead_fuel:up",
+   "scenario": "sensitivity",
+   "arm": "foundry-graph",
+   "repeat": 0,
+   "metrics": {
+    "correct": 1.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 1.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 1,
+   "unpinned": [],
+   "error": null,
+   "throttled_retries": 0,
+   "answer": {
+    "feeder_decision_changes": false,
+    "feeder_variant": "F01",
+    "policy_sha256": "99f2ebb6700149a423d7d219bee459e658dcddc8b00b07e89b3a8879fa8b90e8",
+    "counterfactual": true
+   },
+   "tokens": {
+    "input": 2632,
+    "output": 105,
+    "calls": 2,
+    "usd_estimate": 0.00631
+   }
+  },
+  {
+   "qid": "sensitivity-fuel_load:up",
+   "scenario": "sensitivity",
+   "arm": "foundry-graph",
+   "repeat": 0,
+   "metrics": {
+    "correct": 1.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 1.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 1,
+   "unpinned": [],
+   "error": null,
+   "throttled_retries": 0,
+   "answer": {
+    "feeder_decision_changes": true,
+    "feeder_variant": "F12",
+    "policy_sha256": "d235ea5629a106ffda2cfd32710e40d91aba1b5b2fb6d6a053e7f8a713845e3a",
+    "counterfactual": true
+   },
+   "tokens": {
+    "input": 2629,
+    "output": 106,
+    "calls": 2,
+    "usd_estimate": 0.00632
+   }
+  },
+  {
+   "qid": "sensitivity-moisture:down",
+   "scenario": "sensitivity",
+   "arm": "foundry-graph",
+   "repeat": 0,
+   "metrics": {
+    "correct": 1.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 1.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 1,
+   "unpinned": [],
+   "error": null,
+   "throttled_retries": 0,
+   "answer": {
+    "feeder_decision_changes": true,
+    "feeder_variant": "F12",
+    "policy_sha256": "68216f691b9a675c47697cb0eed30483d01a4b87c938d89a6f98b3d25344d5ac",
+    "counterfactual": true
+   },
+   "tokens": {
+    "input": 2631,
+    "output": 105,
+    "calls": 2,
+    "usd_estimate": 0.00631
+   }
+  },
+  {
+   "qid": "sensitivity-weather_danger:down",
+   "scenario": "sensitivity",
+   "arm": "foundry-graph",
+   "repeat": 0,
+   "metrics": {
+    "correct": 1.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 1.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 1,
+   "unpinned": [],
+   "error": null,
+   "throttled_retries": 0,
+   "answer": {
+    "feeder_decision_changes": true,
+    "feeder_variant": "F12",
+    "policy_sha256": "3f3390fe5bdfdb58263fd87279ddc304696e89d45238e2d614e2e87f546baf14",
+    "counterfactual": true
+   },
+   "tokens": {
+    "input": 2630,
+    "output": 103,
+    "calls": 2,
+    "usd_estimate": 0.00629
+   }
+  },
+  {
+   "qid": "sensitivity-wind:up",
+   "scenario": "sensitivity",
+   "arm": "foundry-graph",
+   "repeat": 0,
+   "metrics": {
+    "correct": 1.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 1.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 1,
+   "unpinned": [],
+   "error": null,
+   "throttled_retries": 0,
+   "answer": {
+    "feeder_decision_changes": false,
+    "feeder_variant": "F01",
+    "policy_sha256": "9240d9401f556fa23329b5dfa48802e43f996d5ed5701be127c99f3e5b5727d7",
+    "counterfactual": true
+   },
+   "tokens": {
+    "input": 2623,
+    "output": 102,
+    "calls": 2,
+    "usd_estimate": 0.00627
+   }
+  }
+ ],
+ "receipts_check": {
+  "n": 20,
+  "blocked": 0,
+  "errors": 0,
+  "rows": [
+   {
+    "parcel": "P001",
+    "blocked": false,
+    "violations": [],
+    "tool_calls": 1,
+    "error": null
+   },
+   {
+    "parcel": "P002",
+    "blocked": false,
+    "violations": [],
+    "tool_calls": 1,
+    "error": null
+   },
+   {
+    "parcel": "P003",
+    "blocked": false,
+    "violations": [],
+    "tool_calls": 1,
+    "error": null
+   },
+   {
+    "parcel": "P004",
+    "blocked": false,
+    "violations": [],
+    "tool_calls": 1,
+    "error": null
+   },
+   {
+    "parcel": "P005",
+    "blocked": false,
+    "violations": [],
+    "tool_calls": 1,
+    "error": null
+   },
+   {
+    "parcel": "P006",
+    "blocked": false,
+    "violations": [],
+    "tool_calls": 1,
+    "error": null
+   },
+   {
+    "parcel": "P007",
+    "blocked": false,
+    "violations": [],
+    "tool_calls": 1,
+    "error": null
+   },
+   {
+    "parcel": "P008",
+    "blocked": false,
+    "violations": [],
+    "tool_calls": 1,
+    "error": null
+   },
+   {
+    "parcel": "P009",
+    "blocked": false,
+    "violations": [],
+    "tool_calls": 1,
+    "error": null
+   },
+   {
+    "parcel": "P010",
+    "blocked": false,
+    "violations": [],
+    "tool_calls": 1,
+    "error": null
+   },
+   {
+    "parcel": "P011",
+    "blocked": false,
+    "violations": [],
+    "tool_calls": 1,
+    "error": null
+   },
+   {
+    "parcel": "P012",
+    "blocked": false,
+    "violations": [],
+    "tool_calls": 1,
+    "error": null
+   },
+   {
+    "parcel": "P013",
+    "blocked": false,
+    "violations": [],
+    "tool_calls": 1,
+    "error": null
+   },
+   {
+    "parcel": "P014",
+    "blocked": false,
+    "violations": [],
+    "tool_calls": 1,
+    "error": null
+   },
+   {
+    "parcel": "P015",
+    "blocked": false,
+    "violations": [],
+    "tool_calls": 1,
+    "error": null
+   },
+   {
+    "parcel": "P016",
+    "blocked": false,
+    "violations": [],
+    "tool_calls": 1,
+    "error": null
+   },
+   {
+    "parcel": "P017",
+    "blocked": false,
+    "violations": [],
+    "tool_calls": 1,
+    "error": null
+   },
+   {
+    "parcel": "P018",
+    "blocked": false,
+    "violations": [],
+    "tool_calls": 1,
+    "error": null
+   },
+   {
+    "parcel": "P019",
+    "blocked": false,
+    "violations": [],
+    "tool_calls": 1,
+    "error": null
+   },
+   {
+    "parcel": "P020",
+    "blocked": false,
+    "violations": [],
+    "tool_calls": 1,
+    "error": null
+   }
+  ]
+ }
+}

@@ -1,0 +1,450 @@
+{
+  "agent": "pinned-score-agent-fabric",
+  "model": "scoring-agent-model2",
+  "mode": "fabric-iq (ontology item id in data_agent_id field)",
+  "agent_version": {
+    "name": "pinned-score-agent-fabric",
+    "version": "3",
+    "readback_tools": [
+      {
+        "type": "mcp",
+        "server_label": "pinnedscore_ontology",
+        "server_url": "[target link omitted]",
+        "require_approval": "never",
+        "project_connection_id": "pinnedscore-fabric-iq-ontology"
+      }
+    ],
+    "verified_wiring": {
+      "agent_name": "pinned-score-agent-fabric",
+      "agent_version": "3",
+      "server_label": "pinnedscore_ontology",
+      "server_url": "[target link omitted]",
+      "project_connection_id": "pinnedscore-fabric-iq-ontology",
+      "require_approval": "never",
+      "auth_type": "UserEntraToken"
+    }
+  },
+  "ground_truth_summary": {
+    "verified_questions": 5,
+    "matched_questions": 5,
+    "all_matched": true
+  },
+  "questions": [
+    {
+      "question": "Which parcels have homes but no passable access road?",
+      "answer": "The parcels with homes but no passable access road are:\n\n1. P001  \n2. P004  \n3. P016  \n4. P020  \n5. P024  \n6. P028  \n7. P031  \n8. P032  \n9. P033  \n10. P036  \n11. P037  \n12. P038  \n13. P040  \n14. P050  \n15. P052  \n16. P053  \n17. P055  \n18. P056  \n19. P059  \n20. P060  \n21. P070  \n22. P075  \n23. P080  \n24. P089  \n25. P090  \n26. P094  \n27. P095  \n28. P102  \n29. P111  \n30. P114  \n31. P116  \n32. P120  \n33. P121  \n34. P123  \n35. P130  \n36. P132  \n37. P137  \n38. P139  \n39. P143  \n40. P147  \n\nThese parcels meet the criteria of having at least one home and no passable access road .",
+      "usage": {
+        "input_tokens": 2082,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 316,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 2398
+      },
+      "status": "completed",
+      "error": null,
+      "ground_truth": {
+        "qid": "C1",
+        "expected_parcels": [
+          "P001",
+          "P004",
+          "P016",
+          "P020",
+          "P024",
+          "P028",
+          "P031",
+          "P032",
+          "P033",
+          "P036",
+          "P037",
+          "P038",
+          "P040",
+          "P050",
+          "P052",
+          "P053",
+          "P055",
+          "P056",
+          "P059",
+          "P060",
+          "P070",
+          "P075",
+          "P080",
+          "P089",
+          "P090",
+          "P094",
+          "P095",
+          "P102",
+          "P111",
+          "P114",
+          "P116",
+          "P120",
+          "P121",
+          "P123",
+          "P130",
+          "P132",
+          "P137",
+          "P139",
+          "P143",
+          "P147"
+        ],
+        "expected_value": null,
+        "actual_parcels": [
+          "P001",
+          "P004",
+          "P016",
+          "P020",
+          "P024",
+          "P028",
+          "P031",
+          "P032",
+          "P033",
+          "P036",
+          "P037",
+          "P038",
+          "P040",
+          "P050",
+          "P052",
+          "P053",
+          "P055",
+          "P056",
+          "P059",
+          "P060",
+          "P070",
+          "P075",
+          "P080",
+          "P089",
+          "P090",
+          "P094",
+          "P095",
+          "P102",
+          "P111",
+          "P114",
+          "P116",
+          "P120",
+          "P121",
+          "P123",
+          "P130",
+          "P132",
+          "P137",
+          "P139",
+          "P143",
+          "P147"
+        ],
+        "actual_value": null,
+        "matched": true
+      },
+      "mcp_calls": [
+        {
+          "type": "mcp_call",
+          "name": "ask_ontology",
+          "server_label": "pinnedscore_ontology",
+          "arguments": "{\"request\":\"Identify parcels with homes by checking HomeGroup.houses > 0 grouped by HomeGroup.parcel_id across all rows. Then determine parcels without any passable access road by confirming NOT EXISTS RoadSegment for parcel_id with passable = true. Return parcel_ids in order without truncation.\"}",
+          "error": null,
+          "status": "completed",
+          "output": {
+            "response": "Using your criteria \u2014 at least one `HomeGroup` row with `houses > 0` per `parcel_id`, and no `RoadSegment` with `passable = true` for that `parcel_id` \u2014 the matching parcel IDs are:\n\n1. P001\n2. P004\n3. P016\n4. P020\n5. P024\n6. P028\n7. P031\n8. P032\n9. P033\n10. P036\n11. P037\n12. P038\n13. P040\n14. P050\n15. P052\n16. P053\n17. P055\n18. P056\n19. P059\n20. P060\n21. P070\n22. P075\n23. P080\n24. P089\n25. P090\n26. P094\n27. P095\n28. P102\n29. P111\n30. P114\n31. P116\n32. P120\n33. P121\n34. P123\n35. P130\n36. P132\n37. P137\n38. P139\n39. P143\n40. P147\n",
+            "raiPostToolAnnotations": [
+              {
+                "error": {
+                  "errorDetails": "Error during output moderation for tool: ask_ontology for general harms."
+                }
+              }
+            ]
+          },
+          "original_output_sha256": "4262318dadc729fb354297d443e959f22e76067cdcf25a4974fe9ef73ecf0df1"
+        }
+      ]
+    },
+    {
+      "question": "Which high-risk parcels (band high or extreme) have no water source on a passable access road?",
+      "answer": "The following high-risk parcels (band 'high' or 'extreme') have no water source on a passable access road:\n\n- P085\n- P137\n- P069\n- P015\n- P102\n- P066\n- P111\n- P089\n- P106\n- P096\n- P088\n- P065\n- P008\n- P116\n- P023\n- P042\n- P014\n- P030\n- P035\n- P098\n- P073\n- P012\n- P010\n- P016\n- P036 .",
+      "usage": {
+        "input_tokens": 1904,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 1152
+        },
+        "output_tokens": 218,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 2122
+      },
+      "status": "completed",
+      "error": null,
+      "ground_truth": {
+        "qid": "C2",
+        "expected_parcels": [
+          "P008",
+          "P010",
+          "P012",
+          "P014",
+          "P015",
+          "P016",
+          "P023",
+          "P030",
+          "P035",
+          "P036",
+          "P042",
+          "P065",
+          "P066",
+          "P069",
+          "P073",
+          "P085",
+          "P088",
+          "P089",
+          "P096",
+          "P098",
+          "P102",
+          "P106",
+          "P111",
+          "P116",
+          "P137"
+        ],
+        "expected_value": null,
+        "actual_parcels": [
+          "P008",
+          "P010",
+          "P012",
+          "P014",
+          "P015",
+          "P016",
+          "P023",
+          "P030",
+          "P035",
+          "P036",
+          "P042",
+          "P065",
+          "P066",
+          "P069",
+          "P073",
+          "P085",
+          "P088",
+          "P089",
+          "P096",
+          "P098",
+          "P102",
+          "P106",
+          "P111",
+          "P116",
+          "P137"
+        ],
+        "actual_value": null,
+        "matched": true
+      },
+      "mcp_calls": [
+        {
+          "type": "mcp_call",
+          "name": "ask_ontology",
+          "server_label": "pinnedscore_ontology",
+          "arguments": "{\"request\":\"Find all parcels in table dbo.parcel where band is 'high' or 'extreme' and there is no water source on a passable access road. Specifically, ensure no RoadSegment exists for parcel_id with passable = true joined to dbo.water_source on road_id. Return all matching parcel_ids without truncation.\"}",
+          "error": null,
+          "status": "completed",
+          "output": {
+            "response": "Using the condition \u201c`band` is `high` or `extreme`, and there is no `RoadSegment` with `passable = true` that joins to `water_source` on `road_id`,\u201d I found **25** matching parcels:\n\n- P085\n- P137\n- P069\n- P015\n- P102\n- P066\n- P111\n- P089\n- P106\n- P096\n- P088\n- P065\n- P008\n- P116\n- P023\n- P042\n- P014\n- P030\n- P035\n- P098\n- P073\n- P012\n- P010\n- P016\n- P036\n\n\n",
+            "raiPostToolAnnotations": [
+              {
+                "error": {
+                  "errorDetails": "Error during output moderation for tool: ask_ontology for general harms."
+                }
+              }
+            ]
+          },
+          "original_output_sha256": "c11a8b4b9f5ced207a7698d9153f7fec98e9df73def85739d78c74cd97f08025"
+        }
+      ]
+    },
+    {
+      "question": "Which crew types cannot reach parcel P003? Put the crew types in 'parcels'.",
+      "answer": "The crew types that cannot reach parcel P003 are:\n\n- dozer\n- engine .",
+      "usage": {
+        "input_tokens": 1586,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 1152
+        },
+        "output_tokens": 75,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 1661
+      },
+      "status": "completed",
+      "error": null,
+      "ground_truth": {
+        "qid": "C3",
+        "expected_parcels": [
+          "dozer",
+          "engine"
+        ],
+        "expected_value": null,
+        "actual_parcels": [
+          "dozer",
+          "engine"
+        ],
+        "actual_value": null,
+        "matched": true
+      },
+      "mcp_calls": [
+        {
+          "type": "mcp_call",
+          "name": "ask_ontology",
+          "server_label": "pinnedscore_ontology",
+          "arguments": "{\"request\":\"Find all crew types from CrewAccess where parcel_id = 'P003' and reachable = false. Return the list of crew types ordered alphabetically.\"}",
+          "error": null,
+          "status": "completed",
+          "output": {
+            "response": "The crew types are:\n\n- dozer\n- engine\n",
+            "raiPostToolAnnotations": [
+              {
+                "error": {
+                  "errorDetails": "Error during output moderation for tool: ask_ontology for general harms."
+                }
+              }
+            ]
+          },
+          "original_output_sha256": "8bbc362dfe8b81a60b069cc9a2c99e69f18b59976c6e4d72dcf11743a70814ac"
+        }
+      ]
+    },
+    {
+      "question": "Which single parcel has the most homes among parcels that have a water source on a passable access road? Give its id in 'parcels' and the number of homes in 'value'.",
+      "answer": "The single parcel with the most homes among parcels that have a water source on a passable access road is:\n\n- **parcels**: `P057`\n- **value**: `59`\u30105:014782be\u2020pinnedscore-fabric-iq-ontology\u3011.",
+      "usage": {
+        "input_tokens": 1740,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 1152
+        },
+        "output_tokens": 168,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 1908
+      },
+      "status": "completed",
+      "error": null,
+      "ground_truth": {
+        "qid": "C4",
+        "expected_parcels": [
+          "P057"
+        ],
+        "expected_value": 59,
+        "actual_parcels": [
+          "P057"
+        ],
+        "actual_value": 59,
+        "matched": true
+      },
+      "mcp_calls": [
+        {
+          "type": "mcp_call",
+          "name": "ask_ontology",
+          "server_label": "pinnedscore_ontology",
+          "arguments": "{\"request\":\"Find the parcel_id and total number of homes for the single parcel with the most homes among parcels that have a water source on a passable access road. Check parcels for which EXISTS a RoadSegment with parcel_id = Parcel.parcel_id and passable = true joined to a WaterSource on road_id, then SUM(HomeGroup.houses) for those parcels grouped by parcel_id, and return the top result ordered by home count descending.\"}",
+          "error": null,
+          "status": "completed",
+          "output": {
+            "response": "Using the `EXISTS` condition for a parcel with at least one **passable** road segment linked to a water source on `road_id`, the top parcel is:\n\n- **parcel_id:** `P057`\n- **total_homes:** `59`\n",
+            "raiPostToolAnnotations": [
+              {
+                "error": {
+                  "errorDetails": "Error during output moderation for tool: ask_ontology for general harms."
+                }
+              }
+            ]
+          },
+          "original_output_sha256": "61f5472bc7e2ea9ed2c766e458b25ca92ca416125096060e142c0e019891e9ad"
+        }
+      ]
+    },
+    {
+      "question": "Which parcels have a critical facility but no passable access road that an engine can use?",
+      "answer": "The parcels with a critical facility and no passable access road that an engine can use are:\n\n- P020\n- P031\n- P052\n- P056\n- P060\n- P070\n- P080\n- P087\n- P090\n- P091\n- P102\n- P113\n- P121\n- P139\n- P149\n\n .",
+      "usage": {
+        "input_tokens": 1742,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 1152
+        },
+        "output_tokens": 171,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 1913
+      },
+      "status": "completed",
+      "error": null,
+      "ground_truth": {
+        "qid": "C5",
+        "expected_parcels": [
+          "P020",
+          "P031",
+          "P052",
+          "P056",
+          "P060",
+          "P070",
+          "P080",
+          "P087",
+          "P090",
+          "P091",
+          "P102",
+          "P113",
+          "P121",
+          "P139",
+          "P149"
+        ],
+        "expected_value": null,
+        "actual_parcels": [
+          "P020",
+          "P031",
+          "P052",
+          "P056",
+          "P060",
+          "P070",
+          "P080",
+          "P087",
+          "P090",
+          "P091",
+          "P102",
+          "P113",
+          "P121",
+          "P139",
+          "P149"
+        ],
+        "actual_value": null,
+        "matched": true
+      },
+      "mcp_calls": [
+        {
+          "type": "mcp_call",
+          "name": "ask_ontology",
+          "server_label": "pinnedscore_ontology",
+          "arguments": "{\"request\":\"Find parcels with a critical facility by checking HomeGroup.has_critical_facility = true and verify there is no passable access road an engine can use by checking CrewAccess where crew_type = 'engine' and reachable = false. Provide a list of parcel_id values for matching parcels and order the results by parcel_id.\"}",
+          "error": null,
+          "status": "completed",
+          "output": {
+            "response": "I found **15** matching parcels, ordered by `parcel_id`:\n\n- P020\n- P031\n- P052\n- P056\n- P060\n- P070\n- P080\n- P087\n- P090\n- P091\n- P102\n- P113\n- P121\n- P139\n- P149\n",
+            "raiPostToolAnnotations": [
+              {
+                "error": {
+                  "errorDetails": "Error during output moderation for tool: ask_ontology for general harms."
+                }
+              }
+            ]
+          },
+          "original_output_sha256": "870d373ab8ff95271f94ea68886ffd5fdaf9c8b736954d0e4e39782e758bd697"
+        }
+      ]
+    }
+  ],
+  "_provenance": {
+    "original_file": "fabric-agent-smoke.json",
+    "original_sha256": "0040275a558c7a6f2f0746bf717f1ba0b78b4feb6dc056da8b8b8ae77a3ccc1c",
+    "transformation": "Allowlisted projection; private target context omitted."
+  }
+}

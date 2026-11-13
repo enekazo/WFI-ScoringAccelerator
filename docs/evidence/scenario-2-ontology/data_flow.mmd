@@ -1,0 +1,17 @@
+flowchart LR
+    subgraph Fabric["Microsoft Fabric (one governed source, workspace PinnedScore)"]
+        L["Lakehouse pinned_scoring_lh<br/>raw / silver / gold_receipts<br/>+ chain tables: parcel, road_segment,<br/>home_group, water_source, crew_access"]
+        O["Ontology item (preview)<br/>5 entities, 4 relationships<br/>definition read back only"]
+        L -. "bound to" .-> O
+    end
+    SQL["SQL analytics endpoint<br/>Entra auth, read-only"]
+    L --> SQL
+    subgraph Foundry["Microsoft Foundry Agent Service"]
+        A["Versioned agent<br/>pinned-score-agent"]
+        T["Read-only tools<br/>get_receipt, list_receipts,<br/>chain_for_parcel, find_parcels"]
+        A --> T
+    end
+    SQL --> T
+    V["Verifier<br/>every number must match<br/>a hash-checked receipt"]
+    A --> V --> U["Answer for the planner<br/>human approves any action"]
+    C["Controls: cost meter, budget cap,<br/>kill switch, no API keys"] -.-> Foundry

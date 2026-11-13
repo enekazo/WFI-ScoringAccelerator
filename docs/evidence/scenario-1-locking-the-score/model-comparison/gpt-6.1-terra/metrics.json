@@ -1,0 +1,261 @@
+{
+ "dry_run": false,
+ "models": [
+  "gpt-6.1-terra"
+ ],
+ "repeats": 3,
+ "parcels": [
+  "P001",
+  "P002",
+  "P003",
+  "P004",
+  "P005",
+  "P006",
+  "P007",
+  "P008",
+  "P009",
+  "P010",
+  "P011",
+  "P012",
+  "P013",
+  "P014",
+  "P015",
+  "P016",
+  "P017",
+  "P018",
+  "P019",
+  "P020",
+  "P021",
+  "P022",
+  "P023",
+  "P024",
+  "P025",
+  "P026",
+  "P027",
+  "P028",
+  "P029",
+  "P030",
+  "P031",
+  "P032",
+  "P033",
+  "P034",
+  "P035",
+  "P036",
+  "P037",
+  "P038",
+  "P039",
+  "P040",
+  "P041",
+  "P042",
+  "P043",
+  "P044",
+  "P045",
+  "P046",
+  "P047",
+  "P048",
+  "P049",
+  "P050"
+ ],
+ "metrics": {
+  "gpt-6.1-terra|A": {
+   "score_error": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 20
+   },
+   "band_mismatch": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 50
+   },
+   "provenance_misstatement": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 50
+   },
+   "fault_detection": {
+    "mean": 0.9888888888888889,
+    "lo": 0.9666666666666667,
+    "hi": 1.0,
+    "n": 30
+   },
+   "false_alarm": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 20
+   },
+   "parse_failure": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 50
+   },
+   "verifier_block": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 50
+   },
+   "reproducibility": {
+    "mean": 1.0,
+    "lo": 1.0,
+    "hi": 1.0,
+    "n": 50
+   }
+  },
+  "gpt-6.1-terra|A+": {
+   "score_error": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 20
+   },
+   "band_mismatch": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 50
+   },
+   "provenance_misstatement": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 50
+   },
+   "fault_detection": {
+    "mean": 1.0,
+    "lo": 1.0,
+    "hi": 1.0,
+    "n": 30
+   },
+   "false_alarm": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 20
+   },
+   "parse_failure": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 50
+   },
+   "verifier_block": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 50
+   },
+   "reproducibility": {
+    "mean": 1.0,
+    "lo": 1.0,
+    "hi": 1.0,
+    "n": 50
+   }
+  },
+  "gpt-6.1-terra|B": {
+   "score_error": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 20
+   },
+   "band_mismatch": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 50
+   },
+   "provenance_misstatement": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 50
+   },
+   "fault_detection": {
+    "mean": 1.0,
+    "lo": 1.0,
+    "hi": 1.0,
+    "n": 30
+   },
+   "false_alarm": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 20
+   },
+   "parse_failure": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 50
+   },
+   "verifier_block": {
+    "mean": 0.16,
+    "lo": 0.1,
+    "hi": 0.2333333333333333,
+    "n": 50
+   },
+   "reproducibility": {
+    "mean": 1.0,
+    "lo": 1.0,
+    "hi": 1.0,
+    "n": 50
+   }
+  },
+  "gpt-6.1-terra|B(raw)": {
+   "score_error": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 20
+   },
+   "band_mismatch": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 50
+   },
+   "provenance_misstatement": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 50
+   },
+   "fault_detection": {
+    "mean": 1.0,
+    "lo": 1.0,
+    "hi": 1.0,
+    "n": 30
+   },
+   "false_alarm": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 20
+   },
+   "parse_failure": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 50
+   },
+   "verifier_block": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 50
+   },
+   "reproducibility": {
+    "mean": 1.0,
+    "lo": 1.0,
+    "hi": 1.0,
+    "n": 50
+   }
+  }
+ }
+}

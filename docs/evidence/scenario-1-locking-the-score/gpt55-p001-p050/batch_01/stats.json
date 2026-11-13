@@ -1,0 +1,64 @@
+{
+ "per_model_arm": {
+  "gpt-5.5": {
+   "A": {
+    "runs": 75,
+    "verifier_blocks": 0,
+    "errors": 0,
+    "errors_429": 0
+   },
+   "A+": {
+    "runs": 75,
+    "verifier_blocks": 0,
+    "errors": 0,
+    "errors_429": 0
+   },
+   "B": {
+    "runs": 75,
+    "verifier_blocks": 38,
+    "errors": 0,
+    "errors_429": 0
+   }
+  }
+ },
+ "model_429_retries": {
+  "gpt-5.5": 0
+ },
+ "tokens_in_out": {
+  "gpt-5.5": [
+   246525,
+   72074
+  ]
+ },
+ "est_cost_usd": 3.03,
+ "workers": 2,
+ "parcels": [
+  "P001",
+  "P002",
+  "P003",
+  "P004",
+  "P005",
+  "P006",
+  "P007",
+  "P008",
+  "P009",
+  "P010",
+  "P011",
+  "P012",
+  "P013",
+  "P014",
+  "P015",
+  "P016",
+  "P017",
+  "P018",
+  "P019",
+  "P020",
+  "P021",
+  "P022",
+  "P023",
+  "P024",
+  "P025"
+ ],
+ "seconds": 857,
+ "gold_source": "local"
+}

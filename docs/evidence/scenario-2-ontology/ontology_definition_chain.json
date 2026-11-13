@@ -1,0 +1,53 @@
+{
+  "relationships": [
+    "parcel_has_road",
+    "road_has_water",
+    "parcel_has_homes",
+    "parcel_has_crew_access"
+  ],
+  "entities": [
+    "Parcel",
+    "RoadSegment",
+    "HomeGroup",
+    "WaterSource",
+    "CrewAccess"
+  ],
+  "update": {
+    "skipped": "--readback; first apply returned HTTP 200, re-applying with new lineage tags returns 400 NotFound"
+  },
+  "get": {
+    "status": 200,
+    "parts": [
+      ".platform",
+      "database.tmdl",
+      "entities/CrewAccess.tmdl",
+      "entities/HomeGroup.tmdl",
+      "entities/Parcel.tmdl",
+      "entities/RoadSegment.tmdl",
+      "entities/WaterSource.tmdl",
+      "entityRelationships.tmdl",
+      "expressions.tmdl",
+      "model.tmdl",
+      "namespaces/default.tmdl",
+      "relationships.tmdl",
+      "tables/crew_access.tmdl",
+      "tables/home_group.tmdl",
+      "tables/parcel.tmdl",
+      "tables/road_segment.tmdl",
+      "tables/water_source.tmdl"
+    ],
+    "entities": [
+      "entities/CrewAccess.tmdl",
+      "entities/HomeGroup.tmdl",
+      "entities/Parcel.tmdl",
+      "entities/RoadSegment.tmdl",
+      "entities/WaterSource.tmdl"
+    ],
+    "relationship_labels_read_back": [
+      "Road Serves Parcel",
+      "Water On Road",
+      "Homes In Parcel",
+      "Crew Access To Parcel"
+    ]
+  }
+}

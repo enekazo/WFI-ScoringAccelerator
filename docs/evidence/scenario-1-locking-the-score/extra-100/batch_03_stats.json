@@ -1,0 +1,185 @@
+{
+ "per_model_arm": {
+  "gpt-4.1": {
+   "A": {
+    "runs": 75,
+    "verifier_blocks": 0,
+    "errors": 0,
+    "errors_429": 0
+   },
+   "A+": {
+    "runs": 75,
+    "verifier_blocks": 0,
+    "errors": 0,
+    "errors_429": 0
+   },
+   "B": {
+    "runs": 75,
+    "verifier_blocks": 61,
+    "errors": 0,
+    "errors_429": 0
+   }
+  },
+  "gpt-4.1-mini": {
+   "A": {
+    "runs": 75,
+    "verifier_blocks": 0,
+    "errors": 1,
+    "errors_429": 0
+   },
+   "A+": {
+    "runs": 75,
+    "verifier_blocks": 0,
+    "errors": 0,
+    "errors_429": 0
+   },
+   "B": {
+    "runs": 75,
+    "verifier_blocks": 15,
+    "errors": 5,
+    "errors_429": 5
+   }
+  },
+  "phi-4": {
+   "A": {
+    "runs": 75,
+    "verifier_blocks": 0,
+    "errors": 0,
+    "errors_429": 0
+   },
+   "A+": {
+    "runs": 75,
+    "verifier_blocks": 0,
+    "errors": 0,
+    "errors_429": 0
+   }
+  },
+  "gpt-6.1-sol": {
+   "A": {
+    "runs": 75,
+    "verifier_blocks": 0,
+    "errors": 1,
+    "errors_429": 0
+   },
+   "A+": {
+    "runs": 75,
+    "verifier_blocks": 0,
+    "errors": 0,
+    "errors_429": 0
+   },
+   "B": {
+    "runs": 75,
+    "verifier_blocks": 8,
+    "errors": 2,
+    "errors_429": 0
+   }
+  },
+  "gpt-6.1-terra": {
+   "A": {
+    "runs": 75,
+    "verifier_blocks": 0,
+    "errors": 1,
+    "errors_429": 0
+   },
+   "A+": {
+    "runs": 75,
+    "verifier_blocks": 0,
+    "errors": 0,
+    "errors_429": 0
+   },
+   "B": {
+    "runs": 75,
+    "verifier_blocks": 9,
+    "errors": 0,
+    "errors_429": 0
+   }
+  },
+  "grok-4.7": {
+   "A": {
+    "runs": 75,
+    "verifier_blocks": 0,
+    "errors": 1,
+    "errors_429": 0
+   },
+   "A+": {
+    "runs": 75,
+    "verifier_blocks": 0,
+    "errors": 0,
+    "errors_429": 0
+   },
+   "B": {
+    "runs": 75,
+    "verifier_blocks": 31,
+    "errors": 0,
+    "errors_429": 0
+   }
+  }
+ },
+ "model_429_retries": {
+  "gpt-4.1": 60,
+  "gpt-4.1-mini": 99,
+  "phi-4": 0,
+  "gpt-6.1-sol": 0,
+  "gpt-6.1-terra": 0,
+  "grok-4.7": 0
+ },
+ "tokens_in_out": {
+  "gpt-4.1": [
+   191241,
+   27947
+  ],
+  "gpt-4.1-mini": [
+   237995,
+   27415
+  ],
+  "phi-4": [
+   152673,
+   20849
+  ],
+  "gpt-6.1-sol": [
+   243752,
+   33959
+  ],
+  "gpt-6.1-terra": [
+   244057,
+   36255
+  ],
+  "grok-4.7": [
+   254721,
+   29340
+  ]
+ },
+ "est_cost_usd": 4.65,
+ "workers": 3,
+ "attempt": 1,
+ "parcels": [
+  "P101",
+  "P102",
+  "P103",
+  "P104",
+  "P105",
+  "P106",
+  "P107",
+  "P108",
+  "P109",
+  "P110",
+  "P111",
+  "P112",
+  "P113",
+  "P114",
+  "P115",
+  "P116",
+  "P117",
+  "P118",
+  "P119",
+  "P120",
+  "P121",
+  "P122",
+  "P123",
+  "P124",
+  "P125"
+ ],
+ "seconds": 1328,
+ "model_429_share": 0.1247,
+ "gold_source": "fabric"
+}

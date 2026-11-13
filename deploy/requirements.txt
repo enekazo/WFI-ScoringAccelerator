@@ -1,0 +1,4 @@
+-r ../cloud/tool_host/requirements.txt
+azure-ai-projects==2.10.0
+openai==3.16.1
+mssql-python==1.17.0

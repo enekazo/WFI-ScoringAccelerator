@@ -1,0 +1,26 @@
+{
+  "ownership_ledger_source_sha256": "1da56cccdabb4c6d3710f65998913800a1080084d04879b8f28ea8196583570f",
+  "predeployment_snapshot_source_sha256": "50824705310f0079722f2c6ad070825645d578ede70be6750848197423753a67",
+  "existing_components": [
+    {
+      "component": "Fabric workspace",
+      "originalCreationRecordedAt": "2026-11-11T17:48:08+00:00",
+      "origin": "created",
+      "interpretation": "Created by an earlier installer invocation; reused by the accepted 12 November run."
+    },
+    {
+      "component": "Lakehouse",
+      "originalCreationRecordedAt": "2026-11-11T17:48:37+00:00",
+      "origin": "created",
+      "interpretation": "Created by an earlier installer invocation; reused by the accepted 12 November run."
+    },
+    {
+      "component": "Ontology",
+      "originalCreationRecordedAt": "2026-11-11T18:08:42+00:00",
+      "origin": "created",
+      "interpretation": "Created by an earlier installer invocation; reused by the accepted 12 November run."
+    }
+  ],
+  "interpretation": "A full installation invocation from Step 1, not a deployment into an empty target.",
+  "console_evidence": "No saved console transcript was available. pytest and receipt-agent success are supported by completed Step 8 and its fail-on-nonzero implementation, not separate current-run logs."
+}

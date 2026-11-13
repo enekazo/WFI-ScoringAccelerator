@@ -1,0 +1,17 @@
+{
+  "create_ontology": {
+    "status": 202,
+    "body": "null",
+    "location": "https://wabi-us-central-b-primary-redirect.analysis.windows.net/v1/operations/00000000-0000-4000-8000-000000000020"
+  },
+  "create_via_items": {
+    "status": 202,
+    "body": "null",
+    "location": "https://wabi-us-central-b-primary-redirect.analysis.windows.net/v1/operations/00000000-0000-4000-8000-000000000027"
+  },
+  "list_ontologies": {
+    "status": 200,
+    "body": "{\"value\":[]}",
+    "location": null
+  }
+}

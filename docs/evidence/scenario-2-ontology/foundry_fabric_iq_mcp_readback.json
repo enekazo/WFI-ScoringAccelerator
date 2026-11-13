@@ -1,0 +1,40 @@
+{
+  "metadata": {},
+  "object": "agent.version",
+  "id": "pinned-score-agent-fabric:6",
+  "name": "pinned-score-agent-fabric",
+  "version": "6",
+  "description": "Fabric ontology MCP tool test; separate from pinned-score-agent.",
+  "created_at": 1794231568,
+  "definition": {
+    "kind": "prompt",
+    "model": "gpt-4.1",
+    "instructions": "You answer wildfire pinned-scoring chain questions (parcel, road, homes, water, crew access). Answer only from the ontology tool (ask_ontology) result; do not use prior knowledge. Read-only; never compute or change scores. If the tool fails, say so.",
+    "tools": [
+      {
+        "type": "mcp",
+        "server_label": "pinnedscore_ontology",
+        "server_url": "https://api.fabric.microsoft.com/v1/mcp/dataPlane/workspaces/00000000-0000-4000-8000-000000000019/items/00000000-0000-4000-8000-000000000002/ontologyEndpoint",
+        "require_approval": "never",
+        "project_connection_id": "pinnedscore-fabric-iq-ontology-v2"
+      }
+    ]
+  },
+  "draft": false,
+  "status": "active",
+  "instance_identity": {
+    "principal_id": "00000000-0000-4000-8000-000000000025",
+    "client_id": "00000000-0000-4000-8000-000000000025",
+    "status": "active"
+  },
+  "blueprint": {
+    "principal_id": "00000000-0000-4000-8000-000000000018",
+    "client_id": "00000000-0000-4000-8000-000000000022",
+    "status": "active"
+  },
+  "blueprint_reference": {
+    "type": "ManagedAgentIdentityBlueprint",
+    "blueprint_id": "pinned-score-agent-fabric-615de"
+  },
+  "agent_guid": "00000000-0000-4000-8000-000000000011"
+}

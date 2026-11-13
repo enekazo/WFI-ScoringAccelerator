@@ -1,0 +1,8 @@
+{
+  "endpoint": "https://model.example.invalid/",
+  "api_version": "2024-10-21",
+  "strong": "gpt-4.1",
+  "small": "gpt-4.1-mini",
+  "temperature": 0,
+  "max_retries": 4
+}

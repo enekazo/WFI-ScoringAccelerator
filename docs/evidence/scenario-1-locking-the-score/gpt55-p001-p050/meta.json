@@ -1,0 +1,24 @@
+{
+  "harness": "scripts/run_gpt55_p001_p050.py (run_experiment, same as run_extra_batches.py)",
+  "foundry_arms_json_touched": false,
+  "workers": 2,
+  "arms": [
+    "A",
+    "A+",
+    "B"
+  ],
+  "est_cost_usd": 6.18,
+  "repeats": 3,
+  "parcels": "P001-P050",
+  "price_usd_per_1M_in_out": [
+    5,
+    25
+  ],
+  "errors": 0,
+  "code_commit": "6a1c71dbf42ecc418eba1c74d65099b8e16c23dc",
+  "source": "local",
+  "rows": 450,
+  "verifier": "pinned_scoring verifier as of code_commit (arm B, receipts+verifier)",
+  "model": "gpt-5.5",
+  "prompts": "src/pinned_scoring/experiment/arms.py at code_commit"
+}

@@ -1,0 +1,17 @@
+{
+  "question": "Which crew types can reach parcel P003?",
+  "routes": [
+    {
+      "route": "fabric-mcp tools/list",
+      "url": "https://api.fabric.microsoft.com/v1/mcp/workspaces/00000000-0000-4000-8000-000000000019/dataagents/00000000-0000-4000-8000-000000000024/agent",
+      "status": 200,
+      "body": "{\"result\":{\"tools\":[{\"name\":\"DataAgent_pinned_scoring_data_agent\",\"description\":\"Answers wildfire-risk chain questions over the synthetic pinned-scoring ontology (parcels, roads, home groups, water sources, crew access).\",\"inputSchema\":{\"type\":\"object\",\"properties\":{\"userQuestion\":{\"type\":\"string\"}},\"required\":[\"userQuestion\"]},\"annotations\":{\"readOnlyHint\":true},\"execution\":{\"taskSupport\":\"optional\"}}]},\"id\":1,\"jsonrpc\":\"2.0\"}"
+    },
+    {
+      "route": "fabric-mcp tools/call",
+      "tool": "DataAgent_pinned_scoring_data_agent",
+      "status": 200,
+      "body": "{\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"For parcel P003, the only crew type that can reach it is:\\n\\n- hand_crew\"}],\"isError\":false},\"id\":2,\"jsonrpc\":\"2.0\"}"
+    }
+  ]
+}

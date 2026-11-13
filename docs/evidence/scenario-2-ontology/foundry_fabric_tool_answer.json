@@ -1,0 +1,27 @@
+{
+  "agent": "pinned-score-agent-fabric",
+  "endpoint": "https://foundry.example.invalid/api/projects/example-project",
+  "model": "gpt-4.1",
+  "auth": "DefaultAzureCredential (az user)",
+  "workspace_id": "00000000-0000-4000-8000-000000000019",
+  "data_agent_id": "00000000-0000-4000-8000-000000000024",
+  "connection": {
+    "status": 200,
+    "id": "/subscriptions/00000000-0000-4000-8000-000000000003/resourceGroups/example-resource-group/providers/Microsoft.CognitiveServices/accounts/example-foundry-account/projects/example-project/connections/pinnedscore-fabric-dataagent",
+    "error": null
+  },
+  "agent_version": {
+    "name": "pinned-score-agent-fabric",
+    "version": "1"
+  },
+  "questions": [
+    {
+      "question": "Which crew types can reach parcel P003?",
+      "error": "BadRequestError: Error code: 400 - {'error': {'message': 'Workspace ID and Artifact ID are required from connection details or additional_properties for Fabric operations. Find out more troubleshooting details here - https://aka.ms/foundryfabrictroubleshooting', 'type': 'invalid_request_error', 'param': None, 'code': 'tool_user_error', 'request_id': '5bfd97054180266008fbcd9f15269eda'}}"
+    },
+    {
+      "question": "Which parcels have the most homes AND a reachable water source?",
+      "error": "BadRequestError: Error code: 400 - {'error': {'message': 'Workspace ID and Artifact ID are required from connection details or additional_properties for Fabric operations. Find out more troubleshooting details here - https://aka.ms/foundryfabrictroubleshooting', 'type': 'invalid_request_error', 'param': None, 'code': 'tool_user_error', 'request_id': '601c7eae0178b3b455f4bd96fb52abbb'}}"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "update": {
+    "status": 200,
+    "body": ""
+  },
+  "get": {
+    "status": 200,
+    "parts": [
+      ".platform",
+      "database.tmdl",
+      "entities/GraphEdge.tmdl",
+      "entities/GraphNode.tmdl",
+      "entities/ParcelScore.tmdl",
+      "entityRelationships.tmdl",
+      "expressions.tmdl",
+      "model.tmdl",
+      "namespaces/default.tmdl",
+      "relationships.tmdl",
+      "tables/gold_receipts.tmdl",
+      "tables/graph_edges.tmdl",
+      "tables/graph_nodes.tmdl"
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "date": "2026-11-09",
+  "graph_model_id": "00000000-0000-4000-8000-000000000004",
+  "documented_query_api": "POST /v1/workspaces/{ws}/graphModels/{id}/executeQuery?beta=true body {\"query\": GQL} (https://learn.microsoft.com/fabric/graph/gql-query-api)",
+  "query_result": "HTTP 400 errorCode=GraphNotQueryable message='The graph is not yet ready for querying. Wait for the initial load to complete, or check the refresh status if you already triggered one.' (see fabric_graph_query.json)",
+  "job_instances_list": "GET /items/{id}/jobs/instances -> 200 {\"value\":[]} (no refresh ever ran)",
+  "refresh_attempt": "POST /items/{id}/jobs/instances?jobType=DefaultJob -> 400 InvalidJobType 'The requested job type is invalid'",
+  "documented_requirement": "Refresh is documented as a portal action: graph model > ... > Schedule > Refresh now (learn.microsoft.com/fabric/iq/ontology/old-experience/how-to-view-entity-type-details#refresh-the-graph-model). No REST job type for graph refresh found in Learn; none guessed further.",
+  "conclusion": "BLOCKED at graph refresh. Graph not queryable, so no GQL results, no C1-C5 via Fabric graph, no agent graph tool. Nothing claimed to work."
+}

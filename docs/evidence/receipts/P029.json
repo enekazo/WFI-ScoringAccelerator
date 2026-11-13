@@ -1,0 +1,39 @@
+{
+  "as_of": "2026-07-15T12:00:00+00:00",
+  "band": null,
+  "components": [
+    [
+      "dead_fuel",
+      "57",
+      "measured",
+      "8.55"
+    ],
+    [
+      "moisture",
+      "27.6",
+      "measured",
+      "8.86"
+    ],
+    [
+      "weather_danger",
+      "22.5",
+      "generated",
+      "5.29"
+    ],
+    [
+      "wind",
+      "44.8",
+      "measured",
+      "7.47"
+    ]
+  ],
+  "entity_id": "P029",
+  "input_sha256": "9885cd8b236427b1be2e99d2be3aa9f614ffeeb53cac16f769f94559be471eed",
+  "policy_sha256": "26fd759b9fc3d9cbe1d252730b34111e289d7e67190aaa9497c361fb96de69ff",
+  "reasons": [
+    "missing:fuel_load"
+  ],
+  "receipt_sha256": "afaaabdbc23458e80d02930dd9a84034fa5b12bfbf57ba9c3cd6eee37965f853",
+  "score": null,
+  "status": "incomplete"
+}

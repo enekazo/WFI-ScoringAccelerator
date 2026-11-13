@@ -1,0 +1,1141 @@
+{
+ "dry_run": false,
+ "models": [
+  "gpt-4.1",
+  "gpt-4.1-mini",
+  "phi-4",
+  "gpt-6.1-sol",
+  "gpt-6.1-terra",
+  "grok-4.7"
+ ],
+ "repeats": 3,
+ "parcels": [
+  "P051",
+  "P052",
+  "P053",
+  "P054",
+  "P055",
+  "P056",
+  "P057",
+  "P058",
+  "P059",
+  "P060",
+  "P061",
+  "P062",
+  "P063",
+  "P064",
+  "P065",
+  "P066",
+  "P067",
+  "P068",
+  "P069",
+  "P070",
+  "P071",
+  "P072",
+  "P073",
+  "P074",
+  "P075"
+ ],
+ "metrics": {
+  "gpt-4.1|A": {
+   "score_error": {
+    "mean": 27.48974358974359,
+    "lo": 10.897435897435896,
+    "hi": 46.94358974358974,
+    "n": 13
+   },
+   "band_mismatch": {
+    "mean": 0.22666666666666666,
+    "lo": 0.09333333333333332,
+    "hi": 0.36,
+    "n": 25
+   },
+   "provenance_misstatement": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 25
+   },
+   "fault_detection": {
+    "mean": 1.0,
+    "lo": 1.0,
+    "hi": 1.0,
+    "n": 12
+   },
+   "false_alarm": {
+    "mean": 0.23076923076923078,
+    "lo": 0.05128205128205128,
+    "hi": 0.43589743589743585,
+    "n": 13
+   },
+   "parse_failure": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 25
+   },
+   "verifier_block": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 25
+   },
+   "reproducibility": {
+    "mean": 0.76,
+    "lo": 0.6,
+    "hi": 0.92,
+    "n": 25
+   }
+  },
+  "gpt-4.1|A+": {
+   "score_error": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 13
+   },
+   "band_mismatch": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 25
+   },
+   "provenance_misstatement": {
+    "mean": 0.04,
+    "lo": 0.0,
+    "hi": 0.12,
+    "n": 25
+   },
+   "fault_detection": {
+    "mean": 1.0,
+    "lo": 1.0,
+    "hi": 1.0,
+    "n": 12
+   },
+   "false_alarm": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 13
+   },
+   "parse_failure": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 25
+   },
+   "verifier_block": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 25
+   },
+   "reproducibility": {
+    "mean": 1.0,
+    "lo": 1.0,
+    "hi": 1.0,
+    "n": 25
+   }
+  },
+  "gpt-4.1|B": {
+   "score_error": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 13
+   },
+   "band_mismatch": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 25
+   },
+   "provenance_misstatement": {
+    "mean": 0.013333333333333332,
+    "lo": 0.0,
+    "hi": 0.04,
+    "n": 25
+   },
+   "fault_detection": {
+    "mean": 0.9722222222222222,
+    "lo": 0.9166666666666666,
+    "hi": 1.0,
+    "n": 12
+   },
+   "false_alarm": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 13
+   },
+   "parse_failure": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 25
+   },
+   "verifier_block": {
+    "mean": 0.8,
+    "lo": 0.72,
+    "hi": 0.88,
+    "n": 25
+   },
+   "reproducibility": {
+    "mean": 1.0,
+    "lo": 1.0,
+    "hi": 1.0,
+    "n": 25
+   }
+  },
+  "gpt-4.1|B(raw)": {
+   "score_error": {
+    "mean": 36.94871794871795,
+    "lo": 30.605128205128207,
+    "hi": 43.32051282051282,
+    "n": 13
+   },
+   "band_mismatch": {
+    "mean": 0.5733333333333333,
+    "lo": 0.44,
+    "hi": 0.7066666666666667,
+    "n": 25
+   },
+   "provenance_misstatement": {
+    "mean": 0.013333333333333332,
+    "lo": 0.0,
+    "hi": 0.04,
+    "n": 25
+   },
+   "fault_detection": {
+    "mean": 0.2222222222222222,
+    "lo": 0.13888888888888887,
+    "hi": 0.3055555555555555,
+    "n": 12
+   },
+   "false_alarm": {
+    "mean": 0.07692307692307693,
+    "lo": 0.0,
+    "hi": 0.15384615384615385,
+    "n": 13
+   },
+   "parse_failure": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 25
+   },
+   "verifier_block": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 25
+   },
+   "reproducibility": {
+    "mean": 1.0,
+    "lo": 1.0,
+    "hi": 1.0,
+    "n": 25
+   }
+  },
+  "gpt-4.1-mini|A": {
+   "score_error": {
+    "mean": 8.735897435897437,
+    "lo": 6.048717948717949,
+    "hi": 11.653846153846153,
+    "n": 13
+   },
+   "band_mismatch": {
+    "mean": 0.26666666666666666,
+    "lo": 0.12,
+    "hi": 0.44,
+    "n": 25
+   },
+   "provenance_misstatement": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 25
+   },
+   "fault_detection": {
+    "mean": 0.8611111111111112,
+    "lo": 0.6944444444444445,
+    "hi": 1.0,
+    "n": 12
+   },
+   "false_alarm": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 13
+   },
+   "parse_failure": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 25
+   },
+   "verifier_block": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 25
+   },
+   "reproducibility": {
+    "mean": 0.56,
+    "lo": 0.36,
+    "hi": 0.76,
+    "n": 25
+   }
+  },
+  "gpt-4.1-mini|A+": {
+   "score_error": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 13
+   },
+   "band_mismatch": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 25
+   },
+   "provenance_misstatement": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 25
+   },
+   "fault_detection": {
+    "mean": 0.9722222222222222,
+    "lo": 0.9166666666666666,
+    "hi": 1.0,
+    "n": 12
+   },
+   "false_alarm": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 13
+   },
+   "parse_failure": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 25
+   },
+   "verifier_block": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 25
+   },
+   "reproducibility": {
+    "mean": 1.0,
+    "lo": 1.0,
+    "hi": 1.0,
+    "n": 25
+   }
+  },
+  "gpt-4.1-mini|B": {
+   "score_error": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 13
+   },
+   "band_mismatch": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 25
+   },
+   "provenance_misstatement": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 25
+   },
+   "fault_detection": {
+    "mean": 1.0,
+    "lo": 1.0,
+    "hi": 1.0,
+    "n": 12
+   },
+   "false_alarm": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 13
+   },
+   "parse_failure": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 25
+   },
+   "verifier_block": {
+    "mean": 0.06666666666666667,
+    "lo": 0.013333333333333332,
+    "hi": 0.13333333333333333,
+    "n": 25
+   },
+   "reproducibility": {
+    "mean": 1.0,
+    "lo": 1.0,
+    "hi": 1.0,
+    "n": 25
+   }
+  },
+  "gpt-4.1-mini|B(raw)": {
+   "score_error": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 13
+   },
+   "band_mismatch": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 25
+   },
+   "provenance_misstatement": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 25
+   },
+   "fault_detection": {
+    "mean": 1.0,
+    "lo": 1.0,
+    "hi": 1.0,
+    "n": 12
+   },
+   "false_alarm": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 13
+   },
+   "parse_failure": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 25
+   },
+   "verifier_block": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 25
+   },
+   "reproducibility": {
+    "mean": 1.0,
+    "lo": 1.0,
+    "hi": 1.0,
+    "n": 25
+   }
+  },
+  "phi-4|A": {
+   "score_error": {
+    "mean": 18.028205128205126,
+    "lo": 12.543589743589745,
+    "hi": 23.34102564102564,
+    "n": 13
+   },
+   "band_mismatch": {
+    "mean": 0.45333333333333337,
+    "lo": 0.26666666666666666,
+    "hi": 0.64,
+    "n": 25
+   },
+   "provenance_misstatement": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 25
+   },
+   "fault_detection": {
+    "mean": 0.3333333333333333,
+    "lo": 0.08333333333333333,
+    "hi": 0.5833333333333334,
+    "n": 12
+   },
+   "false_alarm": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 13
+   },
+   "parse_failure": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 25
+   },
+   "verifier_block": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 25
+   },
+   "reproducibility": {
+    "mean": 0.64,
+    "lo": 0.44,
+    "hi": 0.84,
+    "n": 25
+   }
+  },
+  "phi-4|A+": {
+   "score_error": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 13
+   },
+   "band_mismatch": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 25
+   },
+   "provenance_misstatement": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 25
+   },
+   "fault_detection": {
+    "mean": 0.9166666666666666,
+    "lo": 0.75,
+    "hi": 1.0,
+    "n": 12
+   },
+   "false_alarm": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 13
+   },
+   "parse_failure": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 25
+   },
+   "verifier_block": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 25
+   },
+   "reproducibility": {
+    "mean": 1.0,
+    "lo": 1.0,
+    "hi": 1.0,
+    "n": 25
+   }
+  },
+  "gpt-6.1-sol|A": {
+   "score_error": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 13
+   },
+   "band_mismatch": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 25
+   },
+   "provenance_misstatement": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 25
+   },
+   "fault_detection": {
+    "mean": 1.0,
+    "lo": 1.0,
+    "hi": 1.0,
+    "n": 12
+   },
+   "false_alarm": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 13
+   },
+   "parse_failure": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 25
+   },
+   "verifier_block": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 25
+   },
+   "reproducibility": {
+    "mean": 1.0,
+    "lo": 1.0,
+    "hi": 1.0,
+    "n": 25
+   }
+  },
+  "gpt-6.1-sol|A+": {
+   "score_error": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 13
+   },
+   "band_mismatch": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 25
+   },
+   "provenance_misstatement": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 25
+   },
+   "fault_detection": {
+    "mean": 1.0,
+    "lo": 1.0,
+    "hi": 1.0,
+    "n": 12
+   },
+   "false_alarm": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 13
+   },
+   "parse_failure": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 25
+   },
+   "verifier_block": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 25
+   },
+   "reproducibility": {
+    "mean": 1.0,
+    "lo": 1.0,
+    "hi": 1.0,
+    "n": 25
+   }
+  },
+  "gpt-6.1-sol|B": {
+   "score_error": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 13
+   },
+   "band_mismatch": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 25
+   },
+   "provenance_misstatement": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 25
+   },
+   "fault_detection": {
+    "mean": 1.0,
+    "lo": 1.0,
+    "hi": 1.0,
+    "n": 12
+   },
+   "false_alarm": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 13
+   },
+   "parse_failure": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 25
+   },
+   "verifier_block": {
+    "mean": 0.10666666666666666,
+    "lo": 0.04,
+    "hi": 0.18666666666666665,
+    "n": 25
+   },
+   "reproducibility": {
+    "mean": 1.0,
+    "lo": 1.0,
+    "hi": 1.0,
+    "n": 25
+   }
+  },
+  "gpt-6.1-sol|B(raw)": {
+   "score_error": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 13
+   },
+   "band_mismatch": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 25
+   },
+   "provenance_misstatement": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 25
+   },
+   "fault_detection": {
+    "mean": 1.0,
+    "lo": 1.0,
+    "hi": 1.0,
+    "n": 12
+   },
+   "false_alarm": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 13
+   },
+   "parse_failure": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 25
+   },
+   "verifier_block": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 25
+   },
+   "reproducibility": {
+    "mean": 1.0,
+    "lo": 1.0,
+    "hi": 1.0,
+    "n": 25
+   }
+  },
+  "gpt-6.1-terra|A": {
+   "score_error": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 13
+   },
+   "band_mismatch": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 25
+   },
+   "provenance_misstatement": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 25
+   },
+   "fault_detection": {
+    "mean": 1.0,
+    "lo": 1.0,
+    "hi": 1.0,
+    "n": 12
+   },
+   "false_alarm": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 13
+   },
+   "parse_failure": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 25
+   },
+   "verifier_block": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 25
+   },
+   "reproducibility": {
+    "mean": 1.0,
+    "lo": 1.0,
+    "hi": 1.0,
+    "n": 25
+   }
+  },
+  "gpt-6.1-terra|A+": {
+   "score_error": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 13
+   },
+   "band_mismatch": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 25
+   },
+   "provenance_misstatement": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 25
+   },
+   "fault_detection": {
+    "mean": 1.0,
+    "lo": 1.0,
+    "hi": 1.0,
+    "n": 12
+   },
+   "false_alarm": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 13
+   },
+   "parse_failure": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 25
+   },
+   "verifier_block": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 25
+   },
+   "reproducibility": {
+    "mean": 1.0,
+    "lo": 1.0,
+    "hi": 1.0,
+    "n": 25
+   }
+  },
+  "gpt-6.1-terra|B": {
+   "score_error": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 13
+   },
+   "band_mismatch": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 25
+   },
+   "provenance_misstatement": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 25
+   },
+   "fault_detection": {
+    "mean": 1.0,
+    "lo": 1.0,
+    "hi": 1.0,
+    "n": 12
+   },
+   "false_alarm": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 13
+   },
+   "parse_failure": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 25
+   },
+   "verifier_block": {
+    "mean": 0.29333333333333333,
+    "lo": 0.1733333333333333,
+    "hi": 0.42666666666666664,
+    "n": 25
+   },
+   "reproducibility": {
+    "mean": 1.0,
+    "lo": 1.0,
+    "hi": 1.0,
+    "n": 25
+   }
+  },
+  "gpt-6.1-terra|B(raw)": {
+   "score_error": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 13
+   },
+   "band_mismatch": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 25
+   },
+   "provenance_misstatement": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 25
+   },
+   "fault_detection": {
+    "mean": 1.0,
+    "lo": 1.0,
+    "hi": 1.0,
+    "n": 12
+   },
+   "false_alarm": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 13
+   },
+   "parse_failure": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 25
+   },
+   "verifier_block": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 25
+   },
+   "reproducibility": {
+    "mean": 1.0,
+    "lo": 1.0,
+    "hi": 1.0,
+    "n": 25
+   }
+  },
+  "grok-4.7|A": {
+   "score_error": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 13
+   },
+   "band_mismatch": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 25
+   },
+   "provenance_misstatement": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 25
+   },
+   "fault_detection": {
+    "mean": 1.0,
+    "lo": 1.0,
+    "hi": 1.0,
+    "n": 12
+   },
+   "false_alarm": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 13
+   },
+   "parse_failure": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 25
+   },
+   "verifier_block": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 25
+   },
+   "reproducibility": {
+    "mean": 1.0,
+    "lo": 1.0,
+    "hi": 1.0,
+    "n": 25
+   }
+  },
+  "grok-4.7|A+": {
+   "score_error": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 13
+   },
+   "band_mismatch": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 25
+   },
+   "provenance_misstatement": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 25
+   },
+   "fault_detection": {
+    "mean": 1.0,
+    "lo": 1.0,
+    "hi": 1.0,
+    "n": 12
+   },
+   "false_alarm": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 13
+   },
+   "parse_failure": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 25
+   },
+   "verifier_block": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 25
+   },
+   "reproducibility": {
+    "mean": 1.0,
+    "lo": 1.0,
+    "hi": 1.0,
+    "n": 25
+   }
+  },
+  "grok-4.7|B": {
+   "score_error": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 13
+   },
+   "band_mismatch": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 25
+   },
+   "provenance_misstatement": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 25
+   },
+   "fault_detection": {
+    "mean": 1.0,
+    "lo": 1.0,
+    "hi": 1.0,
+    "n": 12
+   },
+   "false_alarm": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 13
+   },
+   "parse_failure": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 25
+   },
+   "verifier_block": {
+    "mean": 0.4,
+    "lo": 0.2533333333333333,
+    "hi": 0.5466666666666666,
+    "n": 25
+   },
+   "reproducibility": {
+    "mean": 1.0,
+    "lo": 1.0,
+    "hi": 1.0,
+    "n": 25
+   }
+  },
+  "grok-4.7|B(raw)": {
+   "score_error": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 13
+   },
+   "band_mismatch": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 25
+   },
+   "provenance_misstatement": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 25
+   },
+   "fault_detection": {
+    "mean": 1.0,
+    "lo": 1.0,
+    "hi": 1.0,
+    "n": 12
+   },
+   "false_alarm": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 13
+   },
+   "parse_failure": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 25
+   },
+   "verifier_block": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 25
+   },
+   "reproducibility": {
+    "mean": 1.0,
+    "lo": 1.0,
+    "hi": 1.0,
+    "n": 25
+   }
+  }
+ }
+}

@@ -1,0 +1,1779 @@
+{
+ "meta": {
+  "agent_model": "Foundry agent pinned-score-agent-fabric (ontology MCP tool)",
+  "judge_model": "gpt-4.1-mini",
+  "dry_run": false,
+  "endpoint": "https://foundry.example.invalid/api/projects/example-project"
+ },
+ "seed": 20260715,
+ "repeats": 3,
+ "answers": [
+  {
+   "qid": "Q01",
+   "category": "explain",
+   "question": "Why did parcel P003 get the score it did?",
+   "parcels": [
+    "P003"
+   ],
+   "template": "P003 is scored 33.3 and falls in the moderate band. Contributions to the score: moisture contributes 17.43; dead_fuel contributes 5.94; wind contributes 4.98; weather_danger contributes 2.49; fuel_load contributes 2.48",
+   "template_faithfulness_violations": [],
+   "agent_delivered": "Parcel P003 received a wildfire pinned score of 33.3 (band: moderate) due to a combination of contributing factors:\n\n**Supporting a mid-range (moderate) score:**\n- There is a passable (though narrow) road directly linked to the parcel, so it is not isolated.\n- A 50,000-liter water tank is available on the accessible road.\n- Hand crew access is possible via that road.\n\n**Limiting a very low (safer) score:**\n- The only access road is narrow, limiting easy movement of firefighting vehicles and equipment.\n- Engine and dozer access are both unavailable\u2014crews must operate on foot.\n- There is a group of 40 residential houses only 116 meters from the parcel, increasing the risk of fire spread and exposure.\n\n**Bottom line:**  \nThese mixed factors\u2014usable but limited access, some water support, and notable nearby home exposure\u2014explain why P003\u2019s risk is marked as moderate, with neither extreme protection nor vulnerability\u30104:0\u2020source\u3011.",
+   "agent_blocked": false,
+   "agent_infra_error": null,
+   "agent_violations": [],
+   "agent_raw": "Parcel P003 received a wildfire pinned score of 33.3 (band: moderate) due to a combination of contributing factors:\n\n**Supporting a mid-range (moderate) score:**\n- There is a passable (though narrow) road directly linked to the parcel, so it is not isolated.\n- A 50,000-liter water tank is available on the accessible road.\n- Hand crew access is possible via that road.\n\n**Limiting a very low (safer) score:**\n- The only access road is narrow, limiting easy movement of firefighting vehicles and equipment.\n- Engine and dozer access are both unavailable\u2014crews must operate on foot.\n- There is a group of 40 residential houses only 116 meters from the parcel, increasing the risk of fire spread and exposure.\n\n**Bottom line:**  \nThese mixed factors\u2014usable but limited access, some water support, and notable nearby home exposure\u2014explain why P003\u2019s risk is marked as moderate, with neither extreme protection nor vulnerability\u30104:0\u2020source\u3011.",
+   "agent_delivered_faithfulness_violations": []
+  },
+  {
+   "qid": "Q02",
+   "category": "explain",
+   "question": "Explain the score for parcel P014. What is driving it?",
+   "parcels": [
+    "P014"
+   ],
+   "template": "P014 is scored 65.9 and falls in the high band. Contributions to the score: fuel_load contributes 28.73; moisture contributes 20.86; weather_danger contributes 7.65; dead_fuel contributes 4.43; wind contributes 4.28",
+   "template_faithfulness_violations": [],
+   "agent_delivered": "Parcel P014 has a measured wildfire risk score of 65.9, which places it in the high-risk band. This score was set through the pinned scoring process and is sourced from measured data, not manual adjustment. However, the current ontology and data source do not provide a factor-by-factor breakdown or explicit explanation of what is driving this high score. Therefore, while we know the parcel is rated as high risk, we do not have visibility into the specific underlying contributors or their weights for P014 at this time\u30104:0\u2020source\u3011.",
+   "agent_blocked": false,
+   "agent_infra_error": null,
+   "agent_violations": [],
+   "agent_raw": "Parcel P014 has a measured wildfire risk score of 65.9, which places it in the high-risk band. This score was set through the pinned scoring process and is sourced from measured data, not manual adjustment. However, the current ontology and data source do not provide a factor-by-factor breakdown or explicit explanation of what is driving this high score. Therefore, while we know the parcel is rated as high risk, we do not have visibility into the specific underlying contributors or their weights for P014 at this time\u30104:0\u2020source\u3011.",
+   "agent_delivered_faithfulness_violations": []
+  },
+  {
+   "qid": "Q03",
+   "category": "explain",
+   "question": "How was P007's risk band decided?",
+   "parcels": [
+    "P007"
+   ],
+   "template": "P007 is scored 58.8 and falls in the high band. Contributions to the score: fuel_load contributes 18.60; dead_fuel contributes 13.56; weather_danger contributes 12.49; wind contributes 7.53; moisture contributes 6.64",
+   "template_faithfulness_violations": [],
+   "agent_delivered": "Parcel P007's risk band was determined based on its final score of 58.8, which placed it in the high risk classification (the high band appears to start at about 50.0, with moderate below that). The ontology confirms only the final score and band, not the exact weighting formula. However, the scoring was influenced by these factors:\n\n- Road access: 2 road segments (both passable; 1 standard, 1 narrow)\n- Homes/exposure: 1 home group (9 houses), 150 meters to houses, no critical facility\n- Crew access: 3 crew types possible (engine, hand crew, dozer); 2 were reachable, dozer was not\n- Water access: 2 sources (hydrant and dip site) with a combined 15,000 liters\n\nIn summary, P007 received a high risk because it had decent access, some housing nearby, partial crew reachability, and available water, but the ontology does not expose the actual scoring weights or formula used to decide the band\u30104:0\u2020source\u3011.",
+   "agent_blocked": false,
+   "agent_infra_error": null,
+   "agent_violations": [],
+   "agent_raw": "Parcel P007's risk band was determined based on its final score of 58.8, which placed it in the high risk classification (the high band appears to start at about 50.0, with moderate below that). The ontology confirms only the final score and band, not the exact weighting formula. However, the scoring was influenced by these factors:\n\n- Road access: 2 road segments (both passable; 1 standard, 1 narrow)\n- Homes/exposure: 1 home group (9 houses), 150 meters to houses, no critical facility\n- Crew access: 3 crew types possible (engine, hand crew, dozer); 2 were reachable, dozer was not\n- Water access: 2 sources (hydrant and dip site) with a combined 15,000 liters\n\nIn summary, P007 received a high risk because it had decent access, some housing nearby, partial crew reachability, and available water, but the ontology does not expose the actual scoring weights or formula used to decide the band\u30104:0\u2020source\u3011.",
+   "agent_delivered_faithfulness_violations": []
+  },
+  {
+   "qid": "Q04",
+   "category": "why_incomplete",
+   "question": "Why is there no score for P017?",
+   "parcels": [
+    "P017"
+   ],
+   "template": "P017 is incomplete, so no score or band is given. Reasons: fuel_load is missing",
+   "template_faithfulness_violations": [],
+   "agent_delivered": "There is no score for parcel P017 because its parcel record status is marked as incomplete, with the score field left blank (null). The evidence shows that all relevant linked data (roads, homes, crew access) is present, but there is no rule in the ontology suppressing or explaining the absence. The most direct cause appears to be data-side: the scoring chain did not produce a materialized score for P017 due to the incomplete status of the parcel record, not because of any rule-based exception or error.\n\nIn summary: P017's row exists, but it's incomplete and unscored\u2014this is due to data, not the ontology logic or rules\u30104:0\u2020source\u3011.",
+   "agent_blocked": false,
+   "agent_infra_error": null,
+   "agent_violations": [],
+   "agent_raw": "There is no score for parcel P017 because its parcel record status is marked as incomplete, with the score field left blank (null). The evidence shows that all relevant linked data (roads, homes, crew access) is present, but there is no rule in the ontology suppressing or explaining the absence. The most direct cause appears to be data-side: the scoring chain did not produce a materialized score for P017 due to the incomplete status of the parcel record, not because of any rule-based exception or error.\n\nIn summary: P017's row exists, but it's incomplete and unscored\u2014this is due to data, not the ontology logic or rules\u30104:0\u2020source\u3011.",
+   "agent_delivered_faithfulness_violations": []
+  },
+  {
+   "qid": "Q05",
+   "category": "why_incomplete",
+   "question": "P001 has no score. What went wrong?",
+   "parcels": [
+    "P001"
+   ],
+   "template": "P001 is incomplete, so no score or band is given. Reasons: fuel_moisture_pct was given in the wrong unit",
+   "template_faithfulness_violations": [],
+   "agent_delivered": "Parcel P001 has no wildfire pinned-score due to missing and incomplete upstream inputs, not from rule failures. Here's what went wrong for P001:\n\n- No road segments linked (so no road data for wildfire access scoring).\n- No water-source chain (none found along roads, so water input is blank).\n- Crew access records exist, but none are marked reachable (so no usable crew support).\n- There is one home-group record, but it does not indicate a critical facility.\n- The record status is incomplete, and the output score and band are blank.\n- No relevant rules failed; the ontology has zero authored rules for this scoring.\n\nIn summary, P001 lacks essential input data across roads, water, and crew access, resulting in a blank score and incomplete status\u30104:0\u2020source\u3011.",
+   "agent_blocked": false,
+   "agent_infra_error": null,
+   "agent_violations": [],
+   "agent_raw": "Parcel P001 has no wildfire pinned-score due to missing and incomplete upstream inputs, not from rule failures. Here's what went wrong for P001:\n\n- No road segments linked (so no road data for wildfire access scoring).\n- No water-source chain (none found along roads, so water input is blank).\n- Crew access records exist, but none are marked reachable (so no usable crew support).\n- There is one home-group record, but it does not indicate a critical facility.\n- The record status is incomplete, and the output score and band are blank.\n- No relevant rules failed; the ontology has zero authored rules for this scoring.\n\nIn summary, P001 lacks essential input data across roads, water, and crew access, resulting in a blank score and incomplete status\u30104:0\u2020source\u3011.",
+   "agent_delivered_faithfulness_violations": []
+  },
+  {
+   "qid": "Q06",
+   "category": "why_incomplete",
+   "question": "Why was P019 not scored?",
+   "parcels": [
+    "P019"
+   ],
+   "template": "P019 is incomplete, so no score or band is given. Reasons: dead_fuel_pct is too old to use",
+   "template_faithfulness_violations": [],
+   "agent_delivered": "Parcel P019 was not scored because it is marked status = incomplete in the parcel table, and both band and score are blank.\n\nWhat\u2019s missing:\n- Home-group data is absent for P019: home_groups = 0, critical_home_groups = 0.\n\nWhat is present:\n- Road access exists (2 segments).\n- Crew access exists (3 entries).\n- Water sources exist (2).\n\nBest explanation:\nP019 was excluded from scoring because its input set was incomplete, with the clearest gap being no linked home-group records. No separate explicit exclusion reason or rule flag is present in the available data\u30104:0\u2020source\u3011.",
+   "agent_blocked": false,
+   "agent_infra_error": null,
+   "agent_violations": [],
+   "agent_raw": "Parcel P019 was not scored because it is marked status = incomplete in the parcel table, and both band and score are blank.\n\nWhat\u2019s missing:\n- Home-group data is absent for P019: home_groups = 0, critical_home_groups = 0.\n\nWhat is present:\n- Road access exists (2 segments).\n- Crew access exists (3 entries).\n- Water sources exist (2).\n\nBest explanation:\nP019 was excluded from scoring because its input set was incomplete, with the clearest gap being no linked home-group records. No separate explicit exclusion reason or rule flag is present in the available data\u30104:0\u2020source\u3011.",
+   "agent_delivered_faithfulness_violations": []
+  },
+  {
+   "qid": "Q07",
+   "category": "why_incomplete",
+   "question": "What is wrong with the data for P025?",
+   "parcels": [
+    "P025"
+   ],
+   "template": "P025 is incomplete, so no score or band is given. Reasons: dead_fuel_pct is flagged invalid",
+   "template_faithfulness_violations": [],
+   "agent_delivered": "For parcel P025, the only data issue is that it has missing scoring data:\n\n- Present: `parcel_id = P025`, `status = incomplete`, `provenance = measured`, `seed = 20260715`\n- Missing: `band = null`, `score = null`\n- Inconsistencies: None found in the data\n\nThis means P025 is unscored and incomplete\u2014there are no conflicting validation errors, just the absence of a score and band. It cannot be assessed by the pinned scorer until those are present\u30104:0\u2020source\u3011.",
+   "agent_blocked": false,
+   "agent_infra_error": null,
+   "agent_violations": [],
+   "agent_raw": "For parcel P025, the only data issue is that it has missing scoring data:\n\n- Present: `parcel_id = P025`, `status = incomplete`, `provenance = measured`, `seed = 20260715`\n- Missing: `band = null`, `score = null`\n- Inconsistencies: None found in the data\n\nThis means P025 is unscored and incomplete\u2014there are no conflicting validation errors, just the absence of a score and band. It cannot be assessed by the pinned scorer until those are present\u30104:0\u2020source\u3011.",
+   "agent_delivered_faithfulness_violations": []
+  },
+  {
+   "qid": "Q08",
+   "category": "compare",
+   "question": "Which of P014 and P003 is riskier, and why?",
+   "parcels": [
+    "P014",
+    "P003"
+   ],
+   "template": "P014 is higher at 65.9 (high) versus P003 at 33.3 (moderate)",
+   "template_faithfulness_violations": [],
+   "agent_delivered": "Verifier blocked the narration; showing receipt values. P014 score 65.9 band high. P003 score 33.3 band moderate",
+   "agent_blocked": true,
+   "agent_infra_error": null,
+   "agent_violations": [
+    "band_mismatch: claims band 'high'; receipt band is 'moderate'",
+    "band_mismatch: claims band 'moderate'; receipt band is 'high'"
+   ],
+   "agent_raw": "P014 is riskier than P003 for wildfire, according to the pinned score system.\n\n- P014 has a higher risk score (65.9, high band) versus P003 (33.3, moderate band).\n- P014\u2019s suppression/access conditions are worse:\n  - No road access\n  - No reachable crew access\n  - No water source on road\n- P003 has better mitigation:\n  - One passable road\n  - One reachable crew path\n  - One water source (50,000 L available)\n\nWhile P003 has more homes nearby that could be exposed (40 houses vs none for P014), overall P014 is considered riskier because it lacks suppression support and access for crews and water, which are critical drivers in wildfire response risk.\n\nSo, P014 is riskier, mainly because its lack of access and mitigation options makes it far harder to defend if threatened by wildfire\u2014even though P003 might threaten more homes if a fire occurred.\u30104:0\u2020source\u3011",
+   "agent_delivered_faithfulness_violations": []
+  },
+  {
+   "qid": "Q09",
+   "category": "compare",
+   "question": "Compare P007 and P018.",
+   "parcels": [
+    "P007",
+    "P018"
+   ],
+   "template": "P018 is higher at 61.5 (high) versus P007 at 58.8 (high)",
+   "template_faithfulness_violations": [],
+   "agent_delivered": "Verifier blocked the narration; showing receipt values. P007 score 58.8 band high. P018 score 61.5 band high",
+   "agent_blocked": true,
+   "agent_infra_error": "RuntimeError: BadRequestError: Error code: 400 - {'error': {'message': '[Failed Dependency] while invoking tool ask_ontology, the dependency call to the MCP server: https://api.fabric.microsoft.com:443/v1/mcp/dataPlane/workspaces/00000000-0000-4000-8000-000000000019/items/097b5a54-7d8d-45b9-8d26-8cf",
+   "agent_violations": [],
+   "agent_raw": null,
+   "agent_delivered_faithfulness_violations": []
+  },
+  {
+   "qid": "Q10",
+   "category": "compare",
+   "question": "How does P005 compare with P017?",
+   "parcels": [
+    "P005",
+    "P017"
+   ],
+   "template": "P005 is scored 49.8 and falls in the moderate band. Contributions to the score: fuel_load contributes 23.93; wind contributes 9.13; weather_danger contributes 7.93; dead_fuel contributes 5.43; moisture contributes 3.43. P017 is incomplete, so no score or band is given. Reasons: fuel_load is missing. They cannot be ranked because one has no score",
+   "template_faithfulness_violations": [],
+   "agent_delivered": "Verifier blocked the narration; showing receipt values. P005 score 49.8 band moderate. P017 incomplete; reasons missing:fuel_load",
+   "agent_blocked": true,
+   "agent_infra_error": null,
+   "agent_violations": [
+    "completeness_mismatch: claims incomplete but receipt is scored"
+   ],
+   "agent_raw": "Here\u2019s a comparison between P005 and P017 across the wildfire pinned-scoring categories:\n\n| Category         | P005                                                                                           | P017                                                                                           |\n|------------------|------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------|\n| **Parcel details** | Status: scored<br>Band: moderate<br>Score: 49.8<br>Provenance: measured                      | Status: incomplete<br>Band: blank<br>Score: blank<br>Provenance: measured                      |\n| **Road access**    | Road count: 2<br>Passable roads: 2 <br>`R-P005-1` passable/standard <br>`R-P005-2` passable/narrow | Road count: 2<br>Passable roads: 2 <br>`R-P017-1` passable/narrow <br>`R-P017-2` passable/wide |\n| **Home features**  | Home groups: 1<br>Total houses: 28<br>Critical facility: yes<br>Closest distance: 483\u202fm      | Home groups: 1<br>Total houses: 5<br>Critical facility: yes<br>Closest distance: 509\u202fm         |\n| **Water**          | Water sources: 1<br>Total capacity: 20,000\u202fL (pond)                                          | Water sources: 1<br>Total capacity: 50,000\u202fL (hydrant)                                         |\n| **Crew access**    | Crew types: 3<br>Reachable: 2 of 3<br>Dozer not reachable; engine & hand_crew reachable      | Crew types: 3<br>Reachable: 3 of 3<br>All crews reachable                                      |\n\n**Summary:**\n- P005 is scored (moderate, 49.8); P017 is incomplete/blank.\n- P017 has better water capacity and all crews can reach it; P005 lacks dozer access.\n- P005 has a larger number of houses, but both are critical facilities.\n- Both have two passable roads and one water source.\n\nLet me know if you want a category-winner breakdown or more detail!\u30104:0\u2020source\u3011",
+   "agent_delivered_faithfulness_violations": []
+  },
+  {
+   "qid": "Q11",
+   "category": "what_if",
+   "question": "What would P003's score be if the moisture weight were 20% higher?",
+   "parcels": [
+    "P003"
+   ],
+   "template": "P003 is scored 33.3 today. With that weight change the score would be 35.1 instead, in the moderate band. This is a what-if only; the stored score is unchanged",
+   "template_faithfulness_violations": [],
+   "agent_delivered": "The original wildfire risk score for P003 is 33.3. However, I cannot determine what the score would be if the moisture weight were 20% higher, because the ontology does not provide the scoring formula or moisture weighting information. Only the stored score is available\u30104:0\u2020source\u3011.",
+   "agent_blocked": false,
+   "agent_infra_error": null,
+   "agent_violations": [],
+   "agent_raw": "The original wildfire risk score for P003 is 33.3. However, I cannot determine what the score would be if the moisture weight were 20% higher, because the ontology does not provide the scoring formula or moisture weighting information. Only the stored score is available\u30104:0\u2020source\u3011.",
+   "agent_delivered_faithfulness_violations": []
+  },
+  {
+   "qid": "Q12",
+   "category": "what_if",
+   "question": "If the wind weight were 20% lower, what happens to P014?",
+   "parcels": [
+    "P014"
+   ],
+   "template": "P014 is scored 65.9 today. With that weight change the score would be 66.4 instead, in the high band. This is a what-if only; the stored score is unchanged",
+   "template_faithfulness_violations": [],
+   "agent_delivered": "If the wind weight were 20% lower, I cannot determine the exact impact on parcel P014's pinned risk score from the current ontology. Wind is not modeled as an exposed property, measure, or relationship for P014, and the scoring formula does not reveal how wind influences the final score. The only available subfactors for this parcel relate to crew access, not wind. Therefore:\n\n- Score change: indeterminate from current ontology\n- Affected subfactors: Only crew-access factors are visible; wind-related impact is not exposed\n\nIf you need a more detailed interpretation of the visible (crew access) evidence, I can assist with that\u30104:0\u2020source\u3011.",
+   "agent_blocked": false,
+   "agent_infra_error": null,
+   "agent_violations": [],
+   "agent_raw": "If the wind weight were 20% lower, I cannot determine the exact impact on parcel P014's pinned risk score from the current ontology. Wind is not modeled as an exposed property, measure, or relationship for P014, and the scoring formula does not reveal how wind influences the final score. The only available subfactors for this parcel relate to crew access, not wind. Therefore:\n\n- Score change: indeterminate from current ontology\n- Affected subfactors: Only crew-access factors are visible; wind-related impact is not exposed\n\nIf you need a more detailed interpretation of the visible (crew access) evidence, I can assist with that\u30104:0\u2020source\u3011.",
+   "agent_delivered_faithfulness_violations": []
+  },
+  {
+   "qid": "Q13",
+   "category": "what_if",
+   "question": "What if fuel load counted 20% more for P018?",
+   "parcels": [
+    "P018"
+   ],
+   "template": "P018 is scored 61.5 today. With that weight change the score would be 60.9 instead, in the high band. This is a what-if only; the stored score is unchanged",
+   "template_faithfulness_violations": [],
+   "agent_delivered": "I cannot determine how a 20% higher fuel-load weighting would affect parcel P018's wildfire pinned score. The dataset for P018 shows only its overall score (61.5) and lacks a fuel-load metric or a visible scoring formula. Therefore, the impact of that adjustment is indeterminate from the available data\u30104:0\u2020source\u3011.",
+   "agent_blocked": false,
+   "agent_infra_error": null,
+   "agent_violations": [],
+   "agent_raw": "I cannot determine how a 20% higher fuel-load weighting would affect parcel P018's wildfire pinned score. The dataset for P018 shows only its overall score (61.5) and lacks a fuel-load metric or a visible scoring formula. Therefore, the impact of that adjustment is indeterminate from the available data\u30104:0\u2020source\u3011.",
+   "agent_delivered_faithfulness_violations": []
+  },
+  {
+   "qid": "Q14",
+   "category": "next_action",
+   "question": "What should I do next for P017?",
+   "parcels": [
+    "P017"
+   ],
+   "template": "To get P017 scored: supply a real field reading for fuel_load",
+   "template_faithfulness_violations": [],
+   "agent_delivered": "Verifier blocked the narration; showing receipt values. P017 incomplete; reasons missing:fuel_load",
+   "agent_blocked": true,
+   "agent_infra_error": "RuntimeError: BadRequestError: Error code: 400 - {'error': {'message': 'Remote MCP server error while invoking tool ask_ontology: Streamable HTTP POST response completed without a reply to request with ID: 2 The server accepted the HTTP request but did not return a valid MCP JSON-RPC response. Pleas",
+   "agent_violations": [],
+   "agent_raw": null,
+   "agent_delivered_faithfulness_violations": []
+  },
+  {
+   "qid": "Q15",
+   "category": "next_action",
+   "question": "What should I do to get P024 scored?",
+   "parcels": [
+    "P024"
+   ],
+   "template": "To get P024 scored: replace the wind_kmh reading with a real field reading, because its source is not accepted",
+   "template_faithfulness_violations": [],
+   "agent_delivered": "To get P024 scored, all the modeled input records are already present (parcels, roads, water sources, home groups, crew access). However, P024 is still \"incomplete\" because:\n\n- No road segment is marked passable.\n- No crew type is marked reachable.\n- The scoring fields (band and score) are still null.\n\nWhat you need to do:\n- Ensure there is at least one passable road segment associated with P024.\n- Ensure crew access is reachable (likely by correcting road or access records).\n- After resolving these blockers, trigger the scoring step to populate the band and score fields.\n\nUntil these issues (passable road/crew access) are resolved, P024 cannot move from \"incomplete\" to \"scored\" in the wildfire pinned-scoring process\u30104:0\u2020source\u3011.",
+   "agent_blocked": false,
+   "agent_infra_error": null,
+   "agent_violations": [],
+   "agent_raw": "To get P024 scored, all the modeled input records are already present (parcels, roads, water sources, home groups, crew access). However, P024 is still \"incomplete\" because:\n\n- No road segment is marked passable.\n- No crew type is marked reachable.\n- The scoring fields (band and score) are still null.\n\nWhat you need to do:\n- Ensure there is at least one passable road segment associated with P024.\n- Ensure crew access is reachable (likely by correcting road or access records).\n- After resolving these blockers, trigger the scoring step to populate the band and score fields.\n\nUntil these issues (passable road/crew access) are resolved, P024 cannot move from \"incomplete\" to \"scored\" in the wildfire pinned-scoring process\u30104:0\u2020source\u3011.",
+   "agent_delivered_faithfulness_violations": []
+  },
+  {
+   "qid": "Q16",
+   "category": "next_action",
+   "question": "What is the next step for P002?",
+   "parcels": [
+    "P002"
+   ],
+   "template": "To get P002 scored: re-submit dead_fuel_pct in the unit the policy expects",
+   "template_faithfulness_violations": [],
+   "agent_delivered": "The next required step for parcel P002 is to complete the scoring workflow\u2014moving it from \"incomplete\" to a scored state. This is necessary because P002 currently has:\n\n- Status: incomplete\n- Missing both score and band (both are null)\n- No home-group or water-source rows present\n- All access routes for crews are not reachable\n- Its only road segment is not passable\n\nThe scoring outputs (score and band) must be generated and assigned before any subsequent workflow actions can proceed\u30104:0\u2020source\u3011.",
+   "agent_blocked": false,
+   "agent_infra_error": null,
+   "agent_violations": [],
+   "agent_raw": "The next required step for parcel P002 is to complete the scoring workflow\u2014moving it from \"incomplete\" to a scored state. This is necessary because P002 currently has:\n\n- Status: incomplete\n- Missing both score and band (both are null)\n- No home-group or water-source rows present\n- All access routes for crews are not reachable\n- Its only road segment is not passable\n\nThe scoring outputs (score and band) must be generated and assigned before any subsequent workflow actions can proceed\u30104:0\u2020source\u3011.",
+   "agent_delivered_faithfulness_violations": []
+  },
+  {
+   "qid": "Q17",
+   "category": "next_action",
+   "question": "P005 is scored. Is there anything I should do next?",
+   "parcels": [
+    "P005"
+   ],
+   "template": "P005 is already scored, so no data fix is needed",
+   "template_faithfulness_violations": [],
+   "agent_delivered": "Parcel P005 is now in \u201cscored\u201d status and sits in the moderate risk band with a score of 49.8. The ontology does not define an explicit next required action after scoring. However, for parcels in the moderate band, the best-supported next step is to perform a manual review or triage of the result rather than proceed automatically.\n\nNo automatic escalation is modeled at this point; consider manual review for further decisions\u30104:0\u2020source\u3011.",
+   "agent_blocked": false,
+   "agent_infra_error": null,
+   "agent_violations": [],
+   "agent_raw": "Parcel P005 is now in \u201cscored\u201d status and sits in the moderate risk band with a score of 49.8. The ontology does not define an explicit next required action after scoring. However, for parcels in the moderate band, the best-supported next step is to perform a manual review or triage of the result rather than proceed automatically.\n\nNo automatic escalation is modeled at this point; consider manual review for further decisions\u30104:0\u2020source\u3011.",
+   "agent_delivered_faithfulness_violations": []
+  },
+  {
+   "qid": "Q18",
+   "category": "plain_summary",
+   "question": "Give a plain-language summary of P030 for a non-expert.",
+   "parcels": [
+    "P030"
+   ],
+   "template": "P030 is scored 63.3 and falls in the high band. Contributions to the score: moisture contributes 23.86; fuel_load contributes 15.83; weather_danger contributes 13.48; dead_fuel contributes 5.99; wind contributes 4.18",
+   "template_faithfulness_violations": [],
+   "agent_delivered": "Score P030 does not appear in the available data, so I can't provide a specific plain-language summary for that code. Generally, \"score\" is a value given to each parcel of land to help rank or classify it, usually for comparison purposes. If you meant a different score code or another field, I can help interpret that instead\u30104:0\u2020source\u3011.",
+   "agent_blocked": false,
+   "agent_infra_error": null,
+   "agent_violations": [],
+   "agent_raw": "Score P030 does not appear in the available data, so I can't provide a specific plain-language summary for that code. Generally, \"score\" is a value given to each parcel of land to help rank or classify it, usually for comparison purposes. If you meant a different score code or another field, I can help interpret that instead\u30104:0\u2020source\u3011.",
+   "agent_delivered_faithfulness_violations": []
+  },
+  {
+   "qid": "Q19",
+   "category": "plain_summary",
+   "question": "Summarise P021 for a landowner with no technical background.",
+   "parcels": [
+    "P021"
+   ],
+   "template": "P021 is scored 54.4 and falls in the high band. Contributions to the score: fuel_load contributes 28.35; dead_fuel contributes 13.50; weather_danger contributes 8.31; moisture contributes 2.86; wind contributes 1.35",
+   "template_faithfulness_violations": [],
+   "agent_delivered": "I'm unable to summarize rule P021 because there is no rule entry for it in the current system. If you have the actual text of rule P021 or a different rule identifier, I can help explain it in plain language for a landowner\u30104:0\u2020source\u3011.",
+   "agent_blocked": false,
+   "agent_infra_error": null,
+   "agent_violations": [],
+   "agent_raw": "I'm unable to summarize rule P021 because there is no rule entry for it in the current system. If you have the actual text of rule P021 or a different rule identifier, I can help explain it in plain language for a landowner\u30104:0\u2020source\u3011.",
+   "agent_delivered_faithfulness_violations": []
+  },
+  {
+   "qid": "Q20",
+   "category": "plain_summary",
+   "question": "In simple words, what is the situation for P029?",
+   "parcels": [
+    "P029"
+   ],
+   "template": "P029 is incomplete, so no score or band is given. Reasons: fuel_load is missing",
+   "template_faithfulness_violations": [],
+   "agent_delivered": "Verifier blocked the narration; showing receipt values. P029 incomplete; reasons missing:fuel_load",
+   "agent_blocked": true,
+   "agent_infra_error": null,
+   "agent_violations": [
+    "band_on_incomplete: states band 'low' but receipt is incomplete",
+    "band_on_incomplete: states band 'high' but receipt is incomplete"
+   ],
+   "agent_raw": "For parcel P029, the wildfire pinned-scoring record is incomplete\u2014there is no overall risk score or band yet.\n\nHowever, the available details show:\n- There\u2019s a wide, passable road segment.\n- Three types of fire crews (dozer, engine, hand crew) could reach the parcel.\n- There\u2019s a nearby water source with 5,000 liters.\n- There are no homes or critical facilities recorded on this parcel.\n\nThis means fire response access looks good and there\u2019s little exposure to homes or facilities, but since the score isn\u2019t finished yet, it\u2019s not officially rated as low or high risk\u2014just not scored yet based on this data\u30104:0\u2020source\u3011.",
+   "agent_delivered_faithfulness_violations": []
+  }
+ ],
+ "judgements": [
+  {
+   "qid": "Q01",
+   "category": "explain",
+   "repeat": 0,
+   "error": null,
+   "d_first": true,
+   "scores_D": {
+    "answers_question": 5,
+    "plain_language": 5,
+    "actionable": 4
+   },
+   "scores_T": {
+    "answers_question": 3,
+    "plain_language": 3,
+    "actionable": 1
+   },
+   "total_D": 14,
+   "total_T": 7,
+   "outcome": "win"
+  },
+  {
+   "qid": "Q01",
+   "category": "explain",
+   "repeat": 1,
+   "error": null,
+   "d_first": true,
+   "scores_D": {
+    "answers_question": 5,
+    "plain_language": 5,
+    "actionable": 4
+   },
+   "scores_T": {
+    "answers_question": 2,
+    "plain_language": 3,
+    "actionable": 1
+   },
+   "total_D": 14,
+   "total_T": 6,
+   "outcome": "win"
+  },
+  {
+   "qid": "Q01",
+   "category": "explain",
+   "repeat": 2,
+   "error": null,
+   "d_first": false,
+   "scores_D": {
+    "answers_question": 4,
+    "plain_language": 4,
+    "actionable": 3
+   },
+   "scores_T": {
+    "answers_question": 3,
+    "plain_language": 3,
+    "actionable": 1
+   },
+   "total_D": 11,
+   "total_T": 7,
+   "outcome": "win"
+  },
+  {
+   "qid": "Q02",
+   "category": "explain",
+   "repeat": 0,
+   "error": null,
+   "d_first": false,
+   "scores_D": {
+    "answers_question": 3,
+    "plain_language": 4,
+    "actionable": 2
+   },
+   "scores_T": {
+    "answers_question": 4,
+    "plain_language": 4,
+    "actionable": 3
+   },
+   "total_D": 9,
+   "total_T": 11,
+   "outcome": "loss"
+  },
+  {
+   "qid": "Q02",
+   "category": "explain",
+   "repeat": 1,
+   "error": null,
+   "d_first": false,
+   "scores_D": {
+    "answers_question": 3,
+    "plain_language": 4,
+    "actionable": 2
+   },
+   "scores_T": {
+    "answers_question": 4,
+    "plain_language": 4,
+    "actionable": 3
+   },
+   "total_D": 9,
+   "total_T": 11,
+   "outcome": "loss"
+  },
+  {
+   "qid": "Q02",
+   "category": "explain",
+   "repeat": 2,
+   "error": null,
+   "d_first": true,
+   "scores_D": {
+    "answers_question": 3,
+    "plain_language": 4,
+    "actionable": 2
+   },
+   "scores_T": {
+    "answers_question": 5,
+    "plain_language": 3,
+    "actionable": 4
+   },
+   "total_D": 9,
+   "total_T": 12,
+   "outcome": "loss"
+  },
+  {
+   "qid": "Q03",
+   "category": "explain",
+   "repeat": 0,
+   "error": null,
+   "d_first": true,
+   "scores_D": {
+    "answers_question": 5,
+    "plain_language": 5,
+    "actionable": 4
+   },
+   "scores_T": {
+    "answers_question": 3,
+    "plain_language": 4,
+    "actionable": 2
+   },
+   "total_D": 14,
+   "total_T": 9,
+   "outcome": "win"
+  },
+  {
+   "qid": "Q03",
+   "category": "explain",
+   "repeat": 1,
+   "error": null,
+   "d_first": false,
+   "scores_D": {
+    "answers_question": 4,
+    "plain_language": 3,
+    "actionable": 3
+   },
+   "scores_T": {
+    "answers_question": 3,
+    "plain_language": 4,
+    "actionable": 2
+   },
+   "total_D": 10,
+   "total_T": 9,
+   "outcome": "win"
+  },
+  {
+   "qid": "Q03",
+   "category": "explain",
+   "repeat": 2,
+   "error": null,
+   "d_first": true,
+   "scores_D": {
+    "answers_question": 5,
+    "plain_language": 5,
+    "actionable": 4
+   },
+   "scores_T": {
+    "answers_question": 3,
+    "plain_language": 4,
+    "actionable": 2
+   },
+   "total_D": 14,
+   "total_T": 9,
+   "outcome": "win"
+  },
+  {
+   "qid": "Q04",
+   "category": "why_incomplete",
+   "repeat": 0,
+   "error": null,
+   "d_first": false,
+   "scores_D": {
+    "answers_question": 5,
+    "plain_language": 3,
+    "actionable": 4
+   },
+   "scores_T": {
+    "answers_question": 4,
+    "plain_language": 5,
+    "actionable": 3
+   },
+   "total_D": 12,
+   "total_T": 12,
+   "outcome": "tie"
+  },
+  {
+   "qid": "Q04",
+   "category": "why_incomplete",
+   "repeat": 1,
+   "error": null,
+   "d_first": false,
+   "scores_D": {
+    "answers_question": 5,
+    "plain_language": 3,
+    "actionable": 4
+   },
+   "scores_T": {
+    "answers_question": 4,
+    "plain_language": 4,
+    "actionable": 3
+   },
+   "total_D": 12,
+   "total_T": 11,
+   "outcome": "win"
+  },
+  {
+   "qid": "Q04",
+   "category": "why_incomplete",
+   "repeat": 2,
+   "error": null,
+   "d_first": false,
+   "scores_D": {
+    "answers_question": 5,
+    "plain_language": 3,
+    "actionable": 4
+   },
+   "scores_T": {
+    "answers_question": 4,
+    "plain_language": 4,
+    "actionable": 3
+   },
+   "total_D": 12,
+   "total_T": 11,
+   "outcome": "win"
+  },
+  {
+   "qid": "Q05",
+   "category": "why_incomplete",
+   "repeat": 0,
+   "error": null,
+   "d_first": true,
+   "scores_D": {
+    "answers_question": 5,
+    "plain_language": 4,
+    "actionable": 4
+   },
+   "scores_T": {
+    "answers_question": 2,
+    "plain_language": 4,
+    "actionable": 2
+   },
+   "total_D": 13,
+   "total_T": 8,
+   "outcome": "win"
+  },
+  {
+   "qid": "Q05",
+   "category": "why_incomplete",
+   "repeat": 1,
+   "error": null,
+   "d_first": false,
+   "scores_D": {
+    "answers_question": 5,
+    "plain_language": 4,
+    "actionable": 4
+   },
+   "scores_T": {
+    "answers_question": 3,
+    "plain_language": 4,
+    "actionable": 2
+   },
+   "total_D": 13,
+   "total_T": 9,
+   "outcome": "win"
+  },
+  {
+   "qid": "Q05",
+   "category": "why_incomplete",
+   "repeat": 2,
+   "error": null,
+   "d_first": true,
+   "scores_D": {
+    "answers_question": 5,
+    "plain_language": 4,
+    "actionable": 4
+   },
+   "scores_T": {
+    "answers_question": 2,
+    "plain_language": 4,
+    "actionable": 2
+   },
+   "total_D": 13,
+   "total_T": 8,
+   "outcome": "win"
+  },
+  {
+   "qid": "Q06",
+   "category": "why_incomplete",
+   "repeat": 0,
+   "error": null,
+   "d_first": false,
+   "scores_D": {
+    "answers_question": 5,
+    "plain_language": 4,
+    "actionable": 4
+   },
+   "scores_T": {
+    "answers_question": 3,
+    "plain_language": 4,
+    "actionable": 2
+   },
+   "total_D": 13,
+   "total_T": 9,
+   "outcome": "win"
+  },
+  {
+   "qid": "Q06",
+   "category": "why_incomplete",
+   "repeat": 1,
+   "error": null,
+   "d_first": true,
+   "scores_D": {
+    "answers_question": 5,
+    "plain_language": 4,
+    "actionable": 4
+   },
+   "scores_T": {
+    "answers_question": 3,
+    "plain_language": 3,
+    "actionable": 2
+   },
+   "total_D": 13,
+   "total_T": 8,
+   "outcome": "win"
+  },
+  {
+   "qid": "Q06",
+   "category": "why_incomplete",
+   "repeat": 2,
+   "error": null,
+   "d_first": false,
+   "scores_D": {
+    "answers_question": 5,
+    "plain_language": 4,
+    "actionable": 4
+   },
+   "scores_T": {
+    "answers_question": 3,
+    "plain_language": 4,
+    "actionable": 2
+   },
+   "total_D": 13,
+   "total_T": 9,
+   "outcome": "win"
+  },
+  {
+   "qid": "Q07",
+   "category": "why_incomplete",
+   "repeat": 0,
+   "error": null,
+   "d_first": true,
+   "scores_D": {
+    "answers_question": 5,
+    "plain_language": 5,
+    "actionable": 5
+   },
+   "scores_T": {
+    "answers_question": 3,
+    "plain_language": 4,
+    "actionable": 3
+   },
+   "total_D": 15,
+   "total_T": 10,
+   "outcome": "win"
+  },
+  {
+   "qid": "Q07",
+   "category": "why_incomplete",
+   "repeat": 1,
+   "error": null,
+   "d_first": true,
+   "scores_D": {
+    "answers_question": 5,
+    "plain_language": 5,
+    "actionable": 5
+   },
+   "scores_T": {
+    "answers_question": 3,
+    "plain_language": 4,
+    "actionable": 3
+   },
+   "total_D": 15,
+   "total_T": 10,
+   "outcome": "win"
+  },
+  {
+   "qid": "Q07",
+   "category": "why_incomplete",
+   "repeat": 2,
+   "error": null,
+   "d_first": false,
+   "scores_D": {
+    "answers_question": 5,
+    "plain_language": 5,
+    "actionable": 4
+   },
+   "scores_T": {
+    "answers_question": 4,
+    "plain_language": 4,
+    "actionable": 3
+   },
+   "total_D": 14,
+   "total_T": 11,
+   "outcome": "win"
+  },
+  {
+   "qid": "Q08",
+   "category": "compare",
+   "repeat": 0,
+   "error": null,
+   "d_first": false,
+   "scores_D": {
+    "answers_question": 3,
+    "plain_language": 3,
+    "actionable": 1
+   },
+   "scores_T": {
+    "answers_question": 4,
+    "plain_language": 5,
+    "actionable": 3
+   },
+   "total_D": 7,
+   "total_T": 12,
+   "outcome": "loss"
+  },
+  {
+   "qid": "Q08",
+   "category": "compare",
+   "repeat": 1,
+   "error": null,
+   "d_first": false,
+   "scores_D": {
+    "answers_question": 3,
+    "plain_language": 2,
+    "actionable": 1
+   },
+   "scores_T": {
+    "answers_question": 4,
+    "plain_language": 5,
+    "actionable": 3
+   },
+   "total_D": 6,
+   "total_T": 12,
+   "outcome": "loss"
+  },
+  {
+   "qid": "Q08",
+   "category": "compare",
+   "repeat": 2,
+   "error": null,
+   "d_first": true,
+   "scores_D": {
+    "answers_question": 4,
+    "plain_language": 3,
+    "actionable": 2
+   },
+   "scores_T": {
+    "answers_question": 4,
+    "plain_language": 4,
+    "actionable": 2
+   },
+   "total_D": 9,
+   "total_T": 10,
+   "outcome": "loss"
+  },
+  {
+   "qid": "Q09",
+   "category": "compare",
+   "repeat": 0,
+   "error": null,
+   "d_first": true,
+   "scores_D": {
+    "answers_question": 3,
+    "plain_language": 2,
+    "actionable": 1
+   },
+   "scores_T": {
+    "answers_question": 4,
+    "plain_language": 4,
+    "actionable": 1
+   },
+   "total_D": 6,
+   "total_T": 9,
+   "outcome": "loss"
+  },
+  {
+   "qid": "Q09",
+   "category": "compare",
+   "repeat": 1,
+   "error": null,
+   "d_first": false,
+   "scores_D": {
+    "answers_question": 3,
+    "plain_language": 2,
+    "actionable": 1
+   },
+   "scores_T": {
+    "answers_question": 5,
+    "plain_language": 5,
+    "actionable": 3
+   },
+   "total_D": 6,
+   "total_T": 13,
+   "outcome": "loss"
+  },
+  {
+   "qid": "Q09",
+   "category": "compare",
+   "repeat": 2,
+   "error": null,
+   "d_first": true,
+   "scores_D": {
+    "answers_question": 3,
+    "plain_language": 2,
+    "actionable": 1
+   },
+   "scores_T": {
+    "answers_question": 4,
+    "plain_language": 4,
+    "actionable": 2
+   },
+   "total_D": 6,
+   "total_T": 10,
+   "outcome": "loss"
+  },
+  {
+   "qid": "Q10",
+   "category": "compare",
+   "repeat": 0,
+   "error": null,
+   "d_first": true,
+   "scores_D": {
+    "answers_question": 3,
+    "plain_language": 2,
+    "actionable": 2
+   },
+   "scores_T": {
+    "answers_question": 5,
+    "plain_language": 4,
+    "actionable": 4
+   },
+   "total_D": 7,
+   "total_T": 13,
+   "outcome": "loss"
+  },
+  {
+   "qid": "Q10",
+   "category": "compare",
+   "repeat": 1,
+   "error": null,
+   "d_first": true,
+   "scores_D": {
+    "answers_question": 3,
+    "plain_language": 2,
+    "actionable": 2
+   },
+   "scores_T": {
+    "answers_question": 5,
+    "plain_language": 4,
+    "actionable": 4
+   },
+   "total_D": 7,
+   "total_T": 13,
+   "outcome": "loss"
+  },
+  {
+   "qid": "Q10",
+   "category": "compare",
+   "repeat": 2,
+   "error": null,
+   "d_first": false,
+   "scores_D": {
+    "answers_question": 3,
+    "plain_language": 2,
+    "actionable": 2
+   },
+   "scores_T": {
+    "answers_question": 5,
+    "plain_language": 4,
+    "actionable": 5
+   },
+   "total_D": 7,
+   "total_T": 14,
+   "outcome": "loss"
+  },
+  {
+   "qid": "Q11",
+   "category": "what_if",
+   "repeat": 0,
+   "error": null,
+   "d_first": false,
+   "scores_D": {
+    "answers_question": 2,
+    "plain_language": 5,
+    "actionable": 2
+   },
+   "scores_T": {
+    "answers_question": 5,
+    "plain_language": 5,
+    "actionable": 4
+   },
+   "total_D": 9,
+   "total_T": 14,
+   "outcome": "loss"
+  },
+  {
+   "qid": "Q11",
+   "category": "what_if",
+   "repeat": 1,
+   "error": null,
+   "d_first": false,
+   "scores_D": {
+    "answers_question": 2,
+    "plain_language": 5,
+    "actionable": 1
+   },
+   "scores_T": {
+    "answers_question": 5,
+    "plain_language": 5,
+    "actionable": 4
+   },
+   "total_D": 8,
+   "total_T": 14,
+   "outcome": "loss"
+  },
+  {
+   "qid": "Q11",
+   "category": "what_if",
+   "repeat": 2,
+   "error": null,
+   "d_first": false,
+   "scores_D": {
+    "answers_question": 2,
+    "plain_language": 5,
+    "actionable": 1
+   },
+   "scores_T": {
+    "answers_question": 5,
+    "plain_language": 5,
+    "actionable": 4
+   },
+   "total_D": 8,
+   "total_T": 14,
+   "outcome": "loss"
+  },
+  {
+   "qid": "Q12",
+   "category": "what_if",
+   "repeat": 0,
+   "error": null,
+   "d_first": true,
+   "scores_D": {
+    "answers_question": 4,
+    "plain_language": 5,
+    "actionable": 3
+   },
+   "scores_T": {
+    "answers_question": 3,
+    "plain_language": 4,
+    "actionable": 2
+   },
+   "total_D": 12,
+   "total_T": 9,
+   "outcome": "win"
+  },
+  {
+   "qid": "Q12",
+   "category": "what_if",
+   "repeat": 1,
+   "error": null,
+   "d_first": false,
+   "scores_D": {
+    "answers_question": 5,
+    "plain_language": 4,
+    "actionable": 4
+   },
+   "scores_T": {
+    "answers_question": 4,
+    "plain_language": 4,
+    "actionable": 3
+   },
+   "total_D": 13,
+   "total_T": 11,
+   "outcome": "win"
+  },
+  {
+   "qid": "Q12",
+   "category": "what_if",
+   "repeat": 2,
+   "error": null,
+   "d_first": true,
+   "scores_D": {
+    "answers_question": 4,
+    "plain_language": 5,
+    "actionable": 3
+   },
+   "scores_T": {
+    "answers_question": 3,
+    "plain_language": 4,
+    "actionable": 2
+   },
+   "total_D": 12,
+   "total_T": 9,
+   "outcome": "win"
+  },
+  {
+   "qid": "Q13",
+   "category": "what_if",
+   "repeat": 0,
+   "error": null,
+   "d_first": true,
+   "scores_D": {
+    "answers_question": 4,
+    "plain_language": 5,
+    "actionable": 3
+   },
+   "scores_T": {
+    "answers_question": 4,
+    "plain_language": 4,
+    "actionable": 4
+   },
+   "total_D": 12,
+   "total_T": 12,
+   "outcome": "tie"
+  },
+  {
+   "qid": "Q13",
+   "category": "what_if",
+   "repeat": 1,
+   "error": null,
+   "d_first": false,
+   "scores_D": {
+    "answers_question": 3,
+    "plain_language": 5,
+    "actionable": 2
+   },
+   "scores_T": {
+    "answers_question": 4,
+    "plain_language": 4,
+    "actionable": 3
+   },
+   "total_D": 10,
+   "total_T": 11,
+   "outcome": "loss"
+  },
+  {
+   "qid": "Q13",
+   "category": "what_if",
+   "repeat": 2,
+   "error": null,
+   "d_first": false,
+   "scores_D": {
+    "answers_question": 3,
+    "plain_language": 5,
+    "actionable": 2
+   },
+   "scores_T": {
+    "answers_question": 4,
+    "plain_language": 4,
+    "actionable": 3
+   },
+   "total_D": 10,
+   "total_T": 11,
+   "outcome": "loss"
+  },
+  {
+   "qid": "Q14",
+   "category": "next_action",
+   "repeat": 0,
+   "error": null,
+   "d_first": true,
+   "scores_D": {
+    "answers_question": 4,
+    "plain_language": 3,
+    "actionable": 2
+   },
+   "scores_T": {
+    "answers_question": 5,
+    "plain_language": 5,
+    "actionable": 5
+   },
+   "total_D": 9,
+   "total_T": 15,
+   "outcome": "loss"
+  },
+  {
+   "qid": "Q14",
+   "category": "next_action",
+   "repeat": 1,
+   "error": null,
+   "d_first": false,
+   "scores_D": {
+    "answers_question": 3,
+    "plain_language": 3,
+    "actionable": 2
+   },
+   "scores_T": {
+    "answers_question": 5,
+    "plain_language": 5,
+    "actionable": 5
+   },
+   "total_D": 8,
+   "total_T": 15,
+   "outcome": "loss"
+  },
+  {
+   "qid": "Q14",
+   "category": "next_action",
+   "repeat": 2,
+   "error": null,
+   "d_first": false,
+   "scores_D": {
+    "answers_question": 3,
+    "plain_language": 3,
+    "actionable": 3
+   },
+   "scores_T": {
+    "answers_question": 5,
+    "plain_language": 5,
+    "actionable": 5
+   },
+   "total_D": 9,
+   "total_T": 15,
+   "outcome": "loss"
+  },
+  {
+   "qid": "Q15",
+   "category": "next_action",
+   "repeat": 0,
+   "error": null,
+   "d_first": false,
+   "scores_D": {
+    "answers_question": 5,
+    "plain_language": 5,
+    "actionable": 5
+   },
+   "scores_T": {
+    "answers_question": 2,
+    "plain_language": 4,
+    "actionable": 3
+   },
+   "total_D": 15,
+   "total_T": 9,
+   "outcome": "win"
+  },
+  {
+   "qid": "Q15",
+   "category": "next_action",
+   "repeat": 1,
+   "error": null,
+   "d_first": true,
+   "scores_D": {
+    "answers_question": 5,
+    "plain_language": 4,
+    "actionable": 5
+   },
+   "scores_T": {
+    "answers_question": 2,
+    "plain_language": 3,
+    "actionable": 2
+   },
+   "total_D": 14,
+   "total_T": 7,
+   "outcome": "win"
+  },
+  {
+   "qid": "Q15",
+   "category": "next_action",
+   "repeat": 2,
+   "error": null,
+   "d_first": false,
+   "scores_D": {
+    "answers_question": 5,
+    "plain_language": 5,
+    "actionable": 5
+   },
+   "scores_T": {
+    "answers_question": 2,
+    "plain_language": 4,
+    "actionable": 2
+   },
+   "total_D": 15,
+   "total_T": 8,
+   "outcome": "win"
+  },
+  {
+   "qid": "Q16",
+   "category": "next_action",
+   "repeat": 0,
+   "error": null,
+   "d_first": false,
+   "scores_D": {
+    "answers_question": 5,
+    "plain_language": 4,
+    "actionable": 5
+   },
+   "scores_T": {
+    "answers_question": 4,
+    "plain_language": 4,
+    "actionable": 4
+   },
+   "total_D": 14,
+   "total_T": 12,
+   "outcome": "win"
+  },
+  {
+   "qid": "Q16",
+   "category": "next_action",
+   "repeat": 1,
+   "error": null,
+   "d_first": false,
+   "scores_D": {
+    "answers_question": 5,
+    "plain_language": 4,
+    "actionable": 5
+   },
+   "scores_T": {
+    "answers_question": 4,
+    "plain_language": 4,
+    "actionable": 4
+   },
+   "total_D": 14,
+   "total_T": 12,
+   "outcome": "win"
+  },
+  {
+   "qid": "Q16",
+   "category": "next_action",
+   "repeat": 2,
+   "error": null,
+   "d_first": false,
+   "scores_D": {
+    "answers_question": 5,
+    "plain_language": 4,
+    "actionable": 5
+   },
+   "scores_T": {
+    "answers_question": 4,
+    "plain_language": 4,
+    "actionable": 4
+   },
+   "total_D": 14,
+   "total_T": 12,
+   "outcome": "win"
+  },
+  {
+   "qid": "Q17",
+   "category": "next_action",
+   "repeat": 0,
+   "error": null,
+   "d_first": false,
+   "scores_D": {
+    "answers_question": 5,
+    "plain_language": 4,
+    "actionable": 5
+   },
+   "scores_T": {
+    "answers_question": 3,
+    "plain_language": 5,
+    "actionable": 2
+   },
+   "total_D": 14,
+   "total_T": 10,
+   "outcome": "win"
+  },
+  {
+   "qid": "Q17",
+   "category": "next_action",
+   "repeat": 1,
+   "error": null,
+   "d_first": true,
+   "scores_D": {
+    "answers_question": 5,
+    "plain_language": 4,
+    "actionable": 5
+   },
+   "scores_T": {
+    "answers_question": 2,
+    "plain_language": 5,
+    "actionable": 2
+   },
+   "total_D": 14,
+   "total_T": 9,
+   "outcome": "win"
+  },
+  {
+   "qid": "Q17",
+   "category": "next_action",
+   "repeat": 2,
+   "error": null,
+   "d_first": false,
+   "scores_D": {
+    "answers_question": 5,
+    "plain_language": 4,
+    "actionable": 5
+   },
+   "scores_T": {
+    "answers_question": 3,
+    "plain_language": 5,
+    "actionable": 2
+   },
+   "total_D": 14,
+   "total_T": 10,
+   "outcome": "win"
+  },
+  {
+   "qid": "Q18",
+   "category": "plain_summary",
+   "repeat": 0,
+   "error": null,
+   "d_first": true,
+   "scores_D": {
+    "answers_question": 2,
+    "plain_language": 4,
+    "actionable": 2
+   },
+   "scores_T": {
+    "answers_question": 3,
+    "plain_language": 2,
+    "actionable": 2
+   },
+   "total_D": 8,
+   "total_T": 7,
+   "outcome": "win"
+  },
+  {
+   "qid": "Q18",
+   "category": "plain_summary",
+   "repeat": 1,
+   "error": null,
+   "d_first": false,
+   "scores_D": {
+    "answers_question": 4,
+    "plain_language": 4,
+    "actionable": 3
+   },
+   "scores_T": {
+    "answers_question": 3,
+    "plain_language": 3,
+    "actionable": 2
+   },
+   "total_D": 11,
+   "total_T": 8,
+   "outcome": "win"
+  },
+  {
+   "qid": "Q18",
+   "category": "plain_summary",
+   "repeat": 2,
+   "error": null,
+   "d_first": false,
+   "scores_D": {
+    "answers_question": 4,
+    "plain_language": 4,
+    "actionable": 3
+   },
+   "scores_T": {
+    "answers_question": 3,
+    "plain_language": 3,
+    "actionable": 2
+   },
+   "total_D": 11,
+   "total_T": 8,
+   "outcome": "win"
+  },
+  {
+   "qid": "Q19",
+   "category": "plain_summary",
+   "repeat": 0,
+   "error": null,
+   "d_first": false,
+   "scores_D": {
+    "answers_question": 4,
+    "plain_language": 4,
+    "actionable": 3
+   },
+   "scores_T": {
+    "answers_question": 3,
+    "plain_language": 2,
+    "actionable": 2
+   },
+   "total_D": 11,
+   "total_T": 7,
+   "outcome": "win"
+  },
+  {
+   "qid": "Q19",
+   "category": "plain_summary",
+   "repeat": 1,
+   "error": null,
+   "d_first": true,
+   "scores_D": {
+    "answers_question": 2,
+    "plain_language": 4,
+    "actionable": 2
+   },
+   "scores_T": {
+    "answers_question": 3,
+    "plain_language": 2,
+    "actionable": 2
+   },
+   "total_D": 8,
+   "total_T": 7,
+   "outcome": "win"
+  },
+  {
+   "qid": "Q19",
+   "category": "plain_summary",
+   "repeat": 2,
+   "error": null,
+   "d_first": false,
+   "scores_D": {
+    "answers_question": 4,
+    "plain_language": 5,
+    "actionable": 3
+   },
+   "scores_T": {
+    "answers_question": 3,
+    "plain_language": 2,
+    "actionable": 2
+   },
+   "total_D": 12,
+   "total_T": 7,
+   "outcome": "win"
+  },
+  {
+   "qid": "Q20",
+   "category": "plain_summary",
+   "repeat": 0,
+   "error": null,
+   "d_first": false,
+   "scores_D": {
+    "answers_question": 3,
+    "plain_language": 3,
+    "actionable": 3
+   },
+   "scores_T": {
+    "answers_question": 4,
+    "plain_language": 5,
+    "actionable": 4
+   },
+   "total_D": 9,
+   "total_T": 13,
+   "outcome": "loss"
+  },
+  {
+   "qid": "Q20",
+   "category": "plain_summary",
+   "repeat": 1,
+   "error": null,
+   "d_first": true,
+   "scores_D": {
+    "answers_question": 3,
+    "plain_language": 2,
+    "actionable": 2
+   },
+   "scores_T": {
+    "answers_question": 4,
+    "plain_language": 4,
+    "actionable": 3
+   },
+   "total_D": 7,
+   "total_T": 11,
+   "outcome": "loss"
+  },
+  {
+   "qid": "Q20",
+   "category": "plain_summary",
+   "repeat": 2,
+   "error": null,
+   "d_first": true,
+   "scores_D": {
+    "answers_question": 3,
+    "plain_language": 2,
+    "actionable": 2
+   },
+   "scores_T": {
+    "answers_question": 4,
+    "plain_language": 4,
+    "actionable": 3
+   },
+   "total_D": 7,
+   "total_T": 11,
+   "outcome": "loss"
+  }
+ ],
+ "summary": {
+  "judgements": {
+   "attempted": 60,
+   "usable": 60,
+   "judge_errors": 0
+  },
+  "overall": {
+   "n": 60,
+   "win": {
+    "count": 35,
+    "share": 0.5833333333333334,
+    "ci95": [
+     0.45727854313239624,
+     0.6993591351212818
+    ]
+   },
+   "tie": {
+    "count": 2,
+    "share": 0.03333333333333333,
+    "ci95": [
+     0.009189126490150246,
+     0.11363987528925378
+    ]
+   },
+   "loss": {
+    "count": 23,
+    "share": 0.38333333333333336,
+    "ci95": [
+     0.2708808958488824,
+     0.5098263545959686
+    ]
+   }
+  },
+  "mean_total_diff_D_minus_T": 0.5666666666666667,
+  "mean_total_diff_ci95_bootstrap_over_questions": [
+   -1.3,
+   2.3833333333333333
+  ],
+  "mean_criterion_diff_D_minus_T": {
+   "answers_question": 0.36666666666666664,
+   "plain_language": -0.13333333333333333,
+   "actionable": 0.3333333333333333
+  },
+  "by_category": {
+   "explain": {
+    "n": 9,
+    "win": {
+     "count": 6,
+     "share": 0.6666666666666666,
+     "ci95": [
+      0.35419734749908977,
+      0.879418401317257
+     ]
+    },
+    "tie": {
+     "count": 0,
+     "share": 0.0,
+     "ci95": [
+      0.0,
+      0.2991527535509594
+     ]
+    },
+    "loss": {
+     "count": 3,
+     "share": 0.3333333333333333,
+     "ci95": [
+      0.12058159868274293,
+      0.6458026525009102
+     ]
+    },
+    "mean_total_diff": 2.5555555555555554
+   },
+   "why_incomplete": {
+    "n": 12,
+    "win": {
+     "count": 11,
+     "share": 0.9166666666666666,
+     "ci95": [
+      0.6461140782014047,
+      0.9851352905492264
+     ]
+    },
+    "tie": {
+     "count": 1,
+     "share": 0.08333333333333333,
+     "ci95": [
+      0.014864709450773478,
+      0.35388592179859524
+     ]
+    },
+    "loss": {
+     "count": 0,
+     "share": 0.0,
+     "ci95": [
+      0.0,
+      0.2425007574992425
+     ]
+    },
+    "mean_total_diff": 3.5
+   },
+   "compare": {
+    "n": 9,
+    "win": {
+     "count": 0,
+     "share": 0.0,
+     "ci95": [
+      0.0,
+      0.2991527535509594
+     ]
+    },
+    "tie": {
+     "count": 0,
+     "share": 0.0,
+     "ci95": [
+      0.0,
+      0.2991527535509594
+     ]
+    },
+    "loss": {
+     "count": 9,
+     "share": 1.0,
+     "ci95": [
+      0.7008472464490407,
+      1.0
+     ]
+    },
+    "mean_total_diff": -5.0
+   },
+   "what_if": {
+    "n": 9,
+    "win": {
+     "count": 3,
+     "share": 0.3333333333333333,
+     "ci95": [
+      0.12058159868274293,
+      0.6458026525009102
+     ]
+    },
+    "tie": {
+     "count": 1,
+     "share": 0.1111111111111111,
+     "ci95": [
+      0.019890371327130535,
+      0.4350062147680601
+     ]
+    },
+    "loss": {
+     "count": 5,
+     "share": 0.5555555555555556,
+     "ci95": [
+      0.2666473457440297,
+      0.811224570528086
+     ]
+    },
+    "mean_total_diff": -1.2222222222222223
+   },
+   "next_action": {
+    "n": 12,
+    "win": {
+     "count": 9,
+     "share": 0.75,
+     "ci95": [
+      0.46768966087934005,
+      0.9110599603710386
+     ]
+    },
+    "tie": {
+     "count": 0,
+     "share": 0.0,
+     "ci95": [
+      0.0,
+      0.2425007574992425
+     ]
+    },
+    "loss": {
+     "count": 3,
+     "share": 0.25,
+     "ci95": [
+      0.08894003962896138,
+      0.53231033912066
+     ]
+    },
+    "mean_total_diff": 1.6666666666666667
+   },
+   "plain_summary": {
+    "n": 9,
+    "win": {
+     "count": 6,
+     "share": 0.6666666666666666,
+     "ci95": [
+      0.35419734749908977,
+      0.879418401317257
+     ]
+    },
+    "tie": {
+     "count": 0,
+     "share": 0.0,
+     "ci95": [
+      0.0,
+      0.2991527535509594
+     ]
+    },
+    "loss": {
+     "count": 3,
+     "share": 0.3333333333333333,
+     "ci95": [
+      0.12058159868274293,
+      0.6458026525009102
+     ]
+    },
+    "mean_total_diff": 0.5555555555555556
+   }
+  },
+  "agent_delivery": {
+   "questions": 20,
+   "raw_passed_verifier": 15,
+   "fallback_delivered": 5,
+   "of_which_infra_errors": 2,
+   "of_which_verifier_blocks": 3
+  }
+ },
+ "faithfulness": {
+  "template_violations": 0,
+  "delivered_violations": 0
+ },
+ "agent_calls": {
+  "total": 20,
+  "throttled_retries": 0,
+  "tool_calls": 18,
+  "errors": [
+   "BadRequestError: Error code: 400 - {'error': {'message': '[Failed Dependency] while invoking tool ask_ontology, the dependency call to the MCP server: https://api.fabric.microsoft.com:443/v1/mcp/dataPlane/workspaces/00000000-0000-4000-8000-000000000019/items/00000000-0000-4000-8000-000000000002/ontologyEndpoint failed with status code 500, and error message: Response status code does not indicate ",
+   "BadRequestError: Error code: 400 - {'error': {'message': 'Remote MCP server error while invoking tool ask_ontology: Streamable HTTP POST response completed without a reply to request with ID: 2 The server accepted the HTTP request but did not return a valid MCP JSON-RPC response. Please verify the MCP server implementation and transport compatibility. Troubleshooting guide: https://learn.microsoft"
+  ]
+ }
+}

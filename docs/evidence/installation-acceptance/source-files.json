@@ -1,0 +1,553 @@
+{
+  "sourceSha256": "02CE1C24C9E434001053414A2F93D89680C41821A4A9C704D520A35650E158EE",
+  "files": [
+    {
+      "relativePath": "\\cloud\\tool_host\\function_app.py",
+      "sha256": "57C93527A0F24119113A7D9453420C44905DBD8D8307D1C5726FFC222BCD77F5"
+    },
+    {
+      "relativePath": "\\cloud\\tool_host\\requirements.txt",
+      "sha256": "D9EF8B1C8189F101E043D4173B14B0BC957E5DC7C76D3D3A511AD4E9435A9F12"
+    },
+    {
+      "relativePath": "\\deploy\\cleanup_plan.py",
+      "sha256": "77343D9A6663F86739A36267D561715292A261F7D316C97735C47AF2EE67FE18"
+    },
+    {
+      "relativePath": "\\deploy\\deploy_plan.py",
+      "sha256": "A7CB068BE5CB8F864842907B594F9DDC903048A5C071095F98FD7CE971953F5B"
+    },
+    {
+      "relativePath": "\\deploy\\deploy-all.ps1",
+      "sha256": "2B9DA156E5B33EE9C90D5DDD07B97E2A1AF50B8C1FF38896766C03C4E1EC059B"
+    },
+    {
+      "relativePath": "\\deploy\\deploy.ps1",
+      "sha256": "7DAA247E1D8E4342AAAF1D6A6365682DC0CF1B96001E815F7EA698FB911067A2"
+    },
+    {
+      "relativePath": "\\deploy\\deployment-state.ps1",
+      "sha256": "D72965CB0F5B80CBBC095A4313E93DF9737BA3BF27696FEA43FA16ACC4765FA8"
+    },
+    {
+      "relativePath": "\\deploy\\enable_tracing.ps1",
+      "sha256": "2A66C4DB3DCC1C17638AA858A1683DB23F0F62DBE50330011549FFD577B88FEF"
+    },
+    {
+      "relativePath": "\\deploy\\main.bicep",
+      "sha256": "D9B422F25B973A71C83A8F31CA0B37C099E18DBECF4F09AD128609185B7B868F"
+    },
+    {
+      "relativePath": "\\deploy\\ownership-hooks.ps1",
+      "sha256": "6321D2A324D1CAB4DFE66F4B00813123F718C10862090E575C185AA55F883126"
+    },
+    {
+      "relativePath": "\\deploy\\parameters.template.json",
+      "sha256": "1DF6912700F7B1199A7705B8C6CD8CE7225F0997E8CB9DE8686714DA3ECDDDCF"
+    },
+    {
+      "relativePath": "\\deploy\\pin_policy.py",
+      "sha256": "E71B693FD54F0AE1D6FCD2934B92D9AF7281CF13ED451E5113E375A5165235BC"
+    },
+    {
+      "relativePath": "\\deploy\\requirements.txt",
+      "sha256": "A2D1E19A268A6F4A8569E63197761BA291440A5F134B237736A019875A28364B"
+    },
+    {
+      "relativePath": "\\deploy\\resources.bicep",
+      "sha256": "0E931E4FD596AC300100A25594DEA1D0D578AF41D396CCDB66699D5D669E7D82"
+    },
+    {
+      "relativePath": "\\deploy\\uninstall.ps1",
+      "sha256": "37BE08CA51F759FBD40B3654E42CC6EBFF4BB64BBB8D7BEB9075F99793A22C86"
+    },
+    {
+      "relativePath": "\\fabric\\livy\\load_medallion.py",
+      "sha256": "567C13FDA8854A7BDFCEB29612E093D66C5BEEA23026D8398085579F970169C2"
+    },
+    {
+      "relativePath": "\\fabric\\notebooks\\01_load_raw.py",
+      "sha256": "B35348907EFB2FE0968979B020AF1E64D4EAF25B332F238FB677AC16D175BF91"
+    },
+    {
+      "relativePath": "\\fabric\\notebooks\\02_raw_to_silver.py",
+      "sha256": "64B7A2A8AE136407A02DBA277B938B9D461DB66B667697FBD35901B4C9A61EBB"
+    },
+    {
+      "relativePath": "\\fabric\\notebooks\\03_silver_to_gold.py",
+      "sha256": "E7D9CC6AC9315507A68EEDDC4712E217FD6322A0DBD1C4093C09E802A9A429DA"
+    },
+    {
+      "relativePath": "\\fabric\\parameters.template.json",
+      "sha256": "132150EB89998EF17B69E0399AF555A3ABED7A4E4C96E3C2687194CC28650530"
+    },
+    {
+      "relativePath": "\\fabric\\provision.ps1",
+      "sha256": "BD0B8F620C13FB6210278DF7C7B14DE17574D644162E24E7225A2E6AB2967E0F"
+    },
+    {
+      "relativePath": "\\scripts\\analyze_blocks.py",
+      "sha256": "DD8CBEB39E296AA2D8D7F8A1AA0114BF3B64EB2225E7BE8A8EEA3B8B4747B008"
+    },
+    {
+      "relativePath": "\\scripts\\authority.py",
+      "sha256": "99C167F5AAFAFE655FD167F49B1015E4991C832477A579BB5EA43E487B6FBE49"
+    },
+    {
+      "relativePath": "\\scripts\\build_article_html.py",
+      "sha256": "A2E306644733AF4FE799DC54657EF19E22271FED6F7B7FBD530FC3454A64C5C2"
+    },
+    {
+      "relativePath": "\\scripts\\chat_foundry_agent.py",
+      "sha256": "29012041F0AFEFEBC2E659D5F663FE3D8DBA7548364180A4BD28E13D51FDE95D"
+    },
+    {
+      "relativePath": "\\scripts\\create_foundry_agent.py",
+      "sha256": "DDA2CB87F839CFA2EF6D31CFEB066E1A2A421E7C8C6EAC623C77E0D8DE2F5614"
+    },
+    {
+      "relativePath": "\\scripts\\create_foundry_fabric_agent.py",
+      "sha256": "16820DF20D19DFF1FB407A05AA5BC9A51CCE33DA132A300436D7899152EDC97F"
+    },
+    {
+      "relativePath": "\\scripts\\export_foundry_eval.py",
+      "sha256": "5E802FD17D6D90175BD589FA1316F0640FAE2274A43B4BFBA6E9D392918F0EEB"
+    },
+    {
+      "relativePath": "\\scripts\\fabric_data_agent_ask.py",
+      "sha256": "BBDE038A33A66C97954697391C1116AC93BF1BEC8DCB9568F70AE10D8BAF834B"
+    },
+    {
+      "relativePath": "\\scripts\\fabric_data_agent_ontology.py",
+      "sha256": "B0D569ED4A58FCB1E657CCD01C896871733B7E9C4461C8FE61B2F49DF49F417B"
+    },
+    {
+      "relativePath": "\\scripts\\fabric_graph_chain.py",
+      "sha256": "17EF536BA75D37BFDBBC6D5438D507C82494C3F6F48CD1C8A9E5A02B47E0CF5B"
+    },
+    {
+      "relativePath": "\\scripts\\fabric_graph_model_fix.py",
+      "sha256": "AD05780382874E570F69BF4A5B7E8B263D786DF1AE23D118CCFAFC076E58CA30"
+    },
+    {
+      "relativePath": "\\scripts\\fabric_graph_query.py",
+      "sha256": "BA47BA91EE948842B0DB533E7769C33E83DACEAB7D8DDF00510B127E12F6D077"
+    },
+    {
+      "relativePath": "\\scripts\\fabric_graph_readback.py",
+      "sha256": "D755EC2C54C27F6B7FCE1E44D940A72DCA711E8D71C4B8DD8F39010BF20DABB6"
+    },
+    {
+      "relativePath": "\\scripts\\fabric_hash_check.py",
+      "sha256": "00E5D5598353C5BD47F166275218E7B7BA02936CFA6DCC7C84D6671CE0F50A8D"
+    },
+    {
+      "relativePath": "\\scripts\\fabric_load_chain.py",
+      "sha256": "7676B4C18878C1BF1E7BE9EA5064F1483A20CF85B58166FC068C8EC2F5C30567"
+    },
+    {
+      "relativePath": "\\scripts\\fabric_load_graph.py",
+      "sha256": "BF8BB8F9D2EF708457C939DBA07D501086E0852F63F0367D875526266B6DC5BF"
+    },
+    {
+      "relativePath": "\\scripts\\fabric_migrate_quality.py",
+      "sha256": "10BE31972F22EC530F49D7DB6A986DEFF80DA54F3ADA28C3A387E403E74328D4"
+    },
+    {
+      "relativePath": "\\scripts\\fabric_ontology_attempt.py",
+      "sha256": "2B7B076ED69DB10A2883620F608DD6804558E3FA3012D863CB850EA4E85C45F6"
+    },
+    {
+      "relativePath": "\\scripts\\fabric_ontology_define_chain.py",
+      "sha256": "E9D0909FA4B511DD0E408F2AC151FC80B1E347478D00139D2B2BD46AFB7C852A"
+    },
+    {
+      "relativePath": "\\scripts\\fabric_ontology_define.py",
+      "sha256": "C6DAD1B700BE1E6A472CC9917C082AB677682BBD1A00A3C4686AD7A4FA82DC49"
+    },
+    {
+      "relativePath": "\\scripts\\fabric_reset_tables.py",
+      "sha256": "065260A869D275EACC980B9193F9C9B0A4932003E14FF33B0FA07DE4C40D3BE7"
+    },
+    {
+      "relativePath": "\\scripts\\generate_dataset.py",
+      "sha256": "6116192287450BF7091957577268B62A8B28969C662BBB93022BDFEE7B9B1519"
+    },
+    {
+      "relativePath": "\\scripts\\make_charts.py",
+      "sha256": "3A93F5D7094C97E30E40369AEA2D6AB31FA0AB469AADD6267CA9E590F73A22E4"
+    },
+    {
+      "relativePath": "\\scripts\\make_fig02_architecture.py",
+      "sha256": "22547F153815F89303635908F3F8B4B595C01ECE192E19B11BF442202866C0D9"
+    },
+    {
+      "relativePath": "\\scripts\\make_fig03_three_planes.py",
+      "sha256": "CD77572C56E4CE0D172F7CFBD2EB244BF4E304799A9C723B94163B2BB98FC942"
+    },
+    {
+      "relativePath": "\\scripts\\make_fig04_control_layers.py",
+      "sha256": "440A0794CCA778D2C78FF58F687757AE1BE0BE12AD8D63678814F86A56643E19"
+    },
+    {
+      "relativePath": "\\scripts\\make_fig05_decision_lifecycle.py",
+      "sha256": "AC9C2FBFEC49F12E0D79A15928FD841C19CDAE2C3A798FA2EAD59B5027EFE059"
+    },
+    {
+      "relativePath": "\\scripts\\make_fig07_150.py",
+      "sha256": "BA3B8D4077366FE79B17D8C65BDBAD6C32CF8EB6D360FA24761CF8FAA76574CB"
+    },
+    {
+      "relativePath": "\\scripts\\make_fig07.py",
+      "sha256": "0A075CE5FE02941B6EB9DD3FC63759BA165A3E4941951232FA92AE937EB218D5"
+    },
+    {
+      "relativePath": "\\scripts\\make_v9_test_charts.py",
+      "sha256": "1E4F829712472BCF0DF318DD522F83B4B6B39D0ABE2D033C2F2F6559887A1C50"
+    },
+    {
+      "relativePath": "\\scripts\\merge_150.py",
+      "sha256": "2D944D782E862DD4C33F42D47210B13D92C66E48805E457EAEEB428108AA8E8B"
+    },
+    {
+      "relativePath": "\\scripts\\merge_extra_results.py",
+      "sha256": "B27F76EE8605FBCA7E9E0B35836B3E40FAFAFDF2DCA455E6ED4635A2FF143F23"
+    },
+    {
+      "relativePath": "\\scripts\\ownership_record.py",
+      "sha256": "4EF7B76BBCB52C6F163A483F83CB4C5ACE7E24CF6FE40C877D40F56ACCD2ED1A"
+    },
+    {
+      "relativePath": "\\scripts\\rerun_error_rows_p001_p050.py",
+      "sha256": "C9BE7C12C695FD782FA122321A8653E9C23FC821A0CACCF737CBC650634D6D05"
+    },
+    {
+      "relativePath": "\\scripts\\rerun_error_rows.py",
+      "sha256": "47D81D3DA95182C91DB18297B39BD0EB16BFB086419C33192C19DE63C201C263"
+    },
+    {
+      "relativePath": "\\scripts\\rescore_rows.py",
+      "sha256": "FB265C6215E3538FAB25C0B0F3208D220E75E86F940A68FCE23E6558D4D6C2EB"
+    },
+    {
+      "relativePath": "\\scripts\\run_cloud_agent.py",
+      "sha256": "66B3D9D7DB15259139C80978861757C3E1B0E4A531666B5A3F9DE6E79C88FC39"
+    },
+    {
+      "relativePath": "\\scripts\\run_e2e_chain.py",
+      "sha256": "8CC0F19D75C0A5EF415F67EC932B8B61AF7328A78C32D9E63B5E355246F921D3"
+    },
+    {
+      "relativePath": "\\scripts\\run_e2e_foundry.py",
+      "sha256": "0563B8C8107A84E1E547A8B1C0487BE6E3EE0A64E439154F20C96DF3245DF506"
+    },
+    {
+      "relativePath": "\\scripts\\run_experiment.py",
+      "sha256": "B599C5201B58C3CAE9F1D7517C15F0E8C1736CBBC65435DA6A9AD5B7141FE95E"
+    },
+    {
+      "relativePath": "\\scripts\\run_extra_batches.py",
+      "sha256": "28F4AC36E2B0CA19C5333CD925C65C6E51BCC830B73D00A15E646A4514ADBE39"
+    },
+    {
+      "relativePath": "\\scripts\\run_extra_gpt55_fabric.py",
+      "sha256": "8C9467BC461134F8C6325B7104F05553DFD3796877AB42BEDE7CC2096A461C5B"
+    },
+    {
+      "relativePath": "\\scripts\\run_foundry_ontology_eval.py",
+      "sha256": "EF598E0F533B45B7F128D77E91B9514047540D2ED00DB093CF1C15FF4A728E6B"
+    },
+    {
+      "relativePath": "\\scripts\\run_gpt55_p001_p050.py",
+      "sha256": "75AFB72631D52F6D523141F2B97DEB7406D1D0F5C8555EB349FCBCF52B7E4DCC"
+    },
+    {
+      "relativePath": "\\scripts\\run_scenarios.py",
+      "sha256": "ECD3FDE5EB66234DC32339F409B86441636F19D5195BC31C5D293166DDCB68CA"
+    },
+    {
+      "relativePath": "\\scripts\\run_traced_question.py",
+      "sha256": "1C27E92785291F770F2151DE8FDBD03CFD4ED6E7237DA04097AC33DF72D67914"
+    },
+    {
+      "relativePath": "\\scripts\\run_usefulness.py",
+      "sha256": "D1ED9CACF6385F4DC4D4E378C7EB1734F8D7567618C39481C5CDDC4BB13C5A50"
+    },
+    {
+      "relativePath": "\\scripts\\test_merge_150.py",
+      "sha256": "E3D914323849D25AB720CA69C31A8CF7411067C8131C47E8A37C360901A27F5A"
+    },
+    {
+      "relativePath": "\\scripts\\test_rescore_rows.py",
+      "sha256": "A145277579642C5AAED04863527D30D76C081708FCBEF1158B0F10F40CEEDED5"
+    },
+    {
+      "relativePath": "\\scripts\\verify_cloud_deployment.py",
+      "sha256": "4ABAEA70D50A842F0A46AB7D3FE3E70D129DEBAF00465076C1A016D0838C33BF"
+    },
+    {
+      "relativePath": "\\src\\pinned_scoring\\__init__.py",
+      "sha256": "6F3D73AF790FA98A3EA4847E36AEC092951D2B99C2E0BBE5B72134DA2378F897"
+    },
+    {
+      "relativePath": "\\src\\pinned_scoring\\access_chain.py",
+      "sha256": "4F45A91F2E56747AF9E9E318513B9D52DA644BDF7CAD4C81F34DAF7E533CA581"
+    },
+    {
+      "relativePath": "\\src\\pinned_scoring\\agent.py",
+      "sha256": "CBC192A4CC6E2C27F399F6195B793863EF119962A1AC8A32E0B9D8DCFDD42550"
+    },
+    {
+      "relativePath": "\\src\\pinned_scoring\\authority.py",
+      "sha256": "87E9E6547EA85BD890D26BA9C32A101409184073F30A113A932BD3E8051F39D0"
+    },
+    {
+      "relativePath": "\\src\\pinned_scoring\\cloud_tool_host.py",
+      "sha256": "E8C922D48B2B9578F80CC17A7D7561E43AFFF92703F1698BFA7EA42A96CC015D"
+    },
+    {
+      "relativePath": "\\src\\pinned_scoring\\contracts.py",
+      "sha256": "E923A970AAC9591E4AE5A250FAC62B12858A1959FAF38F51CA5EF7FCE122BCFD"
+    },
+    {
+      "relativePath": "\\src\\pinned_scoring\\controls.py",
+      "sha256": "87C4DA25CE54071F654CEDCBEBD8E01E9740B5B95CDC812F9DC1D70976C86396"
+    },
+    {
+      "relativePath": "\\src\\pinned_scoring\\experiment\\__init__.py",
+      "sha256": "A9E6FD08E5E65B99D19472904121B711B1A03AA62FDEED1F8DE10C9674884515"
+    },
+    {
+      "relativePath": "\\src\\pinned_scoring\\experiment\\arms.py",
+      "sha256": "5985E6B83324875F46A18CD814E977EF8463DCC5C5FCE42D65109AB758D3E2FB"
+    },
+    {
+      "relativePath": "\\src\\pinned_scoring\\experiment\\clients.py",
+      "sha256": "C28F02E1249527899925031A1FE0A8E34C6770739656F0613347EC9463B6E1FA"
+    },
+    {
+      "relativePath": "\\src\\pinned_scoring\\experiment\\config.py",
+      "sha256": "9247844FBCD3892EF7029001EA5AF21713C2A6BABCA3A7A84576B42590C67BDF"
+    },
+    {
+      "relativePath": "\\src\\pinned_scoring\\experiment\\metrics.py",
+      "sha256": "7F643B93C5C55AC13166D43918CDCE311A8CA379F9EB4636BD272865D02D8FE3"
+    },
+    {
+      "relativePath": "\\src\\pinned_scoring\\experiment\\report.py",
+      "sha256": "104DCDD3D1A12D88257DA7EBF26D173CDAA7D3C922C6B9F8716DBD41CC0FBC4F"
+    },
+    {
+      "relativePath": "\\src\\pinned_scoring\\experiment\\runner.py",
+      "sha256": "36E17888CA5349F717543684DC33C10BB4730F72611EE029A254E8A84E9AC1E5"
+    },
+    {
+      "relativePath": "\\src\\pinned_scoring\\experiment\\scenarios_eval.py",
+      "sha256": "D86F76BFBFE1A8139F56FC2DBF5BB8E4373511BDFA78B369311AB8ED520F7102"
+    },
+    {
+      "relativePath": "\\src\\pinned_scoring\\experiment\\usefulness.py",
+      "sha256": "8DB7F441659602B619AABD058C5DDB2DB1E5355DF32BC2C0A363E27019CEF57C"
+    },
+    {
+      "relativePath": "\\src\\pinned_scoring\\fabric\\__init__.py",
+      "sha256": "9679BFC6F9D2DEE7E6A2E704BE96FB355254FD24FE4801BCBC4BEBAD8B757C0F"
+    },
+    {
+      "relativePath": "\\src\\pinned_scoring\\fabric\\access.py",
+      "sha256": "C969A69A497D3E59837ED131BA0AB0C3A107C393225E3E20B45541A85E52A7FD"
+    },
+    {
+      "relativePath": "\\src\\pinned_scoring\\fabric\\delta_loader.py",
+      "sha256": "65D10EC7C968E9E06BFA2BD2BEE22789FBBB6CFFCD48836B12CB2F135516615A"
+    },
+    {
+      "relativePath": "\\src\\pinned_scoring\\fabric\\graph_store.py",
+      "sha256": "79EA55347AECEDD5212AA4F28593ED9CD21E44FF5B4495C7F7E5B8E4E6644BFA"
+    },
+    {
+      "relativePath": "\\src\\pinned_scoring\\fabric\\livy.py",
+      "sha256": "A082775E7E4487BA8DC4B1162EAD25B90F0EAEF87B4D23AFF5A8CDBFC428BCA5"
+    },
+    {
+      "relativePath": "\\src\\pinned_scoring\\fabric\\loader.py",
+      "sha256": "BBBB8A5D5AF97032E03B74F959A9C26B78320DBD5AFBB52233E76AB26885CBE5"
+    },
+    {
+      "relativePath": "\\src\\pinned_scoring\\fabric\\sql_endpoint.py",
+      "sha256": "909F5409DAE52A9A628FA310B421368B2F4DF8A544B151CC83172C04CF81BF3A"
+    },
+    {
+      "relativePath": "\\src\\pinned_scoring\\fabric\\transforms.py",
+      "sha256": "47A34C76A3747C2101A47BB77C41B2F90F26E59AE5750949CF13716D7F92BD31"
+    },
+    {
+      "relativePath": "\\src\\pinned_scoring\\foundry_agent.py",
+      "sha256": "C2AFCDE908320C927250EBBA5E985B78FC36BC4187ED6CDA26C02FA5912B5C3E"
+    },
+    {
+      "relativePath": "\\src\\pinned_scoring\\foundry_eval.py",
+      "sha256": "DBFA052E4B088CBAB2D58C1D1EC126AAAF486ADED21C6B170BE259158864E62B"
+    },
+    {
+      "relativePath": "\\src\\pinned_scoring\\graph_tools.py",
+      "sha256": "B99CFD37A0106CB37D6FC54BCD177A4ECA102980CCA4CFCF70B8468FDCE6EDE0"
+    },
+    {
+      "relativePath": "\\src\\pinned_scoring\\graph.py",
+      "sha256": "822340208714AE31D6FAF8E6DCF16E4682D127864F20B645D2E7C937AFE749BB"
+    },
+    {
+      "relativePath": "\\src\\pinned_scoring\\overrides.py",
+      "sha256": "965C6FBF11458CB2675AA7920CFBE3DA562016D6455CBDF89670E68B6DBAFEC8"
+    },
+    {
+      "relativePath": "\\src\\pinned_scoring\\policy.py",
+      "sha256": "69D6C373C73A51C3C36B57417644CB64C67971A24613A3D11F32CF0BD8F0FC83"
+    },
+    {
+      "relativePath": "\\src\\pinned_scoring\\receipt.py",
+      "sha256": "3D609A21AFEC80AED1804209AF9EB5D3FA35E4AA76A5E25FE48C2087C4402956"
+    },
+    {
+      "relativePath": "\\src\\pinned_scoring\\receipts_store.py",
+      "sha256": "95967FCE2F63CE71CE2710C42D4F20CD3C16AD0C20EB41B3EAB920D4974AD7AD"
+    },
+    {
+      "relativePath": "\\src\\pinned_scoring\\scenarios.py",
+      "sha256": "240E35C5A9FF8872997F05223AC4B79B0A63B75E8CEF0E393C3391663894468C"
+    },
+    {
+      "relativePath": "\\src\\pinned_scoring\\scorer.py",
+      "sha256": "DBC24AE19CA26AE7320B43288990314EE8488C5E297C3036251C14D7C92C96C3"
+    },
+    {
+      "relativePath": "\\src\\pinned_scoring\\synth\\__init__.py",
+      "sha256": "08F2FC7F1ADD0AFED352ED09DA997731BEEDBB1AFEE7E2365B376F47F3808861"
+    },
+    {
+      "relativePath": "\\src\\pinned_scoring\\synth\\faults.py",
+      "sha256": "D0A54C12DD2400BE5BCC366A4B134885F321E162D1A082C484220CD14057EC1A"
+    },
+    {
+      "relativePath": "\\src\\pinned_scoring\\synth\\generator.py",
+      "sha256": "82A5BD917A2364B9759426223BBB8C6FAB445C80D90289DC871E63CD40F7052A"
+    },
+    {
+      "relativePath": "\\src\\pinned_scoring\\verifier.py",
+      "sha256": "F53BAB392A0724A61A3DB7AC20B2EF8874DB1C67D8563C031D123500159C7EFA"
+    },
+    {
+      "relativePath": "\\tests\\test_agent.py",
+      "sha256": "CD79105ED2A7738BC9D705EE18433E77D5A94C0E3FF54F825AA6CACACCA9621D"
+    },
+    {
+      "relativePath": "\\tests\\test_authority.py",
+      "sha256": "1270F444A4ED3BB1138FB5F1B168864CE2A3DE395C3BFFB4B734D0C76E4F1AB2"
+    },
+    {
+      "relativePath": "\\tests\\test_cleanup_plan.py",
+      "sha256": "2349DFFA4E83C432E66E69101D5A120251E0F3BB069B0D97E2D4901D1CCC3D31"
+    },
+    {
+      "relativePath": "\\tests\\test_cloud_deployment.py",
+      "sha256": "A21B1B2325728B24B266BAA2B8BB437DB5E4560818EF5FE03152BFA97ED9D842"
+    },
+    {
+      "relativePath": "\\tests\\test_cloud_tool_host.py",
+      "sha256": "11460DA8337491AA189B48795E23606C2FA05DC54C543903473F141DD568528A"
+    },
+    {
+      "relativePath": "\\tests\\test_core.py",
+      "sha256": "6FD884AE028E59D145F9A92782657AB09985D2807CF4546DB35E5062DB4E993E"
+    },
+    {
+      "relativePath": "\\tests\\test_create_foundry_fabric_agent.py",
+      "sha256": "56D3081417442AD3D53E2F1501AA45F06DCBBAA9C771588334EA7F1080388353"
+    },
+    {
+      "relativePath": "\\tests\\test_decision_scenarios.py",
+      "sha256": "B9F8F3B5A94504AC6B7133E483E7B275DA9617E9C7E274D041E9617830E489E0"
+    },
+    {
+      "relativePath": "\\tests\\test_deploy_agent_stages.py",
+      "sha256": "477334B7245C6036F4B3602653EB20E1CC1B698A7E9C4F9CBF74AF77C17054B5"
+    },
+    {
+      "relativePath": "\\tests\\test_deploy_all.py",
+      "sha256": "91A35924868BAFF8798DADB7B20E2A1D97DF6161275F7B6ED250314E104CF731"
+    },
+    {
+      "relativePath": "\\tests\\test_deploy_resume.py",
+      "sha256": "54AE8CF82CBFF34CACDF15C604138934B683B7AC8428FAA24BD35261DBB30150"
+    },
+    {
+      "relativePath": "\\tests\\test_deployment_data.py",
+      "sha256": "F09D7CB431ABA2AFB96894399294B6AC49FF2DB83CB1052A311AABE496ACD829"
+    },
+    {
+      "relativePath": "\\tests\\test_e2e_controls_chain.py",
+      "sha256": "3B3ADEA678825C6EFD09C6753A841B98E8D0633B6E8083960802F0E3D943916B"
+    },
+    {
+      "relativePath": "\\tests\\test_enable_tracing.py",
+      "sha256": "50FD05A3B5F9978AF66031E73E6C03D6847DD42745DA9990848D07AEFABE76DB"
+    },
+    {
+      "relativePath": "\\tests\\test_experiment.py",
+      "sha256": "C4610AAED0F82D2142289375CE3635032B37AC0BA11CB291E48A5C692C2C81A7"
+    },
+    {
+      "relativePath": "\\tests\\test_extra_batches.py",
+      "sha256": "30CFD2D3D042D86D39C8CC2C01B169940A54CF3B0DF65350D6AA237A6443BDC2"
+    },
+    {
+      "relativePath": "\\tests\\test_fabric_assets.py",
+      "sha256": "78D48405CB751B6BD913242A02928372B8EEC3F25064823D7E91E9A57220EF5B"
+    },
+    {
+      "relativePath": "\\tests\\test_fabric_transforms.py",
+      "sha256": "2E495193B98F3DA354170133A839EAD94A37ED92A0F68CB463F480CDD4951847"
+    },
+    {
+      "relativePath": "\\tests\\test_foundry_agent.py",
+      "sha256": "FEEAB9E97774A209E023CC200112F5739822353A48B106A8CDC248AFCB6A896E"
+    },
+    {
+      "relativePath": "\\tests\\test_foundry_ontology_scripts.py",
+      "sha256": "9A2A3CF3FDF23EE643FD5743E0C9757DAFE97650F92EE47AC610F0ADD4F6F8F0"
+    },
+    {
+      "relativePath": "\\tests\\test_medallion_matches_evidence.py",
+      "sha256": "83A822ABDF1D857823E764F73E56BCCBDB37E5309C3104D177DA3270EA0AC3E9"
+    },
+    {
+      "relativePath": "\\tests\\test_microsoft_paths.py",
+      "sha256": "F762537D362049E071E52D2654D8807C735FD6313A7394B1E9E785C88055E03F"
+    },
+    {
+      "relativePath": "\\tests\\test_overrides.py",
+      "sha256": "58590F18692E605AAACECE41E1C140FB198A4FB5B39B79EA2B74F4853686A813"
+    },
+    {
+      "relativePath": "\\tests\\test_ownership_hooks.py",
+      "sha256": "D4FFD9AD9AF330AEA70C07FB9E7A7BFFB22632DC07E82CB72FFFE3C963A30433"
+    },
+    {
+      "relativePath": "\\tests\\test_ownership_integration.py",
+      "sha256": "870AE50D095B80424DFEACA979E960E65C43161A6E2E50AC51BA350CF3961EA1"
+    },
+    {
+      "relativePath": "\\tests\\test_synth.py",
+      "sha256": "7F18F863547544C9F9F37F78B9CC993CC07CF0B9D21F0EE9674427E16C9196D1"
+    },
+    {
+      "relativePath": "\\tests\\test_usefulness.py",
+      "sha256": "871D6F7728C74EEAD4BBE0B56509D413B486187FE85EAD84F9768ED2EA9AB1D2"
+    },
+    {
+      "relativePath": "\\tests\\test_verifier.py",
+      "sha256": "16F6CC4A3DD329610F6393664F8EFA48502C59990E21D8DB334CF0E0BEB0D1ED"
+    }
+  ]
+}

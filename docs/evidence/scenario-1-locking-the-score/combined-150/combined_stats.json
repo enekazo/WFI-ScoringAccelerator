@@ -1,0 +1,2092 @@
+{
+ "parcels": "P001-P150",
+ "total_rows": 9000,
+ "metrics": [
+  "score_error",
+  "band_mismatch",
+  "provenance_misstatement",
+  "fault_detection",
+  "false_alarm",
+  "parse_failure",
+  "verifier_block"
+ ],
+ "cells": {
+  "gpt-4.1|A": {
+   "runs": 450,
+   "parcels": 150,
+   "score_error_mae": {
+    "mean": 32.646153846153844,
+    "lo": 24.136410256410258,
+    "hi": 41.73948717948718,
+    "n": 65
+   },
+   "fault_detection": {
+    "mean": 0.9215686274509803,
+    "lo": 0.8823529411764706,
+    "hi": 0.9568627450980391,
+    "n": 85
+   },
+   "reproducibility": {
+    "mean": 0.62,
+    "lo": 0.54,
+    "hi": 0.7,
+    "n": 150
+   },
+   "errors": 32,
+   "errors_429": 32,
+   "replaced_runs": 0,
+   "tool_calls_total": 0,
+   "tool_calls_per_run": 0.0
+  },
+  "gpt-4.1|A+": {
+   "runs": 450,
+   "parcels": 150,
+   "score_error_mae": {
+    "mean": 3.58974358974359,
+    "lo": 1.5384615384615385,
+    "hi": 6.153846153846154,
+    "n": 65
+   },
+   "fault_detection": {
+    "mean": 0.9254901960784314,
+    "lo": 0.8823529411764706,
+    "hi": 0.9647058823529412,
+    "n": 85
+   },
+   "reproducibility": {
+    "mean": 0.8733333333333333,
+    "lo": 0.82,
+    "hi": 0.9266666666666666,
+    "n": 150
+   },
+   "errors": 20,
+   "errors_429": 20,
+   "replaced_runs": 1,
+   "tool_calls_total": 0,
+   "tool_calls_per_run": 0.0
+  },
+  "gpt-4.1|B": {
+   "runs": 450,
+   "parcels": 150,
+   "score_error_mae": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 65
+   },
+   "fault_detection": {
+    "mean": 0.9058823529411765,
+    "lo": 0.8627450980392156,
+    "hi": 0.9490196078431373,
+    "n": 85
+   },
+   "reproducibility": {
+    "mean": 1.0,
+    "lo": 1.0,
+    "hi": 1.0,
+    "n": 150
+   },
+   "errors": 0,
+   "errors_429": 0,
+   "replaced_runs": 44,
+   "tool_calls_total": 56,
+   "tool_calls_per_run": 0.12444444444444444,
+   "blocks": {
+    "total": 342,
+    "verifier": 342,
+    "api_429": 0,
+    "api_error_other": 0,
+    "rate_total": {
+     "mean": 0.76,
+     "lo": 0.7111111111111111,
+     "hi": 0.8111111111111111,
+     "n": 150
+    },
+    "rate_verifier": {
+     "mean": 0.76,
+     "lo": 0.7111111111111111,
+     "hi": 0.8111111111111111,
+     "n": 150
+    },
+    "rate_api_429": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 150
+    }
+   }
+  },
+  "gpt-4.1|B(raw)": {
+   "runs": 450,
+   "parcels": 150,
+   "score_error_mae": {
+    "mean": 42.62717948717948,
+    "lo": 37.77794871794872,
+    "hi": 47.50871794871795,
+    "n": 65
+   },
+   "fault_detection": {
+    "mean": 0.25098039215686274,
+    "lo": 0.1803921568627451,
+    "hi": 0.3333333333333333,
+    "n": 85
+   },
+   "reproducibility": {
+    "mean": 1.0,
+    "lo": 1.0,
+    "hi": 1.0,
+    "n": 150
+   },
+   "errors": 0,
+   "errors_429": 0,
+   "replaced_runs": 44,
+   "tool_calls_total": 56,
+   "tool_calls_per_run": 0.12444444444444444
+  },
+  "gpt-4.1-mini|A": {
+   "runs": 450,
+   "parcels": 150,
+   "score_error_mae": {
+    "mean": 14.50820512820513,
+    "lo": 11.16923076923077,
+    "hi": 18.744102564102565,
+    "n": 65
+   },
+   "fault_detection": {
+    "mean": 0.7843137254901962,
+    "lo": 0.7098039215686275,
+    "hi": 0.8627450980392156,
+    "n": 85
+   },
+   "reproducibility": {
+    "mean": 0.5466666666666666,
+    "lo": 0.4666666666666667,
+    "hi": 0.6266666666666667,
+    "n": 150
+   },
+   "errors": 38,
+   "errors_429": 38,
+   "replaced_runs": 5,
+   "tool_calls_total": 0,
+   "tool_calls_per_run": 0.0
+  },
+  "gpt-4.1-mini|A+": {
+   "runs": 450,
+   "parcels": 150,
+   "score_error_mae": {
+    "mean": 5.641025641025641,
+    "lo": 2.0512820512820515,
+    "hi": 10.256410256410257,
+    "n": 65
+   },
+   "fault_detection": {
+    "mean": 0.9019607843137255,
+    "lo": 0.8470588235294118,
+    "hi": 0.9529411764705882,
+    "n": 85
+   },
+   "reproducibility": {
+    "mean": 0.8933333333333333,
+    "lo": 0.8466666666666667,
+    "hi": 0.94,
+    "n": 150
+   },
+   "errors": 26,
+   "errors_429": 26,
+   "replaced_runs": 1,
+   "tool_calls_total": 0,
+   "tool_calls_per_run": 0.0
+  },
+  "gpt-4.1-mini|B": {
+   "runs": 450,
+   "parcels": 150,
+   "score_error_mae": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 65
+   },
+   "fault_detection": {
+    "mean": 0.9764705882352941,
+    "lo": 0.9411764705882353,
+    "hi": 1.0,
+    "n": 85
+   },
+   "reproducibility": {
+    "mean": 1.0,
+    "lo": 1.0,
+    "hi": 1.0,
+    "n": 150
+   },
+   "errors": 0,
+   "errors_429": 0,
+   "replaced_runs": 77,
+   "tool_calls_total": 450,
+   "tool_calls_per_run": 1.0,
+   "blocks": {
+    "total": 51,
+    "verifier": 51,
+    "api_429": 0,
+    "api_error_other": 0,
+    "rate_total": {
+     "mean": 0.11333333333333333,
+     "lo": 0.07333333333333333,
+     "hi": 0.15777777777777777,
+     "n": 150
+    },
+    "rate_verifier": {
+     "mean": 0.11333333333333333,
+     "lo": 0.07333333333333333,
+     "hi": 0.15777777777777777,
+     "n": 150
+    },
+    "rate_api_429": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 150
+    }
+   }
+  },
+  "gpt-4.1-mini|B(raw)": {
+   "runs": 450,
+   "parcels": 150,
+   "score_error_mae": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 65
+   },
+   "fault_detection": {
+    "mean": 0.9764705882352941,
+    "lo": 0.9411764705882353,
+    "hi": 1.0,
+    "n": 85
+   },
+   "reproducibility": {
+    "mean": 1.0,
+    "lo": 1.0,
+    "hi": 1.0,
+    "n": 150
+   },
+   "errors": 0,
+   "errors_429": 0,
+   "replaced_runs": 77,
+   "tool_calls_total": 450,
+   "tool_calls_per_run": 1.0
+  },
+  "gpt-5.5|A": {
+   "runs": 450,
+   "parcels": 150,
+   "score_error_mae": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 65
+   },
+   "fault_detection": {
+    "mean": 1.0,
+    "lo": 1.0,
+    "hi": 1.0,
+    "n": 85
+   },
+   "reproducibility": {
+    "mean": 1.0,
+    "lo": 1.0,
+    "hi": 1.0,
+    "n": 150
+   },
+   "errors": 0,
+   "errors_429": 0,
+   "replaced_runs": 0,
+   "tool_calls_total": 0,
+   "tool_calls_per_run": 0.0
+  },
+  "gpt-5.5|A+": {
+   "runs": 450,
+   "parcels": 150,
+   "score_error_mae": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 65
+   },
+   "fault_detection": {
+    "mean": 0.9764705882352941,
+    "lo": 0.9411764705882353,
+    "hi": 1.0,
+    "n": 85
+   },
+   "reproducibility": {
+    "mean": 1.0,
+    "lo": 1.0,
+    "hi": 1.0,
+    "n": 150
+   },
+   "errors": 0,
+   "errors_429": 0,
+   "replaced_runs": 0,
+   "tool_calls_total": 0,
+   "tool_calls_per_run": 0.0
+  },
+  "gpt-5.5|B": {
+   "runs": 450,
+   "parcels": 150,
+   "score_error_mae": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 65
+   },
+   "fault_detection": {
+    "mean": 0.9764705882352941,
+    "lo": 0.9411764705882353,
+    "hi": 1.0,
+    "n": 85
+   },
+   "reproducibility": {
+    "mean": 1.0,
+    "lo": 1.0,
+    "hi": 1.0,
+    "n": 150
+   },
+   "errors": 0,
+   "errors_429": 0,
+   "replaced_runs": 0,
+   "tool_calls_total": 450,
+   "tool_calls_per_run": 1.0,
+   "blocks": {
+    "total": 219,
+    "verifier": 219,
+    "api_429": 0,
+    "api_error_other": 0,
+    "rate_total": {
+     "mean": 0.4866666666666667,
+     "lo": 0.4288888888888889,
+     "hi": 0.5466666666666666,
+     "n": 150
+    },
+    "rate_verifier": {
+     "mean": 0.4866666666666667,
+     "lo": 0.4288888888888889,
+     "hi": 0.5466666666666666,
+     "n": 150
+    },
+    "rate_api_429": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 150
+    }
+   }
+  },
+  "gpt-5.5|B(raw)": {
+   "runs": 450,
+   "parcels": 150,
+   "score_error_mae": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 65
+   },
+   "fault_detection": {
+    "mean": 0.9764705882352941,
+    "lo": 0.9411764705882353,
+    "hi": 1.0,
+    "n": 85
+   },
+   "reproducibility": {
+    "mean": 1.0,
+    "lo": 1.0,
+    "hi": 1.0,
+    "n": 150
+   },
+   "errors": 0,
+   "errors_429": 0,
+   "replaced_runs": 0,
+   "tool_calls_total": 450,
+   "tool_calls_per_run": 1.0
+  },
+  "gpt-6.1-sol|A": {
+   "runs": 450,
+   "parcels": 150,
+   "score_error_mae": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 65
+   },
+   "fault_detection": {
+    "mean": 1.0,
+    "lo": 1.0,
+    "hi": 1.0,
+    "n": 85
+   },
+   "reproducibility": {
+    "mean": 1.0,
+    "lo": 1.0,
+    "hi": 1.0,
+    "n": 150
+   },
+   "errors": 0,
+   "errors_429": 0,
+   "replaced_runs": 15,
+   "tool_calls_total": 0,
+   "tool_calls_per_run": 0.0
+  },
+  "gpt-6.1-sol|A+": {
+   "runs": 450,
+   "parcels": 150,
+   "score_error_mae": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 65
+   },
+   "fault_detection": {
+    "mean": 0.9764705882352941,
+    "lo": 0.9411764705882353,
+    "hi": 1.0,
+    "n": 85
+   },
+   "reproducibility": {
+    "mean": 1.0,
+    "lo": 1.0,
+    "hi": 1.0,
+    "n": 150
+   },
+   "errors": 0,
+   "errors_429": 0,
+   "replaced_runs": 0,
+   "tool_calls_total": 0,
+   "tool_calls_per_run": 0.0
+  },
+  "gpt-6.1-sol|B": {
+   "runs": 450,
+   "parcels": 150,
+   "score_error_mae": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 65
+   },
+   "fault_detection": {
+    "mean": 0.9882352941176471,
+    "lo": 0.9647058823529412,
+    "hi": 1.0,
+    "n": 85
+   },
+   "reproducibility": {
+    "mean": 1.0,
+    "lo": 1.0,
+    "hi": 1.0,
+    "n": 150
+   },
+   "errors": 0,
+   "errors_429": 0,
+   "replaced_runs": 15,
+   "tool_calls_total": 460,
+   "tool_calls_per_run": 1.0222222222222221,
+   "blocks": {
+    "total": 42,
+    "verifier": 42,
+    "api_429": 0,
+    "api_error_other": 0,
+    "rate_total": {
+     "mean": 0.09333333333333334,
+     "lo": 0.062222222222222213,
+     "hi": 0.1288888888888889,
+     "n": 150
+    },
+    "rate_verifier": {
+     "mean": 0.09333333333333334,
+     "lo": 0.062222222222222213,
+     "hi": 0.1288888888888889,
+     "n": 150
+    },
+    "rate_api_429": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 150
+    }
+   }
+  },
+  "gpt-6.1-sol|B(raw)": {
+   "runs": 450,
+   "parcels": 150,
+   "score_error_mae": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 65
+   },
+   "fault_detection": {
+    "mean": 0.9882352941176471,
+    "lo": 0.9647058823529412,
+    "hi": 1.0,
+    "n": 85
+   },
+   "reproducibility": {
+    "mean": 1.0,
+    "lo": 1.0,
+    "hi": 1.0,
+    "n": 150
+   },
+   "errors": 0,
+   "errors_429": 0,
+   "replaced_runs": 15,
+   "tool_calls_total": 460,
+   "tool_calls_per_run": 1.0222222222222221
+  },
+  "gpt-6.1-terra|A": {
+   "runs": 450,
+   "parcels": 150,
+   "score_error_mae": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 65
+   },
+   "fault_detection": {
+    "mean": 0.996078431372549,
+    "lo": 0.9882352941176471,
+    "hi": 1.0,
+    "n": 85
+   },
+   "reproducibility": {
+    "mean": 1.0,
+    "lo": 1.0,
+    "hi": 1.0,
+    "n": 150
+   },
+   "errors": 0,
+   "errors_429": 0,
+   "replaced_runs": 6,
+   "tool_calls_total": 0,
+   "tool_calls_per_run": 0.0
+  },
+  "gpt-6.1-terra|A+": {
+   "runs": 450,
+   "parcels": 150,
+   "score_error_mae": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 65
+   },
+   "fault_detection": {
+    "mean": 0.9764705882352941,
+    "lo": 0.9411764705882353,
+    "hi": 1.0,
+    "n": 85
+   },
+   "reproducibility": {
+    "mean": 1.0,
+    "lo": 1.0,
+    "hi": 1.0,
+    "n": 150
+   },
+   "errors": 0,
+   "errors_429": 0,
+   "replaced_runs": 0,
+   "tool_calls_total": 0,
+   "tool_calls_per_run": 0.0
+  },
+  "gpt-6.1-terra|B": {
+   "runs": 450,
+   "parcels": 150,
+   "score_error_mae": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 65
+   },
+   "fault_detection": {
+    "mean": 0.9764705882352941,
+    "lo": 0.9411764705882353,
+    "hi": 1.0,
+    "n": 85
+   },
+   "reproducibility": {
+    "mean": 1.0,
+    "lo": 1.0,
+    "hi": 1.0,
+    "n": 150
+   },
+   "errors": 0,
+   "errors_429": 0,
+   "replaced_runs": 4,
+   "tool_calls_total": 456,
+   "tool_calls_per_run": 1.0133333333333334,
+   "blocks": {
+    "total": 86,
+    "verifier": 86,
+    "api_429": 0,
+    "api_error_other": 0,
+    "rate_total": {
+     "mean": 0.1911111111111111,
+     "lo": 0.15111111111111108,
+     "hi": 0.23555555555555552,
+     "n": 150
+    },
+    "rate_verifier": {
+     "mean": 0.1911111111111111,
+     "lo": 0.15111111111111108,
+     "hi": 0.23555555555555552,
+     "n": 150
+    },
+    "rate_api_429": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 150
+    }
+   }
+  },
+  "gpt-6.1-terra|B(raw)": {
+   "runs": 450,
+   "parcels": 150,
+   "score_error_mae": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 65
+   },
+   "fault_detection": {
+    "mean": 0.9764705882352941,
+    "lo": 0.9411764705882353,
+    "hi": 1.0,
+    "n": 85
+   },
+   "reproducibility": {
+    "mean": 1.0,
+    "lo": 1.0,
+    "hi": 1.0,
+    "n": 150
+   },
+   "errors": 0,
+   "errors_429": 0,
+   "replaced_runs": 4,
+   "tool_calls_total": 456,
+   "tool_calls_per_run": 1.0133333333333334
+  },
+  "grok-4.7|A": {
+   "runs": 450,
+   "parcels": 150,
+   "score_error_mae": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 65
+   },
+   "fault_detection": {
+    "mean": 1.0,
+    "lo": 1.0,
+    "hi": 1.0,
+    "n": 85
+   },
+   "reproducibility": {
+    "mean": 1.0,
+    "lo": 1.0,
+    "hi": 1.0,
+    "n": 150
+   },
+   "errors": 0,
+   "errors_429": 0,
+   "replaced_runs": 18,
+   "tool_calls_total": 0,
+   "tool_calls_per_run": 0.0
+  },
+  "grok-4.7|A+": {
+   "runs": 450,
+   "parcels": 150,
+   "score_error_mae": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 65
+   },
+   "fault_detection": {
+    "mean": 0.9764705882352941,
+    "lo": 0.9411764705882353,
+    "hi": 1.0,
+    "n": 85
+   },
+   "reproducibility": {
+    "mean": 1.0,
+    "lo": 1.0,
+    "hi": 1.0,
+    "n": 150
+   },
+   "errors": 0,
+   "errors_429": 0,
+   "replaced_runs": 0,
+   "tool_calls_total": 0,
+   "tool_calls_per_run": 0.0
+  },
+  "grok-4.7|B": {
+   "runs": 450,
+   "parcels": 150,
+   "score_error_mae": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 65
+   },
+   "fault_detection": {
+    "mean": 0.9764705882352941,
+    "lo": 0.9411764705882353,
+    "hi": 1.0,
+    "n": 85
+   },
+   "reproducibility": {
+    "mean": 1.0,
+    "lo": 1.0,
+    "hi": 1.0,
+    "n": 150
+   },
+   "errors": 0,
+   "errors_429": 0,
+   "replaced_runs": 0,
+   "tool_calls_total": 451,
+   "tool_calls_per_run": 1.0022222222222221,
+   "blocks": {
+    "total": 195,
+    "verifier": 195,
+    "api_429": 0,
+    "api_error_other": 0,
+    "rate_total": {
+     "mean": 0.43333333333333335,
+     "lo": 0.37333333333333335,
+     "hi": 0.4977777777777778,
+     "n": 150
+    },
+    "rate_verifier": {
+     "mean": 0.43333333333333335,
+     "lo": 0.37333333333333335,
+     "hi": 0.4977777777777778,
+     "n": 150
+    },
+    "rate_api_429": {
+     "mean": 0.0,
+     "lo": 0.0,
+     "hi": 0.0,
+     "n": 150
+    }
+   }
+  },
+  "grok-4.7|B(raw)": {
+   "runs": 450,
+   "parcels": 150,
+   "score_error_mae": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 65
+   },
+   "fault_detection": {
+    "mean": 0.9764705882352941,
+    "lo": 0.9411764705882353,
+    "hi": 1.0,
+    "n": 85
+   },
+   "reproducibility": {
+    "mean": 1.0,
+    "lo": 1.0,
+    "hi": 1.0,
+    "n": 150
+   },
+   "errors": 0,
+   "errors_429": 0,
+   "replaced_runs": 0,
+   "tool_calls_total": 451,
+   "tool_calls_per_run": 1.0022222222222221
+  },
+  "phi-4|A": {
+   "runs": 450,
+   "parcels": 150,
+   "score_error_mae": {
+    "mean": 15.77128205128205,
+    "lo": 12.427179487179485,
+    "hi": 19.927692307692308,
+    "n": 65
+   },
+   "fault_detection": {
+    "mean": 0.5215686274509804,
+    "lo": 0.41568627450980394,
+    "hi": 0.6235294117647059,
+    "n": 85
+   },
+   "reproducibility": {
+    "mean": 0.7466666666666667,
+    "lo": 0.6733333333333333,
+    "hi": 0.8133333333333334,
+    "n": 150
+   },
+   "errors": 2,
+   "errors_429": 0,
+   "replaced_runs": 2,
+   "tool_calls_total": 0,
+   "tool_calls_per_run": 0.0
+  },
+  "phi-4|A+": {
+   "runs": 450,
+   "parcels": 150,
+   "score_error_mae": {
+    "mean": 0.0,
+    "lo": 0.0,
+    "hi": 0.0,
+    "n": 65
+   },
+   "fault_detection": {
+    "mean": 0.8235294117647058,
+    "lo": 0.7411764705882353,
+    "hi": 0.9058823529411765,
+    "n": 85
+   },
+   "reproducibility": {
+    "mean": 1.0,
+    "lo": 1.0,
+    "hi": 1.0,
+    "n": 150
+   },
+   "errors": 0,
+   "errors_429": 0,
+   "replaced_runs": 0,
+   "tool_calls_total": 0,
+   "tool_calls_per_run": 0.0
+  }
+ },
+ "coverage": {
+  "gpt-4.1": {
+   "parcels": 150,
+   "arms": [
+    "A",
+    "A+",
+    "B"
+   ],
+   "missing_parcels": [],
+   "missing_arms": []
+  },
+  "gpt-4.1-mini": {
+   "parcels": 150,
+   "arms": [
+    "A",
+    "A+",
+    "B"
+   ],
+   "missing_parcels": [],
+   "missing_arms": []
+  },
+  "gpt-5.5": {
+   "parcels": 150,
+   "arms": [
+    "A",
+    "A+",
+    "B"
+   ],
+   "missing_parcels": [],
+   "missing_arms": []
+  },
+  "gpt-6.1-sol": {
+   "parcels": 150,
+   "arms": [
+    "A",
+    "A+",
+    "B"
+   ],
+   "missing_parcels": [],
+   "missing_arms": []
+  },
+  "gpt-6.1-terra": {
+   "parcels": 150,
+   "arms": [
+    "A",
+    "A+",
+    "B"
+   ],
+   "missing_parcels": [],
+   "missing_arms": []
+  },
+  "grok-4.7": {
+   "parcels": 150,
+   "arms": [
+    "A",
+    "A+",
+    "B"
+   ],
+   "missing_parcels": [],
+   "missing_arms": []
+  },
+  "phi-4": {
+   "parcels": 150,
+   "arms": [
+    "A",
+    "A+"
+   ],
+   "missing_parcels": [],
+   "missing_arms": [
+    "B"
+   ]
+  }
+ },
+ "replacements": {
+  "count": 188,
+  "keys": [
+   [
+    "gpt-4.1",
+    "B",
+    "P082",
+    2
+   ],
+   [
+    "gpt-4.1",
+    "B",
+    "P087",
+    2
+   ],
+   [
+    "gpt-4.1-mini",
+    "B",
+    "P084",
+    2
+   ],
+   [
+    "gpt-4.1-mini",
+    "B",
+    "P092",
+    0
+   ],
+   [
+    "gpt-6.1-sol",
+    "A",
+    "P076",
+    0
+   ],
+   [
+    "gpt-6.1-sol",
+    "A",
+    "P076",
+    1
+   ],
+   [
+    "gpt-6.1-sol",
+    "A",
+    "P076",
+    2
+   ],
+   [
+    "gpt-6.1-sol",
+    "A",
+    "P078",
+    0
+   ],
+   [
+    "gpt-6.1-sol",
+    "A",
+    "P087",
+    0
+   ],
+   [
+    "gpt-6.1-sol",
+    "A",
+    "P087",
+    1
+   ],
+   [
+    "gpt-6.1-sol",
+    "A",
+    "P087",
+    2
+   ],
+   [
+    "gpt-6.1-sol",
+    "B",
+    "P076",
+    0
+   ],
+   [
+    "gpt-6.1-sol",
+    "B",
+    "P077",
+    0
+   ],
+   [
+    "gpt-6.1-sol",
+    "B",
+    "P078",
+    0
+   ],
+   [
+    "gpt-6.1-sol",
+    "B",
+    "P078",
+    1
+   ],
+   [
+    "gpt-6.1-sol",
+    "B",
+    "P078",
+    2
+   ],
+   [
+    "gpt-6.1-sol",
+    "B",
+    "P098",
+    1
+   ],
+   [
+    "gpt-6.1-sol",
+    "B",
+    "P098",
+    2
+   ],
+   [
+    "gpt-6.1-sol",
+    "B",
+    "P099",
+    1
+   ],
+   [
+    "gpt-6.1-sol",
+    "B",
+    "P099",
+    2
+   ],
+   [
+    "gpt-6.1-sol",
+    "B",
+    "P100",
+    0
+   ],
+   [
+    "gpt-6.1-sol",
+    "B",
+    "P100",
+    1
+   ],
+   [
+    "gpt-6.1-sol",
+    "B",
+    "P100",
+    2
+   ],
+   [
+    "grok-4.7",
+    "A",
+    "P077",
+    0
+   ],
+   [
+    "grok-4.7",
+    "A",
+    "P077",
+    1
+   ],
+   [
+    "grok-4.7",
+    "A",
+    "P078",
+    0
+   ],
+   [
+    "grok-4.7",
+    "A",
+    "P091",
+    2
+   ],
+   [
+    "grok-4.7",
+    "A",
+    "P094",
+    0
+   ],
+   [
+    "grok-4.7",
+    "A",
+    "P094",
+    1
+   ],
+   [
+    "grok-4.7",
+    "A",
+    "P094",
+    2
+   ],
+   [
+    "grok-4.7",
+    "A",
+    "P096",
+    0
+   ],
+   [
+    "grok-4.7",
+    "A",
+    "P096",
+    1
+   ],
+   [
+    "gpt-4.1-mini",
+    "A",
+    "P103",
+    0
+   ],
+   [
+    "gpt-4.1-mini",
+    "B",
+    "P106",
+    1
+   ],
+   [
+    "gpt-4.1-mini",
+    "B",
+    "P111",
+    0
+   ],
+   [
+    "gpt-4.1-mini",
+    "B",
+    "P113",
+    0
+   ],
+   [
+    "gpt-4.1-mini",
+    "B",
+    "P113",
+    1
+   ],
+   [
+    "gpt-4.1-mini",
+    "B",
+    "P114",
+    2
+   ],
+   [
+    "gpt-6.1-sol",
+    "A",
+    "P103",
+    0
+   ],
+   [
+    "gpt-6.1-sol",
+    "B",
+    "P115",
+    2
+   ],
+   [
+    "gpt-6.1-sol",
+    "B",
+    "P117",
+    0
+   ],
+   [
+    "gpt-6.1-terra",
+    "A",
+    "P102",
+    0
+   ],
+   [
+    "grok-4.7",
+    "A",
+    "P111",
+    0
+   ],
+   [
+    "gpt-4.1",
+    "A+",
+    "P149",
+    2
+   ],
+   [
+    "gpt-4.1",
+    "B",
+    "P137",
+    1
+   ],
+   [
+    "gpt-4.1",
+    "B",
+    "P144",
+    0
+   ],
+   [
+    "gpt-4.1",
+    "B",
+    "P145",
+    2
+   ],
+   [
+    "gpt-4.1-mini",
+    "A",
+    "P127",
+    0
+   ],
+   [
+    "gpt-4.1-mini",
+    "A",
+    "P128",
+    0
+   ],
+   [
+    "gpt-4.1-mini",
+    "A",
+    "P128",
+    1
+   ],
+   [
+    "gpt-4.1-mini",
+    "A",
+    "P128",
+    2
+   ],
+   [
+    "gpt-4.1-mini",
+    "A+",
+    "P126",
+    0
+   ],
+   [
+    "gpt-4.1-mini",
+    "B",
+    "P147",
+    0
+   ],
+   [
+    "phi-4",
+    "A",
+    "P128",
+    0
+   ],
+   [
+    "phi-4",
+    "A",
+    "P128",
+    1
+   ],
+   [
+    "gpt-6.1-sol",
+    "A",
+    "P126",
+    0
+   ],
+   [
+    "gpt-6.1-sol",
+    "A",
+    "P127",
+    0
+   ],
+   [
+    "gpt-6.1-sol",
+    "A",
+    "P127",
+    1
+   ],
+   [
+    "gpt-6.1-sol",
+    "A",
+    "P128",
+    0
+   ],
+   [
+    "gpt-6.1-sol",
+    "A",
+    "P128",
+    1
+   ],
+   [
+    "gpt-6.1-sol",
+    "A",
+    "P128",
+    2
+   ],
+   [
+    "gpt-6.1-sol",
+    "A",
+    "P135",
+    0
+   ],
+   [
+    "gpt-6.1-sol",
+    "B",
+    "P128",
+    0
+   ],
+   [
+    "gpt-6.1-terra",
+    "A",
+    "P126",
+    0
+   ],
+   [
+    "gpt-6.1-terra",
+    "A",
+    "P126",
+    1
+   ],
+   [
+    "gpt-6.1-terra",
+    "A",
+    "P126",
+    2
+   ],
+   [
+    "gpt-6.1-terra",
+    "A",
+    "P127",
+    0
+   ],
+   [
+    "gpt-6.1-terra",
+    "A",
+    "P146",
+    0
+   ],
+   [
+    "gpt-6.1-terra",
+    "B",
+    "P126",
+    0
+   ],
+   [
+    "gpt-6.1-terra",
+    "B",
+    "P127",
+    0
+   ],
+   [
+    "gpt-6.1-terra",
+    "B",
+    "P127",
+    1
+   ],
+   [
+    "gpt-6.1-terra",
+    "B",
+    "P128",
+    0
+   ],
+   [
+    "grok-4.7",
+    "A",
+    "P126",
+    0
+   ],
+   [
+    "grok-4.7",
+    "A",
+    "P127",
+    0
+   ],
+   [
+    "grok-4.7",
+    "A",
+    "P127",
+    1
+   ],
+   [
+    "grok-4.7",
+    "A",
+    "P127",
+    2
+   ],
+   [
+    "grok-4.7",
+    "A",
+    "P128",
+    0
+   ],
+   [
+    "grok-4.7",
+    "A",
+    "P128",
+    1
+   ],
+   [
+    "grok-4.7",
+    "A",
+    "P128",
+    2
+   ],
+   [
+    "grok-4.7",
+    "A",
+    "P130",
+    0
+   ],
+   [
+    "gpt-4.1",
+    "B",
+    "P002",
+    0
+   ],
+   [
+    "gpt-4.1",
+    "B",
+    "P003",
+    1
+   ],
+   [
+    "gpt-4.1",
+    "B",
+    "P004",
+    1
+   ],
+   [
+    "gpt-4.1",
+    "B",
+    "P005",
+    2
+   ],
+   [
+    "gpt-4.1",
+    "B",
+    "P007",
+    0
+   ],
+   [
+    "gpt-4.1",
+    "B",
+    "P007",
+    1
+   ],
+   [
+    "gpt-4.1",
+    "B",
+    "P009",
+    0
+   ],
+   [
+    "gpt-4.1",
+    "B",
+    "P009",
+    2
+   ],
+   [
+    "gpt-4.1",
+    "B",
+    "P011",
+    2
+   ],
+   [
+    "gpt-4.1",
+    "B",
+    "P012",
+    0
+   ],
+   [
+    "gpt-4.1",
+    "B",
+    "P013",
+    0
+   ],
+   [
+    "gpt-4.1",
+    "B",
+    "P013",
+    2
+   ],
+   [
+    "gpt-4.1",
+    "B",
+    "P016",
+    0
+   ],
+   [
+    "gpt-4.1",
+    "B",
+    "P016",
+    1
+   ],
+   [
+    "gpt-4.1",
+    "B",
+    "P018",
+    0
+   ],
+   [
+    "gpt-4.1",
+    "B",
+    "P019",
+    2
+   ],
+   [
+    "gpt-4.1",
+    "B",
+    "P020",
+    2
+   ],
+   [
+    "gpt-4.1",
+    "B",
+    "P021",
+    2
+   ],
+   [
+    "gpt-4.1",
+    "B",
+    "P024",
+    0
+   ],
+   [
+    "gpt-4.1",
+    "B",
+    "P026",
+    0
+   ],
+   [
+    "gpt-4.1",
+    "B",
+    "P026",
+    2
+   ],
+   [
+    "gpt-4.1",
+    "B",
+    "P027",
+    1
+   ],
+   [
+    "gpt-4.1",
+    "B",
+    "P028",
+    1
+   ],
+   [
+    "gpt-4.1",
+    "B",
+    "P029",
+    1
+   ],
+   [
+    "gpt-4.1",
+    "B",
+    "P029",
+    2
+   ],
+   [
+    "gpt-4.1",
+    "B",
+    "P031",
+    2
+   ],
+   [
+    "gpt-4.1",
+    "B",
+    "P033",
+    0
+   ],
+   [
+    "gpt-4.1",
+    "B",
+    "P033",
+    2
+   ],
+   [
+    "gpt-4.1",
+    "B",
+    "P034",
+    0
+   ],
+   [
+    "gpt-4.1",
+    "B",
+    "P036",
+    0
+   ],
+   [
+    "gpt-4.1",
+    "B",
+    "P037",
+    0
+   ],
+   [
+    "gpt-4.1",
+    "B",
+    "P038",
+    1
+   ],
+   [
+    "gpt-4.1",
+    "B",
+    "P038",
+    2
+   ],
+   [
+    "gpt-4.1",
+    "B",
+    "P040",
+    0
+   ],
+   [
+    "gpt-4.1",
+    "B",
+    "P041",
+    2
+   ],
+   [
+    "gpt-4.1",
+    "B",
+    "P044",
+    0
+   ],
+   [
+    "gpt-4.1",
+    "B",
+    "P045",
+    0
+   ],
+   [
+    "gpt-4.1",
+    "B",
+    "P047",
+    0
+   ],
+   [
+    "gpt-4.1",
+    "B",
+    "P048",
+    2
+   ],
+   [
+    "gpt-4.1-mini",
+    "B",
+    "P001",
+    1
+   ],
+   [
+    "gpt-4.1-mini",
+    "B",
+    "P001",
+    2
+   ],
+   [
+    "gpt-4.1-mini",
+    "B",
+    "P002",
+    0
+   ],
+   [
+    "gpt-4.1-mini",
+    "B",
+    "P003",
+    1
+   ],
+   [
+    "gpt-4.1-mini",
+    "B",
+    "P003",
+    2
+   ],
+   [
+    "gpt-4.1-mini",
+    "B",
+    "P005",
+    0
+   ],
+   [
+    "gpt-4.1-mini",
+    "B",
+    "P007",
+    2
+   ],
+   [
+    "gpt-4.1-mini",
+    "B",
+    "P008",
+    0
+   ],
+   [
+    "gpt-4.1-mini",
+    "B",
+    "P008",
+    1
+   ],
+   [
+    "gpt-4.1-mini",
+    "B",
+    "P008",
+    2
+   ],
+   [
+    "gpt-4.1-mini",
+    "B",
+    "P009",
+    0
+   ],
+   [
+    "gpt-4.1-mini",
+    "B",
+    "P009",
+    1
+   ],
+   [
+    "gpt-4.1-mini",
+    "B",
+    "P010",
+    1
+   ],
+   [
+    "gpt-4.1-mini",
+    "B",
+    "P011",
+    0
+   ],
+   [
+    "gpt-4.1-mini",
+    "B",
+    "P011",
+    2
+   ],
+   [
+    "gpt-4.1-mini",
+    "B",
+    "P012",
+    0
+   ],
+   [
+    "gpt-4.1-mini",
+    "B",
+    "P012",
+    1
+   ],
+   [
+    "gpt-4.1-mini",
+    "B",
+    "P012",
+    2
+   ],
+   [
+    "gpt-4.1-mini",
+    "B",
+    "P013",
+    0
+   ],
+   [
+    "gpt-4.1-mini",
+    "B",
+    "P013",
+    1
+   ],
+   [
+    "gpt-4.1-mini",
+    "B",
+    "P013",
+    2
+   ],
+   [
+    "gpt-4.1-mini",
+    "B",
+    "P015",
+    1
+   ],
+   [
+    "gpt-4.1-mini",
+    "B",
+    "P016",
+    0
+   ],
+   [
+    "gpt-4.1-mini",
+    "B",
+    "P016",
+    1
+   ],
+   [
+    "gpt-4.1-mini",
+    "B",
+    "P018",
+    2
+   ],
+   [
+    "gpt-4.1-mini",
+    "B",
+    "P019",
+    1
+   ],
+   [
+    "gpt-4.1-mini",
+    "B",
+    "P020",
+    2
+   ],
+   [
+    "gpt-4.1-mini",
+    "B",
+    "P021",
+    0
+   ],
+   [
+    "gpt-4.1-mini",
+    "B",
+    "P022",
+    0
+   ],
+   [
+    "gpt-4.1-mini",
+    "B",
+    "P023",
+    1
+   ],
+   [
+    "gpt-4.1-mini",
+    "B",
+    "P025",
+    0
+   ],
+   [
+    "gpt-4.1-mini",
+    "B",
+    "P026",
+    0
+   ],
+   [
+    "gpt-4.1-mini",
+    "B",
+    "P026",
+    2
+   ],
+   [
+    "gpt-4.1-mini",
+    "B",
+    "P027",
+    1
+   ],
+   [
+    "gpt-4.1-mini",
+    "B",
+    "P028",
+    0
+   ],
+   [
+    "gpt-4.1-mini",
+    "B",
+    "P028",
+    1
+   ],
+   [
+    "gpt-4.1-mini",
+    "B",
+    "P028",
+    2
+   ],
+   [
+    "gpt-4.1-mini",
+    "B",
+    "P029",
+    0
+   ],
+   [
+    "gpt-4.1-mini",
+    "B",
+    "P030",
+    0
+   ],
+   [
+    "gpt-4.1-mini",
+    "B",
+    "P030",
+    2
+   ],
+   [
+    "gpt-4.1-mini",
+    "B",
+    "P031",
+    0
+   ],
+   [
+    "gpt-4.1-mini",
+    "B",
+    "P031",
+    2
+   ],
+   [
+    "gpt-4.1-mini",
+    "B",
+    "P032",
+    2
+   ],
+   [
+    "gpt-4.1-mini",
+    "B",
+    "P033",
+    0
+   ],
+   [
+    "gpt-4.1-mini",
+    "B",
+    "P033",
+    1
+   ],
+   [
+    "gpt-4.1-mini",
+    "B",
+    "P033",
+    2
+   ],
+   [
+    "gpt-4.1-mini",
+    "B",
+    "P034",
+    1
+   ],
+   [
+    "gpt-4.1-mini",
+    "B",
+    "P035",
+    0
+   ],
+   [
+    "gpt-4.1-mini",
+    "B",
+    "P035",
+    1
+   ],
+   [
+    "gpt-4.1-mini",
+    "B",
+    "P036",
+    1
+   ],
+   [
+    "gpt-4.1-mini",
+    "B",
+    "P036",
+    2
+   ],
+   [
+    "gpt-4.1-mini",
+    "B",
+    "P037",
+    1
+   ],
+   [
+    "gpt-4.1-mini",
+    "B",
+    "P038",
+    0
+   ],
+   [
+    "gpt-4.1-mini",
+    "B",
+    "P039",
+    2
+   ],
+   [
+    "gpt-4.1-mini",
+    "B",
+    "P040",
+    0
+   ],
+   [
+    "gpt-4.1-mini",
+    "B",
+    "P040",
+    1
+   ],
+   [
+    "gpt-4.1-mini",
+    "B",
+    "P041",
+    2
+   ],
+   [
+    "gpt-4.1-mini",
+    "B",
+    "P042",
+    0
+   ],
+   [
+    "gpt-4.1-mini",
+    "B",
+    "P042",
+    1
+   ],
+   [
+    "gpt-4.1-mini",
+    "B",
+    "P043",
+    2
+   ],
+   [
+    "gpt-4.1-mini",
+    "B",
+    "P044",
+    0
+   ],
+   [
+    "gpt-4.1-mini",
+    "B",
+    "P044",
+    1
+   ],
+   [
+    "gpt-4.1-mini",
+    "B",
+    "P044",
+    2
+   ],
+   [
+    "gpt-4.1-mini",
+    "B",
+    "P045",
+    1
+   ],
+   [
+    "gpt-4.1-mini",
+    "B",
+    "P047",
+    0
+   ],
+   [
+    "gpt-4.1-mini",
+    "B",
+    "P047",
+    2
+   ],
+   [
+    "gpt-4.1-mini",
+    "B",
+    "P048",
+    1
+   ],
+   [
+    "gpt-4.1-mini",
+    "B",
+    "P048",
+    2
+   ],
+   [
+    "gpt-4.1-mini",
+    "B",
+    "P049",
+    1
+   ]
+  ]
+ },
+ "sources": {
+  "rescored P001-P050": [
+   "C:\\Users\\example-user\\WFI-ScoringAccelerator\\docs\\evidence\\scenario-1-locking-the-score\\combined-150\\rescored-p001-p050\\gpt-6.1-sol\\runs.json",
+   "C:\\Users\\example-user\\WFI-ScoringAccelerator\\docs\\evidence\\scenario-1-locking-the-score\\combined-150\\rescored-p001-p050\\gpt-6.1-terra\\runs.json",
+   "C:\\Users\\example-user\\WFI-ScoringAccelerator\\docs\\evidence\\scenario-1-locking-the-score\\combined-150\\rescored-p001-p050\\grok-4.7\\runs.json",
+   "C:\\Users\\example-user\\WFI-ScoringAccelerator\\docs\\evidence\\scenario-1-locking-the-score\\combined-150\\rescored-p001-p050\\main\\runs.json",
+   "C:\\Users\\example-user\\WFI-ScoringAccelerator\\docs\\evidence\\scenario-1-locking-the-score\\combined-150\\rescored-p001-p050\\phi-4-rerun\\runs.json"
+  ],
+  "P051-P150 batches": [
+   "C:\\Users\\example-user\\WFI-ScoringAccelerator\\docs\\evidence\\scenario-1-locking-the-score\\extra-100\\per-run\\batch_01\\runs.json",
+   "C:\\Users\\example-user\\WFI-ScoringAccelerator\\docs\\evidence\\scenario-1-locking-the-score\\extra-100\\per-run\\batch_02\\runs.json",
+   "C:\\Users\\example-user\\WFI-ScoringAccelerator\\docs\\evidence\\scenario-1-locking-the-score\\extra-100\\per-run\\batch_03\\runs.json",
+   "C:\\Users\\example-user\\WFI-ScoringAccelerator\\docs\\evidence\\scenario-1-locking-the-score\\extra-100\\per-run\\batch_04\\runs.json"
+  ],
+  "gpt-5.5 P051-P150": [
+   "C:\\Users\\example-user\\WFI-ScoringAccelerator\\docs\\evidence\\scenario-1-locking-the-score\\gpt55-p051-p150\\batch_01\\runs.json",
+   "C:\\Users\\example-user\\WFI-ScoringAccelerator\\docs\\evidence\\scenario-1-locking-the-score\\gpt55-p051-p150\\batch_02\\runs.json",
+   "C:\\Users\\example-user\\WFI-ScoringAccelerator\\docs\\evidence\\scenario-1-locking-the-score\\gpt55-p051-p150\\batch_03\\runs.json",
+   "C:\\Users\\example-user\\WFI-ScoringAccelerator\\docs\\evidence\\scenario-1-locking-the-score\\gpt55-p051-p150\\batch_04\\runs.json"
+  ],
+  "gpt-5.5 P001-P050": [
+   "C:\\Users\\example-user\\WFI-ScoringAccelerator\\docs\\evidence\\scenario-1-locking-the-score\\gpt55-p001-p050\\batch_01\\runs.json",
+   "C:\\Users\\example-user\\WFI-ScoringAccelerator\\docs\\evidence\\scenario-1-locking-the-score\\gpt55-p001-p050\\batch_02\\runs.json"
+  ]
+ }
+}

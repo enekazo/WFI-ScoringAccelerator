@@ -1,0 +1,7 @@
+{
+ "agent_answer": "Parcel P126 is not scored; its receipt is incomplete due to an expired wind_kmh value. No score or band is given in the receipt 4a7fcbba95d5106beeb0f24667f5e751d53b58788f298457da586b8c3333f7fc. I cannot propose an action for this parcel because it is not scored.",
+ "tool_calls": [
+  "get_receipt"
+ ]
+}
+

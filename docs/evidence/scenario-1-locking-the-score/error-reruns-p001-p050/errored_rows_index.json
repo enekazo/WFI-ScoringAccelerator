@@ -1,0 +1,866 @@
+[
+ {
+  "model": "gpt-4.1",
+  "arm": "B",
+  "parcel": "P002",
+  "repeat": 0,
+  "class": "infrastructure",
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Your requests to gpt-4.1 for gpt-4.1 in centralus have exceeded request rate limit.', 'type': 'too_many_requests', 'param': None, 'code': 'rate_limit_exceeded'}}"
+ },
+ {
+  "model": "gpt-4.1",
+  "arm": "B",
+  "parcel": "P003",
+  "repeat": 1,
+  "class": "infrastructure",
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Your requests to gpt-4.1 for gpt-4.1 in centralus have exceeded request rate limit.', 'type': 'too_many_requests', 'param': None, 'code': 'rate_limit_exceeded'}}"
+ },
+ {
+  "model": "gpt-4.1",
+  "arm": "B",
+  "parcel": "P004",
+  "repeat": 1,
+  "class": "infrastructure",
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Your requests to gpt-4.1 for gpt-4.1 in centralus have exceeded request rate limit.', 'type': 'too_many_requests', 'param': None, 'code': 'rate_limit_exceeded'}}"
+ },
+ {
+  "model": "gpt-4.1",
+  "arm": "B",
+  "parcel": "P005",
+  "repeat": 2,
+  "class": "infrastructure",
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Your requests to gpt-4.1 for gpt-4.1 in centralus have exceeded request rate limit.', 'type': 'too_many_requests', 'param': None, 'code': 'rate_limit_exceeded'}}"
+ },
+ {
+  "model": "gpt-4.1",
+  "arm": "B",
+  "parcel": "P007",
+  "repeat": 0,
+  "class": "infrastructure",
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Your requests to gpt-4.1 for gpt-4.1 in centralus have exceeded request rate limit.', 'type': 'too_many_requests', 'param': None, 'code': 'rate_limit_exceeded'}}"
+ },
+ {
+  "model": "gpt-4.1",
+  "arm": "B",
+  "parcel": "P007",
+  "repeat": 1,
+  "class": "infrastructure",
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Your requests to gpt-4.1 for gpt-4.1 in centralus have exceeded request rate limit.', 'type': 'too_many_requests', 'param': None, 'code': 'rate_limit_exceeded'}}"
+ },
+ {
+  "model": "gpt-4.1",
+  "arm": "B",
+  "parcel": "P009",
+  "repeat": 0,
+  "class": "infrastructure",
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Your requests to gpt-4.1 for gpt-4.1 in centralus have exceeded request rate limit.', 'type': 'too_many_requests', 'param': None, 'code': 'rate_limit_exceeded'}}"
+ },
+ {
+  "model": "gpt-4.1",
+  "arm": "B",
+  "parcel": "P009",
+  "repeat": 2,
+  "class": "infrastructure",
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Your requests to gpt-4.1 for gpt-4.1 in centralus have exceeded request rate limit.', 'type': 'too_many_requests', 'param': None, 'code': 'rate_limit_exceeded'}}"
+ },
+ {
+  "model": "gpt-4.1",
+  "arm": "B",
+  "parcel": "P011",
+  "repeat": 2,
+  "class": "infrastructure",
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Your requests to gpt-4.1 for gpt-4.1 in centralus have exceeded request rate limit.', 'type': 'too_many_requests', 'param': None, 'code': 'rate_limit_exceeded'}}"
+ },
+ {
+  "model": "gpt-4.1",
+  "arm": "B",
+  "parcel": "P012",
+  "repeat": 0,
+  "class": "infrastructure",
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Your requests to gpt-4.1 for gpt-4.1 in centralus have exceeded request rate limit.', 'type': 'too_many_requests', 'param': None, 'code': 'rate_limit_exceeded'}}"
+ },
+ {
+  "model": "gpt-4.1",
+  "arm": "B",
+  "parcel": "P013",
+  "repeat": 0,
+  "class": "infrastructure",
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Your requests to gpt-4.1 for gpt-4.1 in centralus have exceeded request rate limit.', 'type': 'too_many_requests', 'param': None, 'code': 'rate_limit_exceeded'}}"
+ },
+ {
+  "model": "gpt-4.1",
+  "arm": "B",
+  "parcel": "P013",
+  "repeat": 2,
+  "class": "infrastructure",
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Your requests to gpt-4.1 for gpt-4.1 in centralus have exceeded request rate limit.', 'type': 'too_many_requests', 'param': None, 'code': 'rate_limit_exceeded'}}"
+ },
+ {
+  "model": "gpt-4.1",
+  "arm": "B",
+  "parcel": "P016",
+  "repeat": 0,
+  "class": "infrastructure",
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Your requests to gpt-4.1 for gpt-4.1 in centralus have exceeded request rate limit.', 'type': 'too_many_requests', 'param': None, 'code': 'rate_limit_exceeded'}}"
+ },
+ {
+  "model": "gpt-4.1",
+  "arm": "B",
+  "parcel": "P016",
+  "repeat": 1,
+  "class": "infrastructure",
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Your requests to gpt-4.1 for gpt-4.1 in centralus have exceeded request rate limit.', 'type': 'too_many_requests', 'param': None, 'code': 'rate_limit_exceeded'}}"
+ },
+ {
+  "model": "gpt-4.1",
+  "arm": "B",
+  "parcel": "P018",
+  "repeat": 0,
+  "class": "infrastructure",
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Your requests to gpt-4.1 for gpt-4.1 in centralus have exceeded request rate limit.', 'type': 'too_many_requests', 'param': None, 'code': 'rate_limit_exceeded'}}"
+ },
+ {
+  "model": "gpt-4.1",
+  "arm": "B",
+  "parcel": "P019",
+  "repeat": 2,
+  "class": "infrastructure",
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Your requests to gpt-4.1 for gpt-4.1 in centralus have exceeded request rate limit.', 'type': 'too_many_requests', 'param': None, 'code': 'rate_limit_exceeded'}}"
+ },
+ {
+  "model": "gpt-4.1",
+  "arm": "B",
+  "parcel": "P020",
+  "repeat": 2,
+  "class": "infrastructure",
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Your requests to gpt-4.1 for gpt-4.1 in centralus have exceeded request rate limit.', 'type': 'too_many_requests', 'param': None, 'code': 'rate_limit_exceeded'}}"
+ },
+ {
+  "model": "gpt-4.1",
+  "arm": "B",
+  "parcel": "P021",
+  "repeat": 2,
+  "class": "infrastructure",
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Your requests to gpt-4.1 for gpt-4.1 in centralus have exceeded request rate limit.', 'type': 'too_many_requests', 'param': None, 'code': 'rate_limit_exceeded'}}"
+ },
+ {
+  "model": "gpt-4.1",
+  "arm": "B",
+  "parcel": "P024",
+  "repeat": 0,
+  "class": "infrastructure",
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Your requests to gpt-4.1 for gpt-4.1 in centralus have exceeded request rate limit.', 'type': 'too_many_requests', 'param': None, 'code': 'rate_limit_exceeded'}}"
+ },
+ {
+  "model": "gpt-4.1",
+  "arm": "B",
+  "parcel": "P026",
+  "repeat": 0,
+  "class": "infrastructure",
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Your requests to gpt-4.1 for gpt-4.1 in centralus have exceeded request rate limit.', 'type': 'too_many_requests', 'param': None, 'code': 'rate_limit_exceeded'}}"
+ },
+ {
+  "model": "gpt-4.1",
+  "arm": "B",
+  "parcel": "P026",
+  "repeat": 2,
+  "class": "infrastructure",
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Your requests to gpt-4.1 for gpt-4.1 in centralus have exceeded request rate limit.', 'type': 'too_many_requests', 'param': None, 'code': 'rate_limit_exceeded'}}"
+ },
+ {
+  "model": "gpt-4.1",
+  "arm": "B",
+  "parcel": "P027",
+  "repeat": 1,
+  "class": "infrastructure",
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Your requests to gpt-4.1 for gpt-4.1 in centralus have exceeded request rate limit.', 'type': 'too_many_requests', 'param': None, 'code': 'rate_limit_exceeded'}}"
+ },
+ {
+  "model": "gpt-4.1",
+  "arm": "B",
+  "parcel": "P028",
+  "repeat": 1,
+  "class": "infrastructure",
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Your requests to gpt-4.1 for gpt-4.1 in centralus have exceeded request rate limit.', 'type': 'too_many_requests', 'param': None, 'code': 'rate_limit_exceeded'}}"
+ },
+ {
+  "model": "gpt-4.1",
+  "arm": "B",
+  "parcel": "P029",
+  "repeat": 1,
+  "class": "infrastructure",
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Your requests to gpt-4.1 for gpt-4.1 in centralus have exceeded request rate limit.', 'type': 'too_many_requests', 'param': None, 'code': 'rate_limit_exceeded'}}"
+ },
+ {
+  "model": "gpt-4.1",
+  "arm": "B",
+  "parcel": "P029",
+  "repeat": 2,
+  "class": "infrastructure",
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Your requests to gpt-4.1 for gpt-4.1 in centralus have exceeded request rate limit.', 'type': 'too_many_requests', 'param': None, 'code': 'rate_limit_exceeded'}}"
+ },
+ {
+  "model": "gpt-4.1",
+  "arm": "B",
+  "parcel": "P031",
+  "repeat": 2,
+  "class": "infrastructure",
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Your requests to gpt-4.1 for gpt-4.1 in centralus have exceeded request rate limit.', 'type': 'too_many_requests', 'param': None, 'code': 'rate_limit_exceeded'}}"
+ },
+ {
+  "model": "gpt-4.1",
+  "arm": "B",
+  "parcel": "P033",
+  "repeat": 0,
+  "class": "infrastructure",
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Your requests to gpt-4.1 for gpt-4.1 in centralus have exceeded request rate limit.', 'type': 'too_many_requests', 'param': None, 'code': 'rate_limit_exceeded'}}"
+ },
+ {
+  "model": "gpt-4.1",
+  "arm": "B",
+  "parcel": "P033",
+  "repeat": 2,
+  "class": "infrastructure",
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Your requests to gpt-4.1 for gpt-4.1 in centralus have exceeded request rate limit.', 'type': 'too_many_requests', 'param': None, 'code': 'rate_limit_exceeded'}}"
+ },
+ {
+  "model": "gpt-4.1",
+  "arm": "B",
+  "parcel": "P034",
+  "repeat": 0,
+  "class": "infrastructure",
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Your requests to gpt-4.1 for gpt-4.1 in centralus have exceeded request rate limit.', 'type': 'too_many_requests', 'param': None, 'code': 'rate_limit_exceeded'}}"
+ },
+ {
+  "model": "gpt-4.1",
+  "arm": "B",
+  "parcel": "P036",
+  "repeat": 0,
+  "class": "infrastructure",
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Your requests to gpt-4.1 for gpt-4.1 in centralus have exceeded request rate limit.', 'type': 'too_many_requests', 'param': None, 'code': 'rate_limit_exceeded'}}"
+ },
+ {
+  "model": "gpt-4.1",
+  "arm": "B",
+  "parcel": "P037",
+  "repeat": 0,
+  "class": "infrastructure",
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Your requests to gpt-4.1 for gpt-4.1 in centralus have exceeded request rate limit.', 'type': 'too_many_requests', 'param': None, 'code': 'rate_limit_exceeded'}}"
+ },
+ {
+  "model": "gpt-4.1",
+  "arm": "B",
+  "parcel": "P038",
+  "repeat": 1,
+  "class": "infrastructure",
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Your requests to gpt-4.1 for gpt-4.1 in centralus have exceeded request rate limit.', 'type': 'too_many_requests', 'param': None, 'code': 'rate_limit_exceeded'}}"
+ },
+ {
+  "model": "gpt-4.1",
+  "arm": "B",
+  "parcel": "P038",
+  "repeat": 2,
+  "class": "infrastructure",
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Your requests to gpt-4.1 for gpt-4.1 in centralus have exceeded request rate limit.', 'type': 'too_many_requests', 'param': None, 'code': 'rate_limit_exceeded'}}"
+ },
+ {
+  "model": "gpt-4.1",
+  "arm": "B",
+  "parcel": "P040",
+  "repeat": 0,
+  "class": "infrastructure",
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Your requests to gpt-4.1 for gpt-4.1 in centralus have exceeded request rate limit.', 'type': 'too_many_requests', 'param': None, 'code': 'rate_limit_exceeded'}}"
+ },
+ {
+  "model": "gpt-4.1",
+  "arm": "B",
+  "parcel": "P041",
+  "repeat": 2,
+  "class": "infrastructure",
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Your requests to gpt-4.1 for gpt-4.1 in centralus have exceeded request rate limit.', 'type': 'too_many_requests', 'param': None, 'code': 'rate_limit_exceeded'}}"
+ },
+ {
+  "model": "gpt-4.1",
+  "arm": "B",
+  "parcel": "P044",
+  "repeat": 0,
+  "class": "infrastructure",
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Your requests to gpt-4.1 for gpt-4.1 in centralus have exceeded request rate limit.', 'type': 'too_many_requests', 'param': None, 'code': 'rate_limit_exceeded'}}"
+ },
+ {
+  "model": "gpt-4.1",
+  "arm": "B",
+  "parcel": "P045",
+  "repeat": 0,
+  "class": "infrastructure",
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Your requests to gpt-4.1 for gpt-4.1 in centralus have exceeded request rate limit.', 'type': 'too_many_requests', 'param': None, 'code': 'rate_limit_exceeded'}}"
+ },
+ {
+  "model": "gpt-4.1",
+  "arm": "B",
+  "parcel": "P047",
+  "repeat": 0,
+  "class": "infrastructure",
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Your requests to gpt-4.1 for gpt-4.1 in centralus have exceeded request rate limit.', 'type': 'too_many_requests', 'param': None, 'code': 'rate_limit_exceeded'}}"
+ },
+ {
+  "model": "gpt-4.1",
+  "arm": "B",
+  "parcel": "P048",
+  "repeat": 2,
+  "class": "infrastructure",
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Your requests to gpt-4.1 for gpt-4.1 in centralus have exceeded request rate limit.', 'type': 'too_many_requests', 'param': None, 'code': 'rate_limit_exceeded'}}"
+ },
+ {
+  "model": "gpt-4.1-mini",
+  "arm": "B",
+  "parcel": "P001",
+  "repeat": 1,
+  "class": "infrastructure",
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Your requests to gpt-4.1-mini for gpt-4.1-mini in centralus have exceeded request rate limit.', 'type': 'too_many_requests', 'param': None, 'code': 'rate_limit_exceeded'}}"
+ },
+ {
+  "model": "gpt-4.1-mini",
+  "arm": "B",
+  "parcel": "P001",
+  "repeat": 2,
+  "class": "infrastructure",
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Your requests to gpt-4.1-mini for gpt-4.1-mini in centralus have exceeded request rate limit.', 'type': 'too_many_requests', 'param': None, 'code': 'rate_limit_exceeded'}}"
+ },
+ {
+  "model": "gpt-4.1-mini",
+  "arm": "B",
+  "parcel": "P002",
+  "repeat": 0,
+  "class": "infrastructure",
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Your requests to gpt-4.1-mini for gpt-4.1-mini in centralus have exceeded request rate limit.', 'type': 'too_many_requests', 'param': None, 'code': 'rate_limit_exceeded'}}"
+ },
+ {
+  "model": "gpt-4.1-mini",
+  "arm": "B",
+  "parcel": "P003",
+  "repeat": 1,
+  "class": "infrastructure",
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Your requests to gpt-4.1-mini for gpt-4.1-mini in centralus have exceeded request rate limit.', 'type': 'too_many_requests', 'param': None, 'code': 'rate_limit_exceeded'}}"
+ },
+ {
+  "model": "gpt-4.1-mini",
+  "arm": "B",
+  "parcel": "P003",
+  "repeat": 2,
+  "class": "infrastructure",
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Your requests to gpt-4.1-mini for gpt-4.1-mini in centralus have exceeded request rate limit.', 'type': 'too_many_requests', 'param': None, 'code': 'rate_limit_exceeded'}}"
+ },
+ {
+  "model": "gpt-4.1-mini",
+  "arm": "B",
+  "parcel": "P005",
+  "repeat": 0,
+  "class": "infrastructure",
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Your requests to gpt-4.1-mini for gpt-4.1-mini in centralus have exceeded request rate limit.', 'type': 'too_many_requests', 'param': None, 'code': 'rate_limit_exceeded'}}"
+ },
+ {
+  "model": "gpt-4.1-mini",
+  "arm": "B",
+  "parcel": "P007",
+  "repeat": 2,
+  "class": "infrastructure",
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Your requests to gpt-4.1-mini for gpt-4.1-mini in centralus have exceeded request rate limit.', 'type': 'too_many_requests', 'param': None, 'code': 'rate_limit_exceeded'}}"
+ },
+ {
+  "model": "gpt-4.1-mini",
+  "arm": "B",
+  "parcel": "P008",
+  "repeat": 0,
+  "class": "infrastructure",
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Your requests to gpt-4.1-mini for gpt-4.1-mini in centralus have exceeded request rate limit.', 'type': 'too_many_requests', 'param': None, 'code': 'rate_limit_exceeded'}}"
+ },
+ {
+  "model": "gpt-4.1-mini",
+  "arm": "B",
+  "parcel": "P008",
+  "repeat": 1,
+  "class": "infrastructure",
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Your requests to gpt-4.1-mini for gpt-4.1-mini in centralus have exceeded request rate limit.', 'type': 'too_many_requests', 'param': None, 'code': 'rate_limit_exceeded'}}"
+ },
+ {
+  "model": "gpt-4.1-mini",
+  "arm": "B",
+  "parcel": "P008",
+  "repeat": 2,
+  "class": "infrastructure",
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Your requests to gpt-4.1-mini for gpt-4.1-mini in centralus have exceeded request rate limit.', 'type': 'too_many_requests', 'param': None, 'code': 'rate_limit_exceeded'}}"
+ },
+ {
+  "model": "gpt-4.1-mini",
+  "arm": "B",
+  "parcel": "P009",
+  "repeat": 0,
+  "class": "infrastructure",
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Your requests to gpt-4.1-mini for gpt-4.1-mini in centralus have exceeded request rate limit.', 'type': 'too_many_requests', 'param': None, 'code': 'rate_limit_exceeded'}}"
+ },
+ {
+  "model": "gpt-4.1-mini",
+  "arm": "B",
+  "parcel": "P009",
+  "repeat": 1,
+  "class": "infrastructure",
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Your requests to gpt-4.1-mini for gpt-4.1-mini in centralus have exceeded request rate limit.', 'type': 'too_many_requests', 'param': None, 'code': 'rate_limit_exceeded'}}"
+ },
+ {
+  "model": "gpt-4.1-mini",
+  "arm": "B",
+  "parcel": "P010",
+  "repeat": 1,
+  "class": "infrastructure",
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Your requests to gpt-4.1-mini for gpt-4.1-mini in centralus have exceeded request rate limit.', 'type': 'too_many_requests', 'param': None, 'code': 'rate_limit_exceeded'}}"
+ },
+ {
+  "model": "gpt-4.1-mini",
+  "arm": "B",
+  "parcel": "P011",
+  "repeat": 0,
+  "class": "infrastructure",
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Your requests to gpt-4.1-mini for gpt-4.1-mini in centralus have exceeded request rate limit.', 'type': 'too_many_requests', 'param': None, 'code': 'rate_limit_exceeded'}}"
+ },
+ {
+  "model": "gpt-4.1-mini",
+  "arm": "B",
+  "parcel": "P011",
+  "repeat": 2,
+  "class": "infrastructure",
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Your requests to gpt-4.1-mini for gpt-4.1-mini in centralus have exceeded request rate limit.', 'type': 'too_many_requests', 'param': None, 'code': 'rate_limit_exceeded'}}"
+ },
+ {
+  "model": "gpt-4.1-mini",
+  "arm": "B",
+  "parcel": "P012",
+  "repeat": 0,
+  "class": "infrastructure",
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Your requests to gpt-4.1-mini for gpt-4.1-mini in centralus have exceeded request rate limit.', 'type': 'too_many_requests', 'param': None, 'code': 'rate_limit_exceeded'}}"
+ },
+ {
+  "model": "gpt-4.1-mini",
+  "arm": "B",
+  "parcel": "P012",
+  "repeat": 1,
+  "class": "infrastructure",
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Your requests to gpt-4.1-mini for gpt-4.1-mini in centralus have exceeded request rate limit.', 'type': 'too_many_requests', 'param': None, 'code': 'rate_limit_exceeded'}}"
+ },
+ {
+  "model": "gpt-4.1-mini",
+  "arm": "B",
+  "parcel": "P012",
+  "repeat": 2,
+  "class": "infrastructure",
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Your requests to gpt-4.1-mini for gpt-4.1-mini in centralus have exceeded request rate limit.', 'type': 'too_many_requests', 'param': None, 'code': 'rate_limit_exceeded'}}"
+ },
+ {
+  "model": "gpt-4.1-mini",
+  "arm": "B",
+  "parcel": "P013",
+  "repeat": 0,
+  "class": "infrastructure",
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Your requests to gpt-4.1-mini for gpt-4.1-mini in centralus have exceeded request rate limit.', 'type': 'too_many_requests', 'param': None, 'code': 'rate_limit_exceeded'}}"
+ },
+ {
+  "model": "gpt-4.1-mini",
+  "arm": "B",
+  "parcel": "P013",
+  "repeat": 1,
+  "class": "infrastructure",
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Your requests to gpt-4.1-mini for gpt-4.1-mini in centralus have exceeded request rate limit.', 'type': 'too_many_requests', 'param': None, 'code': 'rate_limit_exceeded'}}"
+ },
+ {
+  "model": "gpt-4.1-mini",
+  "arm": "B",
+  "parcel": "P013",
+  "repeat": 2,
+  "class": "infrastructure",
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Your requests to gpt-4.1-mini for gpt-4.1-mini in centralus have exceeded request rate limit.', 'type': 'too_many_requests', 'param': None, 'code': 'rate_limit_exceeded'}}"
+ },
+ {
+  "model": "gpt-4.1-mini",
+  "arm": "B",
+  "parcel": "P015",
+  "repeat": 1,
+  "class": "infrastructure",
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Your requests to gpt-4.1-mini for gpt-4.1-mini in centralus have exceeded request rate limit.', 'type': 'too_many_requests', 'param': None, 'code': 'rate_limit_exceeded'}}"
+ },
+ {
+  "model": "gpt-4.1-mini",
+  "arm": "B",
+  "parcel": "P016",
+  "repeat": 0,
+  "class": "infrastructure",
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Your requests to gpt-4.1-mini for gpt-4.1-mini in centralus have exceeded request rate limit.', 'type': 'too_many_requests', 'param': None, 'code': 'rate_limit_exceeded'}}"
+ },
+ {
+  "model": "gpt-4.1-mini",
+  "arm": "B",
+  "parcel": "P016",
+  "repeat": 1,
+  "class": "infrastructure",
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Your requests to gpt-4.1-mini for gpt-4.1-mini in centralus have exceeded request rate limit.', 'type': 'too_many_requests', 'param': None, 'code': 'rate_limit_exceeded'}}"
+ },
+ {
+  "model": "gpt-4.1-mini",
+  "arm": "B",
+  "parcel": "P018",
+  "repeat": 2,
+  "class": "infrastructure",
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Your requests to gpt-4.1-mini for gpt-4.1-mini in centralus have exceeded request rate limit.', 'type': 'too_many_requests', 'param': None, 'code': 'rate_limit_exceeded'}}"
+ },
+ {
+  "model": "gpt-4.1-mini",
+  "arm": "B",
+  "parcel": "P019",
+  "repeat": 1,
+  "class": "infrastructure",
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Your requests to gpt-4.1-mini for gpt-4.1-mini in centralus have exceeded request rate limit.', 'type': 'too_many_requests', 'param': None, 'code': 'rate_limit_exceeded'}}"
+ },
+ {
+  "model": "gpt-4.1-mini",
+  "arm": "B",
+  "parcel": "P020",
+  "repeat": 2,
+  "class": "infrastructure",
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Your requests to gpt-4.1-mini for gpt-4.1-mini in centralus have exceeded request rate limit.', 'type': 'too_many_requests', 'param': None, 'code': 'rate_limit_exceeded'}}"
+ },
+ {
+  "model": "gpt-4.1-mini",
+  "arm": "B",
+  "parcel": "P021",
+  "repeat": 0,
+  "class": "infrastructure",
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Your requests to gpt-4.1-mini for gpt-4.1-mini in centralus have exceeded request rate limit.', 'type': 'too_many_requests', 'param': None, 'code': 'rate_limit_exceeded'}}"
+ },
+ {
+  "model": "gpt-4.1-mini",
+  "arm": "B",
+  "parcel": "P022",
+  "repeat": 0,
+  "class": "infrastructure",
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Your requests to gpt-4.1-mini for gpt-4.1-mini in centralus have exceeded request rate limit.', 'type': 'too_many_requests', 'param': None, 'code': 'rate_limit_exceeded'}}"
+ },
+ {
+  "model": "gpt-4.1-mini",
+  "arm": "B",
+  "parcel": "P023",
+  "repeat": 1,
+  "class": "infrastructure",
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Your requests to gpt-4.1-mini for gpt-4.1-mini in centralus have exceeded request rate limit.', 'type': 'too_many_requests', 'param': None, 'code': 'rate_limit_exceeded'}}"
+ },
+ {
+  "model": "gpt-4.1-mini",
+  "arm": "B",
+  "parcel": "P025",
+  "repeat": 0,
+  "class": "infrastructure",
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Your requests to gpt-4.1-mini for gpt-4.1-mini in centralus have exceeded request rate limit.', 'type': 'too_many_requests', 'param': None, 'code': 'rate_limit_exceeded'}}"
+ },
+ {
+  "model": "gpt-4.1-mini",
+  "arm": "B",
+  "parcel": "P026",
+  "repeat": 0,
+  "class": "infrastructure",
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Your requests to gpt-4.1-mini for gpt-4.1-mini in centralus have exceeded request rate limit.', 'type': 'too_many_requests', 'param': None, 'code': 'rate_limit_exceeded'}}"
+ },
+ {
+  "model": "gpt-4.1-mini",
+  "arm": "B",
+  "parcel": "P026",
+  "repeat": 2,
+  "class": "infrastructure",
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Your requests to gpt-4.1-mini for gpt-4.1-mini in centralus have exceeded request rate limit.', 'type': 'too_many_requests', 'param': None, 'code': 'rate_limit_exceeded'}}"
+ },
+ {
+  "model": "gpt-4.1-mini",
+  "arm": "B",
+  "parcel": "P027",
+  "repeat": 1,
+  "class": "infrastructure",
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Your requests to gpt-4.1-mini for gpt-4.1-mini in centralus have exceeded request rate limit.', 'type': 'too_many_requests', 'param': None, 'code': 'rate_limit_exceeded'}}"
+ },
+ {
+  "model": "gpt-4.1-mini",
+  "arm": "B",
+  "parcel": "P028",
+  "repeat": 0,
+  "class": "infrastructure",
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Your requests to gpt-4.1-mini for gpt-4.1-mini in centralus have exceeded request rate limit.', 'type': 'too_many_requests', 'param': None, 'code': 'rate_limit_exceeded'}}"
+ },
+ {
+  "model": "gpt-4.1-mini",
+  "arm": "B",
+  "parcel": "P028",
+  "repeat": 1,
+  "class": "infrastructure",
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Your requests to gpt-4.1-mini for gpt-4.1-mini in centralus have exceeded request rate limit.', 'type': 'too_many_requests', 'param': None, 'code': 'rate_limit_exceeded'}}"
+ },
+ {
+  "model": "gpt-4.1-mini",
+  "arm": "B",
+  "parcel": "P028",
+  "repeat": 2,
+  "class": "infrastructure",
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Your requests to gpt-4.1-mini for gpt-4.1-mini in centralus have exceeded request rate limit.', 'type': 'too_many_requests', 'param': None, 'code': 'rate_limit_exceeded'}}"
+ },
+ {
+  "model": "gpt-4.1-mini",
+  "arm": "B",
+  "parcel": "P029",
+  "repeat": 0,
+  "class": "infrastructure",
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Your requests to gpt-4.1-mini for gpt-4.1-mini in centralus have exceeded request rate limit.', 'type': 'too_many_requests', 'param': None, 'code': 'rate_limit_exceeded'}}"
+ },
+ {
+  "model": "gpt-4.1-mini",
+  "arm": "B",
+  "parcel": "P030",
+  "repeat": 0,
+  "class": "infrastructure",
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Your requests to gpt-4.1-mini for gpt-4.1-mini in centralus have exceeded request rate limit.', 'type': 'too_many_requests', 'param': None, 'code': 'rate_limit_exceeded'}}"
+ },
+ {
+  "model": "gpt-4.1-mini",
+  "arm": "B",
+  "parcel": "P030",
+  "repeat": 2,
+  "class": "infrastructure",
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Your requests to gpt-4.1-mini for gpt-4.1-mini in centralus have exceeded request rate limit.', 'type': 'too_many_requests', 'param': None, 'code': 'rate_limit_exceeded'}}"
+ },
+ {
+  "model": "gpt-4.1-mini",
+  "arm": "B",
+  "parcel": "P031",
+  "repeat": 0,
+  "class": "infrastructure",
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Your requests to gpt-4.1-mini for gpt-4.1-mini in centralus have exceeded request rate limit.', 'type': 'too_many_requests', 'param': None, 'code': 'rate_limit_exceeded'}}"
+ },
+ {
+  "model": "gpt-4.1-mini",
+  "arm": "B",
+  "parcel": "P031",
+  "repeat": 2,
+  "class": "infrastructure",
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Your requests to gpt-4.1-mini for gpt-4.1-mini in centralus have exceeded request rate limit.', 'type': 'too_many_requests', 'param': None, 'code': 'rate_limit_exceeded'}}"
+ },
+ {
+  "model": "gpt-4.1-mini",
+  "arm": "B",
+  "parcel": "P032",
+  "repeat": 2,
+  "class": "infrastructure",
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Your requests to gpt-4.1-mini for gpt-4.1-mini in centralus have exceeded request rate limit.', 'type': 'too_many_requests', 'param': None, 'code': 'rate_limit_exceeded'}}"
+ },
+ {
+  "model": "gpt-4.1-mini",
+  "arm": "B",
+  "parcel": "P033",
+  "repeat": 0,
+  "class": "infrastructure",
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Your requests to gpt-4.1-mini for gpt-4.1-mini in centralus have exceeded request rate limit.', 'type': 'too_many_requests', 'param': None, 'code': 'rate_limit_exceeded'}}"
+ },
+ {
+  "model": "gpt-4.1-mini",
+  "arm": "B",
+  "parcel": "P033",
+  "repeat": 1,
+  "class": "infrastructure",
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Your requests to gpt-4.1-mini for gpt-4.1-mini in centralus have exceeded request rate limit.', 'type': 'too_many_requests', 'param': None, 'code': 'rate_limit_exceeded'}}"
+ },
+ {
+  "model": "gpt-4.1-mini",
+  "arm": "B",
+  "parcel": "P033",
+  "repeat": 2,
+  "class": "infrastructure",
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Your requests to gpt-4.1-mini for gpt-4.1-mini in centralus have exceeded request rate limit.', 'type': 'too_many_requests', 'param': None, 'code': 'rate_limit_exceeded'}}"
+ },
+ {
+  "model": "gpt-4.1-mini",
+  "arm": "B",
+  "parcel": "P034",
+  "repeat": 1,
+  "class": "infrastructure",
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Your requests to gpt-4.1-mini for gpt-4.1-mini in centralus have exceeded request rate limit.', 'type': 'too_many_requests', 'param': None, 'code': 'rate_limit_exceeded'}}"
+ },
+ {
+  "model": "gpt-4.1-mini",
+  "arm": "B",
+  "parcel": "P035",
+  "repeat": 0,
+  "class": "infrastructure",
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Your requests to gpt-4.1-mini for gpt-4.1-mini in centralus have exceeded request rate limit.', 'type': 'too_many_requests', 'param': None, 'code': 'rate_limit_exceeded'}}"
+ },
+ {
+  "model": "gpt-4.1-mini",
+  "arm": "B",
+  "parcel": "P035",
+  "repeat": 1,
+  "class": "infrastructure",
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Your requests to gpt-4.1-mini for gpt-4.1-mini in centralus have exceeded request rate limit.', 'type': 'too_many_requests', 'param': None, 'code': 'rate_limit_exceeded'}}"
+ },
+ {
+  "model": "gpt-4.1-mini",
+  "arm": "B",
+  "parcel": "P036",
+  "repeat": 1,
+  "class": "infrastructure",
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Your requests to gpt-4.1-mini for gpt-4.1-mini in centralus have exceeded request rate limit.', 'type': 'too_many_requests', 'param': None, 'code': 'rate_limit_exceeded'}}"
+ },
+ {
+  "model": "gpt-4.1-mini",
+  "arm": "B",
+  "parcel": "P036",
+  "repeat": 2,
+  "class": "infrastructure",
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Your requests to gpt-4.1-mini for gpt-4.1-mini in centralus have exceeded request rate limit.', 'type': 'too_many_requests', 'param': None, 'code': 'rate_limit_exceeded'}}"
+ },
+ {
+  "model": "gpt-4.1-mini",
+  "arm": "B",
+  "parcel": "P037",
+  "repeat": 1,
+  "class": "infrastructure",
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Your requests to gpt-4.1-mini for gpt-4.1-mini in centralus have exceeded request rate limit.', 'type': 'too_many_requests', 'param': None, 'code': 'rate_limit_exceeded'}}"
+ },
+ {
+  "model": "gpt-4.1-mini",
+  "arm": "B",
+  "parcel": "P038",
+  "repeat": 0,
+  "class": "infrastructure",
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Your requests to gpt-4.1-mini for gpt-4.1-mini in centralus have exceeded request rate limit.', 'type': 'too_many_requests', 'param': None, 'code': 'rate_limit_exceeded'}}"
+ },
+ {
+  "model": "gpt-4.1-mini",
+  "arm": "B",
+  "parcel": "P039",
+  "repeat": 2,
+  "class": "infrastructure",
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Your requests to gpt-4.1-mini for gpt-4.1-mini in centralus have exceeded request rate limit.', 'type': 'too_many_requests', 'param': None, 'code': 'rate_limit_exceeded'}}"
+ },
+ {
+  "model": "gpt-4.1-mini",
+  "arm": "B",
+  "parcel": "P040",
+  "repeat": 0,
+  "class": "infrastructure",
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Your requests to gpt-4.1-mini for gpt-4.1-mini in centralus have exceeded request rate limit.', 'type': 'too_many_requests', 'param': None, 'code': 'rate_limit_exceeded'}}"
+ },
+ {
+  "model": "gpt-4.1-mini",
+  "arm": "B",
+  "parcel": "P040",
+  "repeat": 1,
+  "class": "infrastructure",
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Your requests to gpt-4.1-mini for gpt-4.1-mini in centralus have exceeded request rate limit.', 'type': 'too_many_requests', 'param': None, 'code': 'rate_limit_exceeded'}}"
+ },
+ {
+  "model": "gpt-4.1-mini",
+  "arm": "B",
+  "parcel": "P041",
+  "repeat": 2,
+  "class": "infrastructure",
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Your requests to gpt-4.1-mini for gpt-4.1-mini in centralus have exceeded request rate limit.', 'type': 'too_many_requests', 'param': None, 'code': 'rate_limit_exceeded'}}"
+ },
+ {
+  "model": "gpt-4.1-mini",
+  "arm": "B",
+  "parcel": "P042",
+  "repeat": 0,
+  "class": "infrastructure",
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Your requests to gpt-4.1-mini for gpt-4.1-mini in centralus have exceeded request rate limit.', 'type': 'too_many_requests', 'param': None, 'code': 'rate_limit_exceeded'}}"
+ },
+ {
+  "model": "gpt-4.1-mini",
+  "arm": "B",
+  "parcel": "P042",
+  "repeat": 1,
+  "class": "infrastructure",
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Your requests to gpt-4.1-mini for gpt-4.1-mini in centralus have exceeded request rate limit.', 'type': 'too_many_requests', 'param': None, 'code': 'rate_limit_exceeded'}}"
+ },
+ {
+  "model": "gpt-4.1-mini",
+  "arm": "B",
+  "parcel": "P043",
+  "repeat": 2,
+  "class": "infrastructure",
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Your requests to gpt-4.1-mini for gpt-4.1-mini in centralus have exceeded request rate limit.', 'type': 'too_many_requests', 'param': None, 'code': 'rate_limit_exceeded'}}"
+ },
+ {
+  "model": "gpt-4.1-mini",
+  "arm": "B",
+  "parcel": "P044",
+  "repeat": 0,
+  "class": "infrastructure",
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Your requests to gpt-4.1-mini for gpt-4.1-mini in centralus have exceeded request rate limit.', 'type': 'too_many_requests', 'param': None, 'code': 'rate_limit_exceeded'}}"
+ },
+ {
+  "model": "gpt-4.1-mini",
+  "arm": "B",
+  "parcel": "P044",
+  "repeat": 1,
+  "class": "infrastructure",
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Your requests to gpt-4.1-mini for gpt-4.1-mini in centralus have exceeded request rate limit.', 'type': 'too_many_requests', 'param': None, 'code': 'rate_limit_exceeded'}}"
+ },
+ {
+  "model": "gpt-4.1-mini",
+  "arm": "B",
+  "parcel": "P044",
+  "repeat": 2,
+  "class": "infrastructure",
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Your requests to gpt-4.1-mini for gpt-4.1-mini in centralus have exceeded request rate limit.', 'type': 'too_many_requests', 'param': None, 'code': 'rate_limit_exceeded'}}"
+ },
+ {
+  "model": "gpt-4.1-mini",
+  "arm": "B",
+  "parcel": "P045",
+  "repeat": 1,
+  "class": "infrastructure",
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Your requests to gpt-4.1-mini for gpt-4.1-mini in centralus have exceeded request rate limit.', 'type': 'too_many_requests', 'param': None, 'code': 'rate_limit_exceeded'}}"
+ },
+ {
+  "model": "gpt-4.1-mini",
+  "arm": "B",
+  "parcel": "P047",
+  "repeat": 0,
+  "class": "infrastructure",
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Your requests to gpt-4.1-mini for gpt-4.1-mini in centralus have exceeded request rate limit.', 'type': 'too_many_requests', 'param': None, 'code': 'rate_limit_exceeded'}}"
+ },
+ {
+  "model": "gpt-4.1-mini",
+  "arm": "B",
+  "parcel": "P047",
+  "repeat": 2,
+  "class": "infrastructure",
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Your requests to gpt-4.1-mini for gpt-4.1-mini in centralus have exceeded request rate limit.', 'type': 'too_many_requests', 'param': None, 'code': 'rate_limit_exceeded'}}"
+ },
+ {
+  "model": "gpt-4.1-mini",
+  "arm": "B",
+  "parcel": "P048",
+  "repeat": 1,
+  "class": "infrastructure",
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Your requests to gpt-4.1-mini for gpt-4.1-mini in centralus have exceeded request rate limit.', 'type': 'too_many_requests', 'param': None, 'code': 'rate_limit_exceeded'}}"
+ },
+ {
+  "model": "gpt-4.1-mini",
+  "arm": "B",
+  "parcel": "P048",
+  "repeat": 2,
+  "class": "infrastructure",
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Your requests to gpt-4.1-mini for gpt-4.1-mini in centralus have exceeded request rate limit.', 'type': 'too_many_requests', 'param': None, 'code': 'rate_limit_exceeded'}}"
+ },
+ {
+  "model": "gpt-4.1-mini",
+  "arm": "B",
+  "parcel": "P049",
+  "repeat": 1,
+  "class": "infrastructure",
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Your requests to gpt-4.1-mini for gpt-4.1-mini in centralus have exceeded request rate limit.', 'type': 'too_many_requests', 'param': None, 'code': 'rate_limit_exceeded'}}"
+ }
+]

@@ -1,0 +1,12 @@
+flowchart TB
+  A["Azure first<br/>Entra ID, RBAC, no keys<br/>Cost Management budgets, Foundry quotas"]
+  F["Fabric second<br/>OneLake medallion lakehouse<br/>Gold table = single governed source"]
+  G["Foundry Agent Service<br/>Read-only tools, model versioning<br/>Evaluation and tracing"]
+  C["Our code, only where nothing fits<br/>Pinned policy, hash-locked receipt<br/>Narration verifier, cost meter"]
+  M["Agent 365, design only<br/>Registry, Entra Agent ID<br/>Defender, Purview"]
+  H["Human authority<br/>Named approver; stale evidence fails closed<br/>Platform feature, not in the accelerator"]
+  A --> F --> G --> C --> M --> H
+  classDef built fill:#e6f4ea,stroke:#2e7d32,color:#000
+  classDef design fill:#fff4e0,stroke:#b26a00,color:#000,stroke-dasharray: 5 3
+  class A,F,G,C built
+  class M,H design

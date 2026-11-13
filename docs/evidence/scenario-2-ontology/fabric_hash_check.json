@@ -1,0 +1,7 @@
+{
+  "source": "Fabric lakehouse SQL analytics endpoint",
+  "gold_rows": 50,
+  "checked": 50,
+  "matched": 50,
+  "mismatches": []
+}

@@ -1,0 +1,6 @@
+{
+  "updateDefinition": {"edge": "crew_access", "sourceNodeKeyColumns": ["parcel_id", "crew_type"], "destinationNodeKeyColumns": ["parcel_id"], "http": "202 then LRO 200"},
+  "refresh_job": {"id": "00000000-0000-4000-8000-000000000007", "jobType": "Refresh", "status": "Completed", "failureReason": null, "startTimeUtc": "2026-11-09T11:54:32", "endTimeUtc": "2026-11-09T11:57:42"},
+  "row_counts": {"parcels": 50, "roads": 52, "homes": 40, "water": 25, "crew": 150},
+  "chain_evidence": "fabric_graph_chain_gql.json"
+}

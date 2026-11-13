@@ -1,0 +1,26 @@
+{
+  "date": "2026-11-09",
+  "graph_model": "00000000-0000-4000-8000-000000000004",
+  "step_1_updateDefinition": {
+    "change": "graphType.json CrewAccess primaryKeyProperties: [parcel_id] -> [parcel_id, crew_type]; all other parts re-uploaded unchanged",
+    "http": "202 then LRO 200 Succeeded",
+    "readback": "getDefinition shows primaryKeyProperties = [parcel_id, crew_type]"
+  },
+  "step_2_graphDefinition_check": {
+    "finding": "edge 00000000-0000-4000-8000-000000000028 (data source crew_access, source node = CrewAccess alias 00000000-...) still has sourceNodeKeyColumns [parcel_id] (1 column) and destinationNodeKeyColumns [parcel_id]",
+    "fixed": false,
+    "note": "needs sourceNodeKeyColumns [parcel_id, crew_type]; not applied because refresh budget (exactly one) is spent"
+  },
+  "step_3_refresh": {
+    "manual_post_job_021e9f57": "Deduped (a refresh was already queued, auto-triggered by updateDefinition)",
+    "auto_job_2fde8c7f-ecc6-4297-97fd-3d423e0402e1": {
+      "status": "Failed",
+      "start": "2026-11-09T11:49:05Z",
+      "end": "2026-11-09T11:52:02Z",
+      "errorCode": "UserError3010",
+      "message": "Edge source/destination key column count does not match the referenced node primary key count. Mismatches: Table 'crew_access', edge '00000000-0000-4000-8000-000000000028', source node '00000000-0000-4000-8000-000000000016': node primary key count 2 [parcel_id, crew_type], edge key column count 1 [parcel_id]"
+    },
+    "capacity_error": false
+  },
+  "step_4_chain_run": "not run: refresh failed; graph still holds the previous materialization (CrewAccess = 50 nodes, C3 = engine only)"
+}

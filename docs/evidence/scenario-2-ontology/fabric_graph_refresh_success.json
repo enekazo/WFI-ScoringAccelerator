@@ -1,0 +1,28 @@
+{
+  "date": "2026-11-09",
+  "capacity": "F4",
+  "refresh_job": {
+    "api": "POST /v1/workspaces/{ws}/items/{graph}/jobs/instances?jobType=RefreshGraph (HTTP 202)",
+    "instanceId": "00000000-0000-4000-8000-000000000013",
+    "jobType_reported": "Refresh",
+    "status": "Completed",
+    "failureReason": null,
+    "rootActivityId": "00000000-0000-4000-8000-000000000005",
+    "start": "2026-11-09T11:40:14.576Z",
+    "end": "2026-11-09T11:43:48.689Z"
+  },
+  "node_counts_after_refresh": {"Parcel": 50, "RoadSegment": 52, "HomeGroup": 40, "WaterSource": 25, "CrewAccess": 50, "CrewAccess_expected": 150},
+  "chain_vs_truth": {
+    "C1": "match (14 parcels)",
+    "C2": "match (11 parcels)",
+    "C3": "MISMATCH: graph returned engine only; truth is dozer and engine",
+    "C4": "match (P018)",
+    "C5": "match (P020, P031)"
+  },
+  "root_cause": {
+    "graph_model_getDefinition": "POST /v1/workspaces/{ws}/graphModels/{id}/getDefinition (202 LRO, then /result)",
+    "finding": "graphType.json CrewAccess node type has primaryKeyProperties [\"parcel_id\"] only (properties: parcel_id, crew_type, reachable, ...). The ontology entity CrewAccess has composite parcel_id+crew_type, so the graph model key was not synced from the ontology. One node per parcel_id gives 50 nodes instead of 150.",
+    "dataSources_crew_access": "DeltaTable Tables/crew_access (150 rows in lakehouse)",
+    "action_taken": "none (no updateDefinition on the graph model; instructions were to report)"
+  }
+}

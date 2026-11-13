@@ -1,0 +1,28 @@
+{
+  "agent": "pinned-score-agent-fabric",
+  "endpoint": "https://foundry.example.invalid/api/projects/example-project",
+  "model": "gpt-4.1",
+  "auth": "DefaultAzureCredential (az user)",
+  "workspace_id": "00000000-0000-4000-8000-000000000019",
+  "data_agent_id": "00000000-0000-4000-8000-000000000002",
+  "mode": "fabric-iq (ontology item id in data_agent_id field)",
+  "connection": {
+    "status": 200,
+    "id": "/subscriptions/00000000-0000-4000-8000-000000000003/resourceGroups/example-resource-group/providers/Microsoft.CognitiveServices/accounts/example-foundry-account/projects/example-project/connections/pinnedscore-fabric-iq-ontology",
+    "error": null
+  },
+  "agent_version": {
+    "name": "pinned-score-agent-fabric",
+    "version": "4"
+  },
+  "questions": [
+    {
+      "question": "Which crew types can reach parcel P003?",
+      "error": "BadRequestError: Error code: 400 - {'error': {'message': '[Failed Dependency] while enumerating tools, the dependency call to the MCP server: https://api.fabric.microsoft.com:443/v1/mcp/dataPlane/workspaces/00000000-0000-4000-8000-000000000019/items/00000000-0000-4000-8000-000000000024/ontologyEndpoint failed with status code 500, and error message: Response status code does not indicate success: 500 (Internal Server Error). Response body: {\"error\":{\"code\":-32603,\"message\":\"The server was unable to complete your request due to an internal error\",\"data\":{\"requestId\":\"00000000-0000-4000-8000-000000000009\"}},\"jsonrpc\":\"2.0\",\"id\":null} This indicates a server-side or upstream gateway issue. Please ensure the MCP server is reachable, healthy, and correctly configured. If it appears healthy, check server logs and any network, APIM, firewall, proxy, or private endpoint settings that could be blocking or interrupting the request. Troubleshooting guide: https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/tools/fabric-iq?tabs=azd&pivots=python#troubleshoot', 'type': 'invalid_request_error', 'param': None, 'code': 'tool_user_error', 'request_id': '53f87f5c8afe88a7352bc644df53a524'}}"
+    },
+    {
+      "question": "Which parcels have a critical facility but no passable access road that an engine can use?",
+      "error": "BadRequestError: Error code: 400 - {'error': {'message': '[Failed Dependency] while enumerating tools, the dependency call to the MCP server: https://api.fabric.microsoft.com:443/v1/mcp/dataPlane/workspaces/00000000-0000-4000-8000-000000000019/items/00000000-0000-4000-8000-000000000024/ontologyEndpoint failed with status code 500, and error message: Response status code does not indicate success: 500 (Internal Server Error). Response body: {\"error\":{\"code\":-32603,\"message\":\"The server was unable to complete your request due to an internal error\",\"data\":{\"requestId\":\"00000000-0000-4000-8000-000000000012\"}},\"jsonrpc\":\"2.0\",\"id\":null} This indicates a server-side or upstream gateway issue. Please ensure the MCP server is reachable, healthy, and correctly configured. If it appears healthy, check server logs and any network, APIM, firewall, proxy, or private endpoint settings that could be blocking or interrupting the request. Troubleshooting guide: https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/tools/fabric-iq?tabs=azd&pivots=python#troubleshoot', 'type': 'invalid_request_error', 'param': None, 'code': 'tool_user_error', 'request_id': '6f62fba24eebff303c711a95bcbd3fc2'}}"
+    }
+  ]
+}

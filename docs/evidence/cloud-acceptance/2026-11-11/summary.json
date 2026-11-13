@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-11",
+  "scope": "Live cloud runtime checks on one configured synthetic 150-parcel deployment.",
+  "foundation_revision": "ac0f2916d9d8b5c31275b5e3daef73e2d73ca37f",
+  "function_fix_revision": "108b1aaaa39410cd06ccef84adaa6f332874bfb6",
+  "function_package_sha256": "9634ba901cad5c80feb0edab57aecda417bfeff6d0f2797b3af7398469de1011",
+  "dataset": {
+    "parcelCount": 150,
+    "datasetSha256": "c0e0d1d4dd12e4b1a7a0c07a47bda43bc7dab05226e6b4cf1366370902afc0f9",
+    "policySha256": "26fd759b9fc3d9cbe1d252730b34111e289d7e67190aaa9497c361fb96de69ff"
+  },
+  "results": {
+    "function_score_hash_matches": 150,
+    "fabric_sql_receipt_hash_matches": 150,
+    "direct_graph_questions_matched": 5,
+    "foundry_ontology_questions_matched": 5,
+    "c5_matching_parcels": 15,
+    "receipt_agent_remote_mcp_and_server_verification": true,
+    "post_fix_explicit_and_inferred_missing_receipts_blocked": true,
+    "post_fix_valid_and_contradictory_answers_checked": [
+      "P001",
+      "P003"
+    ],
+    "post_fix_invalid_token_http_status": 401,
+    "post_fix_policy_conflict_http_status": 409
+  },
+  "evidence_files": [
+    "cloud-runtime.json",
+    "fabric_hash_check.json",
+    "fabric_graph_chain_gql.json",
+    "fabric-agent-smoke.json",
+    "receipt-agent-smoke.json",
+    "verify-unknown-entity-fix.json"
+  ],
+  "installer_checkpoint_observed": {
+    "status": "failed",
+    "accepted": false
+  },
+  "not_claimed": [
+    "A clean end-to-end installer run using the final source revision.",
+    "Validation in every tenant, subscription, model or dataset size.",
+    "A new multi-model experiment or a rerun of the scenario-3 calculation tools.",
+    "Live cleanup, production performance, complete hosted tracing or two-person approval."
+  ],
+  "method_notes": [
+    "Acceptance scripts ran on the operator computer; runtime scoring, MCP tools and verification ran in Azure/Fabric/Foundry.",
+    "The Function-only patch has deployment/package identity and post-publication probes in verify-unknown-entity-fix.json; the separate artifacts are not represented as one uninterrupted installer invocation.",
+    "Question correctness does not establish a usefulness advantage or a new model-comparison result.",
+    "Original raw evidence is preserved locally; exports omit private parameters, endpoint/tenant/workspace identities and local paths. Embedded target links are replaced with [target link omitted].",
+    "Provider moderation annotations in ontology tool output are retained; all_matched refers to answer correctness, not proof that moderation succeeded."
+  ]
+}

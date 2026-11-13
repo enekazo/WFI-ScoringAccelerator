@@ -1,0 +1,8 @@
+{
+ "ok": true,
+ "entries": 4,
+ "separation_of_duties_configured": "single_person",
+ "modes_recorded_in_log": [
+  "single_person"
+ ]
+}

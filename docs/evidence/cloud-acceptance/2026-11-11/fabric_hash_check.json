@@ -1,0 +1,16 @@
+{
+  "gold_rows": 150,
+  "historical_rows_excluded": 0,
+  "expected": 150,
+  "checked": 150,
+  "matched": 150,
+  "mismatches": [],
+  "missing": [],
+  "unexpected": [],
+  "ok": true,
+  "_provenance": {
+    "original_file": "fabric_hash_check.json",
+    "original_sha256": "5e4e09df5abccb10a72c98bd5d73d108effe6528aed887f7d6ee1e3db8c3e1de",
+    "transformation": "Allowlisted projection; private target context omitted."
+  }
+}

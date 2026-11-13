@@ -1,0 +1,605 @@
+{
+  "parcels": {
+    "P001": {
+      "clean_status": "scored",
+      "expected_band": "high",
+      "expected_reasons": [
+        "unit:fuel_moisture_pct"
+      ],
+      "expected_score": "53.9",
+      "expected_status": "incomplete",
+      "fault": "unit_mismatch",
+      "injected_metric": "fuel_moisture_pct",
+      "parcel_id": "P001",
+      "tampered_policy_sha256": null
+    },
+    "P002": {
+      "clean_status": "scored",
+      "expected_band": "moderate",
+      "expected_reasons": [
+        "unit:dead_fuel_pct"
+      ],
+      "expected_score": "46.4",
+      "expected_status": "incomplete",
+      "fault": "unit_mismatch",
+      "injected_metric": "dead_fuel_pct",
+      "parcel_id": "P002",
+      "tampered_policy_sha256": null
+    },
+    "P003": {
+      "clean_status": "scored",
+      "expected_band": "moderate",
+      "expected_reasons": [],
+      "expected_score": "33.3",
+      "expected_status": "scored",
+      "fault": null,
+      "injected_metric": null,
+      "parcel_id": "P003",
+      "tampered_policy_sha256": null
+    },
+    "P004": {
+      "clean_status": "scored",
+      "expected_band": "moderate",
+      "expected_reasons": [
+        "unit:dead_fuel_pct"
+      ],
+      "expected_score": "47.0",
+      "expected_status": "incomplete",
+      "fault": "unit_mismatch",
+      "injected_metric": "dead_fuel_pct",
+      "parcel_id": "P004",
+      "tampered_policy_sha256": null
+    },
+    "P005": {
+      "clean_status": "scored",
+      "expected_band": "moderate",
+      "expected_reasons": [],
+      "expected_score": "49.8",
+      "expected_status": "scored",
+      "fault": null,
+      "injected_metric": null,
+      "parcel_id": "P005",
+      "tampered_policy_sha256": null
+    },
+    "P006": {
+      "clean_status": "scored",
+      "expected_band": "moderate",
+      "expected_reasons": [
+        "unit:fuel_moisture_pct"
+      ],
+      "expected_score": "35.8",
+      "expected_status": "incomplete",
+      "fault": "unit_mismatch",
+      "injected_metric": "fuel_moisture_pct",
+      "parcel_id": "P006",
+      "tampered_policy_sha256": null
+    },
+    "P007": {
+      "clean_status": "scored",
+      "expected_band": "high",
+      "expected_reasons": [],
+      "expected_score": "58.8",
+      "expected_status": "scored",
+      "fault": null,
+      "injected_metric": null,
+      "parcel_id": "P007",
+      "tampered_policy_sha256": null
+    },
+    "P008": {
+      "clean_status": "scored",
+      "expected_band": "high",
+      "expected_reasons": [],
+      "expected_score": "58.0",
+      "expected_status": "scored",
+      "fault": null,
+      "injected_metric": null,
+      "parcel_id": "P008",
+      "tampered_policy_sha256": null
+    },
+    "P009": {
+      "clean_status": "scored",
+      "expected_band": "moderate",
+      "expected_reasons": [],
+      "expected_score": "45.8",
+      "expected_status": "scored",
+      "fault": null,
+      "injected_metric": null,
+      "parcel_id": "P009",
+      "tampered_policy_sha256": null
+    },
+    "P010": {
+      "clean_status": "scored",
+      "expected_band": "high",
+      "expected_reasons": [],
+      "expected_score": "52.1",
+      "expected_status": "scored",
+      "fault": null,
+      "injected_metric": null,
+      "parcel_id": "P010",
+      "tampered_policy_sha256": null
+    },
+    "P011": {
+      "clean_status": "scored",
+      "expected_band": "moderate",
+      "expected_reasons": [],
+      "expected_score": "40.5",
+      "expected_status": "policy_mismatch",
+      "fault": "policy_tamper",
+      "injected_metric": null,
+      "parcel_id": "P011",
+      "tampered_policy_sha256": "557f5edcfc278a74c1b53fef3bea6993e1b8e8fb91b129648770038632b836a4"
+    },
+    "P012": {
+      "clean_status": "scored",
+      "expected_band": "high",
+      "expected_reasons": [],
+      "expected_score": "50.0",
+      "expected_status": "scored",
+      "fault": null,
+      "injected_metric": null,
+      "parcel_id": "P012",
+      "tampered_policy_sha256": null
+    },
+    "P013": {
+      "clean_status": "scored",
+      "expected_band": "moderate",
+      "expected_reasons": [],
+      "expected_score": "31.8",
+      "expected_status": "scored",
+      "fault": null,
+      "injected_metric": null,
+      "parcel_id": "P013",
+      "tampered_policy_sha256": null
+    },
+    "P014": {
+      "clean_status": "scored",
+      "expected_band": "high",
+      "expected_reasons": [],
+      "expected_score": "65.9",
+      "expected_status": "scored",
+      "fault": null,
+      "injected_metric": null,
+      "parcel_id": "P014",
+      "tampered_policy_sha256": null
+    },
+    "P015": {
+      "clean_status": "scored",
+      "expected_band": "high",
+      "expected_reasons": [],
+      "expected_score": "66.3",
+      "expected_status": "scored",
+      "fault": null,
+      "injected_metric": null,
+      "parcel_id": "P015",
+      "tampered_policy_sha256": null
+    },
+    "P016": {
+      "clean_status": "scored",
+      "expected_band": "high",
+      "expected_reasons": [],
+      "expected_score": "51.9",
+      "expected_status": "scored",
+      "fault": null,
+      "injected_metric": null,
+      "parcel_id": "P016",
+      "tampered_policy_sha256": null
+    },
+    "P017": {
+      "clean_status": "scored",
+      "expected_band": "moderate",
+      "expected_reasons": [
+        "missing:fuel_load"
+      ],
+      "expected_score": "46.3",
+      "expected_status": "incomplete",
+      "fault": "missing_input",
+      "injected_metric": "fuel_load",
+      "parcel_id": "P017",
+      "tampered_policy_sha256": null
+    },
+    "P018": {
+      "clean_status": "scored",
+      "expected_band": "high",
+      "expected_reasons": [],
+      "expected_score": "61.5",
+      "expected_status": "scored",
+      "fault": null,
+      "injected_metric": null,
+      "parcel_id": "P018",
+      "tampered_policy_sha256": null
+    },
+    "P019": {
+      "clean_status": "scored",
+      "expected_band": "high",
+      "expected_reasons": [
+        "expired:dead_fuel_pct"
+      ],
+      "expected_score": "53.4",
+      "expected_status": "incomplete",
+      "fault": "expired_input",
+      "injected_metric": "dead_fuel_pct",
+      "parcel_id": "P019",
+      "tampered_policy_sha256": null
+    },
+    "P020": {
+      "clean_status": "scored",
+      "expected_band": "moderate",
+      "expected_reasons": [
+        "expired:wind_kmh"
+      ],
+      "expected_score": "44.2",
+      "expected_status": "incomplete",
+      "fault": "expired_input",
+      "injected_metric": "wind_kmh",
+      "parcel_id": "P020",
+      "tampered_policy_sha256": null
+    },
+    "P021": {
+      "clean_status": "scored",
+      "expected_band": "high",
+      "expected_reasons": [],
+      "expected_score": "54.4",
+      "expected_status": "scored",
+      "fault": null,
+      "injected_metric": null,
+      "parcel_id": "P021",
+      "tampered_policy_sha256": null
+    },
+    "P022": {
+      "clean_status": "scored",
+      "expected_band": "high",
+      "expected_reasons": [],
+      "expected_score": "53.9",
+      "expected_status": "scored",
+      "fault": null,
+      "injected_metric": null,
+      "parcel_id": "P022",
+      "tampered_policy_sha256": null
+    },
+    "P023": {
+      "clean_status": "scored",
+      "expected_band": "high",
+      "expected_reasons": [],
+      "expected_score": "56.9",
+      "expected_status": "policy_mismatch",
+      "fault": "policy_tamper",
+      "injected_metric": null,
+      "parcel_id": "P023",
+      "tampered_policy_sha256": "557f5edcfc278a74c1b53fef3bea6993e1b8e8fb91b129648770038632b836a4"
+    },
+    "P024": {
+      "clean_status": "scored",
+      "expected_band": "moderate",
+      "expected_reasons": [
+        "provenance:wind_kmh"
+      ],
+      "expected_score": "31.0",
+      "expected_status": "incomplete",
+      "fault": "fixture_provenance",
+      "injected_metric": "wind_kmh",
+      "parcel_id": "P024",
+      "tampered_policy_sha256": null
+    },
+    "P025": {
+      "clean_status": "scored",
+      "expected_band": "high",
+      "expected_reasons": [
+        "invalid:dead_fuel_pct"
+      ],
+      "expected_score": "53.1",
+      "expected_status": "incomplete",
+      "fault": "invalid_quality",
+      "injected_metric": "dead_fuel_pct",
+      "parcel_id": "P025",
+      "tampered_policy_sha256": null
+    },
+    "P026": {
+      "clean_status": "scored",
+      "expected_band": "high",
+      "expected_reasons": [
+        "invalid:fuel_moisture_pct"
+      ],
+      "expected_score": "65.7",
+      "expected_status": "incomplete",
+      "fault": "invalid_quality",
+      "injected_metric": "fuel_moisture_pct",
+      "parcel_id": "P026",
+      "tampered_policy_sha256": null
+    },
+    "P027": {
+      "clean_status": "scored",
+      "expected_band": "moderate",
+      "expected_reasons": [
+        "unit:fuel_moisture_pct"
+      ],
+      "expected_score": "42.6",
+      "expected_status": "incomplete",
+      "fault": "unit_mismatch",
+      "injected_metric": "fuel_moisture_pct",
+      "parcel_id": "P027",
+      "tampered_policy_sha256": null
+    },
+    "P028": {
+      "clean_status": "scored",
+      "expected_band": "high",
+      "expected_reasons": [
+        "provenance:dead_fuel_pct"
+      ],
+      "expected_score": "66.8",
+      "expected_status": "incomplete",
+      "fault": "fixture_provenance",
+      "injected_metric": "dead_fuel_pct",
+      "parcel_id": "P028",
+      "tampered_policy_sha256": null
+    },
+    "P029": {
+      "clean_status": "scored",
+      "expected_band": "moderate",
+      "expected_reasons": [
+        "missing:fuel_load"
+      ],
+      "expected_score": "38.2",
+      "expected_status": "incomplete",
+      "fault": "missing_input",
+      "injected_metric": "fuel_load",
+      "parcel_id": "P029",
+      "tampered_policy_sha256": null
+    },
+    "P030": {
+      "clean_status": "scored",
+      "expected_band": "high",
+      "expected_reasons": [],
+      "expected_score": "63.3",
+      "expected_status": "scored",
+      "fault": null,
+      "injected_metric": null,
+      "parcel_id": "P030",
+      "tampered_policy_sha256": null
+    },
+    "P031": {
+      "clean_status": "scored",
+      "expected_band": "moderate",
+      "expected_reasons": [],
+      "expected_score": "31.0",
+      "expected_status": "policy_mismatch",
+      "fault": "policy_tamper",
+      "injected_metric": null,
+      "parcel_id": "P031",
+      "tampered_policy_sha256": "557f5edcfc278a74c1b53fef3bea6993e1b8e8fb91b129648770038632b836a4"
+    },
+    "P032": {
+      "clean_status": "scored",
+      "expected_band": "high",
+      "expected_reasons": [
+        "invalid:dead_fuel_pct"
+      ],
+      "expected_score": "50.0",
+      "expected_status": "incomplete",
+      "fault": "invalid_quality",
+      "injected_metric": "dead_fuel_pct",
+      "parcel_id": "P032",
+      "tampered_policy_sha256": null
+    },
+    "P033": {
+      "clean_status": "scored",
+      "expected_band": "moderate",
+      "expected_reasons": [
+        "expired:fuel_moisture_pct"
+      ],
+      "expected_score": "46.2",
+      "expected_status": "incomplete",
+      "fault": "expired_input",
+      "injected_metric": "fuel_moisture_pct",
+      "parcel_id": "P033",
+      "tampered_policy_sha256": null
+    },
+    "P034": {
+      "clean_status": "scored",
+      "expected_band": "moderate",
+      "expected_reasons": [],
+      "expected_score": "31.0",
+      "expected_status": "scored",
+      "fault": null,
+      "injected_metric": null,
+      "parcel_id": "P034",
+      "tampered_policy_sha256": null
+    },
+    "P035": {
+      "clean_status": "scored",
+      "expected_band": "high",
+      "expected_reasons": [],
+      "expected_score": "63.6",
+      "expected_status": "scored",
+      "fault": null,
+      "injected_metric": null,
+      "parcel_id": "P035",
+      "tampered_policy_sha256": null
+    },
+    "P036": {
+      "clean_status": "scored",
+      "expected_band": "high",
+      "expected_reasons": [],
+      "expected_score": "67.8",
+      "expected_status": "policy_mismatch",
+      "fault": "policy_tamper",
+      "injected_metric": null,
+      "parcel_id": "P036",
+      "tampered_policy_sha256": "557f5edcfc278a74c1b53fef3bea6993e1b8e8fb91b129648770038632b836a4"
+    },
+    "P037": {
+      "clean_status": "scored",
+      "expected_band": "high",
+      "expected_reasons": [
+        "invalid:fuel_load"
+      ],
+      "expected_score": "58.4",
+      "expected_status": "incomplete",
+      "fault": "invalid_quality",
+      "injected_metric": "fuel_load",
+      "parcel_id": "P037",
+      "tampered_policy_sha256": null
+    },
+    "P038": {
+      "clean_status": "scored",
+      "expected_band": "moderate",
+      "expected_reasons": [
+        "provenance:fuel_moisture_pct"
+      ],
+      "expected_score": "36.3",
+      "expected_status": "incomplete",
+      "fault": "fixture_provenance",
+      "injected_metric": "fuel_moisture_pct",
+      "parcel_id": "P038",
+      "tampered_policy_sha256": null
+    },
+    "P039": {
+      "clean_status": "scored",
+      "expected_band": "moderate",
+      "expected_reasons": [],
+      "expected_score": "48.9",
+      "expected_status": "scored",
+      "fault": null,
+      "injected_metric": null,
+      "parcel_id": "P039",
+      "tampered_policy_sha256": null
+    },
+    "P040": {
+      "clean_status": "scored",
+      "expected_band": "high",
+      "expected_reasons": [
+        "provenance:fuel_load"
+      ],
+      "expected_score": "69.4",
+      "expected_status": "incomplete",
+      "fault": "fixture_provenance",
+      "injected_metric": "fuel_load",
+      "parcel_id": "P040",
+      "tampered_policy_sha256": null
+    },
+    "P041": {
+      "clean_status": "scored",
+      "expected_band": "moderate",
+      "expected_reasons": [],
+      "expected_score": "34.0",
+      "expected_status": "policy_mismatch",
+      "fault": "policy_tamper",
+      "injected_metric": null,
+      "parcel_id": "P041",
+      "tampered_policy_sha256": "557f5edcfc278a74c1b53fef3bea6993e1b8e8fb91b129648770038632b836a4"
+    },
+    "P042": {
+      "clean_status": "scored",
+      "expected_band": "high",
+      "expected_reasons": [],
+      "expected_score": "73.9",
+      "expected_status": "scored",
+      "fault": null,
+      "injected_metric": null,
+      "parcel_id": "P042",
+      "tampered_policy_sha256": null
+    },
+    "P043": {
+      "clean_status": "scored",
+      "expected_band": "moderate",
+      "expected_reasons": [
+        "invalid:fuel_load"
+      ],
+      "expected_score": "45.4",
+      "expected_status": "incomplete",
+      "fault": "invalid_quality",
+      "injected_metric": "fuel_load",
+      "parcel_id": "P043",
+      "tampered_policy_sha256": null
+    },
+    "P044": {
+      "clean_status": "scored",
+      "expected_band": "moderate",
+      "expected_reasons": [],
+      "expected_score": "33.3",
+      "expected_status": "scored",
+      "fault": null,
+      "injected_metric": null,
+      "parcel_id": "P044",
+      "tampered_policy_sha256": null
+    },
+    "P045": {
+      "clean_status": "scored",
+      "expected_band": "high",
+      "expected_reasons": [
+        "missing:fuel_moisture_pct"
+      ],
+      "expected_score": "59.7",
+      "expected_status": "incomplete",
+      "fault": "missing_input",
+      "injected_metric": "fuel_moisture_pct",
+      "parcel_id": "P045",
+      "tampered_policy_sha256": null
+    },
+    "P046": {
+      "clean_status": "scored",
+      "expected_band": "high",
+      "expected_reasons": [
+        "expired:wind_kmh"
+      ],
+      "expected_score": "55.6",
+      "expected_status": "incomplete",
+      "fault": "expired_input",
+      "injected_metric": "wind_kmh",
+      "parcel_id": "P046",
+      "tampered_policy_sha256": null
+    },
+    "P047": {
+      "clean_status": "scored",
+      "expected_band": "moderate",
+      "expected_reasons": [
+        "missing:wind_kmh"
+      ],
+      "expected_score": "42.6",
+      "expected_status": "incomplete",
+      "fault": "missing_input",
+      "injected_metric": "wind_kmh",
+      "parcel_id": "P047",
+      "tampered_policy_sha256": null
+    },
+    "P048": {
+      "clean_status": "scored",
+      "expected_band": "moderate",
+      "expected_reasons": [
+        "provenance:fuel_moisture_pct"
+      ],
+      "expected_score": "42.3",
+      "expected_status": "incomplete",
+      "fault": "fixture_provenance",
+      "injected_metric": "fuel_moisture_pct",
+      "parcel_id": "P048",
+      "tampered_policy_sha256": null
+    },
+    "P049": {
+      "clean_status": "scored",
+      "expected_band": "high",
+      "expected_reasons": [
+        "missing:wind_kmh"
+      ],
+      "expected_score": "53.1",
+      "expected_status": "incomplete",
+      "fault": "missing_input",
+      "injected_metric": "wind_kmh",
+      "parcel_id": "P049",
+      "tampered_policy_sha256": null
+    },
+    "P050": {
+      "clean_status": "scored",
+      "expected_band": "high",
+      "expected_reasons": [
+        "expired:fuel_moisture_pct"
+      ],
+      "expected_score": "63.5",
+      "expected_status": "incomplete",
+      "fault": "expired_input",
+      "injected_metric": "fuel_moisture_pct",
+      "parcel_id": "P050",
+      "tampered_policy_sha256": null
+    }
+  },
+  "seed": 20260715
+}

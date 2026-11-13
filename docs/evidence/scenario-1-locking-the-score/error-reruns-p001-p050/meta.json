@@ -1,0 +1,54 @@
+{
+ "commit": "6a1c71dbf42ecc418eba1c74d65099b8e16c23dc",
+ "timestamp": "2026-11-10T17:09:00+0000",
+ "workers": 6,
+ "seconds": 99,
+ "errored_total": 108,
+ "infrastructure_rows": 108,
+ "genuine_rows_kept": 0,
+ "rerun_attempted": 108,
+ "not_run_budget_stop": 0,
+ "now_clean": 108,
+ "still_failing": 0,
+ "tokens_in_out": {
+  "gpt-4.1": [
+   26577,
+   4903
+  ],
+  "gpt-4.1-mini": [
+   84949,
+   10287
+  ]
+ },
+ "est_cost_usd": 0.14,
+ "budget_usd": 2.0,
+ "hard_stop_usd": 4.0,
+ "prices_usd_per_1M_in_out": {
+  "gpt-4.1": [
+   2.0,
+   8.0
+  ],
+  "gpt-4.1-mini": [
+   0.4,
+   1.6
+  ],
+  "phi-4": [
+   0.125,
+   0.5
+  ],
+  "gpt-6.1-sol": [
+   5.0,
+   20.0
+  ],
+  "gpt-6.1-terra": [
+   2.0,
+   8.0
+  ],
+  "grok-4.7": [
+   3.0,
+   15.0
+  ]
+ },
+ "receipts_source": "local build from pinned policy (byte-identical to Fabric Gold per fabric_hash_check)",
+ "key_format": "model|arm|parcel|repeat"
+}

@@ -1,0 +1,21 @@
+{
+  "gpt-4.1": {
+    "runs": 150,
+    "blocked": 136,
+    "categories": {
+      "wrong_structured": 93,
+      "infra_error": 39,
+      "reason_wording": 4
+    }
+  },
+  "gpt-4.1-mini": {
+    "runs": 150,
+    "blocked": 131,
+    "categories": {
+      "infra_error": 69,
+      "provenance_wording": 20,
+      "reason_wording": 41,
+      "wrong_structured": 1
+    }
+  }
+}

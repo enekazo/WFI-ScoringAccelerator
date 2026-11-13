@@ -1,0 +1,17 @@
+flowchart LR
+  subgraph R["Recommendation plane - Azure AI Foundry"]
+    R1[Code scorer: pinned policy] --> R2[Hash-pinned receipt]
+    R2 --> R3[Agent explains, read-only tools]
+    R3 --> R4{Verifier}
+  end
+  subgraph A["Authority plane - the platform"]
+    A1[Review, approval, budget, allocation states]
+  end
+  subgraph E["Evidence plane - Fabric OneLake"]
+    E1[Bronze / Silver / Gold evidence products]
+    E2[Replayable read models]
+  end
+  R4 -- advisory only --> A1
+  E1 -. scope, freshness, provenance .-> A1
+  A1 --> X[Execute and log]
+  X --> E2

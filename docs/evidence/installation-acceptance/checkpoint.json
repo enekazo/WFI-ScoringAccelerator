@@ -1,0 +1,106 @@
+{
+  "source_artifact_sha256": "fb659739a42bf83ff635a35d6cf2f8ba7475a3a9a215fb879aeb4f746ff78d52",
+  "schemaVersion": 1,
+  "status": "accepted",
+  "accepted": true,
+  "startedAt": "2026-11-12T07:55:03.6985813+00:00",
+  "updatedAt": "2026-11-12T08:30:20.9908615+00:00",
+  "sourceSha256": "02CE1C24C9E434001053414A2F93D89680C41821A4A9C704D520A35650E158EE",
+  "policySha256": "26fd759b9fc3d9cbe1d252730b34111e289d7e67190aaa9497c361fb96de69ff",
+  "steps": {
+    "1": {
+      "status": "completed",
+      "durationSeconds": 16.36,
+      "startedAt": "2026-11-12T07:55:03.7807533+00:00",
+      "completedAt": "2026-11-12T07:55:20.1607550+00:00",
+      "id": "preflight"
+    },
+    "2": {
+      "status": "completed",
+      "durationSeconds": 4.41,
+      "startedAt": "2026-11-12T07:55:20.1690425+00:00",
+      "completedAt": "2026-11-12T07:55:24.5861202+00:00",
+      "id": "parameters"
+    },
+    "6": {
+      "status": "completed",
+      "durationSeconds": 11.54,
+      "startedAt": "2026-11-12T08:22:02.9370882+00:00",
+      "completedAt": "2026-11-12T08:22:14.4934257+00:00",
+      "id": "foundry_iq_connection"
+    },
+    "5": {
+      "status": "completed",
+      "durationSeconds": 279.26,
+      "startedAt": "2026-11-12T08:17:20.0660063+00:00",
+      "completedAt": "2026-11-12T08:21:59.3338318+00:00",
+      "id": "ontology_and_graph_model"
+    },
+    "9": {
+      "status": "completed",
+      "durationSeconds": 0.03,
+      "startedAt": "2026-11-12T08:30:20.9567739+00:00",
+      "completedAt": "2026-11-12T08:30:20.9855129+00:00",
+      "id": "cost_capacity_summary"
+    },
+    "7": {
+      "status": "completed",
+      "durationSeconds": 38.88,
+      "startedAt": "2026-11-12T08:22:14.5010232+00:00",
+      "completedAt": "2026-11-12T08:22:53.3876686+00:00",
+      "id": "foundry_iq_agent"
+    },
+    "3": {
+      "status": "completed",
+      "durationSeconds": 276.51,
+      "startedAt": "2026-11-12T07:55:24.7461790+00:00",
+      "completedAt": "2026-11-12T08:00:01.2627029+00:00",
+      "id": "azure_foundry_deploy"
+    },
+    "8": {
+      "status": "completed",
+      "durationSeconds": 447.55,
+      "startedAt": "2026-11-12T08:22:53.3941093+00:00",
+      "completedAt": "2026-11-12T08:30:20.9496370+00:00",
+      "id": "tests_and_verification"
+    },
+    "4": {
+      "status": "completed",
+      "durationSeconds": 1038.77,
+      "startedAt": "2026-11-12T08:00:01.2773573+00:00",
+      "completedAt": "2026-11-12T08:17:20.0507755+00:00",
+      "id": "fabric_workspace_lakehouse_load"
+    }
+  },
+  "artifacts": {
+    "receipts": {
+      "sha256": "836FBA5EACE9B8CD62522EEED78FFDB0B857FD193EED01A6C16BBA89457E6929",
+      "receipts": true
+    },
+    "policy": {
+      "sha256": "999AEEAB5F5E1F51A5588538D8B680863FB0B0DB52B41D1B910D03B1AE92FFB0",
+      "receipts": false
+    },
+    "data": {
+      "sha256": "FFB8FC8E184C03F1DCB26305D19016213A8B7E106C5E088D4DE5A7BEA76B7000",
+      "receipts": false
+    },
+    "fabricParameters": {
+      "sha256": "C8E1F43D64C7372B6E8CDBCD14A35B29F3E8B64D4E2D70B8FF41419794217FB7",
+      "receipts": false
+    },
+    "dataset": {
+      "sha256": "3F582CEA0CE04E141DA9034776D26B8F9DB66BC6D8413BEB5A46B06E200477E2",
+      "receipts": false
+    },
+    "azure": {
+      "sha256": "F7B8F27B82A2C8CC2EC9FA3C8D8F9F134AB21F8A2F3B1562D7EB76D7EC4E08ED",
+      "receipts": false
+    },
+    "graph": {
+      "sha256": "341AE21C386151BF58C8B02B11E34FAA7F90975F317F66966F44F8ACC9958B10",
+      "receipts": false
+    }
+  },
+  "redactions": "Target identities, private parameter fingerprint and filesystem paths omitted."
+}

@@ -1,0 +1,84 @@
+{
+ "seed": 20260715,
+ "rows": {
+  "parcel": 50,
+  "road_segment": 52,
+  "home_group": 40,
+  "water_source": 25,
+  "crew_access": 150
+ },
+ "ground_truth": {
+  "C1": {
+   "question": "Which parcels have homes but no passable access road?",
+   "parcels": [
+    "P001",
+    "P004",
+    "P016",
+    "P020",
+    "P024",
+    "P028",
+    "P031",
+    "P032",
+    "P033",
+    "P036",
+    "P037",
+    "P038",
+    "P040",
+    "P050"
+   ],
+   "value": null,
+   "basis": "assumed"
+  },
+  "C2": {
+   "question": "Which high-risk parcels (band high or extreme) have no water source on a passable access road?",
+   "parcels": [
+    "P008",
+    "P010",
+    "P012",
+    "P014",
+    "P015",
+    "P016",
+    "P023",
+    "P030",
+    "P035",
+    "P036",
+    "P042"
+   ],
+   "value": null,
+   "basis": "assumed"
+  },
+  "C3": {
+   "question": "Which crew types cannot reach parcel P003? Put the crew types in 'parcels'.",
+   "parcels": [
+    "dozer",
+    "engine"
+   ],
+   "value": null,
+   "basis": "assumed"
+  },
+  "C4": {
+   "question": "Which single parcel has the most homes among parcels that have a water source on a passable access road? Give its id in 'parcels' and the number of homes in 'value'.",
+   "parcels": [
+    "P018"
+   ],
+   "value": 42,
+   "basis": "measured"
+  },
+  "C5": {
+   "question": "Which parcels have a critical facility but no passable access road that an engine can use?",
+   "parcels": [
+    "P020",
+    "P031"
+   ],
+   "value": null,
+   "basis": "assumed"
+  }
+ },
+ "fabric_readback_equal_to_local": {
+  "parcel": true,
+  "road_segment": true,
+  "home_group": true,
+  "water_source": true,
+  "crew_access": true
+ }
+}

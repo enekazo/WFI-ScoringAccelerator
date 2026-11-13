@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-12",
+  "scope": "Full Step 1-9 installer run on the configured synthetic 150-parcel environment.",
+  "status": "accepted",
+  "accepted": true,
+  "startedAt": "2026-11-12T07:55:03.6985813+00:00",
+  "completedAt": "2026-11-12T08:30:20.9908615+00:00",
+  "durationSeconds": 2117.29,
+  "verificationDurationSeconds": 447.55,
+  "sourceSha256": "02CE1C24C9E434001053414A2F93D89680C41821A4A9C704D520A35650E158EE",
+  "source_snapshot_note": "The tested working tree includes uncommitted implementation changes. Git HEAD alone does not identify the tested source; source-files.json records the fingerprint inputs and a full private source snapshot is preserved.",
+  "git_head_at_collection": "7e1eafe83b88ee0bf544608d016f9d7a54303a3b",
+  "dataset": {
+    "parcelCount": 150,
+    "datasetSha256": "c0e0d1d4dd12e4b1a7a0c07a47bda43bc7dab05226e6b4cf1366370902afc0f9",
+    "policySha256": "26fd759b9fc3d9cbe1d252730b34111e289d7e67190aaa9497c361fb96de69ff"
+  },
+  "integrity_checks": {
+    "source_matches_checkpoint": true,
+    "private_parameters_match_checkpoint": true,
+    "all_seven_checkpoint_artifact_hashes_match": true,
+    "all_nine_stages_completed_within_run": true,
+    "exported_live_artifacts_written_within_run": true
+  },
+  "results": {
+    "function_score_hash_matches": 150,
+    "fabric_sql_receipt_hash_matches": 150,
+    "direct_graph_questions_matched": 5,
+    "foundry_ontology_questions_matched": 5,
+    "valid_narration_accepted": true,
+    "contradiction_fallback": true,
+    "unauthenticated_status": 401,
+    "pytest_and_receipt_agent": "Step 8 completed successfully and its implementation fails on either nonzero exit. No console transcript or separate current-run pytest/receipt-agent JSON was saved; no exact test count or receipt-agent response trace is claimed."
+  },
+  "excluded_stale_artifacts": [
+    "receipt-agent-smoke.json (11 November)",
+    "verify-unknown-entity-fix.json (11 November)"
+  ],
+  "evidence_files": [
+    "checkpoint.json",
+    "source-files.json",
+    "cloud-runtime.json",
+    "fabric_hash_check.json",
+    "fabric_graph_chain_gql.json",
+    "fabric-agent-smoke.json",
+    "provenance.json"
+  ],
+  "not_claimed": [
+    "An empty subscription/new tenant: ownership evidence confirms reuse of the workspace, Lakehouse and ontology created on 11 November.",
+    "Every model, dataset or tenant configuration; new model-comparison/usefulness results.",
+    "Production readiness, field-validated wildfire accuracy, live cleanup or two-person approval."
+  ],
+  "method_notes": [
+    "No installation, cloud query, fault injection or cleanup was rerun during collection.",
+    "Checkpoint and outputs were read, not edited; fingerprints were recomputed.",
+    "Existing 11 November evidence is preserved separately.",
+    "Private archive contains raw configuration and must not be uploaded or shared."
+  ],
+  "private_archive_sha256": "3a67549ac6e14d3c46463c39e39a3ed171c489218a08622aa3c8afa7f461c9dc",
+  "private_provenance_archive_sha256": "b9a112db9b353084584d7faf3ba8daf4ad22693a4da94a77465cad4940d2977e"
+}

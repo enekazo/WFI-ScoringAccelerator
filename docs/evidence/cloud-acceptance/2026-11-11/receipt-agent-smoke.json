@@ -1,0 +1,143 @@
+{
+  "agent": "pinned-score-agent",
+  "question": "Get the receipt for parcel P001 and state its score, band, and receipt_sha256.",
+  "local_tool_execution": false,
+  "local_scoring": false,
+  "local_verification": false,
+  "server_verified": true,
+  "blocked": false,
+  "fallback_used": false,
+  "text": "Parcel P001 is not scored, as its receipt status is \"incomplete\" and its score and band are both `null`. The reason for the incomplete status is `unit:fuel_moisture_pct`. The receipt_sha256 for this parcel is `32960c0ef7b6647a3f10b38a18bee0ed70a0b571caef535666e9864fa2fcac56`.",
+  "delivered": {
+    "mode": "verified_narration",
+    "verified": true,
+    "text": "Parcel P001 is not scored, as its receipt status is \"incomplete\" and its score and band are both `null`. The reason for the incomplete status is `unit:fuel_moisture_pct`. The receipt_sha256 for this parcel is `32960c0ef7b6647a3f10b38a18bee0ed70a0b571caef535666e9864fa2fcac56`.",
+    "entity_id": "P001",
+    "status": "incomplete",
+    "score": null,
+    "band": null,
+    "reasons": [
+      "unit:fuel_moisture_pct"
+    ],
+    "provenance": {
+      "fuel_load": "measured",
+      "dead_fuel": "measured",
+      "weather_danger": "measured",
+      "wind": "measured"
+    },
+    "receipt_sha256": "32960c0ef7b6647a3f10b38a18bee0ed70a0b571caef535666e9864fa2fcac56",
+    "policy_sha256": "26fd759b9fc3d9cbe1d252730b34111e289d7e67190aaa9497c361fb96de69ff",
+    "explanation": "Parcel P001 is not scored, as its receipt status is \"incomplete\" and its score and band are both `null`. The reason for the incomplete status is `unit:fuel_moisture_pct`. The receipt_sha256 for this parcel is `32960c0ef7b6647a3f10b38a18bee0ed70a0b571caef535666e9864fa2fcac56`."
+  },
+  "violations": [],
+  "referenced_parcels": [
+    "P001"
+  ],
+  "receipt_hashes": {
+    "P001": "32960c0ef7b6647a3f10b38a18bee0ed70a0b571caef535666e9864fa2fcac56"
+  },
+  "policy_sha256": "26fd759b9fc3d9cbe1d252730b34111e289d7e67190aaa9497c361fb96de69ff",
+  "mcp_calls": [
+    {
+      "type": "mcp_call",
+      "name": "get_receipt",
+      "server_label": "pinnedscore_receipts",
+      "arguments": "{\"parcel\":\"P001\"}",
+      "error": null,
+      "output": [
+        {
+          "counterfactual": false,
+          "receipt": {
+            "entity_id": "P001",
+            "status": "incomplete",
+            "score": null,
+            "band": null,
+            "components": [
+              [
+                "fuel_load",
+                "33.6",
+                "measured",
+                "25.20"
+              ],
+              [
+                "dead_fuel",
+                "20.7",
+                "measured",
+                "3.11"
+              ],
+              [
+                "weather_danger",
+                "57.1",
+                "measured",
+                "13.44"
+              ],
+              [
+                "wind",
+                "53.9",
+                "measured",
+                "8.98"
+              ]
+            ],
+            "reasons": [
+              "unit:fuel_moisture_pct"
+            ],
+            "as_of": "2026-07-15T12:00:00+00:00",
+            "policy_sha256": "26fd759b9fc3d9cbe1d252730b34111e289d7e67190aaa9497c361fb96de69ff",
+            "input_sha256": "21ab0558b7b417e60bb6727363f94756a5fc5ff7e43f8f9fa9fbad7fd26777ec",
+            "receipt_sha256": "32960c0ef7b6647a3f10b38a18bee0ed70a0b571caef535666e9864fa2fcac56"
+          }
+        },
+        {
+          "structuredResponse": {
+            "counterfactual": false,
+            "receipt": {
+              "entity_id": "P001",
+              "status": "incomplete",
+              "score": null,
+              "band": null,
+              "components": [
+                [
+                  "fuel_load",
+                  "33.6",
+                  "measured",
+                  "25.20"
+                ],
+                [
+                  "dead_fuel",
+                  "20.7",
+                  "measured",
+                  "3.11"
+                ],
+                [
+                  "weather_danger",
+                  "57.1",
+                  "measured",
+                  "13.44"
+                ],
+                [
+                  "wind",
+                  "53.9",
+                  "measured",
+                  "8.98"
+                ]
+              ],
+              "reasons": [
+                "unit:fuel_moisture_pct"
+              ],
+              "as_of": "2026-07-15T12:00:00+00:00",
+              "policy_sha256": "26fd759b9fc3d9cbe1d252730b34111e289d7e67190aaa9497c361fb96de69ff",
+              "input_sha256": "21ab0558b7b417e60bb6727363f94756a5fc5ff7e43f8f9fa9fbad7fd26777ec",
+              "receipt_sha256": "32960c0ef7b6647a3f10b38a18bee0ed70a0b571caef535666e9864fa2fcac56"
+            }
+          }
+        }
+      ],
+      "original_output_sha256": "718990df6995a2777f945a39aa97ff3a39ff85f33ed7e01ab5705f1c5defc7a8"
+    }
+  ],
+  "_provenance": {
+    "original_file": "receipt-agent-smoke.json",
+    "original_sha256": "02a501c2f879759746639e684c67d14a1083a05c776f8195b648d897bed1d0bb",
+    "transformation": "Allowlisted projection; private target context omitted."
+  }
+}

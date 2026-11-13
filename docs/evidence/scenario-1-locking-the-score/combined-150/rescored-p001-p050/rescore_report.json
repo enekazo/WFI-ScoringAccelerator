@@ -1,0 +1,71 @@
+{
+ "main": {
+  "source": "runs.json",
+  "rows": 900,
+  "arm_B": {
+   "gpt-4.1": {
+    "B_runs": 150,
+    "rescored": 111,
+    "errors_kept": 39,
+    "blocked_before": 136,
+    "blocked_after": 132,
+    "block_changed": 4
+   },
+   "gpt-4.1-mini": {
+    "B_runs": 150,
+    "rescored": 81,
+    "errors_kept": 69,
+    "blocked_before": 131,
+    "blocked_after": 78,
+    "block_changed": 53
+   }
+  }
+ },
+ "gpt-6.1-sol": {
+  "source": "model-comparison/gpt-6.1-sol/runs.json",
+  "rows": 450,
+  "arm_B": {
+   "gpt-6.1-sol": {
+    "B_runs": 150,
+    "rescored": 150,
+    "errors_kept": 0,
+    "blocked_before": 19,
+    "blocked_after": 19,
+    "block_changed": 0
+   }
+  }
+ },
+ "gpt-6.1-terra": {
+  "source": "model-comparison/gpt-6.1-terra/runs.json",
+  "rows": 450,
+  "arm_B": {
+   "gpt-6.1-terra": {
+    "B_runs": 150,
+    "rescored": 150,
+    "errors_kept": 0,
+    "blocked_before": 24,
+    "blocked_after": 24,
+    "block_changed": 0
+   }
+  }
+ },
+ "grok-4.7": {
+  "source": "model-comparison/grok-4.7/runs.json",
+  "rows": 450,
+  "arm_B": {
+   "grok-4.7-cmp": {
+    "B_runs": 150,
+    "rescored": 150,
+    "errors_kept": 0,
+    "blocked_before": 63,
+    "blocked_after": 63,
+    "block_changed": 0
+   }
+  }
+ },
+ "phi-4-rerun": {
+  "source": "model-comparison/phi-4-rerun/runs.json",
+  "rows": 300,
+  "arm_B": {}
+ }
+}

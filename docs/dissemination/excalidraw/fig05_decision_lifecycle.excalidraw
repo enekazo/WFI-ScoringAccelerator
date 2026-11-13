@@ -1,0 +1,880 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "WFI Pinned Scoring Accelerator",
+  "elements": [
+    {
+      "id": "text-0",
+      "type": "text",
+      "x": 20,
+      "y": 18,
+      "width": 363.0,
+      "height": 75.0,
+      "text": "Where the decision stops",
+      "originalText": "Where the decision stops",
+      "fontSize": 30,
+      "fontFamily": 2,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "textAlign": "left",
+      "verticalAlign": "top"
+    },
+    {
+      "id": "text-1",
+      "type": "text",
+      "x": 20,
+      "y": 64,
+      "width": 718.484375,
+      "height": 42.5,
+      "text": "The Fabric reference implementation reaches approval, not allocation or operational execution.",
+      "originalText": "The Fabric reference implementation reaches approval, not allocation or operational execution.",
+      "fontSize": 17,
+      "fontFamily": 2,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "textAlign": "left",
+      "verticalAlign": "top"
+    },
+    {
+      "id": "text-2",
+      "type": "text",
+      "x": 20,
+      "y": 112,
+      "width": 294.4921875,
+      "height": 35.0,
+      "text": "COLOURED: built and tested reference path",
+      "originalText": "COLOURED: built and tested reference path",
+      "fontSize": 14,
+      "fontFamily": 2,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "textAlign": "left",
+      "verticalAlign": "top"
+    },
+    {
+      "id": "text-3",
+      "type": "text",
+      "x": 620,
+      "y": 112,
+      "width": 264.484375,
+      "height": 35.0,
+      "text": "GREY / DASHED: design only, not built",
+      "originalText": "GREY / DASHED: design only, not built",
+      "fontSize": 14,
+      "fontFamily": 2,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "textAlign": "left",
+      "verticalAlign": "top"
+    },
+    {
+      "id": "box-4",
+      "type": "rectangle",
+      "x": 20,
+      "y": 190,
+      "width": 220,
+      "height": 190,
+      "strokeColor": "#0078D4",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeStyle": "solid",
+      "strokeWidth": 2,
+      "roundness": {
+        "type": 3
+      }
+    },
+    {
+      "id": "text-5",
+      "type": "text",
+      "x": 54.75,
+      "y": 204,
+      "width": 150.5,
+      "height": 42.5,
+      "text": "1  Check evidence",
+      "originalText": "1  Check evidence",
+      "fontSize": 17,
+      "fontFamily": 2,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "textAlign": "center",
+      "verticalAlign": "top"
+    },
+    {
+      "id": "text-6",
+      "type": "text",
+      "x": 44.7578125,
+      "y": 236,
+      "width": 170.484375,
+      "height": 27.5,
+      "text": "REFERENCE IMPLEMENTATION",
+      "originalText": "REFERENCE IMPLEMENTATION",
+      "fontSize": 11,
+      "fontFamily": 2,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "textAlign": "center",
+      "verticalAlign": "top"
+    },
+    {
+      "id": "text-7",
+      "type": "text",
+      "x": 52.00390625,
+      "y": 268,
+      "width": 155.9921875,
+      "height": 105.0,
+      "text": "Receipt hash and status\nFreshness\nNarration verification",
+      "originalText": "Receipt hash and status\nFreshness\nNarration verification",
+      "fontSize": 14,
+      "fontFamily": 2,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "textAlign": "center",
+      "verticalAlign": "top"
+    },
+    {
+      "id": "arrow-8",
+      "type": "arrow",
+      "x": 240,
+      "y": 285,
+      "width": 20,
+      "height": 0,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          20,
+          0
+        ]
+      ],
+      "strokeColor": "#1F2A37",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "endArrowhead": "arrow"
+    },
+    {
+      "id": "box-9",
+      "type": "rectangle",
+      "x": 260,
+      "y": 190,
+      "width": 220,
+      "height": 190,
+      "strokeColor": "#0078D4",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeStyle": "solid",
+      "strokeWidth": 2,
+      "roundness": {
+        "type": 3
+      }
+    },
+    {
+      "id": "text-10",
+      "type": "text",
+      "x": 322.75,
+      "y": 204,
+      "width": 94.5,
+      "height": 42.5,
+      "text": "2  Propose",
+      "originalText": "2  Propose",
+      "fontSize": 17,
+      "fontFamily": 2,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "textAlign": "center",
+      "verticalAlign": "top"
+    },
+    {
+      "id": "text-11",
+      "type": "text",
+      "x": 284.7578125,
+      "y": 236,
+      "width": 170.484375,
+      "height": 27.5,
+      "text": "REFERENCE IMPLEMENTATION",
+      "originalText": "REFERENCE IMPLEMENTATION",
+      "fontSize": 11,
+      "fontFamily": 2,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "textAlign": "center",
+      "verticalAlign": "top"
+    },
+    {
+      "id": "text-12",
+      "type": "text",
+      "x": 293.99609375,
+      "y": 268,
+      "width": 152.0078125,
+      "height": 105.0,
+      "text": "Foundry agent submits\na proposal tied\nto the receipt",
+      "originalText": "Foundry agent submits\na proposal tied\nto the receipt",
+      "fontSize": 14,
+      "fontFamily": 2,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "textAlign": "center",
+      "verticalAlign": "top"
+    },
+    {
+      "id": "arrow-13",
+      "type": "arrow",
+      "x": 480,
+      "y": 285,
+      "width": 20,
+      "height": 0,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          20,
+          0
+        ]
+      ],
+      "strokeColor": "#1F2A37",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "endArrowhead": "arrow"
+    },
+    {
+      "id": "box-14",
+      "type": "rectangle",
+      "x": 500,
+      "y": 190,
+      "width": 220,
+      "height": 190,
+      "strokeColor": "#0078D4",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeStyle": "solid",
+      "strokeWidth": 2,
+      "roundness": {
+        "type": 3
+      }
+    },
+    {
+      "id": "text-15",
+      "type": "text",
+      "x": 567.25390625,
+      "y": 204,
+      "width": 85.4921875,
+      "height": 42.5,
+      "text": "3  Review",
+      "originalText": "3  Review",
+      "fontSize": 17,
+      "fontFamily": 2,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "textAlign": "center",
+      "verticalAlign": "top"
+    },
+    {
+      "id": "text-16",
+      "type": "text",
+      "x": 524.7578125,
+      "y": 236,
+      "width": 170.484375,
+      "height": 27.5,
+      "text": "REFERENCE IMPLEMENTATION",
+      "originalText": "REFERENCE IMPLEMENTATION",
+      "fontSize": 11,
+      "fontFamily": 2,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "textAlign": "center",
+      "verticalAlign": "top"
+    },
+    {
+      "id": "text-17",
+      "type": "text",
+      "x": 546.0,
+      "y": 268,
+      "width": 128.0,
+      "height": 105.0,
+      "text": "Named reviewer\nadvances or rejects\nthe proposal",
+      "originalText": "Named reviewer\nadvances or rejects\nthe proposal",
+      "fontSize": 14,
+      "fontFamily": 2,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "textAlign": "center",
+      "verticalAlign": "top"
+    },
+    {
+      "id": "arrow-18",
+      "type": "arrow",
+      "x": 720,
+      "y": 285,
+      "width": 20,
+      "height": 0,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          20,
+          0
+        ]
+      ],
+      "strokeColor": "#1F2A37",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "endArrowhead": "arrow"
+    },
+    {
+      "id": "box-19",
+      "type": "rectangle",
+      "x": 740,
+      "y": 190,
+      "width": 220,
+      "height": 190,
+      "strokeColor": "#0078D4",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeStyle": "solid",
+      "strokeWidth": 2,
+      "roundness": {
+        "type": 3
+      }
+    },
+    {
+      "id": "text-20",
+      "type": "text",
+      "x": 801.25,
+      "y": 204,
+      "width": 97.5,
+      "height": 42.5,
+      "text": "4  Approve",
+      "originalText": "4  Approve",
+      "fontSize": 17,
+      "fontFamily": 2,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "textAlign": "center",
+      "verticalAlign": "top"
+    },
+    {
+      "id": "text-21",
+      "type": "text",
+      "x": 764.7578125,
+      "y": 236,
+      "width": 170.484375,
+      "height": 27.5,
+      "text": "REFERENCE IMPLEMENTATION",
+      "originalText": "REFERENCE IMPLEMENTATION",
+      "fontSize": 11,
+      "fontFamily": 2,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "textAlign": "center",
+      "verticalAlign": "top"
+    },
+    {
+      "id": "text-22",
+      "type": "text",
+      "x": 777.0,
+      "y": 268,
+      "width": 146.0,
+      "height": 105.0,
+      "text": "Named approver\nrecords approval\nSingle-person live run",
+      "originalText": "Named approver\nrecords approval\nSingle-person live run",
+      "fontSize": 14,
+      "fontFamily": 2,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "textAlign": "center",
+      "verticalAlign": "top"
+    },
+    {
+      "id": "arrow-23",
+      "type": "arrow",
+      "x": 960,
+      "y": 285,
+      "width": 20,
+      "height": 0,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          20,
+          0
+        ]
+      ],
+      "strokeColor": "#A7AEB7",
+      "strokeWidth": 2,
+      "strokeStyle": "dashed",
+      "endArrowhead": "arrow"
+    },
+    {
+      "id": "box-24",
+      "type": "rectangle",
+      "x": 980,
+      "y": 190,
+      "width": 220,
+      "height": 190,
+      "strokeColor": "#A7AEB7",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeStyle": "dashed",
+      "strokeWidth": 2,
+      "roundness": {
+        "type": 3
+      }
+    },
+    {
+      "id": "text-25",
+      "type": "text",
+      "x": 1043.0,
+      "y": 204,
+      "width": 94.0,
+      "height": 42.5,
+      "text": "5  Allocate",
+      "originalText": "5  Allocate",
+      "fontSize": 17,
+      "fontFamily": 2,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "textAlign": "center",
+      "verticalAlign": "top"
+    },
+    {
+      "id": "text-26",
+      "type": "text",
+      "x": 1049.00390625,
+      "y": 236,
+      "width": 81.9921875,
+      "height": 27.5,
+      "text": "DESIGN ONLY",
+      "originalText": "DESIGN ONLY",
+      "fontSize": 11,
+      "fontFamily": 2,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "textAlign": "center",
+      "verticalAlign": "top"
+    },
+    {
+      "id": "text-27",
+      "type": "text",
+      "x": 1029.25,
+      "y": 268,
+      "width": 121.5,
+      "height": 105.0,
+      "text": "Assign budget,\ncrews and an\nexecution window",
+      "originalText": "Assign budget,\ncrews and an\nexecution window",
+      "fontSize": 14,
+      "fontFamily": 2,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "textAlign": "center",
+      "verticalAlign": "top"
+    },
+    {
+      "id": "arrow-28",
+      "type": "arrow",
+      "x": 1200,
+      "y": 285,
+      "width": 20,
+      "height": 0,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          20,
+          0
+        ]
+      ],
+      "strokeColor": "#A7AEB7",
+      "strokeWidth": 2,
+      "strokeStyle": "dashed",
+      "endArrowhead": "arrow"
+    },
+    {
+      "id": "box-29",
+      "type": "rectangle",
+      "x": 1220,
+      "y": 190,
+      "width": 220,
+      "height": 190,
+      "strokeColor": "#A7AEB7",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeStyle": "dashed",
+      "strokeWidth": 2,
+      "roundness": {
+        "type": 3
+      }
+    },
+    {
+      "id": "text-30",
+      "type": "text",
+      "x": 1284.75390625,
+      "y": 204,
+      "width": 90.4921875,
+      "height": 42.5,
+      "text": "6  Execute",
+      "originalText": "6  Execute",
+      "fontSize": 17,
+      "fontFamily": 2,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "textAlign": "center",
+      "verticalAlign": "top"
+    },
+    {
+      "id": "text-31",
+      "type": "text",
+      "x": 1289.00390625,
+      "y": 236,
+      "width": 81.9921875,
+      "height": 27.5,
+      "text": "DESIGN ONLY",
+      "originalText": "DESIGN ONLY",
+      "fontSize": 11,
+      "fontFamily": 2,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "textAlign": "center",
+      "verticalAlign": "top"
+    },
+    {
+      "id": "text-32",
+      "type": "text",
+      "x": 1279.0,
+      "y": 268,
+      "width": 102.0,
+      "height": 105.0,
+      "text": "Carry out the\napproved work\nin the field",
+      "originalText": "Carry out the\napproved work\nin the field",
+      "fontSize": 14,
+      "fontFamily": 2,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "textAlign": "center",
+      "verticalAlign": "top"
+    },
+    {
+      "id": "arrow-33",
+      "type": "arrow",
+      "x": 1440,
+      "y": 285,
+      "width": 20,
+      "height": 0,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          20,
+          0
+        ]
+      ],
+      "strokeColor": "#A7AEB7",
+      "strokeWidth": 2,
+      "strokeStyle": "dashed",
+      "endArrowhead": "arrow"
+    },
+    {
+      "id": "box-34",
+      "type": "rectangle",
+      "x": 1460,
+      "y": 190,
+      "width": 220,
+      "height": 190,
+      "strokeColor": "#A7AEB7",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeStyle": "dashed",
+      "strokeWidth": 2,
+      "roundness": {
+        "type": 3
+      }
+    },
+    {
+      "id": "text-35",
+      "type": "text",
+      "x": 1528.75390625,
+      "y": 204,
+      "width": 82.4921875,
+      "height": 42.5,
+      "text": "7  Replay",
+      "originalText": "7  Replay",
+      "fontSize": 17,
+      "fontFamily": 2,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "textAlign": "center",
+      "verticalAlign": "top"
+    },
+    {
+      "id": "text-36",
+      "type": "text",
+      "x": 1529.00390625,
+      "y": 236,
+      "width": 81.9921875,
+      "height": 27.5,
+      "text": "DESIGN ONLY",
+      "originalText": "DESIGN ONLY",
+      "fontSize": 11,
+      "fontFamily": 2,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "textAlign": "center",
+      "verticalAlign": "top"
+    },
+    {
+      "id": "text-37",
+      "type": "text",
+      "x": 1501.0,
+      "y": 268,
+      "width": 138.0,
+      "height": 105.0,
+      "text": "Reconstruct the full\npath from evidence\nto operational action",
+      "originalText": "Reconstruct the full\npath from evidence\nto operational action",
+      "fontSize": 14,
+      "fontFamily": 2,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "textAlign": "center",
+      "verticalAlign": "top"
+    },
+    {
+      "id": "box-38",
+      "type": "rectangle",
+      "x": 20,
+      "y": 445,
+      "width": 940,
+      "height": 100,
+      "strokeColor": "#B42318",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeStyle": "solid",
+      "strokeWidth": 2,
+      "roundness": {
+        "type": 3
+      }
+    },
+    {
+      "id": "text-39",
+      "type": "text",
+      "x": 388.25,
+      "y": 459,
+      "width": 203.5,
+      "height": 42.5,
+      "text": "Blocked: no progression",
+      "originalText": "Blocked: no progression",
+      "fontSize": 17,
+      "fontFamily": 2,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "textAlign": "center",
+      "verticalAlign": "top"
+    },
+    {
+      "id": "text-40",
+      "type": "text",
+      "x": 209.7578125,
+      "y": 495,
+      "width": 560.484375,
+      "height": 35.0,
+      "text": "Stale or incomplete receipt | narration mismatch | unauthorised actor | broken hash chain",
+      "originalText": "Stale or incomplete receipt | narration mismatch | unauthorised actor | broken hash chain",
+      "fontSize": 14,
+      "fontFamily": 2,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "textAlign": "center",
+      "verticalAlign": "top"
+    },
+    {
+      "id": "arrow-41",
+      "type": "arrow",
+      "x": 130,
+      "y": 380,
+      "width": 0,
+      "height": 65,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          65
+        ]
+      ],
+      "strokeColor": "#B42318",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "endArrowhead": "arrow"
+    },
+    {
+      "id": "arrow-42",
+      "type": "arrow",
+      "x": 610,
+      "y": 380,
+      "width": 0,
+      "height": 65,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          65
+        ]
+      ],
+      "strokeColor": "#B42318",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "endArrowhead": "arrow"
+    },
+    {
+      "id": "arrow-43",
+      "type": "arrow",
+      "x": 850,
+      "y": 380,
+      "width": 0,
+      "height": 65,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          65
+        ]
+      ],
+      "strokeColor": "#B42318",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "endArrowhead": "arrow"
+    },
+    {
+      "id": "box-44",
+      "type": "rectangle",
+      "x": 20,
+      "y": 585,
+      "width": 940,
+      "height": 100,
+      "strokeColor": "#B35A00",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeStyle": "solid",
+      "strokeWidth": 2,
+      "roundness": {
+        "type": 3
+      }
+    },
+    {
+      "id": "text-45",
+      "type": "text",
+      "x": 386.75390625,
+      "y": 599,
+      "width": 206.4921875,
+      "height": 42.5,
+      "text": "Built: Fabric decision log",
+      "originalText": "Built: Fabric decision log",
+      "fontSize": 17,
+      "fontFamily": 2,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "textAlign": "center",
+      "verticalAlign": "top"
+    },
+    {
+      "id": "text-46",
+      "type": "text",
+      "x": 234.50390625,
+      "y": 635,
+      "width": 510.9921875,
+      "height": 70.0,
+      "text": "Append-only, hash-chained Delta table records proposals, reviews and approvals.\nHash-chain verification detects tampering; it is not a full operational replay.",
+      "originalText": "Append-only, hash-chained Delta table records proposals, reviews and approvals.\nHash-chain verification detects tampering; it is not a full operational replay.",
+      "fontSize": 14,
+      "fontFamily": 2,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "textAlign": "center",
+      "verticalAlign": "top"
+    },
+    {
+      "id": "box-47",
+      "type": "rectangle",
+      "x": 1020,
+      "y": 445,
+      "width": 660,
+      "height": 240,
+      "strokeColor": "#A7AEB7",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeStyle": "dashed",
+      "strokeWidth": 2,
+      "roundness": {
+        "type": 3
+      }
+    },
+    {
+      "id": "text-48",
+      "type": "text",
+      "x": 1213.49609375,
+      "y": 459,
+      "width": 273.0078125,
+      "height": 42.5,
+      "text": "Planned: improvement reporting",
+      "originalText": "Planned: improvement reporting",
+      "fontSize": 17,
+      "fontFamily": 2,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "textAlign": "center",
+      "verticalAlign": "top"
+    },
+    {
+      "id": "text-49",
+      "type": "text",
+      "x": 1205.0,
+      "y": 495,
+      "width": 290.0,
+      "height": 140.0,
+      "text": "Aggregate block reasons and approval delays\ninto operational improvement reports.\n\nThis reporting workflow is not built.",
+      "originalText": "Aggregate block reasons and approval delays\ninto operational improvement reports.\n\nThis reporting workflow is not built.",
+      "fontSize": 14,
+      "fontFamily": 2,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "textAlign": "center",
+      "verticalAlign": "top"
+    },
+    {
+      "id": "text-50",
+      "type": "text",
+      "x": 20,
+      "y": 720,
+      "width": 827.9921875,
+      "height": 37.5,
+      "text": "Live evidence: one Entra identity reviewed and approved in explicit single_person mode; no two-person approval is claimed.",
+      "originalText": "Live evidence: one Entra identity reviewed and approved in explicit single_person mode; no two-person approval is claimed.",
+      "fontSize": 15,
+      "fontFamily": 2,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "textAlign": "left",
+      "verticalAlign": "top"
+    }
+  ],
+  "appState": {
+    "viewBackgroundColor": "#ffffff"
+  }
+}

@@ -1,0 +1,206 @@
+2026-11-10 16:46:09,908 INFO re-running 80 infrastructure-error rows, workers=2
+2026-11-10 16:46:14,268 INFO No environment configuration found.
+2026-11-10 16:46:14,283 INFO ManagedIdentityCredential will use IMDS
+2026-11-10 16:46:14,552 INFO Request URL: 'http://169.254.169.254/metadata/identity/oauth2/token?api-version=2018-02-01&resource=REDACTED'
+Request method: 'GET'
+Request headers:
+    'User-Agent': 'azsdk-python-identity/1.25.3 Python/3.14.3 (Windows-11-10.0.26300-SP0)'
+No body was attached to the request
+2026-11-10 16:46:14,553 INFO Request URL: 'http://169.254.169.254/metadata/identity/oauth2/token?api-version=2018-02-01&resource=REDACTED'
+Request method: 'GET'
+Request headers:
+    'User-Agent': 'azsdk-python-identity/1.25.3 Python/3.14.3 (Windows-11-10.0.26300-SP0)'
+No body was attached to the request
+2026-11-10 16:46:17,640 INFO DefaultAzureCredential acquired a token from AzureCliCredential
+2026-11-10 16:46:18,105 INFO DefaultAzureCredential acquired a token from AzureCliCredential
+2026-11-10 16:46:22,092 INFO HTTP Request: POST https://model.example.invalid/openai/deployments/gpt-4.1/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-11-10 16:46:22,115 INFO No environment configuration found.
+2026-11-10 16:46:22,116 INFO ManagedIdentityCredential will use IMDS
+2026-11-10 16:46:22,122 INFO Request URL: 'http://169.254.169.254/metadata/identity/oauth2/token?api-version=2018-02-01&resource=REDACTED'
+Request method: 'GET'
+Request headers:
+    'User-Agent': 'azsdk-python-identity/1.25.3 Python/3.14.3 (Windows-11-10.0.26300-SP0)'
+No body was attached to the request
+2026-11-10 16:46:22,248 INFO HTTP Request: POST https://model.example.invalid/openai/deployments/gpt-4.1/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-11-10 16:46:22,254 INFO Request URL: 'http://169.254.169.254/metadata/identity/oauth2/token?api-version=2018-02-01&resource=REDACTED'
+Request method: 'GET'
+Request headers:
+    'User-Agent': 'azsdk-python-identity/1.25.3 Python/3.14.3 (Windows-11-10.0.26300-SP0)'
+No body was attached to the request
+2026-11-10 16:46:25,091 INFO DefaultAzureCredential acquired a token from AzureCliCredential
+2026-11-10 16:46:25,668 INFO DefaultAzureCredential acquired a token from AzureCliCredential
+2026-11-10 16:46:28,102 INFO HTTP Request: POST https://model.example.invalid/openai/deployments/gpt-4.1-mini/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-11-10 16:46:29,437 INFO HTTP Request: POST https://model.example.invalid/openai/deployments/gpt-4.1-mini/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-11-10 16:46:30,629 INFO HTTP Request: POST https://model.example.invalid/openai/deployments/gpt-4.1-mini/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-11-10 16:46:30,633 INFO No environment configuration found.
+2026-11-10 16:46:30,634 INFO ManagedIdentityCredential will use IMDS
+2026-11-10 16:46:30,639 INFO Request URL: 'http://169.254.169.254/metadata/identity/oauth2/token?api-version=2018-02-01&resource=REDACTED'
+Request method: 'GET'
+Request headers:
+    'User-Agent': 'azsdk-python-identity/1.25.3 Python/3.14.3 (Windows-11-10.0.26300-SP0)'
+No body was attached to the request
+2026-11-10 16:46:31,627 INFO HTTP Request: POST https://model.example.invalid/openai/deployments/gpt-4.1-mini/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-11-10 16:46:31,634 INFO Request URL: 'http://169.254.169.254/metadata/identity/oauth2/token?api-version=2018-02-01&resource=REDACTED'
+Request method: 'GET'
+Request headers:
+    'User-Agent': 'azsdk-python-identity/1.25.3 Python/3.14.3 (Windows-11-10.0.26300-SP0)'
+No body was attached to the request
+2026-11-10 16:46:33,980 INFO DefaultAzureCredential acquired a token from AzureCliCredential
+2026-11-10 16:46:34,733 INFO DefaultAzureCredential acquired a token from AzureCliCredential
+2026-11-10 16:46:40,894 INFO HTTP Request: POST https://model.example.invalid/openai/deployments/gpt-6.1-sol/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-11-10 16:46:42,142 INFO HTTP Request: POST https://model.example.invalid/openai/deployments/gpt-6.1-sol/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-11-10 16:46:44,421 INFO HTTP Request: POST https://model.example.invalid/openai/deployments/gpt-6.1-sol/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-11-10 16:46:47,864 INFO HTTP Request: POST https://model.example.invalid/openai/deployments/gpt-6.1-sol/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-11-10 16:46:48,908 INFO HTTP Request: POST https://model.example.invalid/openai/deployments/gpt-6.1-sol/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-11-10 16:46:52,612 INFO HTTP Request: POST https://model.example.invalid/openai/deployments/gpt-6.1-sol/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-11-10 16:46:52,615 INFO No environment configuration found.
+2026-11-10 16:46:52,615 INFO ManagedIdentityCredential will use IMDS
+2026-11-10 16:46:52,618 INFO Request URL: 'http://169.254.169.254/metadata/identity/oauth2/token?api-version=2018-02-01&resource=REDACTED'
+Request method: 'GET'
+Request headers:
+    'User-Agent': 'azsdk-python-identity/1.25.3 Python/3.14.3 (Windows-11-10.0.26300-SP0)'
+No body was attached to the request
+2026-11-10 16:46:52,924 INFO HTTP Request: POST https://model.example.invalid/openai/deployments/gpt-6.1-sol/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-11-10 16:46:52,927 INFO No environment configuration found.
+2026-11-10 16:46:52,928 INFO done 10/80, est $0.07
+2026-11-10 16:46:52,929 INFO ManagedIdentityCredential will use IMDS
+2026-11-10 16:46:52,932 INFO Request URL: 'http://169.254.169.254/metadata/identity/oauth2/token?api-version=2018-02-01&resource=REDACTED'
+Request method: 'GET'
+Request headers:
+    'User-Agent': 'azsdk-python-identity/1.25.3 Python/3.14.3 (Windows-11-10.0.26300-SP0)'
+No body was attached to the request
+2026-11-10 16:46:58,147 INFO DefaultAzureCredential acquired a token from AzureCliCredential
+2026-11-10 16:46:58,651 INFO DefaultAzureCredential acquired a token from AzureCliCredential
+2026-11-10 16:47:02,064 INFO HTTP Request: POST https://model.example.invalid/openai/v1/responses "HTTP/1.1 200 OK"
+2026-11-10 16:47:03,168 INFO HTTP Request: POST https://model.example.invalid/openai/v1/responses "HTTP/1.1 200 OK"
+2026-11-10 16:47:07,728 INFO HTTP Request: POST https://model.example.invalid/openai/v1/responses "HTTP/1.1 200 OK"
+2026-11-10 16:47:10,504 INFO HTTP Request: POST https://model.example.invalid/openai/v1/responses "HTTP/1.1 200 OK"
+2026-11-10 16:47:15,607 INFO HTTP Request: POST https://model.example.invalid/openai/v1/responses "HTTP/1.1 200 OK"
+2026-11-10 16:47:18,767 INFO HTTP Request: POST https://model.example.invalid/openai/v1/responses "HTTP/1.1 200 OK"
+2026-11-10 16:47:21,550 INFO HTTP Request: POST https://model.example.invalid/openai/v1/responses "HTTP/1.1 200 OK"
+2026-11-10 16:47:22,860 INFO HTTP Request: POST https://model.example.invalid/openai/v1/responses "HTTP/1.1 200 OK"
+2026-11-10 16:47:25,521 INFO HTTP Request: POST https://model.example.invalid/openai/v1/responses "HTTP/1.1 200 OK"
+2026-11-10 16:47:27,995 INFO HTTP Request: POST https://model.example.invalid/openai/v1/responses "HTTP/1.1 200 OK"
+2026-11-10 16:47:29,143 INFO HTTP Request: POST https://model.example.invalid/openai/v1/responses "HTTP/1.1 200 OK"
+2026-11-10 16:47:32,184 INFO HTTP Request: POST https://model.example.invalid/openai/v1/responses "HTTP/1.1 200 OK"
+2026-11-10 16:47:33,762 INFO HTTP Request: POST https://model.example.invalid/openai/v1/responses "HTTP/1.1 200 OK"
+2026-11-10 16:47:35,742 INFO HTTP Request: POST https://model.example.invalid/openai/v1/responses "HTTP/1.1 200 OK"
+2026-11-10 16:47:38,348 INFO HTTP Request: POST https://model.example.invalid/openai/v1/responses "HTTP/1.1 200 OK"
+2026-11-10 16:47:38,678 INFO HTTP Request: POST https://model.example.invalid/openai/v1/responses "HTTP/1.1 200 OK"
+2026-11-10 16:47:42,462 INFO HTTP Request: POST https://model.example.invalid/openai/v1/responses "HTTP/1.1 200 OK"
+2026-11-10 16:47:42,497 INFO HTTP Request: POST https://model.example.invalid/openai/v1/responses "HTTP/1.1 200 OK"
+2026-11-10 16:47:42,505 INFO done 20/80, est $0.15
+2026-11-10 16:47:44,688 INFO HTTP Request: POST https://model.example.invalid/openai/v1/responses "HTTP/1.1 200 OK"
+2026-11-10 16:47:46,800 INFO HTTP Request: POST https://model.example.invalid/openai/v1/responses "HTTP/1.1 200 OK"
+2026-11-10 16:47:49,044 INFO HTTP Request: POST https://model.example.invalid/openai/v1/responses "HTTP/1.1 200 OK"
+2026-11-10 16:47:50,799 INFO HTTP Request: POST https://model.example.invalid/openai/v1/responses "HTTP/1.1 200 OK"
+2026-11-10 16:47:52,705 INFO HTTP Request: POST https://model.example.invalid/openai/v1/responses "HTTP/1.1 200 OK"
+2026-11-10 16:47:52,708 INFO No environment configuration found.
+2026-11-10 16:47:52,709 INFO ManagedIdentityCredential will use IMDS
+2026-11-10 16:47:52,713 INFO Request URL: 'http://169.254.169.254/metadata/identity/oauth2/token?api-version=2018-02-01&resource=REDACTED'
+Request method: 'GET'
+Request headers:
+    'User-Agent': 'azsdk-python-identity/1.25.3 Python/3.14.3 (Windows-11-10.0.26300-SP0)'
+No body was attached to the request
+2026-11-10 16:47:55,113 INFO DefaultAzureCredential acquired a token from AzureCliCredential
+2026-11-10 16:47:55,763 INFO HTTP Request: POST https://model.example.invalid/openai/v1/responses "HTTP/1.1 200 OK"
+2026-11-10 16:48:33,622 INFO HTTP Request: POST https://model.example.invalid/openai/deployments/grok-4.7/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-11-10 16:48:52,215 INFO HTTP Request: POST https://model.example.invalid/openai/deployments/grok-4.7/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-11-10 16:48:54,307 INFO HTTP Request: POST https://model.example.invalid/openai/deployments/grok-4.7/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-11-10 16:49:23,243 INFO HTTP Request: POST https://model.example.invalid/openai/deployments/grok-4.7/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-11-10 16:49:35,233 INFO HTTP Request: POST https://model.example.invalid/openai/deployments/grok-4.7/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-11-10 16:49:42,641 INFO HTTP Request: POST https://model.example.invalid/openai/deployments/grok-4.7/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-11-10 16:50:06,690 INFO HTTP Request: POST https://model.example.invalid/openai/deployments/grok-4.7/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-11-10 16:50:06,693 INFO done 30/80, est $0.22
+2026-11-10 16:50:33,286 INFO HTTP Request: POST https://model.example.invalid/openai/deployments/grok-4.7/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-11-10 16:50:38,665 INFO HTTP Request: POST https://model.example.invalid/openai/deployments/gpt-4.1-mini/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-11-10 16:50:40,573 INFO HTTP Request: POST https://model.example.invalid/openai/deployments/gpt-4.1-mini/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-11-10 16:50:43,410 INFO HTTP Request: POST https://model.example.invalid/openai/deployments/gpt-4.1-mini/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-11-10 16:50:45,092 INFO HTTP Request: POST https://model.example.invalid/openai/deployments/gpt-4.1-mini/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-11-10 16:50:47,102 INFO HTTP Request: POST https://model.example.invalid/openai/deployments/grok-4.7/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-11-10 16:50:47,756 INFO HTTP Request: POST https://model.example.invalid/openai/deployments/gpt-4.1-mini/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-11-10 16:50:49,455 INFO HTTP Request: POST https://model.example.invalid/openai/deployments/gpt-4.1-mini/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-11-10 16:50:51,859 INFO HTTP Request: POST https://model.example.invalid/openai/deployments/gpt-4.1-mini/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-11-10 16:50:53,137 INFO HTTP Request: POST https://model.example.invalid/openai/deployments/gpt-4.1-mini/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-11-10 16:50:54,465 INFO HTTP Request: POST https://model.example.invalid/openai/deployments/gpt-4.1-mini/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-11-10 16:50:56,540 INFO HTTP Request: POST https://model.example.invalid/openai/deployments/gpt-4.1-mini/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-11-10 16:50:59,827 INFO HTTP Request: POST https://model.example.invalid/openai/deployments/gpt-4.1-mini/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-11-10 16:51:04,286 INFO HTTP Request: POST https://model.example.invalid/openai/v1/responses "HTTP/1.1 200 OK"
+2026-11-10 16:51:07,450 INFO HTTP Request: POST https://model.example.invalid/openai/v1/responses "HTTP/1.1 200 OK"
+2026-11-10 16:51:11,436 INFO HTTP Request: POST https://model.example.invalid/openai/v1/responses "HTTP/1.1 200 OK"
+2026-11-10 16:51:17,139 INFO HTTP Request: POST https://model.example.invalid/openai/v1/responses "HTTP/1.1 200 OK"
+2026-11-10 16:51:17,143 INFO No environment configuration found.
+2026-11-10 16:51:17,144 INFO ManagedIdentityCredential will use IMDS
+2026-11-10 16:51:17,149 INFO Request URL: 'http://169.254.169.254/metadata/identity/oauth2/token?api-version=2018-02-01&resource=REDACTED'
+Request method: 'GET'
+Request headers:
+    'User-Agent': 'azsdk-python-identity/1.25.3 Python/3.14.3 (Windows-11-10.0.26300-SP0)'
+No body was attached to the request
+2026-11-10 16:51:19,250 INFO DefaultAzureCredential acquired a token from AzureCliCredential
+2026-11-10 16:51:24,296 INFO HTTP Request: POST https://model.example.invalid/openai/deployments/gpt-6.1-terra/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-11-10 16:51:26,887 INFO HTTP Request: POST https://model.example.invalid/openai/deployments/gpt-6.1-sol/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-11-10 16:51:26,891 INFO done 40/80, est $0.27
+2026-11-10 16:51:30,578 INFO HTTP Request: POST https://model.example.invalid/openai/deployments/gpt-4.1/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-11-10 16:51:32,472 INFO HTTP Request: POST https://model.example.invalid/openai/deployments/gpt-4.1/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-11-10 16:51:34,575 INFO HTTP Request: POST https://model.example.invalid/openai/deployments/gpt-4.1/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-11-10 16:51:36,827 INFO HTTP Request: POST https://model.example.invalid/openai/deployments/gpt-4.1/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-11-10 16:51:40,861 INFO HTTP Request: POST https://model.example.invalid/openai/deployments/gpt-4.1-mini/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-11-10 16:51:42,799 INFO HTTP Request: POST https://model.example.invalid/openai/deployments/gpt-4.1-mini/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-11-10 16:51:44,736 INFO HTTP Request: POST https://model.example.invalid/openai/deployments/gpt-4.1-mini/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-11-10 16:51:46,804 INFO HTTP Request: POST https://model.example.invalid/openai/deployments/gpt-4.1-mini/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-11-10 16:51:49,563 INFO HTTP Request: POST https://model.example.invalid/openai/deployments/gpt-4.1-mini/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-11-10 16:51:50,817 INFO HTTP Request: POST https://model.example.invalid/openai/deployments/gpt-4.1-mini/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-11-10 16:51:52,822 INFO HTTP Request: POST https://model.example.invalid/openai/deployments/gpt-4.1-mini/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-11-10 16:51:52,825 INFO No environment configuration found.
+2026-11-10 16:51:52,826 INFO ManagedIdentityCredential will use IMDS
+2026-11-10 16:51:52,829 INFO Request URL: 'http://169.254.169.254/metadata/identity/oauth2/token?api-version=2018-02-01&resource=REDACTED'
+Request method: 'GET'
+Request headers:
+    'User-Agent': 'azsdk-python-identity/1.25.3 Python/3.14.3 (Windows-11-10.0.26300-SP0)'
+No body was attached to the request
+2026-11-10 16:51:54,820 INFO DefaultAzureCredential acquired a token from AzureCliCredential
+2026-11-10 16:51:55,940 INFO HTTP Request: POST https://model.example.invalid/openai/deployments/grok-4.7/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-11-10 16:51:55,943 INFO done 50/80, est $0.29
+2026-11-10 16:51:57,280 INFO HTTP Request: POST https://model.example.invalid/openai/deployments/phi-4/chat/completions?api-version=2024-10-21 "HTTP/1.1 404 Not Found"
+2026-11-10 16:51:58,182 INFO HTTP Request: POST https://model.example.invalid/openai/deployments/phi-4/chat/completions?api-version=2024-10-21 "HTTP/1.1 404 Not Found"
+2026-11-10 16:52:02,162 INFO HTTP Request: POST https://model.example.invalid/openai/deployments/gpt-6.1-sol/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-11-10 16:52:06,900 INFO HTTP Request: POST https://model.example.invalid/openai/deployments/gpt-6.1-sol/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-11-10 16:52:07,052 INFO HTTP Request: POST https://model.example.invalid/openai/deployments/gpt-6.1-sol/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-11-10 16:52:11,662 INFO HTTP Request: POST https://model.example.invalid/openai/deployments/gpt-6.1-sol/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-11-10 16:52:12,393 INFO HTTP Request: POST https://model.example.invalid/openai/deployments/gpt-6.1-sol/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-11-10 16:52:12,396 INFO done 60/80, est $0.34
+2026-11-10 16:52:16,787 INFO HTTP Request: POST https://model.example.invalid/openai/deployments/gpt-6.1-sol/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-11-10 16:52:16,840 INFO HTTP Request: POST https://model.example.invalid/openai/deployments/gpt-6.1-sol/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-11-10 16:52:22,303 INFO HTTP Request: POST https://model.example.invalid/openai/v1/responses "HTTP/1.1 200 OK"
+2026-11-10 16:52:23,768 INFO HTTP Request: POST https://model.example.invalid/openai/deployments/gpt-6.1-terra/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-11-10 16:52:25,801 INFO HTTP Request: POST https://model.example.invalid/openai/v1/responses "HTTP/1.1 200 OK"
+2026-11-10 16:52:27,072 INFO HTTP Request: POST https://model.example.invalid/openai/deployments/gpt-6.1-terra/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-11-10 16:52:30,668 INFO HTTP Request: POST https://model.example.invalid/openai/deployments/gpt-6.1-terra/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-11-10 16:52:34,202 INFO HTTP Request: POST https://model.example.invalid/openai/deployments/gpt-6.1-terra/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-11-10 16:52:34,204 INFO No environment configuration found.
+2026-11-10 16:52:34,205 INFO ManagedIdentityCredential will use IMDS
+2026-11-10 16:52:34,206 INFO Request URL: 'http://169.254.169.254/metadata/identity/oauth2/token?api-version=2018-02-01&resource=REDACTED'
+Request method: 'GET'
+Request headers:
+    'User-Agent': 'azsdk-python-identity/1.25.3 Python/3.14.3 (Windows-11-10.0.26300-SP0)'
+No body was attached to the request
+2026-11-10 16:52:36,320 INFO DefaultAzureCredential acquired a token from AzureCliCredential
+2026-11-10 16:52:39,011 INFO HTTP Request: POST https://model.example.invalid/openai/v1/responses "HTTP/1.1 200 OK"
+2026-11-10 16:52:42,014 INFO HTTP Request: POST https://model.example.invalid/openai/v1/responses "HTTP/1.1 200 OK"
+2026-11-10 16:52:43,537 INFO HTTP Request: POST https://model.example.invalid/openai/v1/responses "HTTP/1.1 200 OK"
+2026-11-10 16:52:43,703 INFO HTTP Request: POST https://model.example.invalid/openai/deployments/gpt-6.1-terra/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-11-10 16:52:46,218 INFO HTTP Request: POST https://model.example.invalid/openai/v1/responses "HTTP/1.1 200 OK"
+2026-11-10 16:52:46,224 INFO done 70/80, est $0.40
+2026-11-10 16:52:47,892 INFO HTTP Request: POST https://model.example.invalid/openai/v1/responses "HTTP/1.1 200 OK"
+2026-11-10 16:52:50,266 INFO HTTP Request: POST https://model.example.invalid/openai/v1/responses "HTTP/1.1 200 OK"
+2026-11-10 16:52:51,575 INFO HTTP Request: POST https://model.example.invalid/openai/v1/responses "HTTP/1.1 200 OK"
+2026-11-10 16:52:54,520 INFO HTTP Request: POST https://model.example.invalid/openai/v1/responses "HTTP/1.1 200 OK"
+2026-11-10 16:53:18,293 INFO HTTP Request: POST https://model.example.invalid/openai/deployments/grok-4.7/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-11-10 16:53:39,734 INFO HTTP Request: POST https://model.example.invalid/openai/deployments/grok-4.7/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-11-10 16:53:56,488 INFO HTTP Request: POST https://model.example.invalid/openai/deployments/grok-4.7/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-11-10 16:54:15,853 INFO HTTP Request: POST https://model.example.invalid/openai/deployments/grok-4.7/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-11-10 16:54:30,342 INFO HTTP Request: POST https://model.example.invalid/openai/deployments/grok-4.7/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-11-10 16:54:46,721 INFO HTTP Request: POST https://model.example.invalid/openai/deployments/grok-4.7/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-11-10 16:55:03,354 INFO HTTP Request: POST https://model.example.invalid/openai/deployments/grok-4.7/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-11-10 16:55:24,095 INFO HTTP Request: POST https://model.example.invalid/openai/deployments/grok-4.7/chat/completions?api-version=2024-10-21 "HTTP/1.1 200 OK"
+2026-11-10 16:55:24,099 INFO done 80/80, est $0.46

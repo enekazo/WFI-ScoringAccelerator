@@ -1,0 +1,1 @@
+{"outcome": "rejected", "status": 400, "message": "Error code: 400 - {'error': {'code': 'Bad Request', 'message': '{\"object\":\"error\",\"message\":\"\\\\\"auto\\\\\" tool choice requires --enable-auto-tool-choice and --tool-call-parser to be set\",\"type\":\"BadRequestError\",\"param\":null,\"code\":400}', 'status': 400}}"}

@@ -1,0 +1,19 @@
+{
+ "separation_of_duties_configured": "single_person",
+ "proposals": {
+  "c501026a3cf853df": {
+   "state": "approved",
+   "entity_id": "P127",
+   "by": "reviewer.one@example.invalid",
+   "at": "2026-11-10T15:14:43.801610+00:00",
+   "mode": "single_person"
+  },
+  "0bd37a7832f22745": {
+   "state": "proposed",
+   "entity_id": "P127",
+   "by": "foundry:pinned-score-agent",
+   "at": "2026-11-10T15:06:48.470411+00:00",
+   "mode": "n/a (proposal)"
+  }
+ }
+}

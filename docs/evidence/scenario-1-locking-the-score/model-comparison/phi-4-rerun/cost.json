@@ -1,0 +1,9 @@
+{
+  "prompt_tokens": 513077,
+  "completion_tokens": 71260,
+  "calls": 500,
+  "price_usd_per_1m_input": 0.125,
+  "price_usd_per_1m_output": 0.5,
+  "price_source": "azurespeed.com Phi-4 list price (web lookup, not an invoice)",
+  "estimated_cost_usd": 0.0998
+}

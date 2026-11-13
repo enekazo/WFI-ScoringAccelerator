@@ -1,0 +1,12 @@
+{
+  "name": "wildfire-fuel-risk-example",
+  "version": "1.0.0",
+  "factors": [
+    {"name": "fuel_load", "metric": "fuel_load", "unit": "t/ha", "weight": "0.30", "low": "0", "high": "40", "max_age_hours": 720, "allowed_provenance": ["measured"]},
+    {"name": "dead_fuel", "metric": "dead_fuel_pct", "unit": "%", "weight": "0.15", "low": "0", "high": "100", "max_age_hours": 720, "allowed_provenance": ["measured"]},
+    {"name": "moisture", "metric": "fuel_moisture_pct", "unit": "%", "weight": "0.25", "low": "5", "high": "40", "invert": true, "max_age_hours": 24, "allowed_provenance": ["measured"]},
+    {"name": "weather_danger", "metric": "weather_danger", "unit": "index", "weight": "0.20", "low": "0", "high": "85", "max_age_hours": 24, "allowed_provenance": ["measured", "generated"]},
+    {"name": "wind", "metric": "wind_kmh", "unit": "km/h", "weight": "0.10", "low": "0", "high": "60", "max_age_hours": 24, "allowed_provenance": ["measured"]}
+  ],
+  "bands": [["25", "low"], ["50", "moderate"], ["75", "high"], ["101", "extreme"]]
+}

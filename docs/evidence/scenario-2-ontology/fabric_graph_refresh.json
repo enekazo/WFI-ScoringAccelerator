@@ -1,0 +1,17 @@
+{
+  "request": "POST /v1/workspaces/00000000-0000-4000-8000-000000000019/items/00000000-0000-4000-8000-000000000004/jobs/instances?jobType=RefreshGraph",
+  "http_status": 202,
+  "invalid_job_types_400": ["Refresh", "GraphRefresh", "RunNow", "Schedule", "Graph", "GraphModelRefresh", "Ingestion", "Pipeline"],
+  "job": {
+    "id": "00000000-0000-4000-8000-000000000014",
+    "jobType": "Refresh",
+    "invokeType": "Manual",
+    "status": "Cancelled",
+    "failureReason": null,
+    "startTimeUtc": "2026-11-09T10:07:28.3066667",
+    "endTimeUtc": "2026-11-09T10:07:30.0966667"
+  },
+  "graph_model_definition": "graphType.nodeTypes/edgeTypes, dataSources.dataSources, graphDefinition.nodeTables/edgeTables are all null (no mappings)",
+  "graph_loaded": false,
+  "portal_fallback": "Blocked: Playwright profile signed in, but workspace PinnedScore URLs redirect to 'My workspace' / errorpage 'We couldn't find the page you were looking for'. Needs a different browser session/login. Data agent not published."
+}

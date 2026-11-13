@@ -1,0 +1,14 @@
+{
+ "proposal_id": "c501026a3cf853df",
+ "state": "reviewed",
+ "actor": "reviewer.one@example.invalid",
+ "entity_id": "P127",
+ "receipt_sha256": "94bfb1a1f9d98a43450862aad10752e0d251a81cab2705cd14cf6f0f669da43e",
+ "policy_sha256": "26fd759b9fc3d9cbe1d252730b34111e289d7e67190aaa9497c361fb96de69ff",
+ "narration": "Parcel P127 has a wildfire-risk score of 31.1, banded moderate, as stated in receipt 94bfb1a1f9d98a43450862aad10752e0d251a81cab2705cd14cf6f0f669da43e. This is proposed for human review.",
+ "note": "",
+ "at": "2026-11-10T15:01:45.758617+00:00",
+ "prev": "b8c7515e5bb5531776699c0e3124b3bc1c2ea9138524429c68f8ed7a2b9a4fc8",
+ "hash": "7bd3106f17b357aebbc7819d2fb14b39164300cb7a4b6e2def28e5a4e13ff6d1"
+}
+

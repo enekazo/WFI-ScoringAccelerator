@@ -1,0 +1,722 @@
+[
+ {
+  "batch": 2,
+  "model": "gpt-4.1",
+  "arm": "B",
+  "parcel": "P082",
+  "repeat": 2,
+  "class": "infrastructure",
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Your requests to gpt-4.1 for gpt-4.1 in centralus have exceeded request rate limit.', 'type': 'too_many_requests', 'param': None, 'code': 'rate_limit_exceeded'}}"
+ },
+ {
+  "batch": 2,
+  "model": "gpt-4.1",
+  "arm": "B",
+  "parcel": "P087",
+  "repeat": 2,
+  "class": "infrastructure",
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Your requests to gpt-4.1 for gpt-4.1 in centralus have exceeded request rate limit.', 'type': 'too_many_requests', 'param': None, 'code': 'rate_limit_exceeded'}}"
+ },
+ {
+  "batch": 2,
+  "model": "gpt-4.1-mini",
+  "arm": "B",
+  "parcel": "P084",
+  "repeat": 2,
+  "class": "infrastructure",
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Your requests to gpt-4.1-mini for gpt-4.1-mini in centralus have exceeded request rate limit.', 'type': 'too_many_requests', 'param': None, 'code': 'rate_limit_exceeded'}}"
+ },
+ {
+  "batch": 2,
+  "model": "gpt-4.1-mini",
+  "arm": "B",
+  "parcel": "P092",
+  "repeat": 0,
+  "class": "infrastructure",
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Your requests to gpt-4.1-mini for gpt-4.1-mini in centralus have exceeded request rate limit.', 'type': 'too_many_requests', 'param': None, 'code': 'rate_limit_exceeded'}}"
+ },
+ {
+  "batch": 2,
+  "model": "gpt-6.1-sol",
+  "arm": "A",
+  "parcel": "P076",
+  "repeat": 0,
+  "class": "infrastructure",
+  "error": "APITimeoutError: Request timed out."
+ },
+ {
+  "batch": 2,
+  "model": "gpt-6.1-sol",
+  "arm": "A",
+  "parcel": "P076",
+  "repeat": 1,
+  "class": "infrastructure",
+  "error": "APITimeoutError: Request timed out."
+ },
+ {
+  "batch": 2,
+  "model": "gpt-6.1-sol",
+  "arm": "A",
+  "parcel": "P076",
+  "repeat": 2,
+  "class": "infrastructure",
+  "error": "APITimeoutError: Request timed out."
+ },
+ {
+  "batch": 2,
+  "model": "gpt-6.1-sol",
+  "arm": "A",
+  "parcel": "P078",
+  "repeat": 0,
+  "class": "infrastructure",
+  "error": "APITimeoutError: Request timed out."
+ },
+ {
+  "batch": 2,
+  "model": "gpt-6.1-sol",
+  "arm": "A",
+  "parcel": "P087",
+  "repeat": 0,
+  "class": "infrastructure",
+  "error": "APITimeoutError: Request timed out."
+ },
+ {
+  "batch": 2,
+  "model": "gpt-6.1-sol",
+  "arm": "A",
+  "parcel": "P087",
+  "repeat": 1,
+  "class": "infrastructure",
+  "error": "APITimeoutError: Request timed out."
+ },
+ {
+  "batch": 2,
+  "model": "gpt-6.1-sol",
+  "arm": "A",
+  "parcel": "P087",
+  "repeat": 2,
+  "class": "infrastructure",
+  "error": "APITimeoutError: Request timed out."
+ },
+ {
+  "batch": 2,
+  "model": "gpt-6.1-sol",
+  "arm": "B",
+  "parcel": "P076",
+  "repeat": 0,
+  "class": "infrastructure",
+  "error": "APITimeoutError: Request timed out."
+ },
+ {
+  "batch": 2,
+  "model": "gpt-6.1-sol",
+  "arm": "B",
+  "parcel": "P077",
+  "repeat": 0,
+  "class": "infrastructure",
+  "error": "APITimeoutError: Request timed out."
+ },
+ {
+  "batch": 2,
+  "model": "gpt-6.1-sol",
+  "arm": "B",
+  "parcel": "P078",
+  "repeat": 0,
+  "class": "infrastructure",
+  "error": "APITimeoutError: Request timed out."
+ },
+ {
+  "batch": 2,
+  "model": "gpt-6.1-sol",
+  "arm": "B",
+  "parcel": "P078",
+  "repeat": 1,
+  "class": "infrastructure",
+  "error": "APITimeoutError: Request timed out."
+ },
+ {
+  "batch": 2,
+  "model": "gpt-6.1-sol",
+  "arm": "B",
+  "parcel": "P078",
+  "repeat": 2,
+  "class": "infrastructure",
+  "error": "APITimeoutError: Request timed out."
+ },
+ {
+  "batch": 2,
+  "model": "gpt-6.1-sol",
+  "arm": "B",
+  "parcel": "P098",
+  "repeat": 1,
+  "class": "infrastructure",
+  "error": "APITimeoutError: Request timed out."
+ },
+ {
+  "batch": 2,
+  "model": "gpt-6.1-sol",
+  "arm": "B",
+  "parcel": "P098",
+  "repeat": 2,
+  "class": "infrastructure",
+  "error": "APITimeoutError: Request timed out."
+ },
+ {
+  "batch": 2,
+  "model": "gpt-6.1-sol",
+  "arm": "B",
+  "parcel": "P099",
+  "repeat": 1,
+  "class": "infrastructure",
+  "error": "APITimeoutError: Request timed out."
+ },
+ {
+  "batch": 2,
+  "model": "gpt-6.1-sol",
+  "arm": "B",
+  "parcel": "P099",
+  "repeat": 2,
+  "class": "infrastructure",
+  "error": "APITimeoutError: Request timed out."
+ },
+ {
+  "batch": 2,
+  "model": "gpt-6.1-sol",
+  "arm": "B",
+  "parcel": "P100",
+  "repeat": 0,
+  "class": "infrastructure",
+  "error": "APITimeoutError: Request timed out."
+ },
+ {
+  "batch": 2,
+  "model": "gpt-6.1-sol",
+  "arm": "B",
+  "parcel": "P100",
+  "repeat": 1,
+  "class": "infrastructure",
+  "error": "APITimeoutError: Request timed out."
+ },
+ {
+  "batch": 2,
+  "model": "gpt-6.1-sol",
+  "arm": "B",
+  "parcel": "P100",
+  "repeat": 2,
+  "class": "infrastructure",
+  "error": "APITimeoutError: Request timed out."
+ },
+ {
+  "batch": 2,
+  "model": "grok-4.7",
+  "arm": "A",
+  "parcel": "P077",
+  "repeat": 0,
+  "class": "infrastructure",
+  "error": "APITimeoutError: Request timed out."
+ },
+ {
+  "batch": 2,
+  "model": "grok-4.7",
+  "arm": "A",
+  "parcel": "P077",
+  "repeat": 1,
+  "class": "infrastructure",
+  "error": "APITimeoutError: Request timed out."
+ },
+ {
+  "batch": 2,
+  "model": "grok-4.7",
+  "arm": "A",
+  "parcel": "P078",
+  "repeat": 0,
+  "class": "infrastructure",
+  "error": "APITimeoutError: Request timed out."
+ },
+ {
+  "batch": 2,
+  "model": "grok-4.7",
+  "arm": "A",
+  "parcel": "P091",
+  "repeat": 2,
+  "class": "infrastructure",
+  "error": "APITimeoutError: Request timed out."
+ },
+ {
+  "batch": 2,
+  "model": "grok-4.7",
+  "arm": "A",
+  "parcel": "P094",
+  "repeat": 0,
+  "class": "infrastructure",
+  "error": "APITimeoutError: Request timed out."
+ },
+ {
+  "batch": 2,
+  "model": "grok-4.7",
+  "arm": "A",
+  "parcel": "P094",
+  "repeat": 1,
+  "class": "infrastructure",
+  "error": "APITimeoutError: Request timed out."
+ },
+ {
+  "batch": 2,
+  "model": "grok-4.7",
+  "arm": "A",
+  "parcel": "P094",
+  "repeat": 2,
+  "class": "infrastructure",
+  "error": "APITimeoutError: Request timed out."
+ },
+ {
+  "batch": 2,
+  "model": "grok-4.7",
+  "arm": "A",
+  "parcel": "P096",
+  "repeat": 0,
+  "class": "infrastructure",
+  "error": "APITimeoutError: Request timed out."
+ },
+ {
+  "batch": 2,
+  "model": "grok-4.7",
+  "arm": "A",
+  "parcel": "P096",
+  "repeat": 1,
+  "class": "infrastructure",
+  "error": "APITimeoutError: Request timed out."
+ },
+ {
+  "batch": 3,
+  "model": "gpt-4.1-mini",
+  "arm": "A",
+  "parcel": "P103",
+  "repeat": 0,
+  "class": "infrastructure",
+  "error": "APITimeoutError: Request timed out."
+ },
+ {
+  "batch": 3,
+  "model": "gpt-4.1-mini",
+  "arm": "B",
+  "parcel": "P106",
+  "repeat": 1,
+  "class": "infrastructure",
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Your requests to gpt-4.1-mini for gpt-4.1-mini in centralus have exceeded request rate limit.', 'type': 'too_many_requests', 'param': None, 'code': 'rate_limit_exceeded'}}"
+ },
+ {
+  "batch": 3,
+  "model": "gpt-4.1-mini",
+  "arm": "B",
+  "parcel": "P111",
+  "repeat": 0,
+  "class": "infrastructure",
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Your requests to gpt-4.1-mini for gpt-4.1-mini in centralus have exceeded request rate limit.', 'type': 'too_many_requests', 'param': None, 'code': 'rate_limit_exceeded'}}"
+ },
+ {
+  "batch": 3,
+  "model": "gpt-4.1-mini",
+  "arm": "B",
+  "parcel": "P113",
+  "repeat": 0,
+  "class": "infrastructure",
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Your requests to gpt-4.1-mini for gpt-4.1-mini in centralus have exceeded request rate limit.', 'type': 'too_many_requests', 'param': None, 'code': 'rate_limit_exceeded'}}"
+ },
+ {
+  "batch": 3,
+  "model": "gpt-4.1-mini",
+  "arm": "B",
+  "parcel": "P113",
+  "repeat": 1,
+  "class": "infrastructure",
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Your requests to gpt-4.1-mini for gpt-4.1-mini in centralus have exceeded request rate limit.', 'type': 'too_many_requests', 'param': None, 'code': 'rate_limit_exceeded'}}"
+ },
+ {
+  "batch": 3,
+  "model": "gpt-4.1-mini",
+  "arm": "B",
+  "parcel": "P114",
+  "repeat": 2,
+  "class": "infrastructure",
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Your requests to gpt-4.1-mini for gpt-4.1-mini in centralus have exceeded request rate limit.', 'type': 'too_many_requests', 'param': None, 'code': 'rate_limit_exceeded'}}"
+ },
+ {
+  "batch": 3,
+  "model": "gpt-6.1-sol",
+  "arm": "A",
+  "parcel": "P103",
+  "repeat": 0,
+  "class": "infrastructure",
+  "error": "ClientAuthenticationError: ERROR: The command failed with an unexpected error. Here is the traceback:\nERROR: [Errno 13] Permission denied: 'C:\\\\Users\\\\example-user\\\\.azure-pinned\\\\msal_token_cache.bin.lockfile'\nTraceback (most recent call last):\n  File \"D:\\a\\_work\\1\\s\\build_scripts\\windows\\artifacts\\"
+ },
+ {
+  "batch": 3,
+  "model": "gpt-6.1-sol",
+  "arm": "B",
+  "parcel": "P115",
+  "repeat": 2,
+  "class": "infrastructure",
+  "error": "APIConnectionError: Connection error."
+ },
+ {
+  "batch": 3,
+  "model": "gpt-6.1-sol",
+  "arm": "B",
+  "parcel": "P117",
+  "repeat": 0,
+  "class": "infrastructure",
+  "error": "APIConnectionError: Connection error."
+ },
+ {
+  "batch": 3,
+  "model": "gpt-6.1-terra",
+  "arm": "A",
+  "parcel": "P102",
+  "repeat": 0,
+  "class": "infrastructure",
+  "error": "APITimeoutError: Request timed out."
+ },
+ {
+  "batch": 3,
+  "model": "grok-4.7",
+  "arm": "A",
+  "parcel": "P111",
+  "repeat": 0,
+  "class": "infrastructure",
+  "error": "APITimeoutError: Request timed out."
+ },
+ {
+  "batch": 4,
+  "model": "gpt-4.1",
+  "arm": "A+",
+  "parcel": "P149",
+  "repeat": 2,
+  "class": "infrastructure",
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Your requests to gpt-4.1 for gpt-4.1 in centralus have exceeded request rate limit.', 'type': 'too_many_requests', 'param': None, 'code': 'rate_limit_exceeded'}}"
+ },
+ {
+  "batch": 4,
+  "model": "gpt-4.1",
+  "arm": "B",
+  "parcel": "P137",
+  "repeat": 1,
+  "class": "infrastructure",
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Your requests to gpt-4.1 for gpt-4.1 in centralus have exceeded request rate limit.', 'type': 'too_many_requests', 'param': None, 'code': 'rate_limit_exceeded'}}"
+ },
+ {
+  "batch": 4,
+  "model": "gpt-4.1",
+  "arm": "B",
+  "parcel": "P144",
+  "repeat": 0,
+  "class": "infrastructure",
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Your requests to gpt-4.1 for gpt-4.1 in centralus have exceeded request rate limit.', 'type': 'too_many_requests', 'param': None, 'code': 'rate_limit_exceeded'}}"
+ },
+ {
+  "batch": 4,
+  "model": "gpt-4.1",
+  "arm": "B",
+  "parcel": "P145",
+  "repeat": 2,
+  "class": "infrastructure",
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Your requests to gpt-4.1 for gpt-4.1 in centralus have exceeded request rate limit.', 'type': 'too_many_requests', 'param': None, 'code': 'rate_limit_exceeded'}}"
+ },
+ {
+  "batch": 4,
+  "model": "gpt-4.1-mini",
+  "arm": "A",
+  "parcel": "P127",
+  "repeat": 0,
+  "class": "infrastructure",
+  "error": "APITimeoutError: Request timed out."
+ },
+ {
+  "batch": 4,
+  "model": "gpt-4.1-mini",
+  "arm": "A",
+  "parcel": "P128",
+  "repeat": 0,
+  "class": "infrastructure",
+  "error": "APITimeoutError: Request timed out."
+ },
+ {
+  "batch": 4,
+  "model": "gpt-4.1-mini",
+  "arm": "A",
+  "parcel": "P128",
+  "repeat": 1,
+  "class": "infrastructure",
+  "error": "APITimeoutError: Request timed out."
+ },
+ {
+  "batch": 4,
+  "model": "gpt-4.1-mini",
+  "arm": "A",
+  "parcel": "P128",
+  "repeat": 2,
+  "class": "infrastructure",
+  "error": "APITimeoutError: Request timed out."
+ },
+ {
+  "batch": 4,
+  "model": "gpt-4.1-mini",
+  "arm": "A+",
+  "parcel": "P126",
+  "repeat": 0,
+  "class": "infrastructure",
+  "error": "APITimeoutError: Request timed out."
+ },
+ {
+  "batch": 4,
+  "model": "gpt-4.1-mini",
+  "arm": "B",
+  "parcel": "P147",
+  "repeat": 0,
+  "class": "infrastructure",
+  "error": "RateLimitError: Error code: 429 - {'error': {'message': 'Your requests to gpt-4.1-mini for gpt-4.1-mini in centralus have exceeded request rate limit.', 'type': 'too_many_requests', 'param': None, 'code': 'rate_limit_exceeded'}}"
+ },
+ {
+  "batch": 4,
+  "model": "phi-4",
+  "arm": "A",
+  "parcel": "P128",
+  "repeat": 0,
+  "class": "infrastructure",
+  "error": "APITimeoutError: Request timed out."
+ },
+ {
+  "batch": 4,
+  "model": "phi-4",
+  "arm": "A",
+  "parcel": "P128",
+  "repeat": 1,
+  "class": "infrastructure",
+  "error": "APITimeoutError: Request timed out."
+ },
+ {
+  "batch": 4,
+  "model": "gpt-6.1-sol",
+  "arm": "A",
+  "parcel": "P126",
+  "repeat": 0,
+  "class": "infrastructure",
+  "error": "APITimeoutError: Request timed out."
+ },
+ {
+  "batch": 4,
+  "model": "gpt-6.1-sol",
+  "arm": "A",
+  "parcel": "P127",
+  "repeat": 0,
+  "class": "infrastructure",
+  "error": "APITimeoutError: Request timed out."
+ },
+ {
+  "batch": 4,
+  "model": "gpt-6.1-sol",
+  "arm": "A",
+  "parcel": "P127",
+  "repeat": 1,
+  "class": "infrastructure",
+  "error": "APITimeoutError: Request timed out."
+ },
+ {
+  "batch": 4,
+  "model": "gpt-6.1-sol",
+  "arm": "A",
+  "parcel": "P128",
+  "repeat": 0,
+  "class": "infrastructure",
+  "error": "APITimeoutError: Request timed out."
+ },
+ {
+  "batch": 4,
+  "model": "gpt-6.1-sol",
+  "arm": "A",
+  "parcel": "P128",
+  "repeat": 1,
+  "class": "infrastructure",
+  "error": "APITimeoutError: Request timed out."
+ },
+ {
+  "batch": 4,
+  "model": "gpt-6.1-sol",
+  "arm": "A",
+  "parcel": "P128",
+  "repeat": 2,
+  "class": "infrastructure",
+  "error": "APITimeoutError: Request timed out."
+ },
+ {
+  "batch": 4,
+  "model": "gpt-6.1-sol",
+  "arm": "A",
+  "parcel": "P135",
+  "repeat": 0,
+  "class": "infrastructure",
+  "error": "APITimeoutError: Request timed out."
+ },
+ {
+  "batch": 4,
+  "model": "gpt-6.1-sol",
+  "arm": "B",
+  "parcel": "P128",
+  "repeat": 0,
+  "class": "infrastructure",
+  "error": "APITimeoutError: Request timed out."
+ },
+ {
+  "batch": 4,
+  "model": "gpt-6.1-terra",
+  "arm": "A",
+  "parcel": "P126",
+  "repeat": 0,
+  "class": "infrastructure",
+  "error": "APITimeoutError: Request timed out."
+ },
+ {
+  "batch": 4,
+  "model": "gpt-6.1-terra",
+  "arm": "A",
+  "parcel": "P126",
+  "repeat": 1,
+  "class": "infrastructure",
+  "error": "APITimeoutError: Request timed out."
+ },
+ {
+  "batch": 4,
+  "model": "gpt-6.1-terra",
+  "arm": "A",
+  "parcel": "P126",
+  "repeat": 2,
+  "class": "infrastructure",
+  "error": "APITimeoutError: Request timed out."
+ },
+ {
+  "batch": 4,
+  "model": "gpt-6.1-terra",
+  "arm": "A",
+  "parcel": "P127",
+  "repeat": 0,
+  "class": "infrastructure",
+  "error": "APITimeoutError: Request timed out."
+ },
+ {
+  "batch": 4,
+  "model": "gpt-6.1-terra",
+  "arm": "A",
+  "parcel": "P146",
+  "repeat": 0,
+  "class": "infrastructure",
+  "error": "APITimeoutError: Request timed out."
+ },
+ {
+  "batch": 4,
+  "model": "gpt-6.1-terra",
+  "arm": "B",
+  "parcel": "P126",
+  "repeat": 0,
+  "class": "infrastructure",
+  "error": "APITimeoutError: Request timed out."
+ },
+ {
+  "batch": 4,
+  "model": "gpt-6.1-terra",
+  "arm": "B",
+  "parcel": "P127",
+  "repeat": 0,
+  "class": "infrastructure",
+  "error": "APITimeoutError: Request timed out."
+ },
+ {
+  "batch": 4,
+  "model": "gpt-6.1-terra",
+  "arm": "B",
+  "parcel": "P127",
+  "repeat": 1,
+  "class": "infrastructure",
+  "error": "APITimeoutError: Request timed out."
+ },
+ {
+  "batch": 4,
+  "model": "gpt-6.1-terra",
+  "arm": "B",
+  "parcel": "P128",
+  "repeat": 0,
+  "class": "infrastructure",
+  "error": "APITimeoutError: Request timed out."
+ },
+ {
+  "batch": 4,
+  "model": "grok-4.7",
+  "arm": "A",
+  "parcel": "P126",
+  "repeat": 0,
+  "class": "infrastructure",
+  "error": "APITimeoutError: Request timed out."
+ },
+ {
+  "batch": 4,
+  "model": "grok-4.7",
+  "arm": "A",
+  "parcel": "P127",
+  "repeat": 0,
+  "class": "infrastructure",
+  "error": "APITimeoutError: Request timed out."
+ },
+ {
+  "batch": 4,
+  "model": "grok-4.7",
+  "arm": "A",
+  "parcel": "P127",
+  "repeat": 1,
+  "class": "infrastructure",
+  "error": "APITimeoutError: Request timed out."
+ },
+ {
+  "batch": 4,
+  "model": "grok-4.7",
+  "arm": "A",
+  "parcel": "P127",
+  "repeat": 2,
+  "class": "infrastructure",
+  "error": "APITimeoutError: Request timed out."
+ },
+ {
+  "batch": 4,
+  "model": "grok-4.7",
+  "arm": "A",
+  "parcel": "P128",
+  "repeat": 0,
+  "class": "infrastructure",
+  "error": "APITimeoutError: Request timed out."
+ },
+ {
+  "batch": 4,
+  "model": "grok-4.7",
+  "arm": "A",
+  "parcel": "P128",
+  "repeat": 1,
+  "class": "infrastructure",
+  "error": "APITimeoutError: Request timed out."
+ },
+ {
+  "batch": 4,
+  "model": "grok-4.7",
+  "arm": "A",
+  "parcel": "P128",
+  "repeat": 2,
+  "class": "infrastructure",
+  "error": "APITimeoutError: Request timed out."
+ },
+ {
+  "batch": 4,
+  "model": "grok-4.7",
+  "arm": "A",
+  "parcel": "P130",
+  "repeat": 0,
+  "class": "infrastructure",
+  "error": "APITimeoutError: Request timed out."
+ }
+]

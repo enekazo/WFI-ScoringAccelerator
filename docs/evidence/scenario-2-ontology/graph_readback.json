@@ -1,0 +1,8 @@
+{
+  "equal_to_local": true,
+  "parcels": 50,
+  "assets": 99,
+  "feeders": 12,
+  "customer_groups": 34,
+  "mitigations": 3
+}

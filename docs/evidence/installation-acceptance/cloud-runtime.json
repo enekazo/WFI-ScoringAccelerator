@@ -1,0 +1,128 @@
+{
+  "source_artifact_sha256": "0254b783ad9e2b16907a9eff118e71139a8aa14fedbecd5c92db15e2bf528100",
+  "ok": true,
+  "parcelCount": 150,
+  "policySha256": "26fd759b9fc3d9cbe1d252730b34111e289d7e67190aaa9497c361fb96de69ff",
+  "unauthenticatedStatus": 401,
+  "scoreHashParity": true,
+  "verification": {
+    "normal": {
+      "blocked": false,
+      "fallback_used": false,
+      "raw_text": "Parcel P003 has score 33.3 and band moderate.",
+      "text": "Parcel P003 has score 33.3 and band moderate.",
+      "delivered": {
+        "mode": "verified_narration",
+        "verified": true,
+        "text": "Parcel P003 has score 33.3 and band moderate.",
+        "entity_id": "P003",
+        "status": "scored",
+        "score": "33.3",
+        "band": "moderate",
+        "reasons": [],
+        "provenance": {
+          "fuel_load": "measured",
+          "dead_fuel": "measured",
+          "moisture": "measured",
+          "weather_danger": "measured",
+          "wind": "measured"
+        },
+        "receipt_sha256": "86bda1a7c656951f2d91363b399c8b33e129193315600e00db62c364d2a22070",
+        "policy_sha256": "26fd759b9fc3d9cbe1d252730b34111e289d7e67190aaa9497c361fb96de69ff",
+        "explanation": "Parcel P003 has score 33.3 and band moderate."
+      },
+      "violations": [],
+      "referenced_parcels": [
+        "P003"
+      ],
+      "receipt_hashes": {
+        "P003": "86bda1a7c656951f2d91363b399c8b33e129193315600e00db62c364d2a22070"
+      },
+      "policy_sha256": "26fd759b9fc3d9cbe1d252730b34111e289d7e67190aaa9497c361fb96de69ff"
+    },
+    "contradiction": {
+      "blocked": true,
+      "fallback_used": true,
+      "raw_text": "Parcel P003 has score 999999.",
+      "text": "Verifier blocked the narration; showing receipt values. Parcel P003: status=scored, score=33.3, band=moderate, components=[fuel_load=2.48 (measured), dead_fuel=5.94 (measured), moisture=17.43 (measured), weather_danger=2.49 (measured), wind=4.98 (measured)], receipt_sha256=86bda1a7c656951f2d91363b399c8b33e129193315600e00db62c364d2a22070.",
+      "delivered": {
+        "mode": "receipt_fallback",
+        "reason": "verifier_blocked_narration",
+        "text": "Verifier blocked the narration; showing receipt values. Parcel P003: status=scored, score=33.3, band=moderate, components=[fuel_load=2.48 (measured), dead_fuel=5.94 (measured), moisture=17.43 (measured), weather_danger=2.49 (measured), wind=4.98 (measured)], receipt_sha256=86bda1a7c656951f2d91363b399c8b33e129193315600e00db62c364d2a22070.",
+        "receipts": [
+          {
+            "entity_id": "P003",
+            "status": "scored",
+            "score": "33.3",
+            "band": "moderate",
+            "components": [
+              [
+                "fuel_load",
+                "3.3",
+                "measured",
+                "2.48"
+              ],
+              [
+                "dead_fuel",
+                "39.6",
+                "measured",
+                "5.94"
+              ],
+              [
+                "moisture",
+                "15.6",
+                "measured",
+                "17.43"
+              ],
+              [
+                "weather_danger",
+                "10.6",
+                "measured",
+                "2.49"
+              ],
+              [
+                "wind",
+                "29.9",
+                "measured",
+                "4.98"
+              ]
+            ],
+            "reasons": [],
+            "as_of": "2026-07-15T12:00:00+00:00",
+            "policy_sha256": "26fd759b9fc3d9cbe1d252730b34111e289d7e67190aaa9497c361fb96de69ff",
+            "input_sha256": "2d627647fade31140f98358558e39f87c6683e32ef8ddea183de3f283fd28800",
+            "receipt_sha256": "86bda1a7c656951f2d91363b399c8b33e129193315600e00db62c364d2a22070"
+          }
+        ],
+        "entity_id": "P003",
+        "status": "scored",
+        "score": "33.3",
+        "band": "moderate",
+        "reasons": [],
+        "provenance": {
+          "fuel_load": "measured",
+          "dead_fuel": "measured",
+          "moisture": "measured",
+          "weather_danger": "measured",
+          "wind": "measured"
+        },
+        "receipt_sha256": "86bda1a7c656951f2d91363b399c8b33e129193315600e00db62c364d2a22070",
+        "policy_sha256": "26fd759b9fc3d9cbe1d252730b34111e289d7e67190aaa9497c361fb96de69ff",
+        "explanation": "Verifier blocked the narration; showing receipt values."
+      },
+      "violations": [
+        {
+          "kind": "score_mismatch",
+          "detail": "claims score 999999; receipt score is 33.3"
+        }
+      ],
+      "referenced_parcels": [
+        "P003"
+      ],
+      "receipt_hashes": {
+        "P003": "86bda1a7c656951f2d91363b399c8b33e129193315600e00db62c364d2a22070"
+      },
+      "policy_sha256": "26fd759b9fc3d9cbe1d252730b34111e289d7e67190aaa9497c361fb96de69ff"
+    }
+  }
+}

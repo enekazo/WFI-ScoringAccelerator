@@ -1,0 +1,2092 @@
+{
+ "meta": {
+  "source": "local",
+  "model": "gpt-6.1-sol",
+  "repeats": 1,
+  "workers": 2,
+  "agent_versions": {
+   "pinned-score-agent": "4",
+   "pinned-score-agent-flat": "3"
+  },
+  "aborted": null,
+  "cost": {
+   "model": "gpt-6.1-sol",
+   "calls": 137,
+   "input_tokens": 622064,
+   "output_tokens": 39392,
+   "usd_estimate": 4.0951,
+   "prices_usd_per_m_tokens": {
+    "input": 5.0,
+    "output": 25.0
+   }
+  }
+ },
+ "parity": {
+  "questions": 20,
+  "truth_equal_local_vs_source": 20
+ },
+ "summary": {
+  "foundry-graph": {
+   "n": 20,
+   "correct": 1.0,
+   "provenance_ok": 1.0,
+   "numbers_pinned": 1.0,
+   "tool_calls_mean": 1.0,
+   "api_errors": 0,
+   "throttled_retries": 0,
+   "usd_estimate": 0.3355,
+   "usd_per_question": 0.01677
+  },
+  "foundry-flat": {
+   "n": 20,
+   "correct": 1.0,
+   "provenance_ok": 0.95,
+   "numbers_pinned": 0.3,
+   "tool_calls_mean": 43.8,
+   "api_errors": 0,
+   "throttled_retries": 0,
+   "usd_estimate": 3.6306,
+   "usd_per_question": 0.18153
+  },
+  "bare-model": {
+   "n": 20,
+   "correct": 0.05,
+   "provenance_ok": 0.0,
+   "numbers_pinned": 0.8,
+   "tool_calls_mean": 0.0,
+   "api_errors": 0,
+   "throttled_retries": 0,
+   "usd_estimate": 0.129,
+   "usd_per_question": 0.00645
+  }
+ },
+ "runs": [
+  {
+   "qid": "deenergise-40",
+   "scenario": "deenergise",
+   "arm": "bare-model",
+   "repeat": 0,
+   "metrics": {
+    "correct": 0.0,
+    "provenance_ok": 0.0,
+    "numbers_pinned": 1.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 0,
+   "unpinned": [],
+   "error": null,
+   "throttled_retries": 0,
+   "answer": {
+    "error": "Cannot determine the feeder: the required scoring tools are unavailable, so no red-flag scores or policy hash could be retrieved for wind 40 km/h.",
+    "policy_sha256": null,
+    "counterfactual": false
+   },
+   "tokens": {
+    "input": 388,
+    "output": 167,
+    "calls": 1,
+    "usd_estimate": 0.00611
+   }
+  },
+  {
+   "qid": "deenergise-50",
+   "scenario": "deenergise",
+   "arm": "bare-model",
+   "repeat": 0,
+   "metrics": {
+    "correct": 0.0,
+    "provenance_ok": 0.0,
+    "numbers_pinned": 1.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 0,
+   "unpinned": [],
+   "error": null,
+   "throttled_retries": 0,
+   "answer": {
+    "error": "Cannot determine which feeder to de-energise: the scoring tools are unavailable, so no red-flag scores or policy hash could be retrieved for wind 50 km/h.",
+    "policy_sha256": null,
+    "counterfactual": false
+   },
+   "tokens": {
+    "input": 388,
+    "output": 150,
+    "calls": 1,
+    "usd_estimate": 0.00569
+   }
+  },
+  {
+   "qid": "deenergise-60",
+   "scenario": "deenergise",
+   "arm": "bare-model",
+   "repeat": 0,
+   "metrics": {
+    "correct": 0.0,
+    "provenance_ok": 0.0,
+    "numbers_pinned": 0.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 0,
+   "unpinned": [
+    "9E+1"
+   ],
+   "error": null,
+   "throttled_retries": 0,
+   "answer": {
+    "feeder": null,
+    "customers": null,
+    "critical_facilities": null,
+    "policy_sha256": null,
+    "counterfactual": false,
+    "error": "Scoring tools are unavailable, so I cannot determine which feeder to de-energise first for weather_danger 90 and wind_kmh 60, or retrieve the required policy hash."
+   },
+   "tokens": {
+    "input": 388,
+    "output": 166,
+    "calls": 1,
+    "usd_estimate": 0.00609
+   }
+  },
+  {
+   "qid": "deenergise-70",
+   "scenario": "deenergise",
+   "arm": "bare-model",
+   "repeat": 0,
+   "metrics": {
+    "correct": 0.0,
+    "provenance_ok": 0.0,
+    "numbers_pinned": 1.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 0,
+   "unpinned": [],
+   "error": null,
+   "throttled_retries": 0,
+   "answer": {
+    "error": "Cannot determine which feeder to de-energise: the scoring tools are unavailable, so no red-flag scores or policy hash could be retrieved.",
+    "policy_sha256": null,
+    "counterfactual": false
+   },
+   "tokens": {
+    "input": 388,
+    "output": 185,
+    "calls": 1,
+    "usd_estimate": 0.00656
+   }
+  },
+  {
+   "qid": "deenergise-80",
+   "scenario": "deenergise",
+   "arm": "bare-model",
+   "repeat": 0,
+   "metrics": {
+    "correct": 0.0,
+    "provenance_ok": 0.0,
+    "numbers_pinned": 0.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 0,
+   "unpinned": [
+    "9E+1"
+   ],
+   "error": null,
+   "throttled_retries": 0,
+   "answer": {
+    "policy_sha256": "",
+    "counterfactual": false,
+    "error": "Scoring tools are unavailable, so I cannot rank feeders for weather_danger 90 and wind 80 km/h or retrieve the required policy hash."
+   },
+   "tokens": {
+    "input": 388,
+    "output": 204,
+    "calls": 1,
+    "usd_estimate": 0.00704
+   }
+  },
+  {
+   "qid": "exposure-40",
+   "scenario": "exposure",
+   "arm": "bare-model",
+   "repeat": 0,
+   "metrics": {
+    "correct": 0.0,
+    "provenance_ok": 0.0,
+    "numbers_pinned": 1.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 0,
+   "unpinned": [],
+   "error": null,
+   "throttled_retries": 0,
+   "answer": {
+    "error": "The scoring tools are unavailable, so I cannot identify parcels scoring 40 or more, count exposure across their distinct feeders, or retrieve the policy hash.",
+    "policy_sha256": null,
+    "counterfactual": false
+   },
+   "tokens": {
+    "input": 390,
+    "output": 125,
+    "calls": 1,
+    "usd_estimate": 0.00507
+   }
+  },
+  {
+   "qid": "exposure-50",
+   "scenario": "exposure",
+   "arm": "bare-model",
+   "repeat": 0,
+   "metrics": {
+    "correct": 0.0,
+    "provenance_ok": 0.0,
+    "numbers_pinned": 1.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 0,
+   "unpinned": [],
+   "error": null,
+   "throttled_retries": 0,
+   "answer": {
+    "error": "Cannot determine exposure because no scoring tool is available to retrieve baseline parcel scores, feeder counts, or the policy hash.",
+    "policy_sha256": null,
+    "counterfactual": false
+   },
+   "tokens": {
+    "input": 390,
+    "output": 118,
+    "calls": 1,
+    "usd_estimate": 0.0049
+   }
+  },
+  {
+   "qid": "exposure-55",
+   "scenario": "exposure",
+   "arm": "bare-model",
+   "repeat": 0,
+   "metrics": {
+    "correct": 0.0,
+    "provenance_ok": 0.0,
+    "numbers_pinned": 1.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 0,
+   "unpinned": [],
+   "error": null,
+   "throttled_retries": 0,
+   "answer": {
+    "error": "Cannot determine exposure: the scoring tools and baseline policy hash are unavailable.",
+    "policy_sha256": null,
+    "counterfactual": false
+   },
+   "tokens": {
+    "input": 390,
+    "output": 150,
+    "calls": 1,
+    "usd_estimate": 0.0057
+   }
+  },
+  {
+   "qid": "exposure-60",
+   "scenario": "exposure",
+   "arm": "bare-model",
+   "repeat": 0,
+   "metrics": {
+    "correct": 0.0,
+    "provenance_ok": 0.0,
+    "numbers_pinned": 1.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 0,
+   "unpinned": [],
+   "error": null,
+   "throttled_retries": 0,
+   "answer": {
+    "error": "Cannot determine exposure: the required scoring and feeder tools are unavailable. No parcel scores, exposure counts, or policy hash were retrieved.",
+    "policy_sha256": null,
+    "counterfactual": false
+   },
+   "tokens": {
+    "input": 390,
+    "output": 120,
+    "calls": 1,
+    "usd_estimate": 0.00495
+   }
+  },
+  {
+   "qid": "exposure-70",
+   "scenario": "exposure",
+   "arm": "bare-model",
+   "repeat": 0,
+   "metrics": {
+    "correct": 0.0,
+    "provenance_ok": 0.0,
+    "numbers_pinned": 1.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 0,
+   "unpinned": [],
+   "error": null,
+   "throttled_retries": 0,
+   "answer": {
+    "error": "Cannot determine exposure: the scoring and feeder tools are unavailable. No parcel scores, feeder counts, or policy hash were retrieved.",
+    "policy_sha256": null,
+    "counterfactual": false
+   },
+   "tokens": {
+    "input": 390,
+    "output": 126,
+    "calls": 1,
+    "usd_estimate": 0.0051
+   }
+  },
+  {
+   "qid": "mitigation-18000",
+   "scenario": "mitigation",
+   "arm": "bare-model",
+   "repeat": 0,
+   "metrics": {
+    "correct": 0.0,
+    "provenance_ok": 0.0,
+    "numbers_pinned": 1.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 0,
+   "unpinned": [],
+   "error": null,
+   "throttled_retries": 0,
+   "answer": {
+    "parcel": null,
+    "mitigation": null,
+    "risk_reduction_per_1000usd": null,
+    "policy_sha256": "",
+    "counterfactual": false,
+    "error": "The required scoring tools are unavailable, so I cannot identify the best mitigation costing at most $18000 or retrieve its policy hash."
+   },
+   "tokens": {
+    "input": 389,
+    "output": 205,
+    "calls": 1,
+    "usd_estimate": 0.00707
+   }
+  },
+  {
+   "qid": "mitigation-5000",
+   "scenario": "mitigation",
+   "arm": "bare-model",
+   "repeat": 0,
+   "metrics": {
+    "correct": 1.0,
+    "provenance_ok": 0.0,
+    "numbers_pinned": 1.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 0,
+   "unpinned": [],
+   "error": null,
+   "throttled_retries": 0,
+   "answer": {
+    "parcel": null,
+    "mitigation": null,
+    "risk_reduction_per_1000usd": null,
+    "policy_sha256": "",
+    "counterfactual": false
+   },
+   "tokens": {
+    "input": 389,
+    "output": 126,
+    "calls": 1,
+    "usd_estimate": 0.00509
+   }
+  },
+  {
+   "qid": "mitigation-6000",
+   "scenario": "mitigation",
+   "arm": "bare-model",
+   "repeat": 0,
+   "metrics": {
+    "correct": 0.0,
+    "provenance_ok": 0.0,
+    "numbers_pinned": 1.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 0,
+   "unpinned": [],
+   "error": null,
+   "throttled_retries": 0,
+   "answer": {
+    "parcel": null,
+    "mitigation": null,
+    "risk_reduction_per_1000usd": null,
+    "policy_sha256": "",
+    "counterfactual": false,
+    "error": "The required scoring tools are unavailable, so I cannot identify the best mitigation costing at most $6000 or retrieve its policy hash."
+   },
+   "tokens": {
+    "input": 389,
+    "output": 209,
+    "calls": 1,
+    "usd_estimate": 0.00717
+   }
+  },
+  {
+   "qid": "mitigation-9000",
+   "scenario": "mitigation",
+   "arm": "bare-model",
+   "repeat": 0,
+   "metrics": {
+    "correct": 0.0,
+    "provenance_ok": 0.0,
+    "numbers_pinned": 1.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 0,
+   "unpinned": [],
+   "error": null,
+   "throttled_retries": 0,
+   "answer": {
+    "parcel": null,
+    "mitigation": null,
+    "risk_reduction_per_1000usd": null,
+    "policy_sha256": "",
+    "counterfactual": false,
+    "error": "Scoring tools are unavailable, so I cannot identify the best mitigation costing at most $9000 or retrieve its policy hash."
+   },
+   "tokens": {
+    "input": 389,
+    "output": 261,
+    "calls": 1,
+    "usd_estimate": 0.00847
+   }
+  },
+  {
+   "qid": "mitigation-None",
+   "scenario": "mitigation",
+   "arm": "bare-model",
+   "repeat": 0,
+   "metrics": {
+    "correct": 0.0,
+    "provenance_ok": 0.0,
+    "numbers_pinned": 1.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 0,
+   "unpinned": [],
+   "error": null,
+   "throttled_retries": 0,
+   "answer": {
+    "parcel": null,
+    "mitigation": null,
+    "risk_reduction_per_1000usd": null,
+    "policy_sha256": "",
+    "counterfactual": false,
+    "error": "Scoring tools are unavailable, so I cannot determine the best mitigation or retrieve its policy hash."
+   },
+   "tokens": {
+    "input": 383,
+    "output": 198,
+    "calls": 1,
+    "usd_estimate": 0.00686
+   }
+  },
+  {
+   "qid": "sensitivity-dead_fuel:up",
+   "scenario": "sensitivity",
+   "arm": "bare-model",
+   "repeat": 0,
+   "metrics": {
+    "correct": 0.0,
+    "provenance_ok": 0.0,
+    "numbers_pinned": 1.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 0,
+   "unpinned": [],
+   "error": null,
+   "throttled_retries": 0,
+   "answer": {
+    "error": "Cannot determine sensitivity because the scoring tools are unavailable. No scores or policy hash were retrieved.",
+    "policy_sha256": "",
+    "counterfactual": false
+   },
+   "tokens": {
+    "input": 405,
+    "output": 178,
+    "calls": 1,
+    "usd_estimate": 0.00647
+   }
+  },
+  {
+   "qid": "sensitivity-fuel_load:up",
+   "scenario": "sensitivity",
+   "arm": "bare-model",
+   "repeat": 0,
+   "metrics": {
+    "correct": 0.0,
+    "provenance_ok": 0.0,
+    "numbers_pinned": 1.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 0,
+   "unpinned": [],
+   "error": null,
+   "throttled_retries": 0,
+   "answer": {
+    "feeder_decision_changes": null,
+    "feeder_variant": null,
+    "policy_sha256": null,
+    "counterfactual": false,
+    "error": "Cannot determine: scoring tools are unavailable, so neither the baseline decision nor the fuel_load:up 20% variant could be evaluated."
+   },
+   "tokens": {
+    "input": 404,
+    "output": 213,
+    "calls": 1,
+    "usd_estimate": 0.00734
+   }
+  },
+  {
+   "qid": "sensitivity-moisture:down",
+   "scenario": "sensitivity",
+   "arm": "bare-model",
+   "repeat": 0,
+   "metrics": {
+    "correct": 0.0,
+    "provenance_ok": 0.0,
+    "numbers_pinned": 1.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 0,
+   "unpinned": [],
+   "error": null,
+   "throttled_retries": 0,
+   "answer": {
+    "feeder_decision_changes": null,
+    "feeder_variant": null,
+    "policy_sha256": null,
+    "counterfactual": null,
+    "error": "Scoring tools are unavailable, so I cannot re-score the red-flag scenario at wind 60 km/h with the moisture weight reduced by 20%, determine whether the first feeder changes, or retrieve the policy hash."
+   },
+   "tokens": {
+    "input": 405,
+    "output": 286,
+    "calls": 1,
+    "usd_estimate": 0.00918
+   }
+  },
+  {
+   "qid": "sensitivity-weather_danger:down",
+   "scenario": "sensitivity",
+   "arm": "bare-model",
+   "repeat": 0,
+   "metrics": {
+    "correct": 0.0,
+    "provenance_ok": 0.0,
+    "numbers_pinned": 0.0,
+    "parse_failure": 1.0
+   },
+   "tool_calls": 0,
+   "unpinned": [],
+   "error": null,
+   "throttled_retries": 0,
+   "answer": null,
+   "tokens": {
+    "input": 405,
+    "output": 200,
+    "calls": 1,
+    "usd_estimate": 0.00702
+   }
+  },
+  {
+   "qid": "sensitivity-wind:up",
+   "scenario": "sensitivity",
+   "arm": "bare-model",
+   "repeat": 0,
+   "metrics": {
+    "correct": 0.0,
+    "provenance_ok": 0.0,
+    "numbers_pinned": 0.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 0,
+   "unpinned": [
+    "9E+1"
+   ],
+   "error": null,
+   "throttled_retries": 0,
+   "answer": {
+    "feeder_decision_changes": null,
+    "feeder_variant": null,
+    "policy_sha256": null,
+    "counterfactual": false,
+    "error": "Cannot determine: scoring tools are unavailable, so neither the baseline ranking nor the wind:up (20%) sensitivity variant could be evaluated at weather_danger 90 and wind_kmh 60."
+   },
+   "tokens": {
+    "input": 403,
+    "output": 203,
+    "calls": 1,
+    "usd_estimate": 0.00709
+   }
+  },
+  {
+   "qid": "deenergise-40",
+   "scenario": "deenergise",
+   "arm": "foundry-flat",
+   "repeat": 0,
+   "metrics": {
+    "correct": 1.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 0.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 53,
+   "unpinned": [
+    "1",
+    "5.4E+2"
+   ],
+   "error": null,
+   "throttled_retries": 0,
+   "answer": {
+    "feeder": "F12",
+    "customers": 540,
+    "critical_facilities": 1,
+    "policy_sha256": "26fd759b9fc3d9cbe1d252730b34111e289d7e67190aaa9497c361fb96de69ff",
+    "counterfactual": true
+   },
+   "tokens": {
+    "input": 28202,
+    "output": 1897,
+    "calls": 4,
+    "usd_estimate": 0.18843
+   }
+  },
+  {
+   "qid": "deenergise-50",
+   "scenario": "deenergise",
+   "arm": "foundry-flat",
+   "repeat": 0,
+   "metrics": {
+    "correct": 1.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 0.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 53,
+   "unpinned": [
+    "1",
+    "5.4E+2"
+   ],
+   "error": null,
+   "throttled_retries": 0,
+   "answer": {
+    "feeder": "F12",
+    "customers": 540,
+    "critical_facilities": 1,
+    "policy_sha256": "26fd759b9fc3d9cbe1d252730b34111e289d7e67190aaa9497c361fb96de69ff",
+    "counterfactual": true
+   },
+   "tokens": {
+    "input": 28314,
+    "output": 1923,
+    "calls": 4,
+    "usd_estimate": 0.18965
+   }
+  },
+  {
+   "qid": "deenergise-60",
+   "scenario": "deenergise",
+   "arm": "foundry-flat",
+   "repeat": 0,
+   "metrics": {
+    "correct": 1.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 0.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 28,
+   "unpinned": [
+    "0",
+    "469"
+   ],
+   "error": null,
+   "throttled_retries": 0,
+   "answer": {
+    "feeder": "F01",
+    "customers": 469,
+    "critical_facilities": 0,
+    "policy_sha256": "26fd759b9fc3d9cbe1d252730b34111e289d7e67190aaa9497c361fb96de69ff",
+    "counterfactual": true
+   },
+   "tokens": {
+    "input": 16244,
+    "output": 1011,
+    "calls": 3,
+    "usd_estimate": 0.1065
+   }
+  },
+  {
+   "qid": "deenergise-70",
+   "scenario": "deenergise",
+   "arm": "foundry-flat",
+   "repeat": 0,
+   "metrics": {
+    "correct": 1.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 0.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 53,
+   "unpinned": [
+    "0",
+    "469"
+   ],
+   "error": null,
+   "throttled_retries": 0,
+   "answer": {
+    "feeder": "F01",
+    "customers": 469,
+    "critical_facilities": 0,
+    "policy_sha256": "26fd759b9fc3d9cbe1d252730b34111e289d7e67190aaa9497c361fb96de69ff",
+    "counterfactual": true
+   },
+   "tokens": {
+    "input": 18970,
+    "output": 1847,
+    "calls": 3,
+    "usd_estimate": 0.14103
+   }
+  },
+  {
+   "qid": "deenergise-80",
+   "scenario": "deenergise",
+   "arm": "foundry-flat",
+   "repeat": 0,
+   "metrics": {
+    "correct": 1.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 0.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 53,
+   "unpinned": [
+    "0",
+    "469"
+   ],
+   "error": null,
+   "throttled_retries": 0,
+   "answer": {
+    "feeder": "F01",
+    "customers": 469,
+    "critical_facilities": 0,
+    "policy_sha256": "26fd759b9fc3d9cbe1d252730b34111e289d7e67190aaa9497c361fb96de69ff",
+    "counterfactual": true
+   },
+   "tokens": {
+    "input": 28208,
+    "output": 1877,
+    "calls": 4,
+    "usd_estimate": 0.18796
+   }
+  },
+  {
+   "qid": "exposure-40",
+   "scenario": "exposure",
+   "arm": "foundry-flat",
+   "repeat": 0,
+   "metrics": {
+    "correct": 1.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 0.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 3,
+   "unpinned": [
+    "13886",
+    "1E+1"
+   ],
+   "error": null,
+   "throttled_retries": 0,
+   "answer": {
+    "parcels": [
+     "P005",
+     "P007",
+     "P008",
+     "P009",
+     "P010",
+     "P011",
+     "P012",
+     "P014",
+     "P015",
+     "P016",
+     "P018",
+     "P021",
+     "P022",
+     "P023",
+     "P030",
+     "P035",
+     "P036",
+     "P039",
+     "P042"
+    ],
+    "customers": 13886,
+    "critical_facilities": 10,
+    "policy_sha256": "26fd759b9fc3d9cbe1d252730b34111e289d7e67190aaa9497c361fb96de69ff",
+    "counterfactual": false
+   },
+   "tokens": {
+    "input": 7128,
+    "output": 423,
+    "calls": 2,
+    "usd_estimate": 0.04621
+   }
+  },
+  {
+   "qid": "exposure-50",
+   "scenario": "exposure",
+   "arm": "foundry-flat",
+   "repeat": 0,
+   "metrics": {
+    "correct": 1.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 0.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 3,
+   "unpinned": [
+    "1.191E+4",
+    "8"
+   ],
+   "error": null,
+   "throttled_retries": 0,
+   "answer": {
+    "parcels": [
+     "P007",
+     "P008",
+     "P010",
+     "P012",
+     "P014",
+     "P015",
+     "P016",
+     "P018",
+     "P021",
+     "P022",
+     "P023",
+     "P030",
+     "P035",
+     "P036",
+     "P042"
+    ],
+    "customers": 11910,
+    "critical_facilities": 8,
+    "policy_sha256": "26fd759b9fc3d9cbe1d252730b34111e289d7e67190aaa9497c361fb96de69ff",
+    "counterfactual": false
+   },
+   "tokens": {
+    "input": 7128,
+    "output": 317,
+    "calls": 2,
+    "usd_estimate": 0.04356
+   }
+  },
+  {
+   "qid": "exposure-55",
+   "scenario": "exposure",
+   "arm": "foundry-flat",
+   "repeat": 0,
+   "metrics": {
+    "correct": 1.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 0.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 3,
+   "unpinned": [
+    "7",
+    "9948"
+   ],
+   "error": null,
+   "throttled_retries": 0,
+   "answer": {
+    "parcels": [
+     "P007",
+     "P008",
+     "P014",
+     "P015",
+     "P018",
+     "P023",
+     "P030",
+     "P035",
+     "P036",
+     "P042"
+    ],
+    "customers": 9948,
+    "critical_facilities": 7,
+    "policy_sha256": "26fd759b9fc3d9cbe1d252730b34111e289d7e67190aaa9497c361fb96de69ff",
+    "counterfactual": false
+   },
+   "tokens": {
+    "input": 9490,
+    "output": 279,
+    "calls": 3,
+    "usd_estimate": 0.05443
+   }
+  },
+  {
+   "qid": "exposure-60",
+   "scenario": "exposure",
+   "arm": "foundry-flat",
+   "repeat": 0,
+   "metrics": {
+    "correct": 1.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 0.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 3,
+   "unpinned": [
+    "5",
+    "6733"
+   ],
+   "error": null,
+   "throttled_retries": 0,
+   "answer": {
+    "parcels": [
+     "P014",
+     "P015",
+     "P018",
+     "P030",
+     "P035",
+     "P036",
+     "P042"
+    ],
+    "customers": 6733,
+    "critical_facilities": 5,
+    "policy_sha256": "26fd759b9fc3d9cbe1d252730b34111e289d7e67190aaa9497c361fb96de69ff",
+    "counterfactual": false
+   },
+   "tokens": {
+    "input": 7128,
+    "output": 264,
+    "calls": 2,
+    "usd_estimate": 0.04224
+   }
+  },
+  {
+   "qid": "exposure-70",
+   "scenario": "exposure",
+   "arm": "foundry-flat",
+   "repeat": 0,
+   "metrics": {
+    "correct": 1.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 0.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 4,
+   "unpinned": [
+    "1",
+    "2169"
+   ],
+   "error": null,
+   "throttled_retries": 0,
+   "answer": {
+    "parcels": [
+     "P042"
+    ],
+    "customers": 2169,
+    "critical_facilities": 1,
+    "policy_sha256": "26fd759b9fc3d9cbe1d252730b34111e289d7e67190aaa9497c361fb96de69ff",
+    "counterfactual": false
+   },
+   "tokens": {
+    "input": 12345,
+    "output": 224,
+    "calls": 3,
+    "usd_estimate": 0.06732
+   }
+  },
+  {
+   "qid": "mitigation-18000",
+   "scenario": "mitigation",
+   "arm": "foundry-flat",
+   "repeat": 0,
+   "metrics": {
+    "correct": 1.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 0.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 80,
+   "unpinned": [
+    "3662.2666666667"
+   ],
+   "error": null,
+   "throttled_retries": 0,
+   "answer": {
+    "parcel": "P013",
+    "mitigation": "moisture_mulch",
+    "risk_reduction_per_1000usd": "3662.2666666667",
+    "policy_sha256": "26fd759b9fc3d9cbe1d252730b34111e289d7e67190aaa9497c361fb96de69ff",
+    "counterfactual": true,
+    "provenance": "P013 baseline receipt: all five inputs measured; receipt_sha256 21b4025a8794293a69fa0c1a65a3a14fd7c8a9ebbd99ad80a3f0cfef9919ae36. Mitigated score supplied by the what-if scorer; exposure and cost from tool tables."
+   },
+   "tokens": {
+    "input": 59593,
+    "output": 2982,
+    "calls": 6,
+    "usd_estimate": 0.37251
+   }
+  },
+  {
+   "qid": "mitigation-5000",
+   "scenario": "mitigation",
+   "arm": "foundry-flat",
+   "repeat": 0,
+   "metrics": {
+    "correct": 1.0,
+    "provenance_ok": 0.0,
+    "numbers_pinned": 1.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 4,
+   "unpinned": [],
+   "error": null,
+   "throttled_retries": 0,
+   "answer": {
+    "parcel": null,
+    "mitigation": null,
+    "risk_reduction_per_1000usd": null,
+    "policy_sha256": "26fd759b9fc3d9cbe1d252730b34111e289d7e67190aaa9497c361fb96de69ff",
+    "counterfactual": false
+   },
+   "tokens": {
+    "input": 7262,
+    "output": 152,
+    "calls": 2,
+    "usd_estimate": 0.04011
+   }
+  },
+  {
+   "qid": "mitigation-6000",
+   "scenario": "mitigation",
+   "arm": "foundry-flat",
+   "repeat": 0,
+   "metrics": {
+    "correct": 1.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 0.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 30,
+   "unpinned": [
+    "3246.1"
+   ],
+   "error": null,
+   "throttled_retries": 0,
+   "answer": {
+    "parcel": "P013",
+    "mitigation": "targeted_grazing",
+    "risk_reduction_per_1000usd": "3246.1",
+    "policy_sha256": "26fd759b9fc3d9cbe1d252730b34111e289d7e67190aaa9497c361fb96de69ff",
+    "counterfactual": true,
+    "provenance": "P013 pinned receipt: dead_fuel 85.8, measured. Counterfactual score from what_if using the mitigation catalogue factor 0.7; cost $6000. Exposure from assets and customer_groups tables, counting distinct feeders."
+   },
+   "tokens": {
+    "input": 26286,
+    "output": 1294,
+    "calls": 4,
+    "usd_estimate": 0.16378
+   }
+  },
+  {
+   "qid": "mitigation-9000",
+   "scenario": "mitigation",
+   "arm": "foundry-flat",
+   "repeat": 0,
+   "metrics": {
+    "correct": 1.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 0.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 55,
+   "unpinned": [
+    "3662.2666666667"
+   ],
+   "error": null,
+   "throttled_retries": 0,
+   "answer": {
+    "parcel": "P013",
+    "mitigation": "moisture_mulch",
+    "risk_reduction_per_1000usd": "3662.2666666667",
+    "policy_sha256": "26fd759b9fc3d9cbe1d252730b34111e289d7e67190aaa9497c361fb96de69ff",
+    "counterfactual": true,
+    "provenance": "P013 receipt 21b4025a8794293a69fa0c1a65a3a14fd7c8a9ebbd99ad80a3f0cfef9919ae36: all baseline scoring inputs measured; mitigation outcome re-scored by the what-if tool."
+   },
+   "tokens": {
+    "input": 41504,
+    "output": 2173,
+    "calls": 5,
+    "usd_estimate": 0.26184
+   }
+  },
+  {
+   "qid": "mitigation-None",
+   "scenario": "mitigation",
+   "arm": "foundry-flat",
+   "repeat": 0,
+   "metrics": {
+    "correct": 1.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 0.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 80,
+   "unpinned": [
+    "3662"
+   ],
+   "error": null,
+   "throttled_retries": 0,
+   "answer": {
+    "parcel": "P013",
+    "mitigation": "moisture_mulch",
+    "risk_reduction_per_1000usd": "3662.2666666666666667",
+    "policy_sha256": "26fd759b9fc3d9cbe1d252730b34111e289d7e67190aaa9497c361fb96de69ff",
+    "counterfactual": true,
+    "provenance": "P013 baseline receipt: all scoring inputs measured; receipt_sha256 21b4025a8794293a69fa0c1a65a3a14fd7c8a9ebbd99ad80a3f0cfef9919ae36. Mitigation result is a simulated what-if from the scorer; exposure and cost come from tool tables."
+   },
+   "tokens": {
+    "input": 48389,
+    "output": 2891,
+    "calls": 5,
+    "usd_estimate": 0.31422
+   }
+  },
+  {
+   "qid": "sensitivity-dead_fuel:up",
+   "scenario": "sensitivity",
+   "arm": "foundry-flat",
+   "repeat": 0,
+   "metrics": {
+    "correct": 1.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 1.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 79,
+   "unpinned": [],
+   "error": null,
+   "throttled_retries": 0,
+   "answer": {
+    "feeder_decision_changes": false,
+    "feeder_variant": "F01",
+    "policy_sha256": "99f2ebb6700149a423d7d219bee459e658dcddc8b00b07e89b3a8879fa8b90e8",
+    "counterfactual": true
+   },
+   "tokens": {
+    "input": 44655,
+    "output": 3011,
+    "calls": 5,
+    "usd_estimate": 0.29855
+   }
+  },
+  {
+   "qid": "sensitivity-fuel_load:up",
+   "scenario": "sensitivity",
+   "arm": "foundry-flat",
+   "repeat": 0,
+   "metrics": {
+    "correct": 1.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 1.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 80,
+   "unpinned": [],
+   "error": null,
+   "throttled_retries": 0,
+   "answer": {
+    "feeder_decision_changes": true,
+    "feeder_variant": "F12",
+    "policy_sha256": "d235ea5629a106ffda2cfd32710e40d91aba1b5b2fb6d6a053e7f8a713845e3a",
+    "counterfactual": true
+   },
+   "tokens": {
+    "input": 51485,
+    "output": 2903,
+    "calls": 6,
+    "usd_estimate": 0.33
+   }
+  },
+  {
+   "qid": "sensitivity-moisture:down",
+   "scenario": "sensitivity",
+   "arm": "foundry-flat",
+   "repeat": 0,
+   "metrics": {
+    "correct": 1.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 1.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 79,
+   "unpinned": [],
+   "error": null,
+   "throttled_retries": 0,
+   "answer": {
+    "feeder_decision_changes": true,
+    "feeder_variant": "F12",
+    "policy_sha256": "68216f691b9a675c47697cb0eed30483d01a4b87c938d89a6f98b3d25344d5ac",
+    "counterfactual": true
+   },
+   "tokens": {
+    "input": 51796,
+    "output": 3269,
+    "calls": 6,
+    "usd_estimate": 0.3407
+   }
+  },
+  {
+   "qid": "sensitivity-weather_danger:down",
+   "scenario": "sensitivity",
+   "arm": "foundry-flat",
+   "repeat": 0,
+   "metrics": {
+    "correct": 1.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 1.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 79,
+   "unpinned": [],
+   "error": null,
+   "throttled_retries": 0,
+   "answer": {
+    "feeder_decision_changes": true,
+    "feeder_variant": "F12",
+    "policy_sha256": "3f3390fe5bdfdb58263fd87279ddc304696e89d45238e2d614e2e87f546baf14",
+    "counterfactual": true
+   },
+   "tokens": {
+    "input": 34608,
+    "output": 2847,
+    "calls": 4,
+    "usd_estimate": 0.24421
+   }
+  },
+  {
+   "qid": "sensitivity-wind:up",
+   "scenario": "sensitivity",
+   "arm": "foundry-flat",
+   "repeat": 0,
+   "metrics": {
+    "correct": 1.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 1.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 54,
+   "unpinned": [],
+   "error": null,
+   "throttled_retries": 0,
+   "answer": {
+    "feeder_decision_changes": false,
+    "feeder_variant": "F01",
+    "policy_sha256": "9240d9401f556fa23329b5dfa48802e43f996d5ed5701be127c99f3e5b5727d7",
+    "counterfactual": true
+   },
+   "tokens": {
+    "input": 28877,
+    "output": 2118,
+    "calls": 4,
+    "usd_estimate": 0.19734
+   }
+  },
+  {
+   "qid": "deenergise-40",
+   "scenario": "deenergise",
+   "arm": "foundry-graph",
+   "repeat": 0,
+   "metrics": {
+    "correct": 1.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 1.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 1,
+   "unpinned": [],
+   "error": null,
+   "throttled_retries": 0,
+   "answer": {
+    "feeder": "F12",
+    "customers": 540,
+    "critical_facilities": 1,
+    "policy_sha256": "26fd759b9fc3d9cbe1d252730b34111e289d7e67190aaa9497c361fb96de69ff",
+    "counterfactual": true,
+    "needs_human_signoff": true
+   },
+   "tokens": {
+    "input": 2764,
+    "output": 97,
+    "calls": 2,
+    "usd_estimate": 0.01624
+   }
+  },
+  {
+   "qid": "deenergise-50",
+   "scenario": "deenergise",
+   "arm": "foundry-graph",
+   "repeat": 0,
+   "metrics": {
+    "correct": 1.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 1.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 1,
+   "unpinned": [],
+   "error": null,
+   "throttled_retries": 0,
+   "answer": {
+    "feeder": "F12",
+    "customers": 540,
+    "critical_facilities": 1,
+    "policy_sha256": "26fd759b9fc3d9cbe1d252730b34111e289d7e67190aaa9497c361fb96de69ff",
+    "counterfactual": true,
+    "needs_human_signoff": true,
+    "note": "Human sign-off is required before de-energising F12."
+   },
+   "tokens": {
+    "input": 2764,
+    "output": 113,
+    "calls": 2,
+    "usd_estimate": 0.01665
+   }
+  },
+  {
+   "qid": "deenergise-60",
+   "scenario": "deenergise",
+   "arm": "foundry-graph",
+   "repeat": 0,
+   "metrics": {
+    "correct": 1.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 1.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 1,
+   "unpinned": [],
+   "error": null,
+   "throttled_retries": 0,
+   "answer": {
+    "feeder": "F01",
+    "customers": 469,
+    "critical_facilities": 0,
+    "policy_sha256": "26fd759b9fc3d9cbe1d252730b34111e289d7e67190aaa9497c361fb96de69ff",
+    "counterfactual": true
+   },
+   "tokens": {
+    "input": 2768,
+    "output": 89,
+    "calls": 2,
+    "usd_estimate": 0.01606
+   }
+  },
+  {
+   "qid": "deenergise-70",
+   "scenario": "deenergise",
+   "arm": "foundry-graph",
+   "repeat": 0,
+   "metrics": {
+    "correct": 1.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 1.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 1,
+   "unpinned": [],
+   "error": null,
+   "throttled_retries": 0,
+   "answer": {
+    "feeder": "F01",
+    "customers": 469,
+    "critical_facilities": 0,
+    "policy_sha256": "26fd759b9fc3d9cbe1d252730b34111e289d7e67190aaa9497c361fb96de69ff",
+    "counterfactual": true
+   },
+   "tokens": {
+    "input": 2768,
+    "output": 89,
+    "calls": 2,
+    "usd_estimate": 0.01606
+   }
+  },
+  {
+   "qid": "deenergise-80",
+   "scenario": "deenergise",
+   "arm": "foundry-graph",
+   "repeat": 0,
+   "metrics": {
+    "correct": 1.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 1.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 1,
+   "unpinned": [],
+   "error": null,
+   "throttled_retries": 0,
+   "answer": {
+    "feeder": "F01",
+    "customers": 469,
+    "critical_facilities": 0,
+    "policy_sha256": "26fd759b9fc3d9cbe1d252730b34111e289d7e67190aaa9497c361fb96de69ff",
+    "counterfactual": true
+   },
+   "tokens": {
+    "input": 2768,
+    "output": 89,
+    "calls": 2,
+    "usd_estimate": 0.01606
+   }
+  },
+  {
+   "qid": "exposure-40",
+   "scenario": "exposure",
+   "arm": "foundry-graph",
+   "repeat": 0,
+   "metrics": {
+    "correct": 1.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 1.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 1,
+   "unpinned": [],
+   "error": null,
+   "throttled_retries": 0,
+   "answer": {
+    "parcels": [
+     "P005",
+     "P007",
+     "P008",
+     "P009",
+     "P010",
+     "P011",
+     "P012",
+     "P014",
+     "P015",
+     "P016",
+     "P018",
+     "P021",
+     "P022",
+     "P023",
+     "P030",
+     "P035",
+     "P036",
+     "P039",
+     "P042"
+    ],
+    "customers": 13886,
+    "critical_facilities": 10,
+    "policy_sha256": "26fd759b9fc3d9cbe1d252730b34111e289d7e67190aaa9497c361fb96de69ff",
+    "counterfactual": false
+   },
+   "tokens": {
+    "input": 3685,
+    "output": 146,
+    "calls": 2,
+    "usd_estimate": 0.02208
+   }
+  },
+  {
+   "qid": "exposure-50",
+   "scenario": "exposure",
+   "arm": "foundry-graph",
+   "repeat": 0,
+   "metrics": {
+    "correct": 1.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 1.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 1,
+   "unpinned": [],
+   "error": null,
+   "throttled_retries": 0,
+   "answer": {
+    "parcels": [
+     "P007",
+     "P008",
+     "P010",
+     "P012",
+     "P014",
+     "P015",
+     "P016",
+     "P018",
+     "P021",
+     "P022",
+     "P023",
+     "P030",
+     "P035",
+     "P036",
+     "P042"
+    ],
+    "customers": 11910,
+    "critical_facilities": 8,
+    "policy_sha256": "26fd759b9fc3d9cbe1d252730b34111e289d7e67190aaa9497c361fb96de69ff",
+    "counterfactual": false
+   },
+   "tokens": {
+    "input": 3454,
+    "output": 134,
+    "calls": 2,
+    "usd_estimate": 0.02062
+   }
+  },
+  {
+   "qid": "exposure-55",
+   "scenario": "exposure",
+   "arm": "foundry-graph",
+   "repeat": 0,
+   "metrics": {
+    "correct": 1.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 1.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 1,
+   "unpinned": [],
+   "error": null,
+   "throttled_retries": 0,
+   "answer": {
+    "parcels": [
+     "P007",
+     "P008",
+     "P014",
+     "P015",
+     "P018",
+     "P023",
+     "P030",
+     "P035",
+     "P036",
+     "P042"
+    ],
+    "customers": 9948,
+    "critical_facilities": 7,
+    "policy_sha256": "26fd759b9fc3d9cbe1d252730b34111e289d7e67190aaa9497c361fb96de69ff",
+    "counterfactual": false
+   },
+   "tokens": {
+    "input": 3178,
+    "output": 119,
+    "calls": 2,
+    "usd_estimate": 0.01886
+   }
+  },
+  {
+   "qid": "exposure-60",
+   "scenario": "exposure",
+   "arm": "foundry-graph",
+   "repeat": 0,
+   "metrics": {
+    "correct": 1.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 1.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 1,
+   "unpinned": [],
+   "error": null,
+   "throttled_retries": 0,
+   "answer": {
+    "parcels": [
+     "P014",
+     "P015",
+     "P018",
+     "P030",
+     "P035",
+     "P036",
+     "P042"
+    ],
+    "customers": 6733,
+    "critical_facilities": 5,
+    "policy_sha256": "26fd759b9fc3d9cbe1d252730b34111e289d7e67190aaa9497c361fb96de69ff",
+    "counterfactual": false
+   },
+   "tokens": {
+    "input": 3006,
+    "output": 110,
+    "calls": 2,
+    "usd_estimate": 0.01778
+   }
+  },
+  {
+   "qid": "exposure-70",
+   "scenario": "exposure",
+   "arm": "foundry-graph",
+   "repeat": 0,
+   "metrics": {
+    "correct": 1.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 1.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 1,
+   "unpinned": [],
+   "error": null,
+   "throttled_retries": 0,
+   "answer": {
+    "parcels": [
+     "P042"
+    ],
+    "customers": 2169,
+    "critical_facilities": 1,
+    "policy_sha256": "26fd759b9fc3d9cbe1d252730b34111e289d7e67190aaa9497c361fb96de69ff",
+    "counterfactual": false
+   },
+   "tokens": {
+    "input": 2660,
+    "output": 92,
+    "calls": 2,
+    "usd_estimate": 0.0156
+   }
+  },
+  {
+   "qid": "mitigation-18000",
+   "scenario": "mitigation",
+   "arm": "foundry-graph",
+   "repeat": 0,
+   "metrics": {
+    "correct": 1.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 1.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 1,
+   "unpinned": [],
+   "error": null,
+   "throttled_retries": 0,
+   "answer": {
+    "parcel": "P013",
+    "mitigation": "moisture_mulch",
+    "risk_reduction_per_1000usd": "3662.27",
+    "policy_sha256": "26fd759b9fc3d9cbe1d252730b34111e289d7e67190aaa9497c361fb96de69ff",
+    "counterfactual": true
+   },
+   "tokens": {
+    "input": 2795,
+    "output": 102,
+    "calls": 2,
+    "usd_estimate": 0.01653
+   }
+  },
+  {
+   "qid": "mitigation-5000",
+   "scenario": "mitigation",
+   "arm": "foundry-graph",
+   "repeat": 0,
+   "metrics": {
+    "correct": 1.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 1.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 1,
+   "unpinned": [],
+   "error": null,
+   "throttled_retries": 0,
+   "answer": {
+    "parcel": null,
+    "mitigation": null,
+    "risk_reduction_per_1000usd": null,
+    "policy_sha256": "26fd759b9fc3d9cbe1d252730b34111e289d7e67190aaa9497c361fb96de69ff",
+    "counterfactual": true
+   },
+   "tokens": {
+    "input": 2474,
+    "output": 94,
+    "calls": 2,
+    "usd_estimate": 0.01472
+   }
+  },
+  {
+   "qid": "mitigation-6000",
+   "scenario": "mitigation",
+   "arm": "foundry-graph",
+   "repeat": 0,
+   "metrics": {
+    "correct": 1.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 1.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 1,
+   "unpinned": [],
+   "error": null,
+   "throttled_retries": 0,
+   "answer": {
+    "parcel": "P013",
+    "mitigation": "targeted_grazing",
+    "risk_reduction_per_1000usd": "3246.10",
+    "policy_sha256": "26fd759b9fc3d9cbe1d252730b34111e289d7e67190aaa9497c361fb96de69ff",
+    "counterfactual": true
+   },
+   "tokens": {
+    "input": 2796,
+    "output": 102,
+    "calls": 2,
+    "usd_estimate": 0.01653
+   }
+  },
+  {
+   "qid": "mitigation-9000",
+   "scenario": "mitigation",
+   "arm": "foundry-graph",
+   "repeat": 0,
+   "metrics": {
+    "correct": 1.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 1.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 1,
+   "unpinned": [],
+   "error": null,
+   "throttled_retries": 0,
+   "answer": {
+    "parcel": "P013",
+    "mitigation": "moisture_mulch",
+    "risk_reduction_per_1000usd": "3662.27",
+    "policy_sha256": "26fd759b9fc3d9cbe1d252730b34111e289d7e67190aaa9497c361fb96de69ff",
+    "counterfactual": true
+   },
+   "tokens": {
+    "input": 2796,
+    "output": 102,
+    "calls": 2,
+    "usd_estimate": 0.01653
+   }
+  },
+  {
+   "qid": "mitigation-None",
+   "scenario": "mitigation",
+   "arm": "foundry-graph",
+   "repeat": 0,
+   "metrics": {
+    "correct": 1.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 1.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 1,
+   "unpinned": [],
+   "error": null,
+   "throttled_retries": 0,
+   "answer": {
+    "parcel": "P013",
+    "mitigation": "moisture_mulch",
+    "risk_reduction_per_1000usd": "3662.27",
+    "policy_sha256": "26fd759b9fc3d9cbe1d252730b34111e289d7e67190aaa9497c361fb96de69ff",
+    "counterfactual": true
+   },
+   "tokens": {
+    "input": 2780,
+    "output": 101,
+    "calls": 2,
+    "usd_estimate": 0.01642
+   }
+  },
+  {
+   "qid": "sensitivity-dead_fuel:up",
+   "scenario": "sensitivity",
+   "arm": "foundry-graph",
+   "repeat": 0,
+   "metrics": {
+    "correct": 1.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 1.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 1,
+   "unpinned": [],
+   "error": null,
+   "throttled_retries": 0,
+   "answer": {
+    "feeder_decision_changes": false,
+    "feeder_variant": "F01",
+    "policy_sha256": "99f2ebb6700149a423d7d219bee459e658dcddc8b00b07e89b3a8879fa8b90e8",
+    "counterfactual": true
+   },
+   "tokens": {
+    "input": 2632,
+    "output": 105,
+    "calls": 2,
+    "usd_estimate": 0.01579
+   }
+  },
+  {
+   "qid": "sensitivity-fuel_load:up",
+   "scenario": "sensitivity",
+   "arm": "foundry-graph",
+   "repeat": 0,
+   "metrics": {
+    "correct": 1.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 1.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 1,
+   "unpinned": [],
+   "error": null,
+   "throttled_retries": 0,
+   "answer": {
+    "feeder_decision_changes": true,
+    "feeder_variant": "F12",
+    "policy_sha256": "d235ea5629a106ffda2cfd32710e40d91aba1b5b2fb6d6a053e7f8a713845e3a",
+    "counterfactual": true
+   },
+   "tokens": {
+    "input": 2629,
+    "output": 106,
+    "calls": 2,
+    "usd_estimate": 0.0158
+   }
+  },
+  {
+   "qid": "sensitivity-moisture:down",
+   "scenario": "sensitivity",
+   "arm": "foundry-graph",
+   "repeat": 0,
+   "metrics": {
+    "correct": 1.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 1.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 1,
+   "unpinned": [],
+   "error": null,
+   "throttled_retries": 0,
+   "answer": {
+    "feeder_decision_changes": true,
+    "feeder_variant": "F12",
+    "policy_sha256": "68216f691b9a675c47697cb0eed30483d01a4b87c938d89a6f98b3d25344d5ac",
+    "counterfactual": true
+   },
+   "tokens": {
+    "input": 2631,
+    "output": 105,
+    "calls": 2,
+    "usd_estimate": 0.01578
+   }
+  },
+  {
+   "qid": "sensitivity-weather_danger:down",
+   "scenario": "sensitivity",
+   "arm": "foundry-graph",
+   "repeat": 0,
+   "metrics": {
+    "correct": 1.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 1.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 1,
+   "unpinned": [],
+   "error": null,
+   "throttled_retries": 0,
+   "answer": {
+    "feeder_decision_changes": true,
+    "feeder_variant": "F12",
+    "policy_sha256": "3f3390fe5bdfdb58263fd87279ddc304696e89d45238e2d614e2e87f546baf14",
+    "counterfactual": true
+   },
+   "tokens": {
+    "input": 2630,
+    "output": 103,
+    "calls": 2,
+    "usd_estimate": 0.01572
+   }
+  },
+  {
+   "qid": "sensitivity-wind:up",
+   "scenario": "sensitivity",
+   "arm": "foundry-graph",
+   "repeat": 0,
+   "metrics": {
+    "correct": 1.0,
+    "provenance_ok": 1.0,
+    "numbers_pinned": 1.0,
+    "parse_failure": 0.0
+   },
+   "tool_calls": 1,
+   "unpinned": [],
+   "error": null,
+   "throttled_retries": 0,
+   "answer": {
+    "feeder_decision_changes": false,
+    "feeder_variant": "F01",
+    "policy_sha256": "9240d9401f556fa23329b5dfa48802e43f996d5ed5701be127c99f3e5b5727d7",
+    "counterfactual": true
+   },
+   "tokens": {
+    "input": 2623,
+    "output": 102,
+    "calls": 2,
+    "usd_estimate": 0.01566
+   }
+  }
+ ],
+ "receipts_check": {
+  "n": 20,
+  "blocked": 3,
+  "errors": 0,
+  "rows": [
+   {
+    "parcel": "P001",
+    "blocked": false,
+    "violations": [],
+    "tool_calls": 1,
+    "error": null
+   },
+   {
+    "parcel": "P002",
+    "blocked": false,
+    "violations": [],
+    "tool_calls": 1,
+    "error": null
+   },
+   {
+    "parcel": "P003",
+    "blocked": false,
+    "violations": [],
+    "tool_calls": 1,
+    "error": null
+   },
+   {
+    "parcel": "P004",
+    "blocked": true,
+    "violations": [
+     "Violation(kind='provenance_mismatch', detail='claims weather_danger is measured; receipt says generated')"
+    ],
+    "tool_calls": 1,
+    "error": null
+   },
+   {
+    "parcel": "P005",
+    "blocked": true,
+    "violations": [
+     "Violation(kind='provenance_mismatch', detail='claims weather_danger is measured; receipt says generated')"
+    ],
+    "tool_calls": 1,
+    "error": null
+   },
+   {
+    "parcel": "P006",
+    "blocked": true,
+    "violations": [
+     "Violation(kind='provenance_mismatch', detail='claims weather_danger is measured; receipt says generated')"
+    ],
+    "tool_calls": 1,
+    "error": null
+   },
+   {
+    "parcel": "P007",
+    "blocked": false,
+    "violations": [],
+    "tool_calls": 1,
+    "error": null
+   },
+   {
+    "parcel": "P008",
+    "blocked": false,
+    "violations": [],
+    "tool_calls": 1,
+    "error": null
+   },
+   {
+    "parcel": "P009",
+    "blocked": false,
+    "violations": [],
+    "tool_calls": 1,
+    "error": null
+   },
+   {
+    "parcel": "P010",
+    "blocked": false,
+    "violations": [],
+    "tool_calls": 1,
+    "error": null
+   },
+   {
+    "parcel": "P011",
+    "blocked": false,
+    "violations": [],
+    "tool_calls": 1,
+    "error": null
+   },
+   {
+    "parcel": "P012",
+    "blocked": false,
+    "violations": [],
+    "tool_calls": 1,
+    "error": null
+   },
+   {
+    "parcel": "P013",
+    "blocked": false,
+    "violations": [],
+    "tool_calls": 1,
+    "error": null
+   },
+   {
+    "parcel": "P014",
+    "blocked": false,
+    "violations": [],
+    "tool_calls": 1,
+    "error": null
+   },
+   {
+    "parcel": "P015",
+    "blocked": false,
+    "violations": [],
+    "tool_calls": 1,
+    "error": null
+   },
+   {
+    "parcel": "P016",
+    "blocked": false,
+    "violations": [],
+    "tool_calls": 1,
+    "error": null
+   },
+   {
+    "parcel": "P017",
+    "blocked": false,
+    "violations": [],
+    "tool_calls": 1,
+    "error": null
+   },
+   {
+    "parcel": "P018",
+    "blocked": false,
+    "violations": [],
+    "tool_calls": 1,
+    "error": null
+   },
+   {
+    "parcel": "P019",
+    "blocked": false,
+    "violations": [],
+    "tool_calls": 1,
+    "error": null
+   },
+   {
+    "parcel": "P020",
+    "blocked": false,
+    "violations": [],
+    "tool_calls": 1,
+    "error": null
+   }
+  ]
+ }
+}

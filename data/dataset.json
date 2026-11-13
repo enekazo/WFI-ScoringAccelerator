@@ -1,0 +1,2802 @@
+{
+  "as_of": "2026-07-15T12:00:00+00:00",
+  "parcels": {
+    "P001": [
+      {
+        "entity_id": "P001",
+        "metric": "fuel_load",
+        "observed_at": "2026-07-05T20:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P001",
+        "unit": "t/ha",
+        "valid_until": "2026-07-17T12:00:00+00:00",
+        "value": "33.6"
+      },
+      {
+        "entity_id": "P001",
+        "metric": "dead_fuel_pct",
+        "observed_at": "2026-07-08T14:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P001",
+        "unit": "%",
+        "valid_until": "2026-07-16T13:00:00+00:00",
+        "value": "20.7"
+      },
+      {
+        "entity_id": "P001",
+        "metric": "fuel_moisture_pct",
+        "observed_at": "2026-07-15T07:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P001",
+        "unit": "g/kg",
+        "valid_until": "2026-07-16T07:00:00+00:00",
+        "value": "35.5"
+      },
+      {
+        "entity_id": "P001",
+        "metric": "weather_danger",
+        "observed_at": "2026-07-15T10:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P001",
+        "unit": "index",
+        "valid_until": "2026-07-16T06:00:00+00:00",
+        "value": "57.1"
+      },
+      {
+        "entity_id": "P001",
+        "metric": "wind_kmh",
+        "observed_at": "2026-07-14T13:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P001",
+        "unit": "km/h",
+        "valid_until": "2026-07-15T20:00:00+00:00",
+        "value": "53.9"
+      }
+    ],
+    "P002": [
+      {
+        "entity_id": "P002",
+        "metric": "fuel_load",
+        "observed_at": "2026-07-11T18:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P002",
+        "unit": "t/ha",
+        "valid_until": "2026-07-16T23:00:00+00:00",
+        "value": "19.6"
+      },
+      {
+        "entity_id": "P002",
+        "metric": "dead_fuel_pct",
+        "observed_at": "2026-07-04T05:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P002",
+        "unit": "fraction",
+        "valid_until": "2026-07-17T11:00:00+00:00",
+        "value": "40.4"
+      },
+      {
+        "entity_id": "P002",
+        "metric": "fuel_moisture_pct",
+        "observed_at": "2026-07-14T16:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P002",
+        "unit": "%",
+        "valid_until": "2026-07-16T19:00:00+00:00",
+        "value": "24.5"
+      },
+      {
+        "entity_id": "P002",
+        "metric": "weather_danger",
+        "observed_at": "2026-07-14T21:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P002",
+        "unit": "index",
+        "valid_until": "2026-07-17T07:00:00+00:00",
+        "value": "56.1"
+      },
+      {
+        "entity_id": "P002",
+        "metric": "wind_kmh",
+        "observed_at": "2026-07-14T21:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P002",
+        "unit": "km/h",
+        "valid_until": "2026-07-17T07:00:00+00:00",
+        "value": "8.4"
+      }
+    ],
+    "P003": [
+      {
+        "entity_id": "P003",
+        "metric": "fuel_load",
+        "observed_at": "2026-07-03T20:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P003",
+        "unit": "t/ha",
+        "valid_until": "2026-07-16T22:00:00+00:00",
+        "value": "3.3"
+      },
+      {
+        "entity_id": "P003",
+        "metric": "dead_fuel_pct",
+        "observed_at": "2026-07-12T23:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P003",
+        "unit": "%",
+        "valid_until": "2026-07-17T12:00:00+00:00",
+        "value": "39.6"
+      },
+      {
+        "entity_id": "P003",
+        "metric": "fuel_moisture_pct",
+        "observed_at": "2026-07-15T07:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P003",
+        "unit": "%",
+        "valid_until": "2026-07-17T12:00:00+00:00",
+        "value": "15.6"
+      },
+      {
+        "entity_id": "P003",
+        "metric": "weather_danger",
+        "observed_at": "2026-07-15T10:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P003",
+        "unit": "index",
+        "valid_until": "2026-07-15T15:00:00+00:00",
+        "value": "10.6"
+      },
+      {
+        "entity_id": "P003",
+        "metric": "wind_kmh",
+        "observed_at": "2026-07-14T23:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P003",
+        "unit": "km/h",
+        "valid_until": "2026-07-16T08:00:00+00:00",
+        "value": "29.9"
+      }
+    ],
+    "P004": [
+      {
+        "entity_id": "P004",
+        "metric": "fuel_load",
+        "observed_at": "2026-07-12T03:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P004",
+        "unit": "t/ha",
+        "valid_until": "2026-07-15T21:00:00+00:00",
+        "value": "24.1"
+      },
+      {
+        "entity_id": "P004",
+        "metric": "dead_fuel_pct",
+        "observed_at": "2026-07-07T03:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P004",
+        "unit": "fraction",
+        "valid_until": "2026-07-17T10:00:00+00:00",
+        "value": "31.3"
+      },
+      {
+        "entity_id": "P004",
+        "metric": "fuel_moisture_pct",
+        "observed_at": "2026-07-14T16:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P004",
+        "unit": "%",
+        "valid_until": "2026-07-17T08:00:00+00:00",
+        "value": "29.2"
+      },
+      {
+        "entity_id": "P004",
+        "metric": "weather_danger",
+        "observed_at": "2026-07-15T08:00:00+00:00",
+        "provenance": "generated",
+        "quality": "valid",
+        "source": "generated:P004",
+        "unit": "index",
+        "valid_until": "2026-07-17T02:00:00+00:00",
+        "value": "40.9"
+      },
+      {
+        "entity_id": "P004",
+        "metric": "wind_kmh",
+        "observed_at": "2026-07-14T13:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P004",
+        "unit": "km/h",
+        "valid_until": "2026-07-17T11:00:00+00:00",
+        "value": "41.2"
+      }
+    ],
+    "P005": [
+      {
+        "entity_id": "P005",
+        "metric": "fuel_load",
+        "observed_at": "2026-07-09T01:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P005",
+        "unit": "t/ha",
+        "valid_until": "2026-07-16T19:00:00+00:00",
+        "value": "31.9"
+      },
+      {
+        "entity_id": "P005",
+        "metric": "dead_fuel_pct",
+        "observed_at": "2026-07-10T11:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P005",
+        "unit": "%",
+        "valid_until": "2026-07-16T04:00:00+00:00",
+        "value": "36.2"
+      },
+      {
+        "entity_id": "P005",
+        "metric": "fuel_moisture_pct",
+        "observed_at": "2026-07-15T01:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P005",
+        "unit": "%",
+        "valid_until": "2026-07-17T09:00:00+00:00",
+        "value": "35.2"
+      },
+      {
+        "entity_id": "P005",
+        "metric": "weather_danger",
+        "observed_at": "2026-07-14T14:00:00+00:00",
+        "provenance": "generated",
+        "quality": "valid",
+        "source": "generated:P005",
+        "unit": "index",
+        "valid_until": "2026-07-17T00:00:00+00:00",
+        "value": "33.7"
+      },
+      {
+        "entity_id": "P005",
+        "metric": "wind_kmh",
+        "observed_at": "2026-07-14T16:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P005",
+        "unit": "km/h",
+        "valid_until": "2026-07-17T09:00:00+00:00",
+        "value": "54.8"
+      }
+    ],
+    "P006": [
+      {
+        "entity_id": "P006",
+        "metric": "fuel_load",
+        "observed_at": "2026-07-14T15:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P006",
+        "unit": "t/ha",
+        "valid_until": "2026-07-16T11:00:00+00:00",
+        "value": "13.1"
+      },
+      {
+        "entity_id": "P006",
+        "metric": "dead_fuel_pct",
+        "observed_at": "2026-07-10T03:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P006",
+        "unit": "%",
+        "valid_until": "2026-07-17T11:00:00+00:00",
+        "value": "76.8"
+      },
+      {
+        "entity_id": "P006",
+        "metric": "fuel_moisture_pct",
+        "observed_at": "2026-07-15T08:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P006",
+        "unit": "g/kg",
+        "valid_until": "2026-07-15T21:00:00+00:00",
+        "value": "31.6"
+      },
+      {
+        "entity_id": "P006",
+        "metric": "weather_danger",
+        "observed_at": "2026-07-14T13:00:00+00:00",
+        "provenance": "generated",
+        "quality": "valid",
+        "source": "generated:P006",
+        "unit": "index",
+        "valid_until": "2026-07-17T01:00:00+00:00",
+        "value": "34.1"
+      },
+      {
+        "entity_id": "P006",
+        "metric": "wind_kmh",
+        "observed_at": "2026-07-15T03:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P006",
+        "unit": "km/h",
+        "valid_until": "2026-07-16T15:00:00+00:00",
+        "value": "2.3"
+      }
+    ],
+    "P007": [
+      {
+        "entity_id": "P007",
+        "metric": "fuel_load",
+        "observed_at": "2026-07-04T01:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P007",
+        "unit": "t/ha",
+        "valid_until": "2026-07-17T01:00:00+00:00",
+        "value": "24.8"
+      },
+      {
+        "entity_id": "P007",
+        "metric": "dead_fuel_pct",
+        "observed_at": "2026-07-10T22:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P007",
+        "unit": "%",
+        "valid_until": "2026-07-16T04:00:00+00:00",
+        "value": "90.4"
+      },
+      {
+        "entity_id": "P007",
+        "metric": "fuel_moisture_pct",
+        "observed_at": "2026-07-15T00:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P007",
+        "unit": "%",
+        "valid_until": "2026-07-16T18:00:00+00:00",
+        "value": "30.7"
+      },
+      {
+        "entity_id": "P007",
+        "metric": "weather_danger",
+        "observed_at": "2026-07-14T20:00:00+00:00",
+        "provenance": "generated",
+        "quality": "valid",
+        "source": "generated:P007",
+        "unit": "index",
+        "valid_until": "2026-07-17T11:00:00+00:00",
+        "value": "53.1"
+      },
+      {
+        "entity_id": "P007",
+        "metric": "wind_kmh",
+        "observed_at": "2026-07-14T15:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P007",
+        "unit": "km/h",
+        "valid_until": "2026-07-17T08:00:00+00:00",
+        "value": "45.2"
+      }
+    ],
+    "P008": [
+      {
+        "entity_id": "P008",
+        "metric": "fuel_load",
+        "observed_at": "2026-07-09T23:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P008",
+        "unit": "t/ha",
+        "valid_until": "2026-07-16T08:00:00+00:00",
+        "value": "13.9"
+      },
+      {
+        "entity_id": "P008",
+        "metric": "dead_fuel_pct",
+        "observed_at": "2026-07-11T11:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P008",
+        "unit": "%",
+        "valid_until": "2026-07-17T02:00:00+00:00",
+        "value": "63.1"
+      },
+      {
+        "entity_id": "P008",
+        "metric": "fuel_moisture_pct",
+        "observed_at": "2026-07-15T01:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P008",
+        "unit": "%",
+        "valid_until": "2026-07-16T05:00:00+00:00",
+        "value": "22.8"
+      },
+      {
+        "entity_id": "P008",
+        "metric": "weather_danger",
+        "observed_at": "2026-07-15T03:00:00+00:00",
+        "provenance": "generated",
+        "quality": "valid",
+        "source": "generated:P008",
+        "unit": "index",
+        "valid_until": "2026-07-17T02:00:00+00:00",
+        "value": "73.5"
+      },
+      {
+        "entity_id": "P008",
+        "metric": "wind_kmh",
+        "observed_at": "2026-07-14T21:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P008",
+        "unit": "km/h",
+        "valid_until": "2026-07-16T11:00:00+00:00",
+        "value": "50.9"
+      }
+    ],
+    "P009": [
+      {
+        "entity_id": "P009",
+        "metric": "fuel_load",
+        "observed_at": "2026-07-14T11:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P009",
+        "unit": "t/ha",
+        "valid_until": "2026-07-17T01:00:00+00:00",
+        "value": "11.5"
+      },
+      {
+        "entity_id": "P009",
+        "metric": "dead_fuel_pct",
+        "observed_at": "2026-07-13T15:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P009",
+        "unit": "%",
+        "valid_until": "2026-07-16T05:00:00+00:00",
+        "value": "38.9"
+      },
+      {
+        "entity_id": "P009",
+        "metric": "fuel_moisture_pct",
+        "observed_at": "2026-07-14T19:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P009",
+        "unit": "%",
+        "valid_until": "2026-07-15T18:00:00+00:00",
+        "value": "8.5"
+      },
+      {
+        "entity_id": "P009",
+        "metric": "weather_danger",
+        "observed_at": "2026-07-14T23:00:00+00:00",
+        "provenance": "generated",
+        "quality": "valid",
+        "source": "generated:P009",
+        "unit": "index",
+        "valid_until": "2026-07-15T19:00:00+00:00",
+        "value": "29.2"
+      },
+      {
+        "entity_id": "P009",
+        "metric": "wind_kmh",
+        "observed_at": "2026-07-15T01:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P009",
+        "unit": "km/h",
+        "valid_until": "2026-07-16T14:00:00+00:00",
+        "value": "11.6"
+      }
+    ],
+    "P010": [
+      {
+        "entity_id": "P010",
+        "metric": "fuel_load",
+        "observed_at": "2026-07-09T02:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P010",
+        "unit": "t/ha",
+        "valid_until": "2026-07-15T19:00:00+00:00",
+        "value": "5.8"
+      },
+      {
+        "entity_id": "P010",
+        "metric": "dead_fuel_pct",
+        "observed_at": "2026-07-10T09:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P010",
+        "unit": "%",
+        "valid_until": "2026-07-15T14:00:00+00:00",
+        "value": "76.7"
+      },
+      {
+        "entity_id": "P010",
+        "metric": "fuel_moisture_pct",
+        "observed_at": "2026-07-14T14:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P010",
+        "unit": "%",
+        "valid_until": "2026-07-17T07:00:00+00:00",
+        "value": "6.4"
+      },
+      {
+        "entity_id": "P010",
+        "metric": "weather_danger",
+        "observed_at": "2026-07-15T02:00:00+00:00",
+        "provenance": "generated",
+        "quality": "valid",
+        "source": "generated:P010",
+        "unit": "index",
+        "valid_until": "2026-07-16T08:00:00+00:00",
+        "value": "29.1"
+      },
+      {
+        "entity_id": "P010",
+        "metric": "wind_kmh",
+        "observed_at": "2026-07-15T10:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P010",
+        "unit": "km/h",
+        "valid_until": "2026-07-17T02:00:00+00:00",
+        "value": "32.5"
+      }
+    ],
+    "P011": [
+      {
+        "entity_id": "P011",
+        "metric": "fuel_load",
+        "observed_at": "2026-07-04T07:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P011",
+        "unit": "t/ha",
+        "valid_until": "2026-07-17T11:00:00+00:00",
+        "value": "9.5"
+      },
+      {
+        "entity_id": "P011",
+        "metric": "dead_fuel_pct",
+        "observed_at": "2026-07-14T09:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P011",
+        "unit": "%",
+        "valid_until": "2026-07-15T14:00:00+00:00",
+        "value": "40.6"
+      },
+      {
+        "entity_id": "P011",
+        "metric": "fuel_moisture_pct",
+        "observed_at": "2026-07-14T20:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P011",
+        "unit": "%",
+        "valid_until": "2026-07-16T12:00:00+00:00",
+        "value": "35.8"
+      },
+      {
+        "entity_id": "P011",
+        "metric": "weather_danger",
+        "observed_at": "2026-07-15T06:00:00+00:00",
+        "provenance": "generated",
+        "quality": "valid",
+        "source": "generated:P011",
+        "unit": "index",
+        "valid_until": "2026-07-16T16:00:00+00:00",
+        "value": "73.1"
+      },
+      {
+        "entity_id": "P011",
+        "metric": "wind_kmh",
+        "observed_at": "2026-07-15T05:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P011",
+        "unit": "km/h",
+        "valid_until": "2026-07-17T06:00:00+00:00",
+        "value": "42.4"
+      }
+    ],
+    "P012": [
+      {
+        "entity_id": "P012",
+        "metric": "fuel_load",
+        "observed_at": "2026-07-06T07:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P012",
+        "unit": "t/ha",
+        "valid_until": "2026-07-16T14:00:00+00:00",
+        "value": "16.2"
+      },
+      {
+        "entity_id": "P012",
+        "metric": "dead_fuel_pct",
+        "observed_at": "2026-07-13T03:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P012",
+        "unit": "%",
+        "valid_until": "2026-07-16T15:00:00+00:00",
+        "value": "86.2"
+      },
+      {
+        "entity_id": "P012",
+        "metric": "fuel_moisture_pct",
+        "observed_at": "2026-07-14T18:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P012",
+        "unit": "%",
+        "valid_until": "2026-07-16T21:00:00+00:00",
+        "value": "30.8"
+      },
+      {
+        "entity_id": "P012",
+        "metric": "weather_danger",
+        "observed_at": "2026-07-15T04:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P012",
+        "unit": "index",
+        "valid_until": "2026-07-17T09:00:00+00:00",
+        "value": "45.8"
+      },
+      {
+        "entity_id": "P012",
+        "metric": "wind_kmh",
+        "observed_at": "2026-07-15T10:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P012",
+        "unit": "km/h",
+        "valid_until": "2026-07-17T02:00:00+00:00",
+        "value": "45.2"
+      }
+    ],
+    "P013": [
+      {
+        "entity_id": "P013",
+        "metric": "fuel_load",
+        "observed_at": "2026-07-15T05:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P013",
+        "unit": "t/ha",
+        "valid_until": "2026-07-15T20:00:00+00:00",
+        "value": "12.6"
+      },
+      {
+        "entity_id": "P013",
+        "metric": "dead_fuel_pct",
+        "observed_at": "2026-07-07T05:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P013",
+        "unit": "%",
+        "valid_until": "2026-07-15T19:00:00+00:00",
+        "value": "85.8"
+      },
+      {
+        "entity_id": "P013",
+        "metric": "fuel_moisture_pct",
+        "observed_at": "2026-07-14T16:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P013",
+        "unit": "%",
+        "valid_until": "2026-07-17T08:00:00+00:00",
+        "value": "30.8"
+      },
+      {
+        "entity_id": "P013",
+        "metric": "weather_danger",
+        "observed_at": "2026-07-14T20:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P013",
+        "unit": "index",
+        "valid_until": "2026-07-15T22:00:00+00:00",
+        "value": "11.3"
+      },
+      {
+        "entity_id": "P013",
+        "metric": "wind_kmh",
+        "observed_at": "2026-07-15T01:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P013",
+        "unit": "km/h",
+        "valid_until": "2026-07-17T10:00:00+00:00",
+        "value": "1.3"
+      }
+    ],
+    "P014": [
+      {
+        "entity_id": "P014",
+        "metric": "fuel_load",
+        "observed_at": "2026-07-06T11:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P014",
+        "unit": "t/ha",
+        "valid_until": "2026-07-15T17:00:00+00:00",
+        "value": "38.3"
+      },
+      {
+        "entity_id": "P014",
+        "metric": "dead_fuel_pct",
+        "observed_at": "2026-07-15T07:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P014",
+        "unit": "%",
+        "valid_until": "2026-07-15T16:00:00+00:00",
+        "value": "29.5"
+      },
+      {
+        "entity_id": "P014",
+        "metric": "fuel_moisture_pct",
+        "observed_at": "2026-07-15T05:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P014",
+        "unit": "%",
+        "valid_until": "2026-07-16T19:00:00+00:00",
+        "value": "10.8"
+      },
+      {
+        "entity_id": "P014",
+        "metric": "weather_danger",
+        "observed_at": "2026-07-15T05:00:00+00:00",
+        "provenance": "generated",
+        "quality": "valid",
+        "source": "generated:P014",
+        "unit": "index",
+        "valid_until": "2026-07-16T10:00:00+00:00",
+        "value": "32.5"
+      },
+      {
+        "entity_id": "P014",
+        "metric": "wind_kmh",
+        "observed_at": "2026-07-14T14:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P014",
+        "unit": "km/h",
+        "valid_until": "2026-07-17T04:00:00+00:00",
+        "value": "25.7"
+      }
+    ],
+    "P015": [
+      {
+        "entity_id": "P015",
+        "metric": "fuel_load",
+        "observed_at": "2026-07-03T06:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P015",
+        "unit": "t/ha",
+        "valid_until": "2026-07-15T21:00:00+00:00",
+        "value": "32.8"
+      },
+      {
+        "entity_id": "P015",
+        "metric": "dead_fuel_pct",
+        "observed_at": "2026-07-14T16:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P015",
+        "unit": "%",
+        "valid_until": "2026-07-15T18:00:00+00:00",
+        "value": "24.4"
+      },
+      {
+        "entity_id": "P015",
+        "metric": "fuel_moisture_pct",
+        "observed_at": "2026-07-15T06:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P015",
+        "unit": "%",
+        "valid_until": "2026-07-16T21:00:00+00:00",
+        "value": "8.8"
+      },
+      {
+        "entity_id": "P015",
+        "metric": "weather_danger",
+        "observed_at": "2026-07-15T05:00:00+00:00",
+        "provenance": "generated",
+        "quality": "valid",
+        "source": "generated:P015",
+        "unit": "index",
+        "valid_until": "2026-07-15T16:00:00+00:00",
+        "value": "66.8"
+      },
+      {
+        "entity_id": "P015",
+        "metric": "wind_kmh",
+        "observed_at": "2026-07-15T00:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P015",
+        "unit": "km/h",
+        "valid_until": "2026-07-16T19:00:00+00:00",
+        "value": "0.1"
+      }
+    ],
+    "P016": [
+      {
+        "entity_id": "P016",
+        "metric": "fuel_load",
+        "observed_at": "2026-07-13T06:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P016",
+        "unit": "t/ha",
+        "valid_until": "2026-07-16T05:00:00+00:00",
+        "value": "28.9"
+      },
+      {
+        "entity_id": "P016",
+        "metric": "dead_fuel_pct",
+        "observed_at": "2026-07-04T22:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P016",
+        "unit": "%",
+        "valid_until": "2026-07-16T21:00:00+00:00",
+        "value": "27"
+      },
+      {
+        "entity_id": "P016",
+        "metric": "fuel_moisture_pct",
+        "observed_at": "2026-07-14T14:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P016",
+        "unit": "%",
+        "valid_until": "2026-07-17T04:00:00+00:00",
+        "value": "6.2"
+      },
+      {
+        "entity_id": "P016",
+        "metric": "weather_danger",
+        "observed_at": "2026-07-14T18:00:00+00:00",
+        "provenance": "generated",
+        "quality": "valid",
+        "source": "generated:P016",
+        "unit": "index",
+        "valid_until": "2026-07-16T15:00:00+00:00",
+        "value": "5.5"
+      },
+      {
+        "entity_id": "P016",
+        "metric": "wind_kmh",
+        "observed_at": "2026-07-14T16:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P016",
+        "unit": "km/h",
+        "valid_until": "2026-07-16T18:00:00+00:00",
+        "value": "4.3"
+      }
+    ],
+    "P017": [
+      {
+        "entity_id": "P017",
+        "metric": "dead_fuel_pct",
+        "observed_at": "2026-07-09T05:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P017",
+        "unit": "%",
+        "valid_until": "2026-07-16T20:00:00+00:00",
+        "value": "26.7"
+      },
+      {
+        "entity_id": "P017",
+        "metric": "fuel_moisture_pct",
+        "observed_at": "2026-07-15T07:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P017",
+        "unit": "%",
+        "valid_until": "2026-07-17T04:00:00+00:00",
+        "value": "13"
+      },
+      {
+        "entity_id": "P017",
+        "metric": "weather_danger",
+        "observed_at": "2026-07-15T04:00:00+00:00",
+        "provenance": "generated",
+        "quality": "valid",
+        "source": "generated:P017",
+        "unit": "index",
+        "valid_until": "2026-07-15T14:00:00+00:00",
+        "value": "37.8"
+      },
+      {
+        "entity_id": "P017",
+        "metric": "wind_kmh",
+        "observed_at": "2026-07-14T15:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P017",
+        "unit": "km/h",
+        "valid_until": "2026-07-16T21:00:00+00:00",
+        "value": "0"
+      }
+    ],
+    "P018": [
+      {
+        "entity_id": "P018",
+        "metric": "fuel_load",
+        "observed_at": "2026-07-05T23:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P018",
+        "unit": "t/ha",
+        "valid_until": "2026-07-17T12:00:00+00:00",
+        "value": "20.7"
+      },
+      {
+        "entity_id": "P018",
+        "metric": "dead_fuel_pct",
+        "observed_at": "2026-07-06T16:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P018",
+        "unit": "%",
+        "valid_until": "2026-07-17T00:00:00+00:00",
+        "value": "48.7"
+      },
+      {
+        "entity_id": "P018",
+        "metric": "fuel_moisture_pct",
+        "observed_at": "2026-07-14T23:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P018",
+        "unit": "%",
+        "valid_until": "2026-07-17T05:00:00+00:00",
+        "value": "14.7"
+      },
+      {
+        "entity_id": "P018",
+        "metric": "weather_danger",
+        "observed_at": "2026-07-14T22:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P018",
+        "unit": "index",
+        "valid_until": "2026-07-15T17:00:00+00:00",
+        "value": "69.6"
+      },
+      {
+        "entity_id": "P018",
+        "metric": "wind_kmh",
+        "observed_at": "2026-07-15T04:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P018",
+        "unit": "km/h",
+        "valid_until": "2026-07-17T00:00:00+00:00",
+        "value": "25.2"
+      }
+    ],
+    "P019": [
+      {
+        "entity_id": "P019",
+        "metric": "fuel_load",
+        "observed_at": "2026-07-03T18:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P019",
+        "unit": "t/ha",
+        "valid_until": "2026-07-16T16:00:00+00:00",
+        "value": "19.1"
+      },
+      {
+        "entity_id": "P019",
+        "metric": "dead_fuel_pct",
+        "observed_at": "2026-05-16T12:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P019",
+        "unit": "%",
+        "valid_until": "2026-06-15T12:00:00+00:00",
+        "value": "36.6"
+      },
+      {
+        "entity_id": "P019",
+        "metric": "fuel_moisture_pct",
+        "observed_at": "2026-07-15T03:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P019",
+        "unit": "%",
+        "valid_until": "2026-07-15T18:00:00+00:00",
+        "value": "7.4"
+      },
+      {
+        "entity_id": "P019",
+        "metric": "weather_danger",
+        "observed_at": "2026-07-15T01:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P019",
+        "unit": "index",
+        "valid_until": "2026-07-16T03:00:00+00:00",
+        "value": "18"
+      },
+      {
+        "entity_id": "P019",
+        "metric": "wind_kmh",
+        "observed_at": "2026-07-14T21:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P019",
+        "unit": "km/h",
+        "valid_until": "2026-07-16T05:00:00+00:00",
+        "value": "36.4"
+      }
+    ],
+    "P020": [
+      {
+        "entity_id": "P020",
+        "metric": "fuel_load",
+        "observed_at": "2026-07-14T03:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P020",
+        "unit": "t/ha",
+        "valid_until": "2026-07-16T03:00:00+00:00",
+        "value": "7.1"
+      },
+      {
+        "entity_id": "P020",
+        "metric": "dead_fuel_pct",
+        "observed_at": "2026-07-12T18:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P020",
+        "unit": "%",
+        "valid_until": "2026-07-16T09:00:00+00:00",
+        "value": "50.4"
+      },
+      {
+        "entity_id": "P020",
+        "metric": "fuel_moisture_pct",
+        "observed_at": "2026-07-14T19:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P020",
+        "unit": "%",
+        "valid_until": "2026-07-16T02:00:00+00:00",
+        "value": "32.4"
+      },
+      {
+        "entity_id": "P020",
+        "metric": "weather_danger",
+        "observed_at": "2026-07-14T14:00:00+00:00",
+        "provenance": "generated",
+        "quality": "valid",
+        "source": "generated:P020",
+        "unit": "index",
+        "valid_until": "2026-07-17T03:00:00+00:00",
+        "value": "74.4"
+      },
+      {
+        "entity_id": "P020",
+        "metric": "wind_kmh",
+        "observed_at": "2026-05-16T12:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P020",
+        "unit": "km/h",
+        "valid_until": "2026-06-15T12:00:00+00:00",
+        "value": "50.4"
+      }
+    ],
+    "P021": [
+      {
+        "entity_id": "P021",
+        "metric": "fuel_load",
+        "observed_at": "2026-07-09T21:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P021",
+        "unit": "t/ha",
+        "valid_until": "2026-07-17T07:00:00+00:00",
+        "value": "37.8"
+      },
+      {
+        "entity_id": "P021",
+        "metric": "dead_fuel_pct",
+        "observed_at": "2026-07-09T11:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P021",
+        "unit": "%",
+        "valid_until": "2026-07-16T05:00:00+00:00",
+        "value": "90"
+      },
+      {
+        "entity_id": "P021",
+        "metric": "fuel_moisture_pct",
+        "observed_at": "2026-07-15T11:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P021",
+        "unit": "%",
+        "valid_until": "2026-07-16T14:00:00+00:00",
+        "value": "36"
+      },
+      {
+        "entity_id": "P021",
+        "metric": "weather_danger",
+        "observed_at": "2026-07-15T10:00:00+00:00",
+        "provenance": "generated",
+        "quality": "valid",
+        "source": "generated:P021",
+        "unit": "index",
+        "valid_until": "2026-07-17T06:00:00+00:00",
+        "value": "35.3"
+      },
+      {
+        "entity_id": "P021",
+        "metric": "wind_kmh",
+        "observed_at": "2026-07-14T18:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P021",
+        "unit": "km/h",
+        "valid_until": "2026-07-16T11:00:00+00:00",
+        "value": "8.1"
+      }
+    ],
+    "P022": [
+      {
+        "entity_id": "P022",
+        "metric": "fuel_load",
+        "observed_at": "2026-07-10T22:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P022",
+        "unit": "t/ha",
+        "valid_until": "2026-07-16T21:00:00+00:00",
+        "value": "21.5"
+      },
+      {
+        "entity_id": "P022",
+        "metric": "dead_fuel_pct",
+        "observed_at": "2026-07-08T17:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P022",
+        "unit": "%",
+        "valid_until": "2026-07-16T08:00:00+00:00",
+        "value": "37.8"
+      },
+      {
+        "entity_id": "P022",
+        "metric": "fuel_moisture_pct",
+        "observed_at": "2026-07-15T08:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P022",
+        "unit": "%",
+        "valid_until": "2026-07-17T09:00:00+00:00",
+        "value": "14.4"
+      },
+      {
+        "entity_id": "P022",
+        "metric": "weather_danger",
+        "observed_at": "2026-07-14T18:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P022",
+        "unit": "index",
+        "valid_until": "2026-07-16T00:00:00+00:00",
+        "value": "33.9"
+      },
+      {
+        "entity_id": "P022",
+        "metric": "wind_kmh",
+        "observed_at": "2026-07-15T00:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P022",
+        "unit": "km/h",
+        "valid_until": "2026-07-16T02:00:00+00:00",
+        "value": "35.1"
+      }
+    ],
+    "P023": [
+      {
+        "entity_id": "P023",
+        "metric": "fuel_load",
+        "observed_at": "2026-07-12T08:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P023",
+        "unit": "t/ha",
+        "valid_until": "2026-07-17T01:00:00+00:00",
+        "value": "16.4"
+      },
+      {
+        "entity_id": "P023",
+        "metric": "dead_fuel_pct",
+        "observed_at": "2026-07-14T21:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P023",
+        "unit": "%",
+        "valid_until": "2026-07-16T02:00:00+00:00",
+        "value": "70.2"
+      },
+      {
+        "entity_id": "P023",
+        "metric": "fuel_moisture_pct",
+        "observed_at": "2026-07-14T20:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P023",
+        "unit": "%",
+        "valid_until": "2026-07-17T01:00:00+00:00",
+        "value": "8.7"
+      },
+      {
+        "entity_id": "P023",
+        "metric": "weather_danger",
+        "observed_at": "2026-07-15T08:00:00+00:00",
+        "provenance": "generated",
+        "quality": "valid",
+        "source": "generated:P023",
+        "unit": "index",
+        "valid_until": "2026-07-17T01:00:00+00:00",
+        "value": "27.9"
+      },
+      {
+        "entity_id": "P023",
+        "metric": "wind_kmh",
+        "observed_at": "2026-07-14T16:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P023",
+        "unit": "km/h",
+        "valid_until": "2026-07-15T21:00:00+00:00",
+        "value": "30.7"
+      }
+    ],
+    "P024": [
+      {
+        "entity_id": "P024",
+        "metric": "fuel_load",
+        "observed_at": "2026-07-12T19:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P024",
+        "unit": "t/ha",
+        "valid_until": "2026-07-17T00:00:00+00:00",
+        "value": "11.9"
+      },
+      {
+        "entity_id": "P024",
+        "metric": "dead_fuel_pct",
+        "observed_at": "2026-07-11T04:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P024",
+        "unit": "%",
+        "valid_until": "2026-07-16T14:00:00+00:00",
+        "value": "54.6"
+      },
+      {
+        "entity_id": "P024",
+        "metric": "fuel_moisture_pct",
+        "observed_at": "2026-07-15T02:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P024",
+        "unit": "%",
+        "valid_until": "2026-07-16T07:00:00+00:00",
+        "value": "27.3"
+      },
+      {
+        "entity_id": "P024",
+        "metric": "weather_danger",
+        "observed_at": "2026-07-14T13:00:00+00:00",
+        "provenance": "generated",
+        "quality": "valid",
+        "source": "generated:P024",
+        "unit": "index",
+        "valid_until": "2026-07-16T13:00:00+00:00",
+        "value": "12.2"
+      },
+      {
+        "entity_id": "P024",
+        "metric": "wind_kmh",
+        "observed_at": "2026-07-15T10:00:00+00:00",
+        "provenance": "fixture",
+        "quality": "valid",
+        "source": "sensor:P024",
+        "unit": "km/h",
+        "valid_until": "2026-07-17T07:00:00+00:00",
+        "value": "11.6"
+      }
+    ],
+    "P025": [
+      {
+        "entity_id": "P025",
+        "metric": "fuel_load",
+        "observed_at": "2026-07-13T18:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P025",
+        "unit": "t/ha",
+        "valid_until": "2026-07-16T08:00:00+00:00",
+        "value": "7.7"
+      },
+      {
+        "entity_id": "P025",
+        "metric": "dead_fuel_pct",
+        "observed_at": "2026-07-04T15:00:00+00:00",
+        "provenance": "measured",
+        "quality": "invalid",
+        "source": "measured:P025",
+        "unit": "%",
+        "valid_until": "2026-07-16T13:00:00+00:00",
+        "value": "72.7"
+      },
+      {
+        "entity_id": "P025",
+        "metric": "fuel_moisture_pct",
+        "observed_at": "2026-07-15T11:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P025",
+        "unit": "%",
+        "valid_until": "2026-07-15T15:00:00+00:00",
+        "value": "17.9"
+      },
+      {
+        "entity_id": "P025",
+        "metric": "weather_danger",
+        "observed_at": "2026-07-15T11:00:00+00:00",
+        "provenance": "generated",
+        "quality": "valid",
+        "source": "generated:P025",
+        "unit": "index",
+        "valid_until": "2026-07-16T07:00:00+00:00",
+        "value": "70.9"
+      },
+      {
+        "entity_id": "P025",
+        "metric": "wind_kmh",
+        "observed_at": "2026-07-15T03:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P025",
+        "unit": "km/h",
+        "valid_until": "2026-07-16T13:00:00+00:00",
+        "value": "23.6"
+      }
+    ],
+    "P026": [
+      {
+        "entity_id": "P026",
+        "metric": "fuel_load",
+        "observed_at": "2026-07-15T07:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P026",
+        "unit": "t/ha",
+        "valid_until": "2026-07-15T16:00:00+00:00",
+        "value": "17.9"
+      },
+      {
+        "entity_id": "P026",
+        "metric": "dead_fuel_pct",
+        "observed_at": "2026-07-10T03:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P026",
+        "unit": "%",
+        "valid_until": "2026-07-17T12:00:00+00:00",
+        "value": "86.5"
+      },
+      {
+        "entity_id": "P026",
+        "metric": "fuel_moisture_pct",
+        "observed_at": "2026-07-14T22:00:00+00:00",
+        "provenance": "measured",
+        "quality": "invalid",
+        "source": "measured:P026",
+        "unit": "%",
+        "valid_until": "2026-07-16T22:00:00+00:00",
+        "value": "12.4"
+      },
+      {
+        "entity_id": "P026",
+        "metric": "weather_danger",
+        "observed_at": "2026-07-14T18:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P026",
+        "unit": "index",
+        "valid_until": "2026-07-17T10:00:00+00:00",
+        "value": "66.3"
+      },
+      {
+        "entity_id": "P026",
+        "metric": "wind_kmh",
+        "observed_at": "2026-07-15T09:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P026",
+        "unit": "km/h",
+        "valid_until": "2026-07-15T15:00:00+00:00",
+        "value": "23.9"
+      }
+    ],
+    "P027": [
+      {
+        "entity_id": "P027",
+        "metric": "fuel_load",
+        "observed_at": "2026-07-05T07:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P027",
+        "unit": "t/ha",
+        "valid_until": "2026-07-15T21:00:00+00:00",
+        "value": "26.4"
+      },
+      {
+        "entity_id": "P027",
+        "metric": "dead_fuel_pct",
+        "observed_at": "2026-07-08T01:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P027",
+        "unit": "%",
+        "valid_until": "2026-07-16T18:00:00+00:00",
+        "value": "47.5"
+      },
+      {
+        "entity_id": "P027",
+        "metric": "fuel_moisture_pct",
+        "observed_at": "2026-07-15T01:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P027",
+        "unit": "g/kg",
+        "valid_until": "2026-07-17T03:00:00+00:00",
+        "value": "34.2"
+      },
+      {
+        "entity_id": "P027",
+        "metric": "weather_danger",
+        "observed_at": "2026-07-14T20:00:00+00:00",
+        "provenance": "generated",
+        "quality": "valid",
+        "source": "generated:P027",
+        "unit": "index",
+        "valid_until": "2026-07-16T07:00:00+00:00",
+        "value": "15.3"
+      },
+      {
+        "entity_id": "P027",
+        "metric": "wind_kmh",
+        "observed_at": "2026-07-14T19:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P027",
+        "unit": "km/h",
+        "valid_until": "2026-07-16T15:00:00+00:00",
+        "value": "47.7"
+      }
+    ],
+    "P028": [
+      {
+        "entity_id": "P028",
+        "metric": "fuel_load",
+        "observed_at": "2026-07-14T22:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P028",
+        "unit": "t/ha",
+        "valid_until": "2026-07-17T11:00:00+00:00",
+        "value": "26.2"
+      },
+      {
+        "entity_id": "P028",
+        "metric": "dead_fuel_pct",
+        "observed_at": "2026-07-07T06:00:00+00:00",
+        "provenance": "fixture",
+        "quality": "valid",
+        "source": "sensor:P028",
+        "unit": "%",
+        "valid_until": "2026-07-17T02:00:00+00:00",
+        "value": "63.3"
+      },
+      {
+        "entity_id": "P028",
+        "metric": "fuel_moisture_pct",
+        "observed_at": "2026-07-15T09:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P028",
+        "unit": "%",
+        "valid_until": "2026-07-15T23:00:00+00:00",
+        "value": "14.6"
+      },
+      {
+        "entity_id": "P028",
+        "metric": "weather_danger",
+        "observed_at": "2026-07-14T17:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P028",
+        "unit": "index",
+        "valid_until": "2026-07-16T13:00:00+00:00",
+        "value": "66"
+      },
+      {
+        "entity_id": "P028",
+        "metric": "wind_kmh",
+        "observed_at": "2026-07-15T07:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P028",
+        "unit": "km/h",
+        "valid_until": "2026-07-17T03:00:00+00:00",
+        "value": "23.7"
+      }
+    ],
+    "P029": [
+      {
+        "entity_id": "P029",
+        "metric": "dead_fuel_pct",
+        "observed_at": "2026-07-14T09:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P029",
+        "unit": "%",
+        "valid_until": "2026-07-15T18:00:00+00:00",
+        "value": "57"
+      },
+      {
+        "entity_id": "P029",
+        "metric": "fuel_moisture_pct",
+        "observed_at": "2026-07-14T17:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P029",
+        "unit": "%",
+        "valid_until": "2026-07-16T10:00:00+00:00",
+        "value": "27.6"
+      },
+      {
+        "entity_id": "P029",
+        "metric": "weather_danger",
+        "observed_at": "2026-07-14T14:00:00+00:00",
+        "provenance": "generated",
+        "quality": "valid",
+        "source": "generated:P029",
+        "unit": "index",
+        "valid_until": "2026-07-16T07:00:00+00:00",
+        "value": "22.5"
+      },
+      {
+        "entity_id": "P029",
+        "metric": "wind_kmh",
+        "observed_at": "2026-07-14T14:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P029",
+        "unit": "km/h",
+        "valid_until": "2026-07-15T22:00:00+00:00",
+        "value": "44.8"
+      }
+    ],
+    "P030": [
+      {
+        "entity_id": "P030",
+        "metric": "fuel_load",
+        "observed_at": "2026-07-12T18:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P030",
+        "unit": "t/ha",
+        "valid_until": "2026-07-15T16:00:00+00:00",
+        "value": "21.1"
+      },
+      {
+        "entity_id": "P030",
+        "metric": "dead_fuel_pct",
+        "observed_at": "2026-07-05T14:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P030",
+        "unit": "%",
+        "valid_until": "2026-07-17T10:00:00+00:00",
+        "value": "39.9"
+      },
+      {
+        "entity_id": "P030",
+        "metric": "fuel_moisture_pct",
+        "observed_at": "2026-07-14T15:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P030",
+        "unit": "%",
+        "valid_until": "2026-07-17T07:00:00+00:00",
+        "value": "6.6"
+      },
+      {
+        "entity_id": "P030",
+        "metric": "weather_danger",
+        "observed_at": "2026-07-14T20:00:00+00:00",
+        "provenance": "generated",
+        "quality": "valid",
+        "source": "generated:P030",
+        "unit": "index",
+        "valid_until": "2026-07-17T08:00:00+00:00",
+        "value": "57.3"
+      },
+      {
+        "entity_id": "P030",
+        "metric": "wind_kmh",
+        "observed_at": "2026-07-14T21:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P030",
+        "unit": "km/h",
+        "valid_until": "2026-07-16T17:00:00+00:00",
+        "value": "25.1"
+      }
+    ],
+    "P031": [
+      {
+        "entity_id": "P031",
+        "metric": "fuel_load",
+        "observed_at": "2026-07-06T07:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P031",
+        "unit": "t/ha",
+        "valid_until": "2026-07-16T12:00:00+00:00",
+        "value": "9.1"
+      },
+      {
+        "entity_id": "P031",
+        "metric": "dead_fuel_pct",
+        "observed_at": "2026-07-10T00:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P031",
+        "unit": "%",
+        "valid_until": "2026-07-16T18:00:00+00:00",
+        "value": "58.8"
+      },
+      {
+        "entity_id": "P031",
+        "metric": "fuel_moisture_pct",
+        "observed_at": "2026-07-14T18:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P031",
+        "unit": "%",
+        "valid_until": "2026-07-16T20:00:00+00:00",
+        "value": "35.7"
+      },
+      {
+        "entity_id": "P031",
+        "metric": "weather_danger",
+        "observed_at": "2026-07-14T16:00:00+00:00",
+        "provenance": "generated",
+        "quality": "valid",
+        "source": "generated:P031",
+        "unit": "index",
+        "valid_until": "2026-07-17T12:00:00+00:00",
+        "value": "35.8"
+      },
+      {
+        "entity_id": "P031",
+        "metric": "wind_kmh",
+        "observed_at": "2026-07-15T07:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P031",
+        "unit": "km/h",
+        "valid_until": "2026-07-15T14:00:00+00:00",
+        "value": "23"
+      }
+    ],
+    "P032": [
+      {
+        "entity_id": "P032",
+        "metric": "fuel_load",
+        "observed_at": "2026-07-12T03:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P032",
+        "unit": "t/ha",
+        "valid_until": "2026-07-16T01:00:00+00:00",
+        "value": "7"
+      },
+      {
+        "entity_id": "P032",
+        "metric": "dead_fuel_pct",
+        "observed_at": "2026-07-12T11:00:00+00:00",
+        "provenance": "measured",
+        "quality": "invalid",
+        "source": "measured:P032",
+        "unit": "%",
+        "valid_until": "2026-07-17T07:00:00+00:00",
+        "value": "80.4"
+      },
+      {
+        "entity_id": "P032",
+        "metric": "fuel_moisture_pct",
+        "observed_at": "2026-07-15T07:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P032",
+        "unit": "%",
+        "valid_until": "2026-07-16T05:00:00+00:00",
+        "value": "10"
+      },
+      {
+        "entity_id": "P032",
+        "metric": "weather_danger",
+        "observed_at": "2026-07-15T09:00:00+00:00",
+        "provenance": "generated",
+        "quality": "valid",
+        "source": "generated:P032",
+        "unit": "index",
+        "valid_until": "2026-07-16T17:00:00+00:00",
+        "value": "34.5"
+      },
+      {
+        "entity_id": "P032",
+        "metric": "wind_kmh",
+        "observed_at": "2026-07-15T08:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P032",
+        "unit": "km/h",
+        "valid_until": "2026-07-15T22:00:00+00:00",
+        "value": "18.6"
+      }
+    ],
+    "P033": [
+      {
+        "entity_id": "P033",
+        "metric": "fuel_load",
+        "observed_at": "2026-07-04T01:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P033",
+        "unit": "t/ha",
+        "valid_until": "2026-07-17T02:00:00+00:00",
+        "value": "31.8"
+      },
+      {
+        "entity_id": "P033",
+        "metric": "dead_fuel_pct",
+        "observed_at": "2026-07-13T18:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P033",
+        "unit": "%",
+        "valid_until": "2026-07-16T14:00:00+00:00",
+        "value": "27.2"
+      },
+      {
+        "entity_id": "P033",
+        "metric": "fuel_moisture_pct",
+        "observed_at": "2026-05-16T12:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P033",
+        "unit": "%",
+        "valid_until": "2026-06-15T12:00:00+00:00",
+        "value": "34.1"
+      },
+      {
+        "entity_id": "P033",
+        "metric": "weather_danger",
+        "observed_at": "2026-07-15T01:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P033",
+        "unit": "index",
+        "valid_until": "2026-07-15T16:00:00+00:00",
+        "value": "42.4"
+      },
+      {
+        "entity_id": "P033",
+        "metric": "wind_kmh",
+        "observed_at": "2026-07-14T22:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P033",
+        "unit": "km/h",
+        "valid_until": "2026-07-16T04:00:00+00:00",
+        "value": "24.6"
+      }
+    ],
+    "P034": [
+      {
+        "entity_id": "P034",
+        "metric": "fuel_load",
+        "observed_at": "2026-07-11T01:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P034",
+        "unit": "t/ha",
+        "valid_until": "2026-07-17T07:00:00+00:00",
+        "value": "7.4"
+      },
+      {
+        "entity_id": "P034",
+        "metric": "dead_fuel_pct",
+        "observed_at": "2026-07-08T09:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P034",
+        "unit": "%",
+        "valid_until": "2026-07-17T02:00:00+00:00",
+        "value": "18.7"
+      },
+      {
+        "entity_id": "P034",
+        "metric": "fuel_moisture_pct",
+        "observed_at": "2026-07-15T01:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P034",
+        "unit": "%",
+        "valid_until": "2026-07-17T08:00:00+00:00",
+        "value": "25.2"
+      },
+      {
+        "entity_id": "P034",
+        "metric": "weather_danger",
+        "observed_at": "2026-07-15T01:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P034",
+        "unit": "index",
+        "valid_until": "2026-07-15T21:00:00+00:00",
+        "value": "16.9"
+      },
+      {
+        "entity_id": "P034",
+        "metric": "wind_kmh",
+        "observed_at": "2026-07-14T14:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P034",
+        "unit": "km/h",
+        "valid_until": "2026-07-16T09:00:00+00:00",
+        "value": "48.6"
+      }
+    ],
+    "P035": [
+      {
+        "entity_id": "P035",
+        "metric": "fuel_load",
+        "observed_at": "2026-07-07T21:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P035",
+        "unit": "t/ha",
+        "valid_until": "2026-07-16T22:00:00+00:00",
+        "value": "35.5"
+      },
+      {
+        "entity_id": "P035",
+        "metric": "dead_fuel_pct",
+        "observed_at": "2026-07-11T15:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P035",
+        "unit": "%",
+        "valid_until": "2026-07-15T18:00:00+00:00",
+        "value": "85.1"
+      },
+      {
+        "entity_id": "P035",
+        "metric": "fuel_moisture_pct",
+        "observed_at": "2026-07-15T08:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P035",
+        "unit": "%",
+        "valid_until": "2026-07-16T07:00:00+00:00",
+        "value": "20.6"
+      },
+      {
+        "entity_id": "P035",
+        "metric": "weather_danger",
+        "observed_at": "2026-07-14T16:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P035",
+        "unit": "index",
+        "valid_until": "2026-07-16T05:00:00+00:00",
+        "value": "37.3"
+      },
+      {
+        "entity_id": "P035",
+        "metric": "wind_kmh",
+        "observed_at": "2026-07-14T20:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P035",
+        "unit": "km/h",
+        "valid_until": "2026-07-15T20:00:00+00:00",
+        "value": "9.4"
+      }
+    ],
+    "P036": [
+      {
+        "entity_id": "P036",
+        "metric": "fuel_load",
+        "observed_at": "2026-07-11T00:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P036",
+        "unit": "t/ha",
+        "valid_until": "2026-07-17T09:00:00+00:00",
+        "value": "35.2"
+      },
+      {
+        "entity_id": "P036",
+        "metric": "dead_fuel_pct",
+        "observed_at": "2026-07-03T02:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P036",
+        "unit": "%",
+        "valid_until": "2026-07-16T22:00:00+00:00",
+        "value": "65.6"
+      },
+      {
+        "entity_id": "P036",
+        "metric": "fuel_moisture_pct",
+        "observed_at": "2026-07-15T02:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P036",
+        "unit": "%",
+        "valid_until": "2026-07-16T12:00:00+00:00",
+        "value": "13.6"
+      },
+      {
+        "entity_id": "P036",
+        "metric": "weather_danger",
+        "observed_at": "2026-07-14T19:00:00+00:00",
+        "provenance": "generated",
+        "quality": "valid",
+        "source": "generated:P036",
+        "unit": "index",
+        "valid_until": "2026-07-15T19:00:00+00:00",
+        "value": "32.9"
+      },
+      {
+        "entity_id": "P036",
+        "metric": "wind_kmh",
+        "observed_at": "2026-07-15T04:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P036",
+        "unit": "km/h",
+        "valid_until": "2026-07-16T17:00:00+00:00",
+        "value": "29.8"
+      }
+    ],
+    "P037": [
+      {
+        "entity_id": "P037",
+        "metric": "fuel_load",
+        "observed_at": "2026-07-06T08:00:00+00:00",
+        "provenance": "measured",
+        "quality": "invalid",
+        "source": "measured:P037",
+        "unit": "t/ha",
+        "valid_until": "2026-07-17T00:00:00+00:00",
+        "value": "35.4"
+      },
+      {
+        "entity_id": "P037",
+        "metric": "dead_fuel_pct",
+        "observed_at": "2026-07-12T00:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P037",
+        "unit": "%",
+        "valid_until": "2026-07-16T09:00:00+00:00",
+        "value": "91.8"
+      },
+      {
+        "entity_id": "P037",
+        "metric": "fuel_moisture_pct",
+        "observed_at": "2026-07-14T18:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P037",
+        "unit": "%",
+        "valid_until": "2026-07-16T08:00:00+00:00",
+        "value": "26.4"
+      },
+      {
+        "entity_id": "P037",
+        "metric": "weather_danger",
+        "observed_at": "2026-07-15T07:00:00+00:00",
+        "provenance": "generated",
+        "quality": "valid",
+        "source": "generated:P037",
+        "unit": "index",
+        "valid_until": "2026-07-16T08:00:00+00:00",
+        "value": "27.1"
+      },
+      {
+        "entity_id": "P037",
+        "metric": "wind_kmh",
+        "observed_at": "2026-07-14T20:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P037",
+        "unit": "km/h",
+        "valid_until": "2026-07-17T04:00:00+00:00",
+        "value": "11.9"
+      }
+    ],
+    "P038": [
+      {
+        "entity_id": "P038",
+        "metric": "fuel_load",
+        "observed_at": "2026-07-05T17:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P038",
+        "unit": "t/ha",
+        "valid_until": "2026-07-17T04:00:00+00:00",
+        "value": "8.4"
+      },
+      {
+        "entity_id": "P038",
+        "metric": "dead_fuel_pct",
+        "observed_at": "2026-07-15T03:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P038",
+        "unit": "%",
+        "valid_until": "2026-07-16T16:00:00+00:00",
+        "value": "63.7"
+      },
+      {
+        "entity_id": "P038",
+        "metric": "fuel_moisture_pct",
+        "observed_at": "2026-07-15T09:00:00+00:00",
+        "provenance": "fixture",
+        "quality": "valid",
+        "source": "sensor:P038",
+        "unit": "%",
+        "valid_until": "2026-07-15T18:00:00+00:00",
+        "value": "26.9"
+      },
+      {
+        "entity_id": "P038",
+        "metric": "weather_danger",
+        "observed_at": "2026-07-14T16:00:00+00:00",
+        "provenance": "generated",
+        "quality": "valid",
+        "source": "generated:P038",
+        "unit": "index",
+        "valid_until": "2026-07-15T17:00:00+00:00",
+        "value": "24.5"
+      },
+      {
+        "entity_id": "P038",
+        "metric": "wind_kmh",
+        "observed_at": "2026-07-15T01:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P038",
+        "unit": "km/h",
+        "valid_until": "2026-07-16T10:00:00+00:00",
+        "value": "31.9"
+      }
+    ],
+    "P039": [
+      {
+        "entity_id": "P039",
+        "metric": "fuel_load",
+        "observed_at": "2026-07-03T15:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P039",
+        "unit": "t/ha",
+        "valid_until": "2026-07-16T02:00:00+00:00",
+        "value": "4.4"
+      },
+      {
+        "entity_id": "P039",
+        "metric": "dead_fuel_pct",
+        "observed_at": "2026-07-05T17:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P039",
+        "unit": "%",
+        "valid_until": "2026-07-16T05:00:00+00:00",
+        "value": "60.5"
+      },
+      {
+        "entity_id": "P039",
+        "metric": "fuel_moisture_pct",
+        "observed_at": "2026-07-15T11:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P039",
+        "unit": "%",
+        "valid_until": "2026-07-16T23:00:00+00:00",
+        "value": "14.3"
+      },
+      {
+        "entity_id": "P039",
+        "metric": "weather_danger",
+        "observed_at": "2026-07-14T22:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P039",
+        "unit": "index",
+        "valid_until": "2026-07-15T18:00:00+00:00",
+        "value": "65.6"
+      },
+      {
+        "entity_id": "P039",
+        "metric": "wind_kmh",
+        "observed_at": "2026-07-15T02:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P039",
+        "unit": "km/h",
+        "valid_until": "2026-07-15T21:00:00+00:00",
+        "value": "16.1"
+      }
+    ],
+    "P040": [
+      {
+        "entity_id": "P040",
+        "metric": "fuel_load",
+        "observed_at": "2026-07-03T11:00:00+00:00",
+        "provenance": "fixture",
+        "quality": "valid",
+        "source": "sensor:P040",
+        "unit": "t/ha",
+        "valid_until": "2026-07-17T09:00:00+00:00",
+        "value": "26.1"
+      },
+      {
+        "entity_id": "P040",
+        "metric": "dead_fuel_pct",
+        "observed_at": "2026-07-09T16:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P040",
+        "unit": "%",
+        "valid_until": "2026-07-16T23:00:00+00:00",
+        "value": "16.6"
+      },
+      {
+        "entity_id": "P040",
+        "metric": "fuel_moisture_pct",
+        "observed_at": "2026-07-14T15:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P040",
+        "unit": "%",
+        "valid_until": "2026-07-16T15:00:00+00:00",
+        "value": "10"
+      },
+      {
+        "entity_id": "P040",
+        "metric": "weather_danger",
+        "observed_at": "2026-07-14T14:00:00+00:00",
+        "provenance": "generated",
+        "quality": "valid",
+        "source": "generated:P040",
+        "unit": "index",
+        "valid_until": "2026-07-16T22:00:00+00:00",
+        "value": "75.1"
+      },
+      {
+        "entity_id": "P040",
+        "metric": "wind_kmh",
+        "observed_at": "2026-07-15T03:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P040",
+        "unit": "km/h",
+        "valid_until": "2026-07-16T08:00:00+00:00",
+        "value": "49.3"
+      }
+    ],
+    "P041": [
+      {
+        "entity_id": "P041",
+        "metric": "fuel_load",
+        "observed_at": "2026-07-04T23:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P041",
+        "unit": "t/ha",
+        "valid_until": "2026-07-16T15:00:00+00:00",
+        "value": "3.3"
+      },
+      {
+        "entity_id": "P041",
+        "metric": "dead_fuel_pct",
+        "observed_at": "2026-07-03T17:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P041",
+        "unit": "%",
+        "valid_until": "2026-07-17T09:00:00+00:00",
+        "value": "15.4"
+      },
+      {
+        "entity_id": "P041",
+        "metric": "fuel_moisture_pct",
+        "observed_at": "2026-07-15T08:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P041",
+        "unit": "%",
+        "valid_until": "2026-07-16T21:00:00+00:00",
+        "value": "26.1"
+      },
+      {
+        "entity_id": "P041",
+        "metric": "weather_danger",
+        "observed_at": "2026-07-14T23:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P041",
+        "unit": "index",
+        "valid_until": "2026-07-16T06:00:00+00:00",
+        "value": "50.4"
+      },
+      {
+        "entity_id": "P041",
+        "metric": "wind_kmh",
+        "observed_at": "2026-07-15T07:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P041",
+        "unit": "km/h",
+        "valid_until": "2026-07-16T18:00:00+00:00",
+        "value": "44.4"
+      }
+    ],
+    "P042": [
+      {
+        "entity_id": "P042",
+        "metric": "fuel_load",
+        "observed_at": "2026-07-10T14:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P042",
+        "unit": "t/ha",
+        "valid_until": "2026-07-16T03:00:00+00:00",
+        "value": "37.8"
+      },
+      {
+        "entity_id": "P042",
+        "metric": "dead_fuel_pct",
+        "observed_at": "2026-07-13T02:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P042",
+        "unit": "%",
+        "valid_until": "2026-07-16T04:00:00+00:00",
+        "value": "71.8"
+      },
+      {
+        "entity_id": "P042",
+        "metric": "fuel_moisture_pct",
+        "observed_at": "2026-07-15T07:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P042",
+        "unit": "%",
+        "valid_until": "2026-07-17T09:00:00+00:00",
+        "value": "25.1"
+      },
+      {
+        "entity_id": "P042",
+        "metric": "weather_danger",
+        "observed_at": "2026-07-14T22:00:00+00:00",
+        "provenance": "generated",
+        "quality": "valid",
+        "source": "generated:P042",
+        "unit": "index",
+        "valid_until": "2026-07-15T17:00:00+00:00",
+        "value": "78.2"
+      },
+      {
+        "entity_id": "P042",
+        "metric": "wind_kmh",
+        "observed_at": "2026-07-15T10:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P042",
+        "unit": "km/h",
+        "valid_until": "2026-07-17T04:00:00+00:00",
+        "value": "34.6"
+      }
+    ],
+    "P043": [
+      {
+        "entity_id": "P043",
+        "metric": "fuel_load",
+        "observed_at": "2026-07-05T22:00:00+00:00",
+        "provenance": "measured",
+        "quality": "invalid",
+        "source": "measured:P043",
+        "unit": "t/ha",
+        "valid_until": "2026-07-17T08:00:00+00:00",
+        "value": "29.1"
+      },
+      {
+        "entity_id": "P043",
+        "metric": "dead_fuel_pct",
+        "observed_at": "2026-07-08T17:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P043",
+        "unit": "%",
+        "valid_until": "2026-07-17T11:00:00+00:00",
+        "value": "77.2"
+      },
+      {
+        "entity_id": "P043",
+        "metric": "fuel_moisture_pct",
+        "observed_at": "2026-07-15T11:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P043",
+        "unit": "%",
+        "valid_until": "2026-07-16T05:00:00+00:00",
+        "value": "30.4"
+      },
+      {
+        "entity_id": "P043",
+        "metric": "weather_danger",
+        "observed_at": "2026-07-15T07:00:00+00:00",
+        "provenance": "generated",
+        "quality": "valid",
+        "source": "generated:P043",
+        "unit": "index",
+        "valid_until": "2026-07-16T00:00:00+00:00",
+        "value": "19"
+      },
+      {
+        "entity_id": "P043",
+        "metric": "wind_kmh",
+        "observed_at": "2026-07-14T16:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P043",
+        "unit": "km/h",
+        "valid_until": "2026-07-17T09:00:00+00:00",
+        "value": "3.9"
+      }
+    ],
+    "P044": [
+      {
+        "entity_id": "P044",
+        "metric": "fuel_load",
+        "observed_at": "2026-07-13T17:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P044",
+        "unit": "t/ha",
+        "valid_until": "2026-07-16T00:00:00+00:00",
+        "value": "13.3"
+      },
+      {
+        "entity_id": "P044",
+        "metric": "dead_fuel_pct",
+        "observed_at": "2026-07-13T20:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P044",
+        "unit": "%",
+        "valid_until": "2026-07-16T16:00:00+00:00",
+        "value": "59.6"
+      },
+      {
+        "entity_id": "P044",
+        "metric": "fuel_moisture_pct",
+        "observed_at": "2026-07-14T22:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P044",
+        "unit": "%",
+        "valid_until": "2026-07-16T20:00:00+00:00",
+        "value": "37.9"
+      },
+      {
+        "entity_id": "P044",
+        "metric": "weather_danger",
+        "observed_at": "2026-07-14T21:00:00+00:00",
+        "provenance": "generated",
+        "quality": "valid",
+        "source": "generated:P044",
+        "unit": "index",
+        "valid_until": "2026-07-15T15:00:00+00:00",
+        "value": "25.1"
+      },
+      {
+        "entity_id": "P044",
+        "metric": "wind_kmh",
+        "observed_at": "2026-07-15T06:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P044",
+        "unit": "km/h",
+        "valid_until": "2026-07-16T20:00:00+00:00",
+        "value": "41.8"
+      }
+    ],
+    "P045": [
+      {
+        "entity_id": "P045",
+        "metric": "fuel_load",
+        "observed_at": "2026-07-04T07:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P045",
+        "unit": "t/ha",
+        "valid_until": "2026-07-17T11:00:00+00:00",
+        "value": "20.6"
+      },
+      {
+        "entity_id": "P045",
+        "metric": "dead_fuel_pct",
+        "observed_at": "2026-07-12T03:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P045",
+        "unit": "%",
+        "valid_until": "2026-07-16T11:00:00+00:00",
+        "value": "59"
+      },
+      {
+        "entity_id": "P045",
+        "metric": "weather_danger",
+        "observed_at": "2026-07-14T21:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P045",
+        "unit": "index",
+        "valid_until": "2026-07-17T09:00:00+00:00",
+        "value": "48.3"
+      },
+      {
+        "entity_id": "P045",
+        "metric": "wind_kmh",
+        "observed_at": "2026-07-15T11:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P045",
+        "unit": "km/h",
+        "valid_until": "2026-07-17T08:00:00+00:00",
+        "value": "45.4"
+      }
+    ],
+    "P046": [
+      {
+        "entity_id": "P046",
+        "metric": "fuel_load",
+        "observed_at": "2026-07-10T06:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P046",
+        "unit": "t/ha",
+        "valid_until": "2026-07-17T02:00:00+00:00",
+        "value": "17.7"
+      },
+      {
+        "entity_id": "P046",
+        "metric": "dead_fuel_pct",
+        "observed_at": "2026-07-06T07:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P046",
+        "unit": "%",
+        "valid_until": "2026-07-16T09:00:00+00:00",
+        "value": "70.9"
+      },
+      {
+        "entity_id": "P046",
+        "metric": "fuel_moisture_pct",
+        "observed_at": "2026-07-15T03:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P046",
+        "unit": "%",
+        "valid_until": "2026-07-15T15:00:00+00:00",
+        "value": "11.7"
+      },
+      {
+        "entity_id": "P046",
+        "metric": "weather_danger",
+        "observed_at": "2026-07-15T03:00:00+00:00",
+        "provenance": "generated",
+        "quality": "valid",
+        "source": "generated:P046",
+        "unit": "index",
+        "valid_until": "2026-07-15T17:00:00+00:00",
+        "value": "31.6"
+      },
+      {
+        "entity_id": "P046",
+        "metric": "wind_kmh",
+        "observed_at": "2026-05-16T12:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P046",
+        "unit": "km/h",
+        "valid_until": "2026-06-15T12:00:00+00:00",
+        "value": "24.2"
+      }
+    ],
+    "P047": [
+      {
+        "entity_id": "P047",
+        "metric": "fuel_load",
+        "observed_at": "2026-07-10T17:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P047",
+        "unit": "t/ha",
+        "valid_until": "2026-07-16T08:00:00+00:00",
+        "value": "31.2"
+      },
+      {
+        "entity_id": "P047",
+        "metric": "dead_fuel_pct",
+        "observed_at": "2026-07-07T05:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P047",
+        "unit": "%",
+        "valid_until": "2026-07-15T23:00:00+00:00",
+        "value": "22.6"
+      },
+      {
+        "entity_id": "P047",
+        "metric": "fuel_moisture_pct",
+        "observed_at": "2026-07-15T01:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P047",
+        "unit": "%",
+        "valid_until": "2026-07-16T08:00:00+00:00",
+        "value": "35.9"
+      },
+      {
+        "entity_id": "P047",
+        "metric": "weather_danger",
+        "observed_at": "2026-07-15T09:00:00+00:00",
+        "provenance": "generated",
+        "quality": "valid",
+        "source": "generated:P047",
+        "unit": "index",
+        "valid_until": "2026-07-16T11:00:00+00:00",
+        "value": "51.9"
+      }
+    ],
+    "P048": [
+      {
+        "entity_id": "P048",
+        "metric": "fuel_load",
+        "observed_at": "2026-07-04T17:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P048",
+        "unit": "t/ha",
+        "valid_until": "2026-07-16T07:00:00+00:00",
+        "value": "5.4"
+      },
+      {
+        "entity_id": "P048",
+        "metric": "dead_fuel_pct",
+        "observed_at": "2026-07-15T02:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P048",
+        "unit": "%",
+        "valid_until": "2026-07-15T22:00:00+00:00",
+        "value": "54.3"
+      },
+      {
+        "entity_id": "P048",
+        "metric": "fuel_moisture_pct",
+        "observed_at": "2026-07-14T23:00:00+00:00",
+        "provenance": "fixture",
+        "quality": "valid",
+        "source": "sensor:P048",
+        "unit": "%",
+        "valid_until": "2026-07-17T02:00:00+00:00",
+        "value": "14.8"
+      },
+      {
+        "entity_id": "P048",
+        "metric": "weather_danger",
+        "observed_at": "2026-07-14T19:00:00+00:00",
+        "provenance": "generated",
+        "quality": "valid",
+        "source": "generated:P048",
+        "unit": "index",
+        "valid_until": "2026-07-16T16:00:00+00:00",
+        "value": "39.3"
+      },
+      {
+        "entity_id": "P048",
+        "metric": "wind_kmh",
+        "observed_at": "2026-07-15T08:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P048",
+        "unit": "km/h",
+        "valid_until": "2026-07-16T13:00:00+00:00",
+        "value": "17.2"
+      }
+    ],
+    "P049": [
+      {
+        "entity_id": "P049",
+        "metric": "fuel_load",
+        "observed_at": "2026-07-07T22:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P049",
+        "unit": "t/ha",
+        "valid_until": "2026-07-16T12:00:00+00:00",
+        "value": "33.3"
+      },
+      {
+        "entity_id": "P049",
+        "metric": "dead_fuel_pct",
+        "observed_at": "2026-07-03T06:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P049",
+        "unit": "%",
+        "valid_until": "2026-07-17T07:00:00+00:00",
+        "value": "87.1"
+      },
+      {
+        "entity_id": "P049",
+        "metric": "fuel_moisture_pct",
+        "observed_at": "2026-07-15T10:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P049",
+        "unit": "%",
+        "valid_until": "2026-07-16T17:00:00+00:00",
+        "value": "24.7"
+      },
+      {
+        "entity_id": "P049",
+        "metric": "weather_danger",
+        "observed_at": "2026-07-15T01:00:00+00:00",
+        "provenance": "generated",
+        "quality": "valid",
+        "source": "generated:P049",
+        "unit": "index",
+        "valid_until": "2026-07-17T00:00:00+00:00",
+        "value": "7.5"
+      }
+    ],
+    "P050": [
+      {
+        "entity_id": "P050",
+        "metric": "fuel_load",
+        "observed_at": "2026-07-06T10:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P050",
+        "unit": "t/ha",
+        "valid_until": "2026-07-16T01:00:00+00:00",
+        "value": "28.4"
+      },
+      {
+        "entity_id": "P050",
+        "metric": "dead_fuel_pct",
+        "observed_at": "2026-07-06T05:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P050",
+        "unit": "%",
+        "valid_until": "2026-07-15T14:00:00+00:00",
+        "value": "26.4"
+      },
+      {
+        "entity_id": "P050",
+        "metric": "fuel_moisture_pct",
+        "observed_at": "2026-05-16T12:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P050",
+        "unit": "%",
+        "valid_until": "2026-06-15T12:00:00+00:00",
+        "value": "11.1"
+      },
+      {
+        "entity_id": "P050",
+        "metric": "weather_danger",
+        "observed_at": "2026-07-15T06:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P050",
+        "unit": "index",
+        "valid_until": "2026-07-15T22:00:00+00:00",
+        "value": "70.1"
+      },
+      {
+        "entity_id": "P050",
+        "metric": "wind_kmh",
+        "observed_at": "2026-07-14T21:00:00+00:00",
+        "provenance": "measured",
+        "quality": "valid",
+        "source": "measured:P050",
+        "unit": "km/h",
+        "valid_until": "2026-07-15T23:00:00+00:00",
+        "value": "6.5"
+      }
+    ]
+  },
+  "policy_sha256": "26fd759b9fc3d9cbe1d252730b34111e289d7e67190aaa9497c361fb96de69ff",
+  "seed": 20260715
+}

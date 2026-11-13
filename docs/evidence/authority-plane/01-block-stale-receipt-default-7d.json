@@ -1,0 +1,8 @@
+{
+ "agent_answer": "The receipt for parcel P127 is stale (as_of 2026-07-15T12:00:00+00:00). I cannot propose an action for this parcel until its receipt is updated.",
+ "tool_calls": [
+  "get_receipt",
+  "propose_action"
+ ]
+}
+

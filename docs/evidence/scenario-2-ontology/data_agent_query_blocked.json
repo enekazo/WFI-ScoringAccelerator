@@ -1,0 +1,12 @@
+{
+  "date": "2026-11-09",
+  "data_agent_id": "00000000-0000-4000-8000-000000000024",
+  "attempts": [
+    "updateDefinition with ontology datasource in Files/Config/draft/ (LRO Succeeded, read back OK)",
+    "updateDefinition adding Files/Config/published/... copies of the draft parts (LRO Succeeded)",
+    "GET /v1/workspaces/{ws}/aiskills/{id}/aiassistant/openai/assistants?api-version=2024-05-01-preview",
+    "GET /v1/workspaces/{ws}/dataagents/{id}/aiassistant/openai/assistants?api-version=2024-05-01-preview"
+  ],
+  "result": "both GETs: HTTP 404 errorCode=EntityNotFound message='The requested resource could not be found' isRetriable=false",
+  "conclusion": "Ontology attached to the data agent as a datasource (definition level) but not queryable via REST: no documented REST publish/query route was found. Publishing is presumably a Fabric portal action, and the Foundry Fabric data agent tool needs a project connection with user identity passthrough (not a service principal). Stopped per instruction; no workaround built."
+}

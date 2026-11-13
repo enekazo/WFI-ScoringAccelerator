@@ -1,0 +1,23 @@
+{
+  "resource_group": "example-resource-group",
+  "log_analytics_workspace": "law-pinnedscore",
+  "application_insights": "appi-pinnedscore",
+  "project_connection": "appi-pinnedscore (category AppInsights)",
+  "agent": "pinned-score-agent-fabric (version 6)",
+  "question": "C5",
+  "trace_id": "b7f33acd02922db1baa44eced164be5d",
+  "answer": "P020 and P031 (correct)",
+  "tool_calls": 1,
+  "error": null,
+  "spans_seen_in_app_insights_dependencies": [
+    "pinned-score-C5",
+    "invoke_agent pinned-score-agent-fabric:6",
+    "responses",
+    "chat gpt-4.1-2025-04-14",
+    "execute_tool mcp_pinnedscore_ontology.ask_ontology",
+    "AIProjectClient.get_openai_client"
+  ],
+  "verified_by": "KQL on appi-pinnedscore dependencies table, about 4 minutes after the run (output was truncated at 8 rows, so the list may be incomplete)",
+  "not_checked": "Foundry portal Traces tab was not opened",
+  "secrets": "none stored; connection string fetched at runtime"
+}

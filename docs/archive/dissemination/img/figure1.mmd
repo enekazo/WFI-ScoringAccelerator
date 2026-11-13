@@ -1,0 +1,9 @@
+flowchart LR
+    P["Policy<br/>(pinned, hashed)"] --> S["Scorer<br/>(code computes)"]
+    E["Evidence<br/>(labelled: observed / imputed)"] --> S
+    S --> R["Receipt<br/>(score + hashes)"]
+    R --> A["Foundry agent<br/>(read-only tools, explains)"]
+    A --> V{"Verifier<br/>claims match receipt?"}
+    V -- yes --> U["Verified explanation"]
+    V -- no --> H["Blocked, goes to a human"]
+    U --> M["Measurement<br/>(error, provenance, reproducibility)"]

@@ -1,0 +1,11 @@
+flowchart LR
+  P[Pinned policy, SHA-256] --> S[Deterministic scorer]
+  O[Observations + faults] --> S
+  S --> RC[Hashed receipt]
+  RC --> AG[Agent: read-only get_receipt]
+  AG --> V{Verifier vs receipt}
+  V -- match --> D1[Agent answer delivered]
+  V -- mismatch / error --> D2[Receipt-derived answer delivered]
+  RC --> M[Harness: metrics vs ground truth]
+  D1 --> M
+  D2 --> M

@@ -1,0 +1,1783 @@
+{
+ "meta": {
+  "agent_model": "gpt-4.1",
+  "judge_model": "gpt-4.1-mini",
+  "dry_run": false,
+  "endpoint": "https://model.example.invalid/"
+ },
+ "seed": 20260715,
+ "repeats": 3,
+ "answers": [
+  {
+   "qid": "Q01",
+   "category": "explain",
+   "question": "Why did parcel P003 get the score it did?",
+   "parcels": [
+    "P003"
+   ],
+   "template": "P003 is scored 33.3 and falls in the moderate band. Contributions to the score: moisture contributes 17.43; dead_fuel contributes 5.94; wind contributes 4.98; weather_danger contributes 2.49; fuel_load contributes 2.48",
+   "template_faithfulness_violations": [],
+   "agent_delivered": "Parcel P003 received a wildfire risk score of 33.3, which places it in the \"moderate\" risk band. This score is based on measured data for several components: fuel load (3.3), dead fuel (39.6), moisture (15.6), weather danger (10.6), and wind (29.9). All these values were measured, as noted in the receipt. There are no additional reasons or adjustments listed, so the score directly reflects the measured component values as of July 15, 2026.",
+   "agent_blocked": false,
+   "agent_infra_error": null,
+   "agent_violations": [],
+   "agent_raw": "Parcel P003 received a wildfire risk score of 33.3, which places it in the \"moderate\" risk band. This score is based on measured data for several components: fuel load (3.3), dead fuel (39.6), moisture (15.6), weather danger (10.6), and wind (29.9). All these values were measured, as noted in the receipt. There are no additional reasons or adjustments listed, so the score directly reflects the measured component values as of July 15, 2026.",
+   "agent_delivered_faithfulness_violations": []
+  },
+  {
+   "qid": "Q02",
+   "category": "explain",
+   "question": "Explain the score for parcel P014. What is driving it?",
+   "parcels": [
+    "P014"
+   ],
+   "template": "P014 is scored 65.9 and falls in the high band. Contributions to the score: fuel_load contributes 28.73; moisture contributes 20.86; weather_danger contributes 7.65; dead_fuel contributes 4.43; wind contributes 4.28",
+   "template_faithfulness_violations": [],
+   "agent_delivered": "Parcel P014 has a wildfire risk score of 65.9, which places it in the \"high\" risk band. This score is driven by several measured and generated factors: notably, the fuel load is high at 38.3, and dead fuel is also elevated at 29.5. The moisture level is relatively low at 10.8, which increases fire risk, and weather danger is significant at 32.5. Wind is measured at 25.7, further contributing to the risk. All these components combine to produce the high score, and the data is a mix of measured and generated values as noted in the receipt.",
+   "agent_blocked": false,
+   "agent_infra_error": null,
+   "agent_violations": [],
+   "agent_raw": "Parcel P014 has a wildfire risk score of 65.9, which places it in the \"high\" risk band. This score is driven by several measured and generated factors: notably, the fuel load is high at 38.3, and dead fuel is also elevated at 29.5. The moisture level is relatively low at 10.8, which increases fire risk, and weather danger is significant at 32.5. Wind is measured at 25.7, further contributing to the risk. All these components combine to produce the high score, and the data is a mix of measured and generated values as noted in the receipt.",
+   "agent_delivered_faithfulness_violations": []
+  },
+  {
+   "qid": "Q03",
+   "category": "explain",
+   "question": "How was P007's risk band decided?",
+   "parcels": [
+    "P007"
+   ],
+   "template": "P007 is scored 58.8 and falls in the high band. Contributions to the score: fuel_load contributes 18.60; dead_fuel contributes 13.56; weather_danger contributes 12.49; wind contributes 7.53; moisture contributes 6.64",
+   "template_faithfulness_violations": [],
+   "agent_delivered": "P007\u2019s risk band was decided as \"high\" based on a wildfire risk score of 58.8. This score was calculated using measured and generated data for fuel load, dead fuel, moisture, weather danger, and wind. Since all required components are present and there are no missing data or reasons listed, the band assignment is complete and based on the provided score. The data sources are noted as either measured or generated, as shown in the receipt.",
+   "agent_blocked": false,
+   "agent_infra_error": null,
+   "agent_violations": [],
+   "agent_raw": "P007\u2019s risk band was decided as \"high\" based on a wildfire risk score of 58.8. This score was calculated using measured and generated data for fuel load, dead fuel, moisture, weather danger, and wind. Since all required components are present and there are no missing data or reasons listed, the band assignment is complete and based on the provided score. The data sources are noted as either measured or generated, as shown in the receipt.",
+   "agent_delivered_faithfulness_violations": []
+  },
+  {
+   "qid": "Q04",
+   "category": "why_incomplete",
+   "question": "Why is there no score for P017?",
+   "parcels": [
+    "P017"
+   ],
+   "template": "P017 is incomplete, so no score or band is given. Reasons: fuel_load is missing",
+   "template_faithfulness_violations": [],
+   "agent_delivered": "There is no score for parcel P017 because the receipt is incomplete. Specifically, the reason given is \"missing:fuel_load,\" which means the required fuel load data was not provided. Without this information, a wildfire risk score and band cannot be calculated. To resolve this, you need to supply the missing fuel load data.",
+   "agent_blocked": false,
+   "agent_infra_error": null,
+   "agent_violations": [],
+   "agent_raw": "There is no score for parcel P017 because the receipt is incomplete. Specifically, the reason given is \"missing:fuel_load,\" which means the required fuel load data was not provided. Without this information, a wildfire risk score and band cannot be calculated. To resolve this, you need to supply the missing fuel load data.",
+   "agent_delivered_faithfulness_violations": []
+  },
+  {
+   "qid": "Q05",
+   "category": "why_incomplete",
+   "question": "P001 has no score. What went wrong?",
+   "parcels": [
+    "P001"
+   ],
+   "template": "P001 is incomplete, so no score or band is given. Reasons: fuel_moisture_pct was given in the wrong unit",
+   "template_faithfulness_violations": [],
+   "agent_delivered": "P001 does not have a wildfire risk score because the receipt is incomplete. The reason given is \"unit:fuel_moisture_pct,\" which means the fuel moisture percentage data is missing. Without this key component, the risk assessment cannot be completed. To resolve this, you need to provide the missing fuel moisture percentage measurement.",
+   "agent_blocked": false,
+   "agent_infra_error": null,
+   "agent_violations": [],
+   "agent_raw": "P001 does not have a wildfire risk score because the receipt is incomplete. The reason given is \"unit:fuel_moisture_pct,\" which means the fuel moisture percentage data is missing. Without this key component, the risk assessment cannot be completed. To resolve this, you need to provide the missing fuel moisture percentage measurement.",
+   "agent_delivered_faithfulness_violations": []
+  },
+  {
+   "qid": "Q06",
+   "category": "why_incomplete",
+   "question": "Why was P019 not scored?",
+   "parcels": [
+    "P019"
+   ],
+   "template": "P019 is incomplete, so no score or band is given. Reasons: dead_fuel_pct is too old to use",
+   "template_faithfulness_violations": [],
+   "agent_delivered": "Parcel P019 was not scored because the receipt is incomplete. The reason given is \"expired:dead_fuel_pct,\" which means the dead fuel percentage data used was out of date. To obtain a score and risk band, you need to provide an up-to-date dead fuel percentage measurement.",
+   "agent_blocked": false,
+   "agent_infra_error": null,
+   "agent_violations": [],
+   "agent_raw": "Parcel P019 was not scored because the receipt is incomplete. The reason given is \"expired:dead_fuel_pct,\" which means the dead fuel percentage data used was out of date. To obtain a score and risk band, you need to provide an up-to-date dead fuel percentage measurement.",
+   "agent_delivered_faithfulness_violations": []
+  },
+  {
+   "qid": "Q07",
+   "category": "why_incomplete",
+   "question": "What is wrong with the data for P025?",
+   "parcels": [
+    "P025"
+   ],
+   "template": "P025 is incomplete, so no score or band is given. Reasons: dead_fuel_pct is flagged invalid",
+   "template_faithfulness_violations": [],
+   "agent_delivered": "The data for P025 is incomplete and does not provide a score or risk band. The reason given is \"invalid:dead_fuel_pct,\" which means the dead fuel percentage value is invalid or missing. To resolve this, you need to supply a valid dead fuel percentage measurement for the parcel. Without this, the wildfire risk assessment cannot be completed.",
+   "agent_blocked": false,
+   "agent_infra_error": null,
+   "agent_violations": [],
+   "agent_raw": "The data for P025 is incomplete and does not provide a score or risk band. The reason given is \"invalid:dead_fuel_pct,\" which means the dead fuel percentage value is invalid or missing. To resolve this, you need to supply a valid dead fuel percentage measurement for the parcel. Without this, the wildfire risk assessment cannot be completed.",
+   "agent_delivered_faithfulness_violations": []
+  },
+  {
+   "qid": "Q08",
+   "category": "compare",
+   "question": "Which of P014 and P003 is riskier, and why?",
+   "parcels": [
+    "P014",
+    "P003"
+   ],
+   "template": "P014 is higher at 65.9 (high) versus P003 at 33.3 (moderate)",
+   "template_faithfulness_violations": [],
+   "agent_delivered": "Verifier blocked the narration; showing receipt values. P014 score 65.9 band high. P003 score 33.3 band moderate",
+   "agent_blocked": true,
+   "agent_infra_error": null,
+   "agent_violations": [
+    "score_mismatch: claims score 65.9; receipt score is 33.3",
+    "score_mismatch: claims score 33.3; receipt score is 65.9"
+   ],
+   "agent_raw": "Parcel P014 is riskier than P003. P014 has a wildfire risk score of 65.9 and is in the \"high\" risk band, while P003 has a score of 33.3 and is in the \"moderate\" risk band. These scores and bands are based on the measured and generated data in the receipts provided.",
+   "agent_delivered_faithfulness_violations": []
+  },
+  {
+   "qid": "Q09",
+   "category": "compare",
+   "question": "Compare P007 and P018.",
+   "parcels": [
+    "P007",
+    "P018"
+   ],
+   "template": "P018 is higher at 61.5 (high) versus P007 at 58.8 (high)",
+   "template_faithfulness_violations": [],
+   "agent_delivered": "Verifier blocked the narration; showing receipt values. P007 score 58.8 band high. P018 score 61.5 band high",
+   "agent_blocked": true,
+   "agent_infra_error": null,
+   "agent_violations": [
+    "score_mismatch: claims score 61.5; receipt score is 58.8",
+    "score_mismatch: claims score 58.8; receipt score is 61.5"
+   ],
+   "agent_raw": "Both parcels P007 and P018 have a wildfire risk band of \"high\" as of July 15, 2026. P007 has a risk score of 58.8, while P018 has a slightly higher score of 61.5. This means that, according to the measured and generated data in the receipts, P018 is at a somewhat higher wildfire risk than P007, but both are in the same high-risk category. All component values were measured or generated as indicated in the receipts, and there are no missing data or reasons affecting the scores.",
+   "agent_delivered_faithfulness_violations": []
+  },
+  {
+   "qid": "Q10",
+   "category": "compare",
+   "question": "How does P005 compare with P017?",
+   "parcels": [
+    "P005",
+    "P017"
+   ],
+   "template": "P005 is scored 49.8 and falls in the moderate band. Contributions to the score: fuel_load contributes 23.93; wind contributes 9.13; weather_danger contributes 7.93; dead_fuel contributes 5.43; moisture contributes 3.43. P017 is incomplete, so no score or band is given. Reasons: fuel_load is missing. They cannot be ranked because one has no score",
+   "template_faithfulness_violations": [],
+   "agent_delivered": "Parcel P005 has a wildfire risk score of 49.8 and is in the moderate risk band, based on measured and generated data for fuel load, dead fuel, moisture, weather danger, and wind. In contrast, P017 does not have a score or risk band because it is missing the fuel_load component, as noted by the reason \"missing:fuel_load.\" To assess P017's risk, you would need to provide the missing fuel load data. Only P005 can currently be compared or ranked for wildfire risk.",
+   "agent_blocked": false,
+   "agent_infra_error": null,
+   "agent_violations": [],
+   "agent_raw": "Parcel P005 has a wildfire risk score of 49.8 and is in the moderate risk band, based on measured and generated data for fuel load, dead fuel, moisture, weather danger, and wind. In contrast, P017 does not have a score or risk band because it is missing the fuel_load component, as noted by the reason \"missing:fuel_load.\" To assess P017's risk, you would need to provide the missing fuel load data. Only P005 can currently be compared or ranked for wildfire risk.",
+   "agent_delivered_faithfulness_violations": []
+  },
+  {
+   "qid": "Q11",
+   "category": "what_if",
+   "question": "What would P003's score be if the moisture weight were 20% higher?",
+   "parcels": [
+    "P003"
+   ],
+   "template": "P003 is scored 33.3 today. With that weight change the score would be 35.1 instead, in the moderate band. This is a what-if only; the stored score is unchanged",
+   "template_faithfulness_violations": [],
+   "agent_delivered": "If the moisture weight for parcel P003 were 20% higher, its wildfire risk score would hypothetically be 35.1, and it would remain in the \"moderate\" risk band. This is based on the supplied what_if result, which is a hypothetical scenario. The current actual score is 33.3, also in the \"moderate\" band.",
+   "agent_blocked": false,
+   "agent_infra_error": null,
+   "agent_violations": [],
+   "agent_raw": "If the moisture weight for parcel P003 were 20% higher, its wildfire risk score would hypothetically be 35.1, and it would remain in the \"moderate\" risk band. This is based on the supplied what_if result, which is a hypothetical scenario. The current actual score is 33.3, also in the \"moderate\" band.",
+   "agent_delivered_faithfulness_violations": []
+  },
+  {
+   "qid": "Q12",
+   "category": "what_if",
+   "question": "If the wind weight were 20% lower, what happens to P014?",
+   "parcels": [
+    "P014"
+   ],
+   "template": "P014 is scored 65.9 today. With that weight change the score would be 66.4 instead, in the high band. This is a what-if only; the stored score is unchanged",
+   "template_faithfulness_violations": [],
+   "agent_delivered": "If the wind weight were 20% lower for parcel P014, the hypothetical wildfire risk score would be 66.4, which remains in the \"high\" risk band. This is a hypothetical result based on the supplied what_if data. The risk band does not change, and the score increases slightly compared to the original score of 65.9.",
+   "agent_blocked": false,
+   "agent_infra_error": null,
+   "agent_violations": [],
+   "agent_raw": "If the wind weight were 20% lower for parcel P014, the hypothetical wildfire risk score would be 66.4, which remains in the \"high\" risk band. This is a hypothetical result based on the supplied what_if data. The risk band does not change, and the score increases slightly compared to the original score of 65.9.",
+   "agent_delivered_faithfulness_violations": []
+  },
+  {
+   "qid": "Q13",
+   "category": "what_if",
+   "question": "What if fuel load counted 20% more for P018?",
+   "parcels": [
+    "P018"
+   ],
+   "template": "P018 is scored 61.5 today. With that weight change the score would be 60.9 instead, in the high band. This is a what-if only; the stored score is unchanged",
+   "template_faithfulness_violations": [],
+   "agent_delivered": "If fuel load counted 20% more for parcel P018, the hypothetical wildfire risk score would be 60.9, and the risk band would remain \"high.\" This is a hypothetical scenario based on the supplied what_if result. The change in fuel load does not lower the risk band, and the score decreases slightly from the original 61.5. This information is based on the provided data for P018.",
+   "agent_blocked": false,
+   "agent_infra_error": null,
+   "agent_violations": [],
+   "agent_raw": "If fuel load counted 20% more for parcel P018, the hypothetical wildfire risk score would be 60.9, and the risk band would remain \"high.\" This is a hypothetical scenario based on the supplied what_if result. The change in fuel load does not lower the risk band, and the score decreases slightly from the original 61.5. This information is based on the provided data for P018.",
+   "agent_delivered_faithfulness_violations": []
+  },
+  {
+   "qid": "Q14",
+   "category": "next_action",
+   "question": "What should I do next for P017?",
+   "parcels": [
+    "P017"
+   ],
+   "template": "To get P017 scored: supply a real field reading for fuel_load",
+   "template_faithfulness_violations": [],
+   "agent_delivered": "Verifier blocked the narration; showing receipt values. P017 incomplete; reasons missing:fuel_load",
+   "agent_blocked": true,
+   "agent_infra_error": null,
+   "agent_violations": [
+    "provenance_unsupported: claims fuel_load is generated, but receipt has no usable value for it",
+    "completeness_mismatch: claims complete but receipt is incomplete"
+   ],
+   "agent_raw": "For parcel P017, the wildfire risk assessment is incomplete because the fuel_load data is missing. There is no score or risk band available due to this missing information. To proceed, you should provide the fuel_load value so that a complete risk assessment can be generated.",
+   "agent_delivered_faithfulness_violations": []
+  },
+  {
+   "qid": "Q15",
+   "category": "next_action",
+   "question": "What should I do to get P024 scored?",
+   "parcels": [
+    "P024"
+   ],
+   "template": "To get P024 scored: replace the wind_kmh reading with a real field reading, because its source is not accepted",
+   "template_faithfulness_violations": [],
+   "agent_delivered": "Verifier blocked the narration; showing receipt values. P024 incomplete; reasons provenance:wind_kmh",
+   "agent_blocked": true,
+   "agent_infra_error": null,
+   "agent_violations": [
+    "reason_mismatch: claims wind_kmh is missing; receipt says provenance",
+    "provenance_unsupported: claims wind_kmh is measured, but receipt has no usable value for it",
+    "provenance_unsupported: claims wind_kmh is generated, but receipt has no usable value for it",
+    "provenance_unsupported: claims wind_kmh is fixture, but receipt has no usable value for it"
+   ],
+   "agent_raw": "P024 cannot be scored right now because the receipt is incomplete. The reason given is \"provenance:wind_kmh,\" which means the required wind speed data (wind_kmh) is missing or its source is not properly documented. To get P024 scored, you need to provide the wind_kmh value with the correct provenance (measured, generated, or fixture). Once this information is added, the parcel can be scored and assigned a risk band.",
+   "agent_delivered_faithfulness_violations": []
+  },
+  {
+   "qid": "Q16",
+   "category": "next_action",
+   "question": "What is the next step for P002?",
+   "parcels": [
+    "P002"
+   ],
+   "template": "To get P002 scored: re-submit dead_fuel_pct in the unit the policy expects",
+   "template_faithfulness_violations": [],
+   "agent_delivered": "Verifier blocked the narration; showing receipt values. P002 incomplete; reasons unit:dead_fuel_pct",
+   "agent_blocked": true,
+   "agent_infra_error": null,
+   "agent_violations": [
+    "reason_mismatch: claims dead_fuel_pct is missing; receipt says unit",
+    "completeness_mismatch: claims complete but receipt is incomplete"
+   ],
+   "agent_raw": "The wildfire parcel risk assessment for P002 is incomplete because the unit for dead fuel percentage (\"unit:dead_fuel_pct\") is missing. As a result, there is no score or risk band available. The next step is to provide the missing dead fuel percentage data so that a complete risk assessment can be generated.",
+   "agent_delivered_faithfulness_violations": []
+  },
+  {
+   "qid": "Q17",
+   "category": "next_action",
+   "question": "P005 is scored. Is there anything I should do next?",
+   "parcels": [
+    "P005"
+   ],
+   "template": "P005 is already scored, so no data fix is needed",
+   "template_faithfulness_violations": [],
+   "agent_delivered": "Parcel P005 has been scored with a wildfire risk score of 49.8, which places it in the \"moderate\" risk band. There are no missing data or reasons for concern listed in the receipt, so no immediate action is required just based on the scoring process. If you are considering mitigation or further assessment, you may want to review the individual component scores (such as wind and fuel load) for targeted actions, but from the receipt itself, your next step depends on your risk tolerance and local guidelines for parcels in the moderate band.",
+   "agent_blocked": false,
+   "agent_infra_error": null,
+   "agent_violations": [],
+   "agent_raw": "Parcel P005 has been scored with a wildfire risk score of 49.8, which places it in the \"moderate\" risk band. There are no missing data or reasons for concern listed in the receipt, so no immediate action is required just based on the scoring process. If you are considering mitigation or further assessment, you may want to review the individual component scores (such as wind and fuel load) for targeted actions, but from the receipt itself, your next step depends on your risk tolerance and local guidelines for parcels in the moderate band.",
+   "agent_delivered_faithfulness_violations": []
+  },
+  {
+   "qid": "Q18",
+   "category": "plain_summary",
+   "question": "Give a plain-language summary of P030 for a non-expert.",
+   "parcels": [
+    "P030"
+   ],
+   "template": "P030 is scored 63.3 and falls in the high band. Contributions to the score: moisture contributes 23.86; fuel_load contributes 15.83; weather_danger contributes 13.48; dead_fuel contributes 5.99; wind contributes 4.18",
+   "template_faithfulness_violations": [],
+   "agent_delivered": "Verifier blocked the narration; showing receipt values. P030 score 63.3 band high",
+   "agent_blocked": true,
+   "agent_infra_error": null,
+   "agent_violations": [
+    "provenance_mismatch: claims wind is generated; receipt says measured"
+   ],
+   "agent_raw": "Parcel P030 has a wildfire risk score of 63.3, which places it in the \"high\" risk band as of July 15, 2026. This means the parcel is considered to have a significant risk of wildfire. The score is based on measured values for fuel load, dead fuel, moisture, and wind, as well as a generated weather danger value. No missing data or issues were reported in the assessment.",
+   "agent_delivered_faithfulness_violations": []
+  },
+  {
+   "qid": "Q19",
+   "category": "plain_summary",
+   "question": "Summarise P021 for a landowner with no technical background.",
+   "parcels": [
+    "P021"
+   ],
+   "template": "P021 is scored 54.4 and falls in the high band. Contributions to the score: fuel_load contributes 28.35; dead_fuel contributes 13.50; weather_danger contributes 8.31; moisture contributes 2.86; wind contributes 1.35",
+   "template_faithfulness_violations": [],
+   "agent_delivered": "For parcel P021, the wildfire risk is rated as \"high\" with a score of 54.4. This means there is a significant chance of wildfire affecting your land. The main factors behind this rating are high amounts of fuel (like dry vegetation), a lot of dead fuel, and weather conditions that increase fire danger. These results are based on measurements and generated data as listed in the receipt. If you have concerns, you may want to consider steps to reduce fuel and improve fire safety on your property.",
+   "agent_blocked": false,
+   "agent_infra_error": null,
+   "agent_violations": [],
+   "agent_raw": "For parcel P021, the wildfire risk is rated as \"high\" with a score of 54.4. This means there is a significant chance of wildfire affecting your land. The main factors behind this rating are high amounts of fuel (like dry vegetation), a lot of dead fuel, and weather conditions that increase fire danger. These results are based on measurements and generated data as listed in the receipt. If you have concerns, you may want to consider steps to reduce fuel and improve fire safety on your property.",
+   "agent_delivered_faithfulness_violations": []
+  },
+  {
+   "qid": "Q20",
+   "category": "plain_summary",
+   "question": "In simple words, what is the situation for P029?",
+   "parcels": [
+    "P029"
+   ],
+   "template": "P029 is incomplete, so no score or band is given. Reasons: fuel_load is missing",
+   "template_faithfulness_violations": [],
+   "agent_delivered": "Verifier blocked the narration; showing receipt values. P029 incomplete; reasons missing:fuel_load",
+   "agent_blocked": true,
+   "agent_infra_error": null,
+   "agent_violations": [
+    "provenance_unsupported: claims fuel_load is measured, but receipt has no usable value for it"
+   ],
+   "agent_raw": "For parcel P029, the wildfire risk assessment is incomplete because the fuel load data is missing. This means there is no risk score or band available. To get a proper risk evaluation, the fuel load needs to be measured and included. The current situation cannot be fully assessed until this missing information is provided.",
+   "agent_delivered_faithfulness_violations": []
+  }
+ ],
+ "judgements": [
+  {
+   "qid": "Q01",
+   "category": "explain",
+   "repeat": 0,
+   "error": null,
+   "d_first": true,
+   "scores_D": {
+    "answers_question": 5,
+    "plain_language": 5,
+    "actionable": 4
+   },
+   "scores_T": {
+    "answers_question": 4,
+    "plain_language": 3,
+    "actionable": 2
+   },
+   "total_D": 14,
+   "total_T": 9,
+   "outcome": "win"
+  },
+  {
+   "qid": "Q01",
+   "category": "explain",
+   "repeat": 1,
+   "error": null,
+   "d_first": true,
+   "scores_D": {
+    "answers_question": 5,
+    "plain_language": 5,
+    "actionable": 3
+   },
+   "scores_T": {
+    "answers_question": 4,
+    "plain_language": 3,
+    "actionable": 2
+   },
+   "total_D": 13,
+   "total_T": 9,
+   "outcome": "win"
+  },
+  {
+   "qid": "Q01",
+   "category": "explain",
+   "repeat": 2,
+   "error": null,
+   "d_first": false,
+   "scores_D": {
+    "answers_question": 3,
+    "plain_language": 3,
+    "actionable": 2
+   },
+   "scores_T": {
+    "answers_question": 4,
+    "plain_language": 4,
+    "actionable": 2
+   },
+   "total_D": 8,
+   "total_T": 10,
+   "outcome": "loss"
+  },
+  {
+   "qid": "Q02",
+   "category": "explain",
+   "repeat": 0,
+   "error": null,
+   "d_first": false,
+   "scores_D": {
+    "answers_question": 4,
+    "plain_language": 3,
+    "actionable": 2
+   },
+   "scores_T": {
+    "answers_question": 4,
+    "plain_language": 4,
+    "actionable": 2
+   },
+   "total_D": 9,
+   "total_T": 10,
+   "outcome": "loss"
+  },
+  {
+   "qid": "Q02",
+   "category": "explain",
+   "repeat": 1,
+   "error": null,
+   "d_first": false,
+   "scores_D": {
+    "answers_question": 3,
+    "plain_language": 3,
+    "actionable": 2
+   },
+   "scores_T": {
+    "answers_question": 4,
+    "plain_language": 4,
+    "actionable": 2
+   },
+   "total_D": 8,
+   "total_T": 10,
+   "outcome": "loss"
+  },
+  {
+   "qid": "Q02",
+   "category": "explain",
+   "repeat": 2,
+   "error": null,
+   "d_first": true,
+   "scores_D": {
+    "answers_question": 5,
+    "plain_language": 5,
+    "actionable": 4
+   },
+   "scores_T": {
+    "answers_question": 3,
+    "plain_language": 3,
+    "actionable": 2
+   },
+   "total_D": 14,
+   "total_T": 8,
+   "outcome": "win"
+  },
+  {
+   "qid": "Q03",
+   "category": "explain",
+   "repeat": 0,
+   "error": null,
+   "d_first": true,
+   "scores_D": {
+    "answers_question": 5,
+    "plain_language": 5,
+    "actionable": 4
+   },
+   "scores_T": {
+    "answers_question": 4,
+    "plain_language": 4,
+    "actionable": 2
+   },
+   "total_D": 14,
+   "total_T": 10,
+   "outcome": "win"
+  },
+  {
+   "qid": "Q03",
+   "category": "explain",
+   "repeat": 1,
+   "error": null,
+   "d_first": false,
+   "scores_D": {
+    "answers_question": 4,
+    "plain_language": 3,
+    "actionable": 2
+   },
+   "scores_T": {
+    "answers_question": 4,
+    "plain_language": 4,
+    "actionable": 3
+   },
+   "total_D": 9,
+   "total_T": 11,
+   "outcome": "loss"
+  },
+  {
+   "qid": "Q03",
+   "category": "explain",
+   "repeat": 2,
+   "error": null,
+   "d_first": true,
+   "scores_D": {
+    "answers_question": 5,
+    "plain_language": 5,
+    "actionable": 4
+   },
+   "scores_T": {
+    "answers_question": 4,
+    "plain_language": 4,
+    "actionable": 2
+   },
+   "total_D": 14,
+   "total_T": 10,
+   "outcome": "win"
+  },
+  {
+   "qid": "Q04",
+   "category": "why_incomplete",
+   "repeat": 0,
+   "error": null,
+   "d_first": false,
+   "scores_D": {
+    "answers_question": 5,
+    "plain_language": 5,
+    "actionable": 5
+   },
+   "scores_T": {
+    "answers_question": 4,
+    "plain_language": 5,
+    "actionable": 3
+   },
+   "total_D": 15,
+   "total_T": 12,
+   "outcome": "win"
+  },
+  {
+   "qid": "Q04",
+   "category": "why_incomplete",
+   "repeat": 1,
+   "error": null,
+   "d_first": false,
+   "scores_D": {
+    "answers_question": 5,
+    "plain_language": 5,
+    "actionable": 5
+   },
+   "scores_T": {
+    "answers_question": 4,
+    "plain_language": 5,
+    "actionable": 3
+   },
+   "total_D": 15,
+   "total_T": 12,
+   "outcome": "win"
+  },
+  {
+   "qid": "Q04",
+   "category": "why_incomplete",
+   "repeat": 2,
+   "error": null,
+   "d_first": false,
+   "scores_D": {
+    "answers_question": 5,
+    "plain_language": 5,
+    "actionable": 5
+   },
+   "scores_T": {
+    "answers_question": 4,
+    "plain_language": 5,
+    "actionable": 3
+   },
+   "total_D": 15,
+   "total_T": 12,
+   "outcome": "win"
+  },
+  {
+   "qid": "Q05",
+   "category": "why_incomplete",
+   "repeat": 0,
+   "error": null,
+   "d_first": true,
+   "scores_D": {
+    "answers_question": 5,
+    "plain_language": 5,
+    "actionable": 5
+   },
+   "scores_T": {
+    "answers_question": 4,
+    "plain_language": 4,
+    "actionable": 4
+   },
+   "total_D": 15,
+   "total_T": 12,
+   "outcome": "win"
+  },
+  {
+   "qid": "Q05",
+   "category": "why_incomplete",
+   "repeat": 1,
+   "error": null,
+   "d_first": false,
+   "scores_D": {
+    "answers_question": 5,
+    "plain_language": 5,
+    "actionable": 5
+   },
+   "scores_T": {
+    "answers_question": 4,
+    "plain_language": 3,
+    "actionable": 3
+   },
+   "total_D": 15,
+   "total_T": 10,
+   "outcome": "win"
+  },
+  {
+   "qid": "Q05",
+   "category": "why_incomplete",
+   "repeat": 2,
+   "error": null,
+   "d_first": true,
+   "scores_D": {
+    "answers_question": 5,
+    "plain_language": 5,
+    "actionable": 5
+   },
+   "scores_T": {
+    "answers_question": 4,
+    "plain_language": 4,
+    "actionable": 4
+   },
+   "total_D": 15,
+   "total_T": 12,
+   "outcome": "win"
+  },
+  {
+   "qid": "Q06",
+   "category": "why_incomplete",
+   "repeat": 0,
+   "error": null,
+   "d_first": false,
+   "scores_D": {
+    "answers_question": 5,
+    "plain_language": 5,
+    "actionable": 5
+   },
+   "scores_T": {
+    "answers_question": 4,
+    "plain_language": 3,
+    "actionable": 2
+   },
+   "total_D": 15,
+   "total_T": 9,
+   "outcome": "win"
+  },
+  {
+   "qid": "Q06",
+   "category": "why_incomplete",
+   "repeat": 1,
+   "error": null,
+   "d_first": true,
+   "scores_D": {
+    "answers_question": 5,
+    "plain_language": 5,
+    "actionable": 5
+   },
+   "scores_T": {
+    "answers_question": 4,
+    "plain_language": 4,
+    "actionable": 3
+   },
+   "total_D": 15,
+   "total_T": 11,
+   "outcome": "win"
+  },
+  {
+   "qid": "Q06",
+   "category": "why_incomplete",
+   "repeat": 2,
+   "error": null,
+   "d_first": false,
+   "scores_D": {
+    "answers_question": 5,
+    "plain_language": 5,
+    "actionable": 5
+   },
+   "scores_T": {
+    "answers_question": 4,
+    "plain_language": 3,
+    "actionable": 2
+   },
+   "total_D": 15,
+   "total_T": 9,
+   "outcome": "win"
+  },
+  {
+   "qid": "Q07",
+   "category": "why_incomplete",
+   "repeat": 0,
+   "error": null,
+   "d_first": true,
+   "scores_D": {
+    "answers_question": 5,
+    "plain_language": 5,
+    "actionable": 5
+   },
+   "scores_T": {
+    "answers_question": 4,
+    "plain_language": 4,
+    "actionable": 3
+   },
+   "total_D": 15,
+   "total_T": 11,
+   "outcome": "win"
+  },
+  {
+   "qid": "Q07",
+   "category": "why_incomplete",
+   "repeat": 1,
+   "error": null,
+   "d_first": true,
+   "scores_D": {
+    "answers_question": 5,
+    "plain_language": 5,
+    "actionable": 5
+   },
+   "scores_T": {
+    "answers_question": 4,
+    "plain_language": 4,
+    "actionable": 3
+   },
+   "total_D": 15,
+   "total_T": 11,
+   "outcome": "win"
+  },
+  {
+   "qid": "Q07",
+   "category": "why_incomplete",
+   "repeat": 2,
+   "error": null,
+   "d_first": false,
+   "scores_D": {
+    "answers_question": 5,
+    "plain_language": 5,
+    "actionable": 5
+   },
+   "scores_T": {
+    "answers_question": 4,
+    "plain_language": 4,
+    "actionable": 2
+   },
+   "total_D": 15,
+   "total_T": 10,
+   "outcome": "win"
+  },
+  {
+   "qid": "Q08",
+   "category": "compare",
+   "repeat": 0,
+   "error": null,
+   "d_first": false,
+   "scores_D": {
+    "answers_question": 3,
+    "plain_language": 2,
+    "actionable": 1
+   },
+   "scores_T": {
+    "answers_question": 4,
+    "plain_language": 5,
+    "actionable": 3
+   },
+   "total_D": 6,
+   "total_T": 12,
+   "outcome": "loss"
+  },
+  {
+   "qid": "Q08",
+   "category": "compare",
+   "repeat": 1,
+   "error": null,
+   "d_first": false,
+   "scores_D": {
+    "answers_question": 3,
+    "plain_language": 2,
+    "actionable": 1
+   },
+   "scores_T": {
+    "answers_question": 4,
+    "plain_language": 5,
+    "actionable": 3
+   },
+   "total_D": 6,
+   "total_T": 12,
+   "outcome": "loss"
+  },
+  {
+   "qid": "Q08",
+   "category": "compare",
+   "repeat": 2,
+   "error": null,
+   "d_first": true,
+   "scores_D": {
+    "answers_question": 4,
+    "plain_language": 3,
+    "actionable": 2
+   },
+   "scores_T": {
+    "answers_question": 4,
+    "plain_language": 4,
+    "actionable": 2
+   },
+   "total_D": 9,
+   "total_T": 10,
+   "outcome": "loss"
+  },
+  {
+   "qid": "Q09",
+   "category": "compare",
+   "repeat": 0,
+   "error": null,
+   "d_first": true,
+   "scores_D": {
+    "answers_question": 3,
+    "plain_language": 2,
+    "actionable": 2
+   },
+   "scores_T": {
+    "answers_question": 4,
+    "plain_language": 4,
+    "actionable": 3
+   },
+   "total_D": 7,
+   "total_T": 11,
+   "outcome": "loss"
+  },
+  {
+   "qid": "Q09",
+   "category": "compare",
+   "repeat": 1,
+   "error": null,
+   "d_first": false,
+   "scores_D": {
+    "answers_question": 3,
+    "plain_language": 2,
+    "actionable": 2
+   },
+   "scores_T": {
+    "answers_question": 4,
+    "plain_language": 4,
+    "actionable": 3
+   },
+   "total_D": 7,
+   "total_T": 11,
+   "outcome": "loss"
+  },
+  {
+   "qid": "Q09",
+   "category": "compare",
+   "repeat": 2,
+   "error": null,
+   "d_first": true,
+   "scores_D": {
+    "answers_question": 3,
+    "plain_language": 2,
+    "actionable": 2
+   },
+   "scores_T": {
+    "answers_question": 4,
+    "plain_language": 4,
+    "actionable": 3
+   },
+   "total_D": 7,
+   "total_T": 11,
+   "outcome": "loss"
+  },
+  {
+   "qid": "Q10",
+   "category": "compare",
+   "repeat": 0,
+   "error": null,
+   "d_first": true,
+   "scores_D": {
+    "answers_question": 5,
+    "plain_language": 5,
+    "actionable": 5
+   },
+   "scores_T": {
+    "answers_question": 4,
+    "plain_language": 4,
+    "actionable": 4
+   },
+   "total_D": 15,
+   "total_T": 12,
+   "outcome": "win"
+  },
+  {
+   "qid": "Q10",
+   "category": "compare",
+   "repeat": 1,
+   "error": null,
+   "d_first": true,
+   "scores_D": {
+    "answers_question": 5,
+    "plain_language": 5,
+    "actionable": 5
+   },
+   "scores_T": {
+    "answers_question": 5,
+    "plain_language": 4,
+    "actionable": 4
+   },
+   "total_D": 15,
+   "total_T": 13,
+   "outcome": "win"
+  },
+  {
+   "qid": "Q10",
+   "category": "compare",
+   "repeat": 2,
+   "error": null,
+   "d_first": false,
+   "scores_D": {
+    "answers_question": 5,
+    "plain_language": 5,
+    "actionable": 5
+   },
+   "scores_T": {
+    "answers_question": 4,
+    "plain_language": 4,
+    "actionable": 3
+   },
+   "total_D": 15,
+   "total_T": 11,
+   "outcome": "win"
+  },
+  {
+   "qid": "Q11",
+   "category": "what_if",
+   "repeat": 0,
+   "error": null,
+   "d_first": false,
+   "scores_D": {
+    "answers_question": 5,
+    "plain_language": 5,
+    "actionable": 4
+   },
+   "scores_T": {
+    "answers_question": 5,
+    "plain_language": 5,
+    "actionable": 4
+   },
+   "total_D": 14,
+   "total_T": 14,
+   "outcome": "tie"
+  },
+  {
+   "qid": "Q11",
+   "category": "what_if",
+   "repeat": 1,
+   "error": null,
+   "d_first": false,
+   "scores_D": {
+    "answers_question": 5,
+    "plain_language": 5,
+    "actionable": 4
+   },
+   "scores_T": {
+    "answers_question": 5,
+    "plain_language": 5,
+    "actionable": 4
+   },
+   "total_D": 14,
+   "total_T": 14,
+   "outcome": "tie"
+  },
+  {
+   "qid": "Q11",
+   "category": "what_if",
+   "repeat": 2,
+   "error": null,
+   "d_first": false,
+   "scores_D": {
+    "answers_question": 5,
+    "plain_language": 5,
+    "actionable": 4
+   },
+   "scores_T": {
+    "answers_question": 5,
+    "plain_language": 5,
+    "actionable": 4
+   },
+   "total_D": 14,
+   "total_T": 14,
+   "outcome": "tie"
+  },
+  {
+   "qid": "Q12",
+   "category": "what_if",
+   "repeat": 0,
+   "error": null,
+   "d_first": true,
+   "scores_D": {
+    "answers_question": 5,
+    "plain_language": 5,
+    "actionable": 4
+   },
+   "scores_T": {
+    "answers_question": 4,
+    "plain_language": 4,
+    "actionable": 3
+   },
+   "total_D": 14,
+   "total_T": 11,
+   "outcome": "win"
+  },
+  {
+   "qid": "Q12",
+   "category": "what_if",
+   "repeat": 1,
+   "error": null,
+   "d_first": false,
+   "scores_D": {
+    "answers_question": 5,
+    "plain_language": 5,
+    "actionable": 4
+   },
+   "scores_T": {
+    "answers_question": 4,
+    "plain_language": 4,
+    "actionable": 3
+   },
+   "total_D": 14,
+   "total_T": 11,
+   "outcome": "win"
+  },
+  {
+   "qid": "Q12",
+   "category": "what_if",
+   "repeat": 2,
+   "error": null,
+   "d_first": true,
+   "scores_D": {
+    "answers_question": 5,
+    "plain_language": 5,
+    "actionable": 4
+   },
+   "scores_T": {
+    "answers_question": 4,
+    "plain_language": 4,
+    "actionable": 3
+   },
+   "total_D": 14,
+   "total_T": 11,
+   "outcome": "win"
+  },
+  {
+   "qid": "Q13",
+   "category": "what_if",
+   "repeat": 0,
+   "error": null,
+   "d_first": true,
+   "scores_D": {
+    "answers_question": 5,
+    "plain_language": 5,
+    "actionable": 4
+   },
+   "scores_T": {
+    "answers_question": 5,
+    "plain_language": 4,
+    "actionable": 3
+   },
+   "total_D": 14,
+   "total_T": 12,
+   "outcome": "win"
+  },
+  {
+   "qid": "Q13",
+   "category": "what_if",
+   "repeat": 1,
+   "error": null,
+   "d_first": false,
+   "scores_D": {
+    "answers_question": 5,
+    "plain_language": 5,
+    "actionable": 4
+   },
+   "scores_T": {
+    "answers_question": 4,
+    "plain_language": 4,
+    "actionable": 3
+   },
+   "total_D": 14,
+   "total_T": 11,
+   "outcome": "win"
+  },
+  {
+   "qid": "Q13",
+   "category": "what_if",
+   "repeat": 2,
+   "error": null,
+   "d_first": false,
+   "scores_D": {
+    "answers_question": 5,
+    "plain_language": 5,
+    "actionable": 4
+   },
+   "scores_T": {
+    "answers_question": 4,
+    "plain_language": 4,
+    "actionable": 3
+   },
+   "total_D": 14,
+   "total_T": 11,
+   "outcome": "win"
+  },
+  {
+   "qid": "Q14",
+   "category": "next_action",
+   "repeat": 0,
+   "error": null,
+   "d_first": true,
+   "scores_D": {
+    "answers_question": 4,
+    "plain_language": 3,
+    "actionable": 2
+   },
+   "scores_T": {
+    "answers_question": 5,
+    "plain_language": 5,
+    "actionable": 5
+   },
+   "total_D": 9,
+   "total_T": 15,
+   "outcome": "loss"
+  },
+  {
+   "qid": "Q14",
+   "category": "next_action",
+   "repeat": 1,
+   "error": null,
+   "d_first": false,
+   "scores_D": {
+    "answers_question": 3,
+    "plain_language": 3,
+    "actionable": 2
+   },
+   "scores_T": {
+    "answers_question": 5,
+    "plain_language": 5,
+    "actionable": 5
+   },
+   "total_D": 8,
+   "total_T": 15,
+   "outcome": "loss"
+  },
+  {
+   "qid": "Q14",
+   "category": "next_action",
+   "repeat": 2,
+   "error": null,
+   "d_first": false,
+   "scores_D": {
+    "answers_question": 3,
+    "plain_language": 3,
+    "actionable": 3
+   },
+   "scores_T": {
+    "answers_question": 4,
+    "plain_language": 5,
+    "actionable": 5
+   },
+   "total_D": 9,
+   "total_T": 14,
+   "outcome": "loss"
+  },
+  {
+   "qid": "Q15",
+   "category": "next_action",
+   "repeat": 0,
+   "error": null,
+   "d_first": false,
+   "scores_D": {
+    "answers_question": 2,
+    "plain_language": 2,
+    "actionable": 1
+   },
+   "scores_T": {
+    "answers_question": 4,
+    "plain_language": 4,
+    "actionable": 4
+   },
+   "total_D": 5,
+   "total_T": 12,
+   "outcome": "loss"
+  },
+  {
+   "qid": "Q15",
+   "category": "next_action",
+   "repeat": 1,
+   "error": null,
+   "d_first": true,
+   "scores_D": {
+    "answers_question": 2,
+    "plain_language": 2,
+    "actionable": 1
+   },
+   "scores_T": {
+    "answers_question": 5,
+    "plain_language": 5,
+    "actionable": 5
+   },
+   "total_D": 5,
+   "total_T": 15,
+   "outcome": "loss"
+  },
+  {
+   "qid": "Q15",
+   "category": "next_action",
+   "repeat": 2,
+   "error": null,
+   "d_first": false,
+   "scores_D": {
+    "answers_question": 2,
+    "plain_language": 2,
+    "actionable": 1
+   },
+   "scores_T": {
+    "answers_question": 5,
+    "plain_language": 5,
+    "actionable": 5
+   },
+   "total_D": 5,
+   "total_T": 15,
+   "outcome": "loss"
+  },
+  {
+   "qid": "Q16",
+   "category": "next_action",
+   "repeat": 0,
+   "error": null,
+   "d_first": false,
+   "scores_D": {
+    "answers_question": 3,
+    "plain_language": 2,
+    "actionable": 2
+   },
+   "scores_T": {
+    "answers_question": 5,
+    "plain_language": 4,
+    "actionable": 5
+   },
+   "total_D": 7,
+   "total_T": 14,
+   "outcome": "loss"
+  },
+  {
+   "qid": "Q16",
+   "category": "next_action",
+   "repeat": 1,
+   "error": null,
+   "d_first": false,
+   "scores_D": {
+    "answers_question": 3,
+    "plain_language": 2,
+    "actionable": 2
+   },
+   "scores_T": {
+    "answers_question": 5,
+    "plain_language": 4,
+    "actionable": 5
+   },
+   "total_D": 7,
+   "total_T": 14,
+   "outcome": "loss"
+  },
+  {
+   "qid": "Q16",
+   "category": "next_action",
+   "repeat": 2,
+   "error": null,
+   "d_first": false,
+   "scores_D": {
+    "answers_question": 3,
+    "plain_language": 2,
+    "actionable": 2
+   },
+   "scores_T": {
+    "answers_question": 5,
+    "plain_language": 4,
+    "actionable": 5
+   },
+   "total_D": 7,
+   "total_T": 14,
+   "outcome": "loss"
+  },
+  {
+   "qid": "Q17",
+   "category": "next_action",
+   "repeat": 0,
+   "error": null,
+   "d_first": false,
+   "scores_D": {
+    "answers_question": 5,
+    "plain_language": 5,
+    "actionable": 5
+   },
+   "scores_T": {
+    "answers_question": 3,
+    "plain_language": 5,
+    "actionable": 3
+   },
+   "total_D": 15,
+   "total_T": 11,
+   "outcome": "win"
+  },
+  {
+   "qid": "Q17",
+   "category": "next_action",
+   "repeat": 1,
+   "error": null,
+   "d_first": true,
+   "scores_D": {
+    "answers_question": 5,
+    "plain_language": 5,
+    "actionable": 4
+   },
+   "scores_T": {
+    "answers_question": 2,
+    "plain_language": 5,
+    "actionable": 1
+   },
+   "total_D": 14,
+   "total_T": 8,
+   "outcome": "win"
+  },
+  {
+   "qid": "Q17",
+   "category": "next_action",
+   "repeat": 2,
+   "error": null,
+   "d_first": false,
+   "scores_D": {
+    "answers_question": 5,
+    "plain_language": 5,
+    "actionable": 5
+   },
+   "scores_T": {
+    "answers_question": 3,
+    "plain_language": 5,
+    "actionable": 3
+   },
+   "total_D": 15,
+   "total_T": 11,
+   "outcome": "win"
+  },
+  {
+   "qid": "Q18",
+   "category": "plain_summary",
+   "repeat": 0,
+   "error": null,
+   "d_first": true,
+   "scores_D": {
+    "answers_question": 2,
+    "plain_language": 2,
+    "actionable": 1
+   },
+   "scores_T": {
+    "answers_question": 4,
+    "plain_language": 3,
+    "actionable": 2
+   },
+   "total_D": 5,
+   "total_T": 9,
+   "outcome": "loss"
+  },
+  {
+   "qid": "Q18",
+   "category": "plain_summary",
+   "repeat": 1,
+   "error": null,
+   "d_first": false,
+   "scores_D": {
+    "answers_question": 1,
+    "plain_language": 1,
+    "actionable": 1
+   },
+   "scores_T": {
+    "answers_question": 3,
+    "plain_language": 3,
+    "actionable": 2
+   },
+   "total_D": 3,
+   "total_T": 8,
+   "outcome": "loss"
+  },
+  {
+   "qid": "Q18",
+   "category": "plain_summary",
+   "repeat": 2,
+   "error": null,
+   "d_first": false,
+   "scores_D": {
+    "answers_question": 2,
+    "plain_language": 2,
+    "actionable": 1
+   },
+   "scores_T": {
+    "answers_question": 4,
+    "plain_language": 3,
+    "actionable": 2
+   },
+   "total_D": 5,
+   "total_T": 9,
+   "outcome": "loss"
+  },
+  {
+   "qid": "Q19",
+   "category": "plain_summary",
+   "repeat": 0,
+   "error": null,
+   "d_first": false,
+   "scores_D": {
+    "answers_question": 5,
+    "plain_language": 5,
+    "actionable": 4
+   },
+   "scores_T": {
+    "answers_question": 2,
+    "plain_language": 2,
+    "actionable": 1
+   },
+   "total_D": 14,
+   "total_T": 5,
+   "outcome": "win"
+  },
+  {
+   "qid": "Q19",
+   "category": "plain_summary",
+   "repeat": 1,
+   "error": null,
+   "d_first": true,
+   "scores_D": {
+    "answers_question": 5,
+    "plain_language": 5,
+    "actionable": 4
+   },
+   "scores_T": {
+    "answers_question": 3,
+    "plain_language": 2,
+    "actionable": 1
+   },
+   "total_D": 14,
+   "total_T": 6,
+   "outcome": "win"
+  },
+  {
+   "qid": "Q19",
+   "category": "plain_summary",
+   "repeat": 2,
+   "error": null,
+   "d_first": false,
+   "scores_D": {
+    "answers_question": 5,
+    "plain_language": 5,
+    "actionable": 4
+   },
+   "scores_T": {
+    "answers_question": 2,
+    "plain_language": 2,
+    "actionable": 1
+   },
+   "total_D": 14,
+   "total_T": 5,
+   "outcome": "win"
+  },
+  {
+   "qid": "Q20",
+   "category": "plain_summary",
+   "repeat": 0,
+   "error": null,
+   "d_first": false,
+   "scores_D": {
+    "answers_question": 3,
+    "plain_language": 2,
+    "actionable": 3
+   },
+   "scores_T": {
+    "answers_question": 4,
+    "plain_language": 5,
+    "actionable": 4
+   },
+   "total_D": 8,
+   "total_T": 13,
+   "outcome": "loss"
+  },
+  {
+   "qid": "Q20",
+   "category": "plain_summary",
+   "repeat": 1,
+   "error": null,
+   "d_first": true,
+   "scores_D": {
+    "answers_question": 3,
+    "plain_language": 2,
+    "actionable": 2
+   },
+   "scores_T": {
+    "answers_question": 4,
+    "plain_language": 4,
+    "actionable": 3
+   },
+   "total_D": 7,
+   "total_T": 11,
+   "outcome": "loss"
+  },
+  {
+   "qid": "Q20",
+   "category": "plain_summary",
+   "repeat": 2,
+   "error": null,
+   "d_first": true,
+   "scores_D": {
+    "answers_question": 3,
+    "plain_language": 2,
+    "actionable": 2
+   },
+   "scores_T": {
+    "answers_question": 4,
+    "plain_language": 4,
+    "actionable": 3
+   },
+   "total_D": 7,
+   "total_T": 11,
+   "outcome": "loss"
+  }
+ ],
+ "summary": {
+  "judgements": {
+   "attempted": 60,
+   "usable": 60,
+   "judge_errors": 0
+  },
+  "overall": {
+   "n": 60,
+   "win": {
+    "count": 32,
+    "share": 0.5333333333333333,
+    "ci95": [
+     0.40893208671135106,
+     0.65372298459012
+    ]
+   },
+   "tie": {
+    "count": 3,
+    "share": 0.05,
+    "ci95": [
+     0.01714919117914121,
+     0.13700734625099836
+    ]
+   },
+   "loss": {
+    "count": 25,
+    "share": 0.4166666666666667,
+    "ci95": [
+     0.30064086487871833,
+     0.5427214568676039
+    ]
+   }
+  },
+  "mean_total_diff_D_minus_T": 0.2333333333333333,
+  "mean_total_diff_ci95_bootstrap_over_questions": [
+   -1.8,
+   2.25
+  ],
+  "mean_criterion_diff_D_minus_T": {
+   "answers_question": 0.1,
+   "plain_language": -0.16666666666666666,
+   "actionable": 0.3
+  },
+  "by_category": {
+   "explain": {
+    "n": 9,
+    "win": {
+     "count": 5,
+     "share": 0.5555555555555556,
+     "ci95": [
+      0.2666473457440297,
+      0.811224570528086
+     ]
+    },
+    "tie": {
+     "count": 0,
+     "share": 0.0,
+     "ci95": [
+      0.0,
+      0.2991527535509594
+     ]
+    },
+    "loss": {
+     "count": 4,
+     "share": 0.4444444444444444,
+     "ci95": [
+      0.188775429471914,
+      0.7333526542559703
+     ]
+    },
+    "mean_total_diff": 1.7777777777777777
+   },
+   "why_incomplete": {
+    "n": 12,
+    "win": {
+     "count": 12,
+     "share": 1.0,
+     "ci95": [
+      0.7574992425007574,
+      1.0
+     ]
+    },
+    "tie": {
+     "count": 0,
+     "share": 0.0,
+     "ci95": [
+      0.0,
+      0.2425007574992425
+     ]
+    },
+    "loss": {
+     "count": 0,
+     "share": 0.0,
+     "ci95": [
+      0.0,
+      0.2425007574992425
+     ]
+    },
+    "mean_total_diff": 4.083333333333333
+   },
+   "compare": {
+    "n": 9,
+    "win": {
+     "count": 3,
+     "share": 0.3333333333333333,
+     "ci95": [
+      0.12058159868274293,
+      0.6458026525009102
+     ]
+    },
+    "tie": {
+     "count": 0,
+     "share": 0.0,
+     "ci95": [
+      0.0,
+      0.2991527535509594
+     ]
+    },
+    "loss": {
+     "count": 6,
+     "share": 0.6666666666666666,
+     "ci95": [
+      0.35419734749908977,
+      0.879418401317257
+     ]
+    },
+    "mean_total_diff": -1.7777777777777777
+   },
+   "what_if": {
+    "n": 9,
+    "win": {
+     "count": 6,
+     "share": 0.6666666666666666,
+     "ci95": [
+      0.35419734749908977,
+      0.879418401317257
+     ]
+    },
+    "tie": {
+     "count": 3,
+     "share": 0.3333333333333333,
+     "ci95": [
+      0.12058159868274293,
+      0.6458026525009102
+     ]
+    },
+    "loss": {
+     "count": 0,
+     "share": 0.0,
+     "ci95": [
+      0.0,
+      0.2991527535509594
+     ]
+    },
+    "mean_total_diff": 1.8888888888888888
+   },
+   "next_action": {
+    "n": 12,
+    "win": {
+     "count": 3,
+     "share": 0.25,
+     "ci95": [
+      0.08894003962896138,
+      0.53231033912066
+     ]
+    },
+    "tie": {
+     "count": 0,
+     "share": 0.0,
+     "ci95": [
+      0.0,
+      0.2425007574992425
+     ]
+    },
+    "loss": {
+     "count": 9,
+     "share": 0.75,
+     "ci95": [
+      0.46768966087934005,
+      0.9110599603710386
+     ]
+    },
+    "mean_total_diff": -4.333333333333333
+   },
+   "plain_summary": {
+    "n": 9,
+    "win": {
+     "count": 3,
+     "share": 0.3333333333333333,
+     "ci95": [
+      0.12058159868274293,
+      0.6458026525009102
+     ]
+    },
+    "tie": {
+     "count": 0,
+     "share": 0.0,
+     "ci95": [
+      0.0,
+      0.2991527535509594
+     ]
+    },
+    "loss": {
+     "count": 6,
+     "share": 0.6666666666666666,
+     "ci95": [
+      0.35419734749908977,
+      0.879418401317257
+     ]
+    },
+    "mean_total_diff": 0.0
+   }
+  },
+  "agent_delivery": {
+   "questions": 20,
+   "raw_passed_verifier": 13,
+   "fallback_delivered": 7,
+   "of_which_infra_errors": 0,
+   "of_which_verifier_blocks": 7
+  }
+ },
+ "faithfulness": {
+  "template_violations": 0,
+  "delivered_violations": 0
+ }
+}

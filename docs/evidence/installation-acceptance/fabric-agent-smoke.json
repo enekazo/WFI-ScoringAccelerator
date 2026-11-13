@@ -1,0 +1,295 @@
+{
+  "source_artifact_sha256": "4914120767d6dc4eacc873a227aefe49ab34e7f06fc8cab7bc5df2b9fb5f3776",
+  "model": "scoring-agent-model4",
+  "model_identity_note": "Deployment alias, not a verified underlying model version.",
+  "mode": "fabric-iq (ontology item id in data_agent_id field)",
+  "questions": [
+    {
+      "question": "Which parcels have homes but no passable access road?",
+      "answer": "The following parcels have homes but no passable access road:\n\n- P001\n- P004\n- P016\n- P020\n- P024\n- P028\n- P031\n- P032\n- P033\n- P036\n- P037\n- P038\n- P040\n- P050\n- P052\n- P053\n- P055\n- P056\n- P059\n- P060\n- P070\n- P075\n- P080\n- P089\n- P090\n- P094\n- P095\n- P102\n- P111\n- P114\n- P116\n- P120\n- P121\n- P123\n- P130\n- P132\n- P137\n- P139\n- P143\n- P147\n\n ",
+      "status": "completed",
+      "error": null,
+      "ground_truth": {
+        "qid": "C1",
+        "expected_parcels": [
+          "P001",
+          "P004",
+          "P016",
+          "P020",
+          "P024",
+          "P028",
+          "P031",
+          "P032",
+          "P033",
+          "P036",
+          "P037",
+          "P038",
+          "P040",
+          "P050",
+          "P052",
+          "P053",
+          "P055",
+          "P056",
+          "P059",
+          "P060",
+          "P070",
+          "P075",
+          "P080",
+          "P089",
+          "P090",
+          "P094",
+          "P095",
+          "P102",
+          "P111",
+          "P114",
+          "P116",
+          "P120",
+          "P121",
+          "P123",
+          "P130",
+          "P132",
+          "P137",
+          "P139",
+          "P143",
+          "P147"
+        ],
+        "expected_value": null,
+        "actual_parcels": [
+          "P001",
+          "P004",
+          "P016",
+          "P020",
+          "P024",
+          "P028",
+          "P031",
+          "P032",
+          "P033",
+          "P036",
+          "P037",
+          "P038",
+          "P040",
+          "P050",
+          "P052",
+          "P053",
+          "P055",
+          "P056",
+          "P059",
+          "P060",
+          "P070",
+          "P075",
+          "P080",
+          "P089",
+          "P090",
+          "P094",
+          "P095",
+          "P102",
+          "P111",
+          "P114",
+          "P116",
+          "P120",
+          "P121",
+          "P123",
+          "P130",
+          "P132",
+          "P137",
+          "P139",
+          "P143",
+          "P147"
+        ],
+        "actual_value": null,
+        "matched": true
+      },
+      "remote_tool_calls": [
+        {
+          "type": "mcp_call",
+          "name": "ask_ontology",
+          "status": "completed"
+        }
+      ]
+    },
+    {
+      "question": "Which high-risk parcels (band high or extreme) have no water source on a passable access road?",
+      "answer": "The high-risk parcels (band = `high` or `extreme`) with no water source on a passable access road are:\n\n- P008\n- P010\n- P012\n- P014\n- P015\n- P016\n- P023\n- P030\n- P035\n- P036\n- P042\n- P065\n- P066\n- P069\n- P073\n- P085\n- P088\n- P089\n- P096\n- P098\n- P102\n- P106\n- P111\n- P116\n- P137 .",
+      "status": "completed",
+      "error": null,
+      "ground_truth": {
+        "qid": "C2",
+        "expected_parcels": [
+          "P008",
+          "P010",
+          "P012",
+          "P014",
+          "P015",
+          "P016",
+          "P023",
+          "P030",
+          "P035",
+          "P036",
+          "P042",
+          "P065",
+          "P066",
+          "P069",
+          "P073",
+          "P085",
+          "P088",
+          "P089",
+          "P096",
+          "P098",
+          "P102",
+          "P106",
+          "P111",
+          "P116",
+          "P137"
+        ],
+        "expected_value": null,
+        "actual_parcels": [
+          "P008",
+          "P010",
+          "P012",
+          "P014",
+          "P015",
+          "P016",
+          "P023",
+          "P030",
+          "P035",
+          "P036",
+          "P042",
+          "P065",
+          "P066",
+          "P069",
+          "P073",
+          "P085",
+          "P088",
+          "P089",
+          "P096",
+          "P098",
+          "P102",
+          "P106",
+          "P111",
+          "P116",
+          "P137"
+        ],
+        "actual_value": null,
+        "matched": true
+      },
+      "remote_tool_calls": [
+        {
+          "type": "mcp_call",
+          "name": "ask_ontology",
+          "status": "completed"
+        }
+      ]
+    },
+    {
+      "question": "Which crew types cannot reach parcel P003? Put the crew types in 'parcels'.",
+      "answer": "The crew types that cannot reach parcel `P003` are:\n\n- **dozer**\n- **engine**\n\nMatching results were found, as indicated by `reachable = false` for these crew types .",
+      "status": "completed",
+      "error": null,
+      "ground_truth": {
+        "qid": "C3",
+        "expected_parcels": [
+          "dozer",
+          "engine"
+        ],
+        "expected_value": null,
+        "actual_parcels": [
+          "dozer",
+          "engine"
+        ],
+        "actual_value": null,
+        "matched": true
+      },
+      "remote_tool_calls": [
+        {
+          "type": "mcp_call",
+          "name": "ask_ontology",
+          "status": "completed"
+        }
+      ]
+    },
+    {
+      "question": "Which single parcel has the most homes among parcels that have a water source on a passable access road? Give its id in 'parcels' and the number of homes in 'value'.",
+      "answer": "The parcel with the most homes among those with a water source on a passable access road is:\n\n- **parcels:** P057  \n- **value:** 59 ",
+      "status": "completed",
+      "error": null,
+      "ground_truth": {
+        "qid": "C4",
+        "expected_parcels": [
+          "P057"
+        ],
+        "expected_value": 59,
+        "actual_parcels": [
+          "P057"
+        ],
+        "actual_value": 59,
+        "matched": true
+      },
+      "remote_tool_calls": [
+        {
+          "type": "mcp_call",
+          "name": "ask_ontology",
+          "status": "completed"
+        }
+      ]
+    },
+    {
+      "question": "Which parcels have a critical facility but no passable access road that an engine can use?",
+      "answer": "The following parcel IDs have a critical facility but no passable access road that an engine can use:\n\n- P020\n- P031\n- P052\n- P056\n- P060\n- P070\n- P080\n- P087\n- P090\n- P091\n- P102\n- P113\n- P121\n- P139\n- P149 .",
+      "status": "completed",
+      "error": null,
+      "ground_truth": {
+        "qid": "C5",
+        "expected_parcels": [
+          "P020",
+          "P031",
+          "P052",
+          "P056",
+          "P060",
+          "P070",
+          "P080",
+          "P087",
+          "P090",
+          "P091",
+          "P102",
+          "P113",
+          "P121",
+          "P139",
+          "P149"
+        ],
+        "expected_value": null,
+        "actual_parcels": [
+          "P020",
+          "P031",
+          "P052",
+          "P056",
+          "P060",
+          "P070",
+          "P080",
+          "P087",
+          "P090",
+          "P091",
+          "P102",
+          "P113",
+          "P121",
+          "P139",
+          "P149"
+        ],
+        "actual_value": null,
+        "matched": true
+      },
+      "remote_tool_calls": [
+        {
+          "type": "mcp_call",
+          "name": "ask_ontology",
+          "status": "completed"
+        }
+      ]
+    }
+  ],
+  "ground_truth_summary": {
+    "verified_questions": 5,
+    "matched_questions": 5,
+    "all_matched": true
+  },
+  "export_note": "Target identities and provider payloads omitted; raw tool payloads preserved privately."
+}

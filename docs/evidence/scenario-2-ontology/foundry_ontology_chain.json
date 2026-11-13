@@ -1,0 +1,328 @@
+{
+ "agent": "pinned-score-agent-fabric",
+ "format_hint": "Reply with one JSON object only: {\"parcels\": [<parcel ids, or crew type names for crew questions>], \"value\": <number or null>, \"note\": \"<one sentence>\"}.",
+ "summary": {
+  "questions_run": 9,
+  "correct": 9.0,
+  "errors": 0,
+  "throttled_retries": 0,
+  "c3_runs": [
+   {
+    "repeat": 0,
+    "parcels": [
+     "dozer",
+     "engine"
+    ],
+    "correct": 1.0
+   },
+   {
+    "repeat": 1,
+    "parcels": [
+     "dozer",
+     "engine"
+    ],
+    "correct": 1.0
+   },
+   {
+    "repeat": 2,
+    "parcels": [
+     "dozer",
+     "engine"
+    ],
+    "correct": 1.0
+   },
+   {
+    "repeat": 3,
+    "parcels": [
+     "dozer",
+     "engine"
+    ],
+    "correct": 1.0
+   },
+   {
+    "repeat": 4,
+    "parcels": [
+     "dozer",
+     "engine"
+    ],
+    "correct": 1.0
+   }
+  ]
+ },
+ "rows": [
+  {
+   "qid": "C1",
+   "repeat": 0,
+   "question": "Which parcels have homes but no passable access road?",
+   "truth": {
+    "parcels": [
+     "P001",
+     "P004",
+     "P016",
+     "P020",
+     "P024",
+     "P028",
+     "P031",
+     "P032",
+     "P033",
+     "P036",
+     "P037",
+     "P038",
+     "P040",
+     "P050"
+    ],
+    "value": null,
+    "basis": "assumed"
+   },
+   "answer_text": "{\n  \"parcels\": [\"P001\", \"P004\", \"P016\", \"P020\", \"P024\", \"P028\", \"P031\", \"P032\", \"P033\", \"P036\", \"P037\", \"P038\", \"P040\", \"P050\"],\n  \"value\": 14,\n  \"note\": \"14 parcels have homes but do not have a passable access road.\"\n}",
+   "parsed": {
+    "parcels": [
+     "P001",
+     "P004",
+     "P016",
+     "P020",
+     "P024",
+     "P028",
+     "P031",
+     "P032",
+     "P033",
+     "P036",
+     "P037",
+     "P038",
+     "P040",
+     "P050"
+    ],
+    "value": 14,
+    "note": "14 parcels have homes but do not have a passable access road."
+   },
+   "correct": 1.0,
+   "tool_calls": 1,
+   "tool_errors": [],
+   "error": null
+  },
+  {
+   "qid": "C2",
+   "repeat": 0,
+   "question": "Which high-risk parcels (band high or extreme) have no water source on a passable access road?",
+   "truth": {
+    "parcels": [
+     "P008",
+     "P010",
+     "P012",
+     "P014",
+     "P015",
+     "P016",
+     "P023",
+     "P030",
+     "P035",
+     "P036",
+     "P042"
+    ],
+    "value": null,
+    "basis": "assumed"
+   },
+   "answer_text": "{\"parcels\": [\"P008\", \"P010\", \"P012\", \"P014\", \"P015\", \"P016\", \"P023\", \"P030\", \"P035\", \"P036\", \"P042\"], \"value\": 11, \"note\": \"There are 11 high- or extreme-risk parcels without a water source on a passable access road.\"}",
+   "parsed": {
+    "parcels": [
+     "P008",
+     "P010",
+     "P012",
+     "P014",
+     "P015",
+     "P016",
+     "P023",
+     "P030",
+     "P035",
+     "P036",
+     "P042"
+    ],
+    "value": 11,
+    "note": "There are 11 high- or extreme-risk parcels without a water source on a passable access road."
+   },
+   "correct": 1.0,
+   "tool_calls": 1,
+   "tool_errors": [],
+   "error": null
+  },
+  {
+   "qid": "C3",
+   "repeat": 0,
+   "question": "Which crew types cannot reach parcel P003? Put the crew types in 'parcels'.",
+   "truth": {
+    "parcels": [
+     "dozer",
+     "engine"
+    ],
+    "value": null,
+    "basis": "assumed"
+   },
+   "answer_text": "{\"parcels\": [\"dozer\", \"engine\"], \"value\": 2, \"note\": \"Dozer and engine crew types cannot reach parcel P003 due to access limitations.\"}",
+   "parsed": {
+    "parcels": [
+     "dozer",
+     "engine"
+    ],
+    "value": 2,
+    "note": "Dozer and engine crew types cannot reach parcel P003 due to access limitations."
+   },
+   "correct": 1.0,
+   "tool_calls": 1,
+   "tool_errors": [],
+   "error": null
+  },
+  {
+   "qid": "C4",
+   "repeat": 0,
+   "question": "Which single parcel has the most homes among parcels that have a water source on a passable access road? Give its id in 'parcels' and the number of homes in 'value'.",
+   "truth": {
+    "parcels": [
+     "P018"
+    ],
+    "value": 42,
+    "basis": "measured"
+   },
+   "answer_text": "{\"parcels\": [\"P018\"], \"value\": 42, \"note\": \"Parcel P018 has the most homes (42) among parcels with a water source on a passable access road.\"}",
+   "parsed": {
+    "parcels": [
+     "P018"
+    ],
+    "value": 42,
+    "note": "Parcel P018 has the most homes (42) among parcels with a water source on a passable access road."
+   },
+   "correct": 1.0,
+   "tool_calls": 1,
+   "tool_errors": [],
+   "error": null
+  },
+  {
+   "qid": "C5",
+   "repeat": 0,
+   "question": "Which parcels have a critical facility but no passable access road that an engine can use?",
+   "truth": {
+    "parcels": [
+     "P020",
+     "P031"
+    ],
+    "value": null,
+    "basis": "assumed"
+   },
+   "answer_text": "{\"parcels\": [\"P020\", \"P031\"], \"value\": 2, \"note\": \"These parcels have at least one critical facility but no passable access road suitable for a fire engine.\"}",
+   "parsed": {
+    "parcels": [
+     "P020",
+     "P031"
+    ],
+    "value": 2,
+    "note": "These parcels have at least one critical facility but no passable access road suitable for a fire engine."
+   },
+   "correct": 1.0,
+   "tool_calls": 1,
+   "tool_errors": [],
+   "error": null
+  },
+  {
+   "qid": "C3",
+   "repeat": 1,
+   "question": "Which crew types cannot reach parcel P003? Put the crew types in 'parcels'.",
+   "truth": {
+    "parcels": [
+     "dozer",
+     "engine"
+    ],
+    "value": null,
+    "basis": "assumed"
+   },
+   "answer_text": "{\"parcels\": [\"dozer\", \"engine\"], \"value\": 2, \"note\": \"Crew types 'dozer' and 'engine' cannot reach parcel P003 due to access limitations.\"}",
+   "parsed": {
+    "parcels": [
+     "dozer",
+     "engine"
+    ],
+    "value": 2,
+    "note": "Crew types 'dozer' and 'engine' cannot reach parcel P003 due to access limitations."
+   },
+   "correct": 1.0,
+   "tool_calls": 1,
+   "tool_errors": [],
+   "error": null
+  },
+  {
+   "qid": "C3",
+   "repeat": 2,
+   "question": "Which crew types cannot reach parcel P003? Put the crew types in 'parcels'.",
+   "truth": {
+    "parcels": [
+     "dozer",
+     "engine"
+    ],
+    "value": null,
+    "basis": "assumed"
+   },
+   "answer_text": "{\"parcels\": [\"dozer\", \"engine\"], \"value\": null, \"note\": \"Both dozer and engine crew types cannot reach parcel P003.\"}",
+   "parsed": {
+    "parcels": [
+     "dozer",
+     "engine"
+    ],
+    "value": null,
+    "note": "Both dozer and engine crew types cannot reach parcel P003."
+   },
+   "correct": 1.0,
+   "tool_calls": 1,
+   "tool_errors": [],
+   "error": null
+  },
+  {
+   "qid": "C3",
+   "repeat": 3,
+   "question": "Which crew types cannot reach parcel P003? Put the crew types in 'parcels'.",
+   "truth": {
+    "parcels": [
+     "dozer",
+     "engine"
+    ],
+    "value": null,
+    "basis": "assumed"
+   },
+   "answer_text": "{\"parcels\": [\"dozer\", \"engine\"], \"value\": null, \"note\": \"Dozer and engine crews cannot reach parcel P003 according to the pinned scoring crew access evaluation.\"}",
+   "parsed": {
+    "parcels": [
+     "dozer",
+     "engine"
+    ],
+    "value": null,
+    "note": "Dozer and engine crews cannot reach parcel P003 according to the pinned scoring crew access evaluation."
+   },
+   "correct": 1.0,
+   "tool_calls": 1,
+   "tool_errors": [],
+   "error": null
+  },
+  {
+   "qid": "C3",
+   "repeat": 4,
+   "question": "Which crew types cannot reach parcel P003? Put the crew types in 'parcels'.",
+   "truth": {
+    "parcels": [
+     "dozer",
+     "engine"
+    ],
+    "value": null,
+    "basis": "assumed"
+   },
+   "answer_text": "{\"parcels\": [\"dozer\", \"engine\"], \"value\": null, \"note\": \"Dozer and engine crews cannot reach parcel P003.\"}",
+   "parsed": {
+    "parcels": [
+     "dozer",
+     "engine"
+    ],
+    "value": null,
+    "note": "Dozer and engine crews cannot reach parcel P003."
+   },
+   "correct": 1.0,
+   "tool_calls": 1,
+   "tool_errors": [],
+   "error": null
+  }
+ ]
+}

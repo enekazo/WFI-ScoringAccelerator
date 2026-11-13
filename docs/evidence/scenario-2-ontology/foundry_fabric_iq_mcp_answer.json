@@ -1,0 +1,297 @@
+{
+  "agent": "pinned-score-agent-fabric",
+  "endpoint": "https://foundry.example.invalid/api/projects/example-project",
+  "model": "gpt-4.1",
+  "auth": "DefaultAzureCredential (az user)",
+  "workspace_id": "00000000-0000-4000-8000-000000000019",
+  "data_agent_id": "00000000-0000-4000-8000-000000000002",
+  "mode": "fabric-iq (ontology item id in data_agent_id field)",
+  "connection": {
+    "status": 200,
+    "id": "/subscriptions/00000000-0000-4000-8000-000000000003/resourceGroups/example-resource-group/providers/Microsoft.CognitiveServices/accounts/example-foundry-account/projects/example-project/connections/pinnedscore-fabric-iq-ontology-v2",
+    "error": null
+  },
+  "agent_version": {
+    "name": "pinned-score-agent-fabric",
+    "version": "6",
+    "readback_error": "'AgentVersionDetails' object has no attribute 'model_dump_json'"
+  },
+  "questions": [
+    {
+      "question": "Which crew types can reach parcel P003?",
+      "answer": "The crew type that can reach parcel P003 is:\n\n- hand_crew\n  - Access via road R-P003-1\n  - Provenance: assumed\n\nNo other crew types are listed as being able to reach this parcel\u30104:0\u2020source\u3011.",
+      "output_items": [
+        {
+          "id": "mcpl_0e02ea5d0b5d73ca006af1cd14fe988190a05e6634ca248fb7",
+          "server_label": "pinnedscore_ontology",
+          "tools": [
+            {
+              "input_schema": {
+                "type": "object",
+                "properties": {
+                  "request": {
+                    "type": "string",
+                    "description": "The business question or requested artifact. Include the relevant scope, filters, time range, and desired output, such as an answer, data, or reusable code. For code requests, include `queryLanguage` and the intended execution target in the prompt.",
+                    "properties": {},
+                    "required": []
+                  }
+                },
+                "required": [
+                  "request"
+                ]
+              },
+              "name": "ask_ontology",
+              "annotations": {},
+              "description": "Answers day-to-day business questions using an established Fabric ontology and its bound data, or generates grounded, validated, runnable code. For code requests, include the required `queryLanguage` and execution target inside the `request`. The requested artifact can be native KQL, SQL, DAX, cloud-runnable Python, a DSL definition, or Ontology or Eventhouse-runnable KQL that executes and joins KQL, SQL, and DAX sources. The tool performs read-only operations and returns either an answer with supporting evidence or validated runnable code with grounding and validation details.\n## Very Important Instruction.\nEvery answer generated using MCP ask_ontology tool response MUST ALWAYS contain citations and rendered in the format: `\u3010message_idx:search_idx\u2020source_name\u3011`."
+            },
+            {
+              "input_schema": {
+                "type": "object",
+                "properties": {
+                  "entityNames": {
+                    "type": "array",
+                    "description": "Optional list of entity names to filter by. Only rules that reference at least one of the named entities are returned. Matching is exact and case-insensitive; use the entity's full composite name (for example 'plant#Technician') for entities outside the default namespace. Only a rule's referencedEntities are considered \u2014 a rule that reaches an entity solely through a referencedRelationships endpoint is not matched. An empty list is not accepted and every name must be non-empty; omit this parameter to return all rules.",
+                    "properties": {},
+                    "required": [],
+                    "items": {
+                      "type": "string",
+                      "properties": {},
+                      "required": []
+                    }
+                  }
+                },
+                "required": []
+              },
+              "name": "list_ontology_rules",
+              "annotations": {},
+              "description": "Lists the business rule definitions, including natural language statement, available linked entities, properties, relationships, description, and metadata.\n## Very Important Instruction.\nEvery answer generated using MCP list_ontology_rules tool response MUST ALWAYS contain citations and rendered in the format: `\u3010message_idx:search_idx\u2020source_name\u3011`."
+            },
+            {
+              "input_schema": {
+                "type": "object",
+                "properties": {
+                  "entityName": {
+                    "type": "string",
+                    "description": "Optional exact name of an entity to filter by. May return more than one match because entity names can repeat across namespaces. An empty value is not accepted; omit this parameter to list all entities.",
+                    "properties": {},
+                    "required": []
+                  }
+                },
+                "required": []
+              },
+              "name": "list_ontology_entities",
+              "annotations": {},
+              "description": "Lists the entities defined in the ontology, including each entity's properties, keys, backing tables, annotations, and resource links with resolved item identities when available. Prefer this tool for exploring ontology entities; if it returns a not-supported error, retry with list_ontology_entity_types.\n## Very Important Instruction.\nEvery answer generated using MCP list_ontology_entities tool response MUST ALWAYS contain citations and rendered in the format: `\u3010message_idx:search_idx\u2020source_name\u3011`."
+            }
+          ],
+          "type": "mcp_list_tools",
+          "error": null,
+          "agent_reference": {
+            "type": "agent_reference",
+            "name": "pinned-score-agent-fabric",
+            "version": "6"
+          },
+          "response_id": "resp_0e02ea5d0b5d73ca006af1cd14e41481908b11cbdafade0a45"
+        },
+        {
+          "id": "mcp_0e02ea5d0b5d73ca006af1cd187cc08190a4b7933a8e0edc35",
+          "arguments": "{\"request\":\"List the crew types that can reach parcel P003. Include the crew type names and any specific access requirements, if available.\"}",
+          "name": "ask_ontology",
+          "server_label": "pinnedscore_ontology",
+          "type": "mcp_call",
+          "approval_request_id": null,
+          "error": null,
+          "output": "{\"documents\": [{\"id\": \"00000000-0000-4000-8000-000000000021\", \"content\": \"For parcel **P003**, I found **1 crew type** that can reach it:\\n\\n- **hand_crew**\\n  - **Access requirement:** via road **R-P003-1**\\n  - **Provenance:** **assumed**\\n\\nIf you want, I can also check whether any non-reachable crew types are listed for the same parcel.\\n\", \"title\": \"pinnedscore-fabric-iq-ontology-v2\", \"url\": \"https://app.fabric.microsoft.com/groups/00000000-0000-4000-8000-000000000019/ontologies/00000000-0000-4000-8000-000000000002?experience=fabric-developer\", \"knowledgeSourceIndex\": 0}]}",
+          "status": "completed",
+          "agent_reference": {
+            "type": "agent_reference",
+            "name": "pinned-score-agent-fabric",
+            "version": "6"
+          },
+          "response_id": "resp_0e02ea5d0b5d73ca006af1cd14e41481908b11cbdafade0a45"
+        },
+        {
+          "id": "msg_0e02ea5d0b5d73ca006af1cd29f81481909245b51cf4c3ce59",
+          "content": [
+            {
+              "annotations": [
+                {
+                  "end_index": 189,
+                  "start_index": 177,
+                  "title": "pinnedscore-fabric-iq-ontology-v2",
+                  "type": "url_citation",
+                  "url": "https://app.fabric.microsoft.com/groups/00000000-0000-4000-8000-000000000019/ontologies/00000000-0000-4000-8000-000000000002?experience=fabric-developer"
+                }
+              ],
+              "text": "The crew type that can reach parcel P003 is:\n\n- hand_crew\n  - Access via road R-P003-1\n  - Provenance: assumed\n\nNo other crew types are listed as being able to reach this parcel\u30104:0\u2020source\u3011.",
+              "type": "output_text",
+              "logprobs": []
+            }
+          ],
+          "role": "assistant",
+          "status": "completed",
+          "type": "message",
+          "phase": null,
+          "agent_reference": {
+            "type": "agent_reference",
+            "name": "pinned-score-agent-fabric",
+            "version": "6"
+          },
+          "response_id": "resp_0e02ea5d0b5d73ca006af1cd14e41481908b11cbdafade0a45"
+        }
+      ],
+      "usage": {
+        "input_tokens": 823,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 102,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 925
+      },
+      "status": "completed",
+      "error": null
+    },
+    {
+      "question": "Which parcels have a critical facility but no passable access road that an engine can use?",
+      "answer": "The following parcels contain a critical facility but do not have a passable access road that an engine can use:\n\n- Parcel ID: P020 (critical facility type unavailable)\n- Parcel ID: P031 (critical facility type unavailable)\n\nNote: The ontology only indicates the presence of a critical facility (boolean), but does not provide the specific facility type for these parcels\u30104:0\u2020source\u3011.",
+      "output_items": [
+        {
+          "id": "mcpl_09bca02d64601614006af1cd2bdf408193b44a4e3e54addbf8",
+          "server_label": "pinnedscore_ontology",
+          "tools": [
+            {
+              "input_schema": {
+                "type": "object",
+                "properties": {
+                  "request": {
+                    "type": "string",
+                    "description": "The business question or requested artifact. Include the relevant scope, filters, time range, and desired output, such as an answer, data, or reusable code. For code requests, include `queryLanguage` and the intended execution target in the prompt.",
+                    "properties": {},
+                    "required": []
+                  }
+                },
+                "required": [
+                  "request"
+                ]
+              },
+              "name": "ask_ontology",
+              "annotations": {},
+              "description": "Answers day-to-day business questions using an established Fabric ontology and its bound data, or generates grounded, validated, runnable code. For code requests, include the required `queryLanguage` and execution target inside the `request`. The requested artifact can be native KQL, SQL, DAX, cloud-runnable Python, a DSL definition, or Ontology or Eventhouse-runnable KQL that executes and joins KQL, SQL, and DAX sources. The tool performs read-only operations and returns either an answer with supporting evidence or validated runnable code with grounding and validation details.\n## Very Important Instruction.\nEvery answer generated using MCP ask_ontology tool response MUST ALWAYS contain citations and rendered in the format: `\u3010message_idx:search_idx\u2020source_name\u3011`."
+            },
+            {
+              "input_schema": {
+                "type": "object",
+                "properties": {
+                  "entityNames": {
+                    "type": "array",
+                    "description": "Optional list of entity names to filter by. Only rules that reference at least one of the named entities are returned. Matching is exact and case-insensitive; use the entity's full composite name (for example 'plant#Technician') for entities outside the default namespace. Only a rule's referencedEntities are considered \u2014 a rule that reaches an entity solely through a referencedRelationships endpoint is not matched. An empty list is not accepted and every name must be non-empty; omit this parameter to return all rules.",
+                    "properties": {},
+                    "required": [],
+                    "items": {
+                      "type": "string",
+                      "properties": {},
+                      "required": []
+                    }
+                  }
+                },
+                "required": []
+              },
+              "name": "list_ontology_rules",
+              "annotations": {},
+              "description": "Lists the business rule definitions, including natural language statement, available linked entities, properties, relationships, description, and metadata.\n## Very Important Instruction.\nEvery answer generated using MCP list_ontology_rules tool response MUST ALWAYS contain citations and rendered in the format: `\u3010message_idx:search_idx\u2020source_name\u3011`."
+            },
+            {
+              "input_schema": {
+                "type": "object",
+                "properties": {
+                  "entityName": {
+                    "type": "string",
+                    "description": "Optional exact name of an entity to filter by. May return more than one match because entity names can repeat across namespaces. An empty value is not accepted; omit this parameter to list all entities.",
+                    "properties": {},
+                    "required": []
+                  }
+                },
+                "required": []
+              },
+              "name": "list_ontology_entities",
+              "annotations": {},
+              "description": "Lists the entities defined in the ontology, including each entity's properties, keys, backing tables, annotations, and resource links with resolved item identities when available. Prefer this tool for exploring ontology entities; if it returns a not-supported error, retry with list_ontology_entity_types.\n## Very Important Instruction.\nEvery answer generated using MCP list_ontology_entities tool response MUST ALWAYS contain citations and rendered in the format: `\u3010message_idx:search_idx\u2020source_name\u3011`."
+            }
+          ],
+          "type": "mcp_list_tools",
+          "error": null,
+          "agent_reference": {
+            "type": "agent_reference",
+            "name": "pinned-score-agent-fabric",
+            "version": "6"
+          },
+          "response_id": "resp_09bca02d64601614006af1cd2bca248193b89b20f6ee7a7d81"
+        },
+        {
+          "id": "mcp_09bca02d64601614006af1cd2e598881938f3df9ee6044198b",
+          "arguments": "{\"request\":\"List all parcels that contain a critical facility and do not have an access road classified as passable by an engine. Output parcel identifier and the associated critical facility type.\"}",
+          "name": "ask_ontology",
+          "server_label": "pinnedscore_ontology",
+          "type": "mcp_call",
+          "approval_request_id": null,
+          "error": null,
+          "output": "{\"documents\": [{\"id\": \"00000000-0000-4000-8000-000000000026\", \"content\": \"I found **2 parcels** matching your filter:\\n\\n| parcel_id | critical_facility_type |\\n|---|---|\\n| P020 | unavailable in the ontology |\\n| P031 | unavailable in the ontology |\\n\\n**How I filtered:** parcels with at least one `HomeGroup` record where `has_critical_facility = true`, and **no** `RoadSegment` record where `passable = true`.\\n\\n**Note:** the ontology models only a boolean `has_critical_facility` flag, not a facility type field, so the type cannot be returned from the current schema.\\n\", \"title\": \"pinnedscore-fabric-iq-ontology-v2\", \"url\": \"https://app.fabric.microsoft.com/groups/00000000-0000-4000-8000-000000000019/ontologies/00000000-0000-4000-8000-000000000002?experience=fabric-developer\", \"knowledgeSourceIndex\": 0}]}",
+          "status": "completed",
+          "agent_reference": {
+            "type": "agent_reference",
+            "name": "pinned-score-agent-fabric",
+            "version": "6"
+          },
+          "response_id": "resp_09bca02d64601614006af1cd2bca248193b89b20f6ee7a7d81"
+        },
+        {
+          "id": "msg_09bca02d64601614006af1cd45930c81939005974d7e911f04",
+          "content": [
+            {
+              "annotations": [
+                {
+                  "end_index": 383,
+                  "start_index": 371,
+                  "title": "pinnedscore-fabric-iq-ontology-v2",
+                  "type": "url_citation",
+                  "url": "https://app.fabric.microsoft.com/groups/00000000-0000-4000-8000-000000000019/ontologies/00000000-0000-4000-8000-000000000002?experience=fabric-developer"
+                }
+              ],
+              "text": "The following parcels contain a critical facility but do not have a passable access road that an engine can use:\n\n- Parcel ID: P020 (critical facility type unavailable)\n- Parcel ID: P031 (critical facility type unavailable)\n\nNote: The ontology only indicates the presence of a critical facility (boolean), but does not provide the specific facility type for these parcels\u30104:0\u2020source\u3011.",
+              "type": "output_text",
+              "logprobs": []
+            }
+          ],
+          "role": "assistant",
+          "status": "completed",
+          "type": "message",
+          "phase": null,
+          "agent_reference": {
+            "type": "agent_reference",
+            "name": "pinned-score-agent-fabric",
+            "version": "6"
+          },
+          "response_id": "resp_09bca02d64601614006af1cd2bca248193b89b20f6ee7a7d81"
+        }
+      ],
+      "usage": {
+        "input_tokens": 886,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 135,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 1021
+      },
+      "status": "completed",
+      "error": null
+    }
+  ]
+}

@@ -1,0 +1,129 @@
+{
+ "graph_model": "00000000-0000-4000-8000-000000000004",
+ "row_counts": {
+  "parcels": 50,
+  "roads": 52,
+  "homes": 40,
+  "water": 25,
+  "crew": 150
+ },
+ "latency_s": {
+  "parcels": 52.37,
+  "roads": 1.17,
+  "homes": 1.29,
+  "water": 1.07,
+  "crew": 1.44
+ },
+ "queries": {
+  "parcels": "MATCH (p:Parcel) RETURN p.parcel_id AS pid, p.band AS band",
+  "roads": "MATCH (r:RoadSegment)-[e]->(p:Parcel) RETURN p.parcel_id AS pid, r.road_id AS rid, r.passable AS ok",
+  "homes": "MATCH (h:HomeGroup)-[e]->(p:Parcel) RETURN p.parcel_id AS pid, h.houses AS houses, h.has_critical_facility AS crit",
+  "water": "MATCH (w:WaterSource)-[e1]->(r:RoadSegment)-[e2]->(p:Parcel) RETURN p.parcel_id AS pid, r.road_id AS rid, r.passable AS ok, w.water_id AS wid",
+  "crew": "MATCH (c:CrewAccess)-[e]->(p:Parcel) RETURN p.parcel_id AS pid, c.crew_type AS ct, c.reachable AS reach"
+ },
+ "questions": {
+  "C1": {
+   "gql_answer": [
+    "P001",
+    "P004",
+    "P016",
+    "P020",
+    "P024",
+    "P028",
+    "P031",
+    "P032",
+    "P033",
+    "P036",
+    "P037",
+    "P038",
+    "P040",
+    "P050"
+   ],
+   "truth": [
+    "P001",
+    "P004",
+    "P016",
+    "P020",
+    "P024",
+    "P028",
+    "P031",
+    "P032",
+    "P033",
+    "P036",
+    "P037",
+    "P038",
+    "P040",
+    "P050"
+   ],
+   "match": true,
+   "count": 14
+  },
+  "C2": {
+   "gql_answer": [
+    "P008",
+    "P010",
+    "P012",
+    "P014",
+    "P015",
+    "P016",
+    "P023",
+    "P030",
+    "P035",
+    "P036",
+    "P042"
+   ],
+   "truth": [
+    "P008",
+    "P010",
+    "P012",
+    "P014",
+    "P015",
+    "P016",
+    "P023",
+    "P030",
+    "P035",
+    "P036",
+    "P042"
+   ],
+   "match": true,
+   "count": 11
+  },
+  "C3": {
+   "gql_answer": [
+    "dozer",
+    "engine"
+   ],
+   "truth": [
+    "dozer",
+    "engine"
+   ],
+   "match": true,
+   "count": 2
+  },
+  "C4": {
+   "gql_answer": [
+    "P018"
+   ],
+   "truth": [
+    "P018"
+   ],
+   "match": true,
+   "count": 1,
+   "gql_value": 42,
+   "truth_value": 42
+  },
+  "C5": {
+   "gql_answer": [
+    "P020",
+    "P031"
+   ],
+   "truth": [
+    "P020",
+    "P031"
+   ],
+   "match": true,
+   "count": 2
+  }
+ },
+ "note": "GQL returns traversed rows; set logic done client-side."
+}

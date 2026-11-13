@@ -1,0 +1,12 @@
+{
+  "note": "After user published pinned_scoring_data_agent and set CrewAccess composite key + refresh (10:53)",
+  "crewaccess_count_gql": 50,
+  "crewaccess_expected": 150,
+  "assistants_route": {
+    "url": "GET /v1/workspaces/00000000-0000-4000-8000-000000000019/dataagents/00000000-0000-4000-8000-000000000024/aiassistant/openai/assistants?api-version=2024-05-01-preview",
+    "http": 404,
+    "errorCode": "EntityNotFound",
+    "message": "The requested resource could not be found",
+    "requestId": "00000000-0000-4000-8000-000000000017"
+  }
+}
